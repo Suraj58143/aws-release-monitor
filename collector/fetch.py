@@ -25,8 +25,8 @@ SOURCES = (
     {
         "name": "AWS What's New",
         "url": "https://aws.amazon.com/new/",
-        "kind": "html",
-        "path_pattern": r"/(?:about-aws/whats-new|new)/",
+        "feed_url": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
+        "kind": "rss",
     },
     {
         "name": "AWS News Blog",
@@ -37,8 +37,8 @@ SOURCES = (
     {
         "name": "AWS Security Bulletins",
         "url": "https://aws.amazon.com/security/security-bulletins/",
-        "kind": "html",
-        "path_pattern": r"/security/security-bulletins/",
+        "feed_url": "https://aws.amazon.com/security/security-bulletins/rss/feed/",
+        "kind": "rss",
     },
 )
 
@@ -115,8 +115,10 @@ def _fetch_source(session: requests.Session, source: dict[str, str]) -> list[dic
                     "base_url": source["url"],
                 }
             )
-        if not records:
+        if not records and not parsed.bozo:
             raise ValueError("The RSS feed contained no entries")
+        if parsed.bozo and not records:
+            raise ValueError(f"The RSS feed could not be parsed: {parsed.bozo_exception}")
         return records
 
     response = session.get(source["url"], timeout=REQUEST_TIMEOUT)
@@ -148,20 +150,29 @@ def collect() -> tuple[int, int]:
                     if (article := normalize_article(raw)) is not None
                 ]
                 raw_articles.extend(normalized)
+                filtered_out = len(raw_records) - len(normalized)
                 source_status[source["name"]] = {
                     "url": source["url"],
                     "status": "ok",
                     "fetched": len(raw_records),
                     "normalized": len(normalized),
+                    "filtered_out": filtered_out,
                     "error": "",
                 }
-                LOGGER.info("%s: fetched %d announcements", source["name"], len(normalized))
+                LOGGER.info(
+                    "%s: retained %d service-specific announcements; filtered %d of %d",
+                    source["name"],
+                    len(normalized),
+                    filtered_out,
+                    len(raw_records),
+                )
             except (requests.RequestException, ValueError, KeyError) as error:
                 source_status[source["name"]] = {
                     "url": source["url"],
                     "status": "error",
                     "fetched": 0,
                     "normalized": 0,
+                    "filtered_out": 0,
                     "error": str(error),
                 }
                 LOGGER.exception("Failed to collect %s", source["name"])

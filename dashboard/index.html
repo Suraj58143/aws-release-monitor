@@ -23,7 +23,7 @@
       <section class="hero" aria-labelledby="page-title">
         <p class="eyebrow"><span class="status-dot"></span> COMMUNITY MONITOR · UPDATED HOURLY</p>
         <h1 id="page-title">The latest from <span>AWS.</span></h1>
-        <p class="hero-copy">Official launches, service changes, and security news in one place.</p>
+        <p class="hero-copy">Service-specific announcements for AWS-owned products. Third-party releases and general roundups are filtered out.</p>
         <p class="last-updated" id="last-updated" aria-live="polite">Loading announcements…</p>
       </section>
 
@@ -58,6 +58,12 @@
             <span class="sr-only">Search announcements</span>
             <span aria-hidden="true">⌕</span>
             <input id="search" type="search" placeholder="Search announcements…" autocomplete="off">
+          </label>
+          <label class="select-field">
+            <span class="sr-only">Filter by AWS service</span>
+            <select id="service-filter">
+              <option value="">All AWS services</option>
+            </select>
           </label>
           <label class="select-field">
             <span class="sr-only">Filter by category</span>

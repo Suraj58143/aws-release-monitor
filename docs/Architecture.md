@@ -5,9 +5,9 @@
 ```mermaid
 flowchart LR
     S[GitHub Actions schedule / dispatch] --> F[Python collector]
-    F --> A[AWS What's New HTML]
+    F --> A[AWS What's New RSS]
     F --> B[AWS News Blog RSS]
-    F --> C[AWS Security Bulletins HTML]
+    F --> C[AWS Security Bulletins RSS]
     A --> N[Normalize and classify]
     B --> N
     C --> N
@@ -18,11 +18,16 @@ flowchart LR
     P --> U[Static dashboard]
 ```
 
-The collector reads each official source independently. A source failure is stored
-in the run state without discarding successful-source results; if every source
-fails, the run exits without changing the dataset. Article identity is the
-SHA-256 digest of the normalized title concatenated with the normalized URL.
-Historical articles are retained.
+The collector reads each official source independently. It retains an item only
+when its title identifies a cataloged AWS-owned service/product. Generic
+roundups, unrelated AWS posts, and titles centered on third-party vendors or
+products (including Microsoft/Windows Server) are excluded. The editable
+`collector/services.json` catalog supports additional AWS products and aliases.
+A source failure is stored in run state without discarding successful-source
+results; if every source fails, the run exits without changing the dataset.
+Article identity is the SHA-256 digest of the normalized title concatenated
+with the normalized URL. Existing historical items that do not satisfy the
+service filter are removed during collection.
 
 ## Deployment
 

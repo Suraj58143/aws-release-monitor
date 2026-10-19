@@ -5,11 +5,12 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "required": ["title", "url", "source", "category", "summary", "published", "hash"],
+    "required": ["title", "url", "source", "service", "category", "summary", "published", "hash"],
     "properties": {
       "title": { "type": "string", "minLength": 1 },
       "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
       "source": { "type": "string", "minLength": 1 },
+      "service": { "type": "string", "minLength": 1 },
       "category": {
         "type": "string",
         "enum": ["Release", "Upgrade", "Security", "Bug Fix", "Service Update", "General Announcement"]

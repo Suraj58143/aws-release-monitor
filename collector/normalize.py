@@ -11,6 +11,7 @@ from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 from bs4 import BeautifulSoup
 
 from collector.classification import classify
+from collector.services import service_for_title
 from collector.storage import article_hash
 
 _TRACKING_PARAMETERS = {"fbclid", "gclid"}
@@ -76,7 +77,8 @@ def normalize_article(raw: dict[str, object]) -> dict[str, str] | None:
     """Normalize one source item; return None when it lacks a title or valid URL."""
     title = _clean_text(raw.get("title"))
     url = _normalize_url(raw.get("url"), str(raw.get("base_url", "")))
-    if not title or not url:
+    service = service_for_title(title)
+    if not title or not url or service is None:
         return None
 
     summary = _clean_text(raw.get("summary"))[:1000]
@@ -86,6 +88,7 @@ def normalize_article(raw: dict[str, object]) -> dict[str, str] | None:
         "title": title,
         "url": url,
         "source": source,
+        "service": service,
         "category": category,
         "summary": summary,
         "published": _normalize_date(raw.get("publish_date")),

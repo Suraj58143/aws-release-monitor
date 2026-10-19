@@ -9,6 +9,7 @@ import pytest
 from collector import storage
 from collector.classification import classify
 from collector.normalize import normalize_article
+from collector.services import service_for_title
 
 
 @pytest.mark.parametrize(
@@ -32,10 +33,39 @@ def test_non_security_release_is_not_misclassified_by_summary_context() -> None:
     ) == "Release"
 
 
+@pytest.mark.parametrize(
+    ("title", "expected"),
+    [
+        ("Amazon CloudWatch Omni is now available in additional AWS Regions", "Amazon CloudWatch Omni"),
+        ("EC2 Image Builder now integrates with ASG", "Amazon EC2 Image Builder"),
+        ("CVE-2026-18830 - Issue with Amazon Bedrock AgentCore harness", "Amazon Bedrock AgentCore"),
+    ],
+)
+def test_detects_the_most_specific_aws_service(title: str, expected: str) -> None:
+    assert service_for_title(title) == expected
+
+
+@pytest.mark.parametrize(
+    "title",
+    [
+        "Microsoft Windows Server security patches are available on AWS",
+        "Amazon S3 is now available on the Vercel Marketplace",
+        "AWS Weekly Roundup: Amazon Bedrock, Amazon S3, and more",
+        "Linux kernel issue affecting KVM-based hypervisors",
+        "Nemotron 3.5 Super VL model now available on Amazon SageMaker JumpStart",
+        "Beam model by Reflection is now available on Amazon SageMaker JumpStart",
+        "Muse Spark Open model now available on Amazon SageMaker JumpStart",
+        "PostgreSQL 19 RC1 is now available in Amazon RDS Database Preview Environment",
+    ],
+)
+def test_excludes_third_party_and_general_announcements(title: str) -> None:
+    assert service_for_title(title) is None
+
+
 def test_normalize_article_cleans_url_text_and_date() -> None:
     article = normalize_article(
         {
-            "title": "<b>Launch of a new AWS feature</b>",
+            "title": "<b>Launch of a new Amazon S3 feature</b>",
             "url": "/about-aws/whats-new/item/?utm_source=news#details",
             "source": "AWS What's New",
             "summary": "<p>A new feature is now available.</p>",
@@ -45,7 +75,8 @@ def test_normalize_article_cleans_url_text_and_date() -> None:
     )
 
     assert article is not None
-    assert article["title"] == "Launch of a new AWS feature"
+    assert article["title"] == "Launch of a new Amazon S3 feature"
+    assert article["service"] == "Amazon Simple Storage Service"
     assert article["url"] == "https://aws.amazon.com/about-aws/whats-new/item/"
     assert article["summary"] == "A new feature is now available."
     assert article["published"] == "2026-10-19T10:30:00Z"
@@ -66,7 +97,7 @@ def test_article_hash_matches_required_sha256_pair() -> None:
 def test_security_bulletin_source_sets_security_category() -> None:
     article = normalize_article(
         {
-            "title": "Bulletin 2026-123",
+            "title": "CVE-2026-123 - Issue with Amazon S3",
             "url": "https://aws.amazon.com/security/security-bulletins/example/",
             "source": "AWS Security Bulletins",
         }
@@ -81,19 +112,26 @@ def test_save_results_deduplicates_and_preserves_history(tmp_path, monkeypatch) 
     monkeypatch.setattr(storage, "ARTICLES_PATH", articles_path)
     monkeypatch.setattr(storage, "STATE_PATH", state_path)
     prior = {
-        "title": "Earlier AWS release",
+        "title": "Earlier Amazon S3 release",
         "url": "https://aws.amazon.com/earlier/",
         "source": "AWS What's New",
+        "service": "Amazon Simple Storage Service",
         "category": "Release",
         "summary": "",
         "published": "2026-01-01T00:00:00Z",
-        "hash": storage.article_hash("Earlier AWS release", "https://aws.amazon.com/earlier/"),
+        "hash": storage.article_hash("Earlier Amazon S3 release", "https://aws.amazon.com/earlier/"),
     }
-    articles_path.write_text(json.dumps([prior]), encoding="utf-8")
+    legacy = {
+        "title": "Microsoft Windows Server patch on AWS",
+        "url": "https://aws.amazon.com/legacy/",
+        "source": "AWS News Blog",
+    }
+    articles_path.write_text(json.dumps([prior, legacy]), encoding="utf-8")
     new = {
         "title": "Current AWS release",
         "url": "https://aws.amazon.com/current/",
         "source": "AWS What's New",
+        "service": "Amazon Simple Storage Service",
         "category": "Release",
         "summary": "",
         "published": "2026-10-19T00:00:00Z",
@@ -108,7 +146,7 @@ def test_save_results_deduplicates_and_preserves_history(tmp_path, monkeypatch) 
     assert stored[0]["title"] == "Current AWS release"
     assert stored[0]["category"] == "Security"
     assert stored[0]["summary"] == "Corrected security bulletin summary"
-    assert stored[1]["title"] == "Earlier AWS release"
+    assert stored[1]["title"] == "Earlier Amazon S3 release"
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert state["total_articles"] == 2
     assert datetime.fromisoformat(state["last_run"]).tzinfo == UTC

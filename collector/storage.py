@@ -10,6 +10,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from collector.services import service_for_title
+
 ROOT = Path(__file__).resolve().parent.parent
 ARTICLES_PATH = ROOT / "data" / "articles.json"
 STATE_PATH = ROOT / "data" / "state.json"
@@ -64,7 +66,12 @@ def save_results(
     source_status: dict[str, dict[str, Any]],
 ) -> tuple[int, int]:
     """Merge new records into history and persist article and run metadata."""
-    articles = load_articles()
+    articles = []
+    for article in load_articles():
+        service = service_for_title(article.get("title", ""))
+        if service is not None:
+            article["service"] = service
+            articles.append(article)
     known_articles = {item.get("hash"): index for index, item in enumerate(articles)}
     added = 0
     for article in new_articles:
@@ -77,7 +84,7 @@ def save_results(
             continue
 
         existing = articles[known_articles[digest]]
-        for field in ("title", "url", "source", "category", "hash"):
+        for field in ("title", "url", "source", "service", "category", "hash"):
             existing[field] = article[field]
         for field in ("summary", "published"):
             if article[field]:

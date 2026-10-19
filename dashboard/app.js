@@ -4,6 +4,7 @@ const articlesElement = document.querySelector("#article-list");
 const emptyElement = document.querySelector("#empty-state");
 const errorElement = document.querySelector("#error-state");
 const searchElement = document.querySelector("#search");
+const serviceElement = document.querySelector("#service-filter");
 const categoryElement = document.querySelector("#category-filter");
 const sourceElement = document.querySelector("#source-filter");
 const sortElement = document.querySelector("#sort-order");
@@ -41,6 +42,7 @@ function createCard(article) {
   const card = element("article", "article-card");
   const meta = element("div", "card-meta");
   meta.append(element("span", `badge ${categoryClass(article.category)}`, article.category || "General Announcement"));
+  meta.append(element("span", "service-tag", article.service || "AWS service"));
   meta.append(element("span", "card-source", article.source || "AWS"));
   meta.append(element("span", "card-date", formatDate(article.published)));
   card.append(meta);
@@ -97,11 +99,13 @@ function render() {
   const query = searchElement.value.trim().toLocaleLowerCase();
   const category = categoryElement.value;
   const source = sourceElement.value;
+  const service = serviceElement.value;
   const matches = sortArticles(articles.filter((article) => {
     const searchable = `${article.title || ""} ${article.summary || ""} ${article.source || ""} ${article.category || ""}`.toLocaleLowerCase();
     return (!query || searchable.includes(query))
       && (!category || article.category === category)
-      && (!source || article.source === source);
+      && (!source || article.source === source)
+      && (!service || article.service === service);
   }));
 
   articlesElement.replaceChildren(...matches.map(createCard));
@@ -137,6 +141,8 @@ async function loadArticles() {
   if (!Array.isArray(payload)) throw new Error("The announcement dataset has an invalid format.");
   articles = payload;
 
+  const services = [...new Set(articles.map((article) => article.service).filter(Boolean))].sort();
+  for (const service of services) serviceElement.add(new Option(service, service));
   const sources = [...new Set(articles.map((article) => article.source).filter(Boolean))].sort();
   for (const source of sources) sourceElement.add(new Option(source, source));
 
@@ -152,7 +158,7 @@ async function loadArticles() {
   renderHighlights("#upgrade-list", "Upgrade");
 }
 
-for (const control of [searchElement, categoryElement, sourceElement, sortElement]) {
+for (const control of [searchElement, serviceElement, categoryElement, sourceElement, sortElement]) {
   control.addEventListener("input", render);
   control.addEventListener("change", render);
 }

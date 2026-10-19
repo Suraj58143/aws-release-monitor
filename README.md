@@ -36,16 +36,24 @@ flowchart TB
 
 | Source | URL | Collection |
 |---|---|---|
-| AWS What's New | <https://aws.amazon.com/new/> | Official announcement page |
+| AWS What's New | <https://aws.amazon.com/new/> | Official RSS feed |
 | AWS News Blog | <https://aws.amazon.com/blogs/aws/> | Official RSS feed |
-| AWS Security Bulletins | <https://aws.amazon.com/security/security-bulletins/> | Official bulletin page |
+| AWS Security Bulletins | <https://aws.amazon.com/security/security-bulletins/> | Official RSS feed |
 
 Add future sources in `SOURCES` in `collector/fetch.py`.
+
+The collector now reads AWS's official What's New and Security Bulletins RSS
+feeds and keeps only titles identifying a cataloged AWS-owned service or
+product. General roundups and third-party products (including Microsoft and
+Windows Server announcements) are excluded. Add AWS service names and aliases
+to `collector/services.json`; the dashboard includes a matching AWS service
+filter. Existing off-scope history is removed on the next collection run.
 
 ## Features
 
 - Hourly scheduled collection and manual workflow dispatch.
-- Title, URL, source, summary, published date, category, and SHA-256 identity.
+- AWS service, title, URL, source, summary, published date, category, and
+  SHA-256 identity.
 - Historical retention with duplicate prevention.
 - Categories: Release, Upgrade, Security, Bug Fix, Service Update, General
   Announcement.

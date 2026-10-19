@@ -45,7 +45,7 @@ h1 span { color: var(--orange); }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 1.15rem; }
 h2 { margin: 0; font-size: 1.45rem; letter-spacing: -.035em; }
 .result-count { color: var(--muted); font-size: .8rem; }
-.filters { display: grid; grid-template-columns: minmax(220px, 1fr) repeat(3, minmax(145px, .42fr)); gap: .65rem; margin-bottom: 1rem; }
+.filters { display: grid; grid-template-columns: minmax(220px, 1fr) repeat(4, minmax(130px, .42fr)); gap: .65rem; margin-bottom: 1rem; }
 .search-field, .select-field { display: flex; min-height: 43px; align-items: center; gap: .55rem; padding: 0 .8rem; border: 1px solid var(--border); border-radius: 8px; background: #101821; color: var(--muted); }
 .search-field:focus-within, .select-field:focus-within { border-color: #52708a; }
 .search-field input, .select-field select { width: 100%; min-width: 0; border: 0; outline: 0; color: var(--text); background: transparent; font: inherit; font-size: .82rem; }
@@ -64,6 +64,7 @@ h2 { margin: 0; font-size: 1.45rem; letter-spacing: -.035em; }
 .badge-service-update { color: #d0b1ff; background: #3a2b52; }
 .badge-general-announcement { color: #c1cbd5; background: #2a3540; }
 .card-source, .card-date { color: var(--muted); font-size: .71rem; }
+.service-tag { color: #ffd18a; font-size: .71rem; font-weight: 650; }
 .article-title { margin: 0 0 .5rem; font-size: 1rem; line-height: 1.4; }
 .article-title a { text-decoration: none; }
 .article-title a:hover { color: #ffbd55; }

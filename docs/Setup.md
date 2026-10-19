@@ -58,3 +58,11 @@ does not allow browsers to fetch JSON.
   SHA-256 of normalized title plus URL.
 - `data/state.json` records the most recent run, per-source status, and counts.
 - `schemas/` contains the JSON Schema contracts checked by CI.
+
+## AWS service selection
+
+The collector keeps announcements whose title matches an AWS-owned service or
+product in `collector/services.json`. Add canonical names and title aliases to
+that catalog to extend coverage. It filters general roundups and known
+third-party products, including Microsoft and Windows Server announcements.
+The dashboard's **AWS service** filter is populated from the retained dataset.
