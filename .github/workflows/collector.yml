@@ -43,7 +43,25 @@ jobs:
             echo "No dataset changes to commit."
           else
             git commit -m "chore: update AWS announcements"
-            git push
+            for attempt in 1 2 3; do
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                exit 0
+              fi
+
+              if [ "$attempt" -eq 3 ]; then
+                echo "::error::Could not push the collector commit after three attempts."
+                exit 1
+              fi
+
+              echo "Remote branch advanced during collection; rebasing and merging the latest feed results (attempt $attempt)."
+              git fetch origin "$GITHUB_REF_NAME"
+              git rebase --strategy-option=theirs "origin/${GITHUB_REF_NAME}"
+              python -m collector.fetch
+              git add data/articles.json data/state.json
+              if ! git diff --cached --quiet; then
+                git commit --amend --no-edit
+              fi
+            done
           fi
 
       - name: Build Pages site
