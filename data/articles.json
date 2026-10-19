@@ -1,0 +1,326 @@
+[
+  {
+    "title": "AWS Weekly Roundup: AWS Lambda Web Functions, Amazon S3 on the Vercel Marketplace, and more (October 19, 2026)",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-lambda-web-functions-amazon-s3-on-the-vercel-marketplace-and-more-october-19-2026/",
+    "source": "AWS News Blog",
+    "category": "General Announcement",
+    "summary": "Nothing last week added a new kind of compute. What it did instead was shorten the distance between the code you already have and that code being live. AWS Lambda learned to run a plain HTTP server with no adapter in front of it, and Amazon S3 became something you can provision from inside the […]",
+    "published": "2026-10-19T15:34:59Z",
+    "hash": "762814fd8fe4417abf301b49ffa77de6decf0ec2344b2f69c0ed5960debea56c"
+  },
+  {
+    "title": "Amazon S3 is now available on the Vercel Marketplace and v0 by Vercel",
+    "url": "https://aws.amazon.com/blogs/aws/amazon-s3-vercel-marketplace-v0/",
+    "source": "AWS News Blog",
+    "category": "Release",
+    "summary": "Amazon Simple Storage Service (Amazon S3), including Amazon S3 Tables and Amazon S3 Vectors, is natively available on the Vercel Marketplace and v0 by Vercel.",
+    "published": "2026-10-14T19:30:48Z",
+    "hash": "b7313209e662cc404ea16a59bd43fdbfd414bd814f0770f7a1529214508b9af9"
+  },
+  {
+    "title": "AWS Weekly Roundup: Prime Day 2026 by the numbers, Claude Haiku 5.5, Amazon Nova 2.5 Sonic, and more (October 13, 2026)",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026/",
+    "source": "AWS News Blog",
+    "category": "General Announcement",
+    "summary": "Some numbers are hard to picture until you sit with them for a moment. Last week we published the Prime Day 2026 metrics, and the one that stuck with me is 2.3 quadrillion: the daily requests Amazon ElastiCache peaked at during the event. Prime Day ran back in June, so this post always lands as […]",
+    "published": "2026-10-13T15:59:06Z",
+    "hash": "00e9269f5a77e8cb71b015fd4cf5610d4f8cf4ff86e52af6bf576d353347d520"
+  },
+  {
+    "title": "Announcing AWS Lambda Web Functions",
+    "url": "https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/",
+    "source": "AWS News Blog",
+    "category": "Release",
+    "summary": "AWS Lambda Web Functions is a serverless compute primitive that runs your HTTP framework natively, delivering fast, consistent responses through multi-concurrent execution and automated global distribution.",
+    "published": "2026-10-12T22:34:47Z",
+    "hash": "1a897c02da14e85f6cb5dbe60bc0a58a18c7404f1e8fe152ac21622bb2f78915"
+  },
+  {
+    "title": "All the numbers: Amazon Prime Day 2026 powered by AWS",
+    "url": "https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/",
+    "source": "AWS News Blog",
+    "category": "General Announcement",
+    "summary": "Amazon Prime Day 2026 was exclusively for Prime members and ran June 23–26, 2026 with millions of deals across more than 35 categories. As part of our annual tradition of sharing how AWS powered Prime Day (2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, and 2025), I want to share the services and chart-topping metrics […]",
+    "published": "2026-10-06T16:09:36Z",
+    "hash": "987954309da811e35f460ed73534ac8a349d23955542d685a5d90a3a2a5f5613"
+  },
+  {
+    "title": "AWS Weekly Roundup: Amazon Bedrock Managed Agents powered by OpenAI, Q3 service availability updates, Kiro workflows, and more (October 5, 2026)",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/",
+    "source": "AWS News Blog",
+    "category": "Release",
+    "summary": "Last week, we announced a public preview of Amazon Bedrock Managed Agents powered by OpenAI, built on a customized version of OpenAI’s Agents API engineered to be AWS-native and integrated with AWS resources. You can now build agents optimized for OpenAI models that run entirely inside AWS with the identities, permissions, and governance controls you […]",
+    "published": "2026-10-05T15:41:19Z",
+    "hash": "bdbcc11426c1299aef7da1479ea694c564b69f95f2378f8e203d83d60e8a8b07"
+  },
+  {
+    "title": "Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)",
+    "url": "https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/",
+    "source": "AWS News Blog",
+    "category": "Bug Fix",
+    "summary": "Introducing the public preview of AWS Well-Architected Agent, an AI-powered service that analyzes your AWS environment to deliver targeted, contextual recommendations for improving your applications' cost, security, performance, and resilience—with ready-to-implement fixes aligned to your business goals.",
+    "published": "2026-10-01T20:04:04Z",
+    "hash": "13da5ca9359e9476d4e6dc1ac217eb969af2892e388316f4cf823c9c5691e582"
+  },
+  {
+    "title": "Amazon S3 Tables now support all Apache Iceberg V3 data types",
+    "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/",
+    "source": "AWS News Blog",
+    "category": "Upgrade",
+    "summary": "Amazon S3 Tables now support all data types in the Apache Iceberg V3 spec, along with column default values, deletion vectors, and row lineage. Upgrade existing V2 tables or create new V3 tables with built-in compaction, maintenance, and engine compatibility.",
+    "published": "2026-09-30T22:10:00Z",
+    "hash": "3611d96989c0c6424952fd476d142fab1889ca5669faf11804692657d9ab80de"
+  },
+  {
+    "title": "Amazon S3 Vectors now supports metadata pre-filtering for higher recall on filtered searches",
+    "url": "https://aws.amazon.com/blogs/aws/amazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches/",
+    "source": "AWS News Blog",
+    "category": "Upgrade",
+    "summary": "Amazon S3 Vectors now supports metadata pre filtering, delivering up to 5x higher recall on filtered searches. Filters evaluate before similarity search so scoped queries return more relevant results. Ideal for RAG, agentic apps, and document search.",
+    "published": "2026-09-30T20:03:34Z",
+    "hash": "203bfe936e98fac1bbe6a39db4d9e8bf9b86ae73a3f46db94c5cdeb92e86de9e"
+  },
+  {
+    "title": "Amazon Aurora PostgreSQL now supports direct querying of Apache Iceberg and Parquet data in your data lake",
+    "url": "https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/",
+    "source": "AWS News Blog",
+    "category": "Upgrade",
+    "summary": "Amazon Aurora PostgreSQL now lets you directly query Apache Iceberg and Parquet data stored in your data lake alongside live operational data—no ETL pipelines required. Powered by DuckDB embedded within Aurora, this capability enables single queries that join transactional and historical data using familiar PostgreSQL syntax. It supports AWS Glue Data Catalog, S3, and S3 Tables, with optimizations like predicate pushdown and caching for efficient performance.",
+    "published": "2026-09-30T17:22:31Z",
+    "hash": "9b4b3631ae9fd15063f3a020dd28814ed4d6362e78688d5c4d195cc1293f727c"
+  },
+  {
+    "title": "Celebrating Our Newest AWS Heroes – September 2026",
+    "url": "https://aws.amazon.com/blogs/aws/celebrating-our-newest-aws-heroes-september-2026/",
+    "source": "AWS News Blog",
+    "category": "General Announcement",
+    "summary": "Today, we’re excited to introduce the newest members of the AWS Heroes program. AWS Heroes are a vibrant, worldwide group of AWS experts who go above and beyond to share knowledge, mentor others, and build thriving communities. These individuals make a real difference in helping developers and organizations succeed with AWS. This month, we welcome […]",
+    "published": "2026-09-30T17:04:05Z",
+    "hash": "4a6697da037369231cdbe637230b944bdb2a8b58d0bf674c22edc2671abdf461"
+  },
+  {
+    "title": "AWS Weekly Roundup: GPT-6 Sol and Luna, Claude Opus 5.5 on Amazon Bedrock, Strands harness, and more (September 28, 2026)",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/",
+    "source": "AWS News Blog",
+    "category": "General Announcement",
+    "summary": "If there’s one theme that defined last week, it’s choice. The frontier models keep arriving, and the interesting question is no longer just “how smart is it?” but “which model fits this step, at this cost, at this latency?” That’s exactly what landed on Amazon Bedrock over the past few days: GPT-6 Sol and GPT-6 […]",
+    "published": "2026-09-28T16:14:54Z",
+    "hash": "6c8c232afa69f474db37f97811e3b34a71fe603db0faae2aff51158d3ce01a34"
+  },
+  {
+    "title": "Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications",
+    "url": "https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/",
+    "source": "AWS News Blog",
+    "category": "Release",
+    "summary": "Amazon EventBridge announces an enhanced custom event bus for organizations scaling event-driven applications across teams and accounts. Deploy a single event bus shared across all AWS accounts in your organization, with ordering guarantees, a simplified Subscriber resource, and improved economics at scale.",
+    "published": "2026-09-24T20:58:46Z",
+    "hash": "669436b0fa6ed30a8df20e94e85ee51e609c61af592e78bbe82c6bcc3c237a3d"
+  },
+  {
+    "title": "Now on Amazon CloudWatch Omni: collaborative AI-powered observability for your applications",
+    "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/",
+    "source": "AWS News Blog",
+    "category": "General Announcement",
+    "summary": "Amazon CloudWatch Omni is the next evolution of CloudWatch — unified observability that brings your applications and AI agents into one reimagined experience, with auto-discovered topology, natural language queries, and AI-guided investigation powered by AWS DevOps Agent.",
+    "published": "2026-09-22T22:23:14Z",
+    "hash": "3830134aa05545935977ca0a2503a97d6b76ebe5af377c420bad2a9a623294db"
+  },
+  {
+    "title": "Introducing Amazon CloudWatch Omni: AI-powered observability for generative AI and agentic workloads",
+    "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/",
+    "source": "AWS News Blog",
+    "category": "Release",
+    "summary": "Learn how Amazon CloudWatch Omni delivers AI-powered observability purpose-built for generative AI and agentic workloads. Trace, evaluate, and experiment with AI agents across any framework—directly from your IDE or a standalone web experience—using open standards and built-in evaluators for quality, correctness, and coherence.",
+    "published": "2026-09-22T22:21:13Z",
+    "hash": "0218bcfe344355c2677913dd0c0ffb75549909e7ab503ca1db7eed8f497224f8"
+  },
+  {
+    "title": "AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/",
+    "source": "AWS News Blog",
+    "category": "General Announcement",
+    "summary": "Living in the Netherlands, I spend a fair amount of time on trains, and that is usually where I catch up on what the builder community is writing. Until now, that meant opening a laptop or squinting at a browser tab on my phone. This week I found myself scrolling through trending articles and checking […]",
+    "published": "2026-09-21T16:11:24Z",
+    "hash": "fd7d2501b0fba4deebbbddf186d3a9218ea465969f175de82dbeb03a00554430"
+  },
+  {
+    "title": "New low-cost burstable Amazon EC2 T8i instances are generally available",
+    "url": "https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/",
+    "source": "AWS News Blog",
+    "category": "General Announcement",
+    "summary": "AWS introduces new low-cost burstable Amazon EC2 T8i instances powered by custom sixth generation Intel Xeon Scalable Processors (Granite Rapids), available only on AWS. T8i instances are among the lowest-cost EC2 instances and deliver up to 30% better price performance over previous generation T3 instances.",
+    "published": "2026-09-17T21:11:48Z",
+    "hash": "eaf8136afde2f90a905c89764631bdad86ddd33db078095bc052180c015f0b3f"
+  },
+  {
+    "title": "AWS Elastic Beanstalk introduces Cluster Mode",
+    "url": "https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/",
+    "source": "AWS News Blog",
+    "category": "General Announcement",
+    "summary": "Run an application on AWS Elastic Beanstalk Cluster Mode without provisioning or operating the compute underneath it. You provide a container image or source code; Elastic Beanstalk with service-operated compute creates and operates the environment that runs it.",
+    "published": "2026-09-17T19:20:21Z",
+    "hash": "b68dccf95e2edd0b1db94861322674ab2fe111b3ec8c96c566410db883f35a65"
+  },
+  {
+    "title": "AWS reimagines the getting started experience",
+    "url": "https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/",
+    "source": "AWS News Blog",
+    "category": "Upgrade",
+    "summary": "AWS has reimagined the getting started experience with smart and sensible defaults to help developers get started fast so that they can focus on building. New customers can sign up and get started right away with $100 in Free Tier credits, managed project environments, and simplified team and resource permissions. If their workload evolves, customers can activate advanced features to access the full breadth and depth of AWS in one step, with no migration required.",
+    "published": "2026-09-16T17:50:14Z",
+    "hash": "ef2360e43b7586118b46b81abc244dbdbd951f8fa5899e2bd66bd4dbc849abaa"
+  },
+  {
+    "title": "AWS Weekly Roundup: OpenAI GPT-6 Astra on Amazon Bedrock, Amazon Quick desktop GA, Kiro for students, and more (September 14, 2026)",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026/",
+    "source": "AWS News Blog",
+    "category": "Release",
+    "summary": "There’s a particular energy to mid-September in New York. Pumpkin spice lattes are flowing, temperatures are dropping, and it’s nearly sweater weather. The city is back at full speed, and so is the AWS launch calendar. This week that energy showed up in a new frontier model on Amazon Bedrock, a desktop app for Amazon […]",
+    "published": "2026-09-14T15:56:33Z",
+    "hash": "b0b0c5818e7b763f0fc91a44355d6da3858bbef91c04ec0276a324cb4471f035"
+  },
+  {
+    "title": "What’s new Explore new capabilities and the latest technologies",
+    "url": "https://aws.amazon.com/new/?nc2=h_rc_new",
+    "source": "AWS What's New",
+    "category": "General Announcement",
+    "summary": "",
+    "published": "",
+    "hash": "5f26741b0476c92ad6917cd1e89756672e2b0e26079509289c44070055b41d65"
+  },
+  {
+    "title": "What's New with AWS",
+    "url": "https://aws.amazon.com/new/",
+    "source": "AWS What's New",
+    "category": "General Announcement",
+    "summary": "",
+    "published": "",
+    "hash": "9a95fc5d0bf83437d9c2d1344c3c8ea3bde84fff933c74f39b01de88339708a2"
+  },
+  {
+    "title": "What's New",
+    "url": "https://aws.amazon.com/new/?nc1=f_cc",
+    "source": "AWS What's New",
+    "category": "General Announcement",
+    "summary": "",
+    "published": "",
+    "hash": "00c2515f61b2e992090315b28d338ea28bc4c47a1c11294bc050ba40d20ffaa9"
+  },
+  {
+    "title": "Subscribe via RSS feed",
+    "url": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
+    "source": "AWS What's New",
+    "category": "General Announcement",
+    "summary": "",
+    "published": "",
+    "hash": "d0af0c6524c8241821f750674b5d6a0b1aeb571d766a9ca110f0c370d8dece64"
+  },
+  {
+    "title": "Subscribe to the RSS Feed",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/feed/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "",
+    "published": "",
+    "hash": "f87854a8c18636e29a30d7f31636889557f8ec7ce93f5bd1ee943b3f17b1d7e4"
+  },
+  {
+    "title": "Security Bulletins",
+    "url": "https://aws.amazon.com/security/security-bulletins/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "",
+    "published": "",
+    "hash": "680680d54bf66df833b80b52f37329704edff4e604612d7668480aa452450efe"
+  },
+  {
+    "title": "News & announcements",
+    "url": "https://aws.amazon.com/new/?nc2=h_dsc_new",
+    "source": "AWS What's New",
+    "category": "General Announcement",
+    "summary": "",
+    "published": "",
+    "hash": "c52439fcfb419c08688a3cd08b3c72cd8a9cae64f655d648c1472a6c1791b399"
+  },
+  {
+    "title": "Issue in the Linux kernel virtio-net/TAP networking path affecting KVM-based hypervisors",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-137-aws/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "",
+    "published": "",
+    "hash": "7cf090969f5edcc7ab65776ef4f47f78c7f06263d6f64836a4bfa76dbda9e221"
+  },
+  {
+    "title": "CVE-2026-110812 - Deserialization of untrusted data in the Gremlin graph-import path in Amazon Neptune",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-136-aws/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "",
+    "published": "",
+    "hash": "d23722b14dd144fff541f1c1d959609f660a1e8f0ed94dfdc314d34f18d2cfbe"
+  },
+  {
+    "title": "CVE-2026-110310 - RSA PKCS#1 v1.5 padding oracle via legacy envelope key format downgrade in Amazon S3 Encryption Client for .NET",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-135-aws/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "",
+    "published": "",
+    "hash": "a345d4c7b8d27edb24af0b9170627095e5e2b5ccddbb609a2aea55306bdf6454"
+  },
+  {
+    "title": "CVE-2026-110248 - Insertion of sensitive information into log files in Amazon SageMaker Python SDK",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-134-aws/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "",
+    "published": "",
+    "hash": "51b4ecf436589b25cac9c69097a0ab194f2197537d375df2a9c5548fe13cb6fe"
+  },
+  {
+    "title": "CVE-2026-109587 & CVE-2026-109588 - Issue with FreeRTOS-Kernel",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-138-aws/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "",
+    "published": "",
+    "hash": "13db7cb14bc5239a823ba5160a3256c4462372fd2382bed4410e95344eb01b0a"
+  },
+  {
+    "title": "CVE-2026-108096: Improper authorization in query resolvers for SQL-backed models in AWS Amplify API Category",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-133-aws/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "",
+    "published": "",
+    "hash": "887bd8fea8a30697d00b674d5e8d31cbf8fd76d1174cee3ca6635380573c537d"
+  },
+  {
+    "title": "CVE-2026-107783 - Insertion of sensitive information into log file in AWS Tools for PowerShell",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-132-aws/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "",
+    "published": "",
+    "hash": "6c5192e062bc22ddf81615c1fc27cd85ef5154a3876ec23abbd513629598f3a7"
+  },
+  {
+    "title": "CVE-2026-107608: Improper link resolution in asset bundling output handling in aws-cdk-lib",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-131-aws/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "See details",
+    "published": "",
+    "hash": "696b5285879d340060d58dfcea40c58b5fcc908c28f8790ada5883475b4d258e"
+  },
+  {
+    "title": "CVE-2026-102551 & CVE-2026-102552 - Issue with FreeRTOS-Plus-TCP",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-139-aws/",
+    "source": "AWS Security Bulletins",
+    "category": "Security",
+    "summary": "",
+    "published": "",
+    "hash": "aef47e989082ad9c68b938b9fc7d31a9fa86a0e9965a25bb1db331505f8916af"
+  }
+]

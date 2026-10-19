@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AWS announcement collector state",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["last_run", "total_articles", "new_articles", "sources"],
+  "properties": {
+    "last_run": { "type": ["string", "null"], "format": "date-time" },
+    "total_articles": { "type": "integer", "minimum": 0 },
+    "new_articles": { "type": "integer", "minimum": 0 },
+    "sources": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url", "status", "fetched", "normalized", "error"],
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "status": { "type": "string", "enum": ["ok", "error"] },
+          "fetched": { "type": "integer", "minimum": 0 },
+          "normalized": { "type": "integer", "minimum": 0 },
+          "error": { "type": "string" }
+        }
+      }
+    }
+  }
+}

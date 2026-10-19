@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0b1118">
+    <meta name="description" content="A searchable dashboard of AWS announcements, releases, upgrades, and security bulletins.">
+    <title>AWS Release Monitor</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="AWS Release Monitor home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span>AWS <strong>Release Monitor</strong></span>
+      </a>
+      <a class="header-link" href="https://aws.amazon.com/new/" target="_blank" rel="noopener noreferrer">AWS What's New <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="status-dot"></span> COMMUNITY MONITOR · UPDATED HOURLY</p>
+        <h1 id="page-title">The latest from <span>AWS.</span></h1>
+        <p class="hero-copy">Official launches, service changes, and security news in one place.</p>
+        <p class="last-updated" id="last-updated" aria-live="polite">Loading announcements…</p>
+      </section>
+
+      <section class="overview" aria-label="Overview">
+        <article class="stat-card">
+          <span class="stat-label">Tracked announcements</span>
+          <strong class="stat-value" id="stat-total">—</strong>
+          <span class="stat-note">Across all monitored sources</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Last 7 days</span>
+          <strong class="stat-value" id="stat-week">—</strong>
+          <span class="stat-note">Recently published updates</span>
+        </article>
+        <article class="stat-card stat-card-security">
+          <span class="stat-label">Security updates</span>
+          <strong class="stat-value" id="stat-security">—</strong>
+          <span class="stat-note">Security bulletins and advisories</span>
+        </article>
+      </section>
+
+      <section class="updates-section" aria-labelledby="updates-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE AWS FEED</p>
+            <h2 id="updates-title">Latest updates</h2>
+          </div>
+          <span class="result-count" id="result-count" aria-live="polite"></span>
+        </div>
+        <div class="filters" role="search">
+          <label class="search-field">
+            <span class="sr-only">Search announcements</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="Search announcements…" autocomplete="off">
+          </label>
+          <label class="select-field">
+            <span class="sr-only">Filter by category</span>
+            <select id="category-filter">
+              <option value="">All categories</option>
+              <option>Release</option>
+              <option>Upgrade</option>
+              <option>Security</option>
+              <option>Bug Fix</option>
+              <option>Service Update</option>
+              <option>General Announcement</option>
+            </select>
+          </label>
+          <label class="select-field">
+            <span class="sr-only">Filter by source</span>
+            <select id="source-filter">
+              <option value="">All sources</option>
+            </select>
+          </label>
+          <label class="select-field sort-field">
+            <span class="sr-only">Sort announcements</span>
+            <select id="sort-order">
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+              <option value="title">Title A–Z</option>
+            </select>
+          </label>
+        </div>
+        <div class="article-grid" id="article-list" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>No announcements match these filters.</p>
+        <p class="error-state" id="error-state" hidden></p>
+      </section>
+
+      <section class="highlights-section" aria-label="Highlights">
+        <div class="highlight-column">
+          <div class="section-heading compact-heading">
+            <div><p class="eyebrow">STAY PROTECTED</p><h2>Security updates</h2></div>
+            <span class="section-symbol security-symbol" aria-hidden="true">!</span>
+          </div>
+          <div class="highlight-list" id="security-list"></div>
+        </div>
+        <div class="highlight-column">
+          <div class="section-heading compact-heading">
+            <div><p class="eyebrow">WHAT'S NEW</p><h2>Recent releases</h2></div>
+            <span class="section-symbol release-symbol" aria-hidden="true">↗</span>
+          </div>
+          <div class="highlight-list" id="release-list"></div>
+        </div>
+        <div class="highlight-column">
+          <div class="section-heading compact-heading">
+            <div><p class="eyebrow">KEEP CURRENT</p><h2>Recent upgrades</h2></div>
+            <span class="section-symbol upgrade-symbol" aria-hidden="true">↑</span>
+          </div>
+          <div class="highlight-list" id="upgrade-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Independent dashboard · announcements belong to AWS</span>
+      <a href="https://github.com/Suraj58143/aws-release-monitor" target="_blank" rel="noopener noreferrer">View project on GitHub ↗</a>
+    </footer>
+  </body>
+</html>
