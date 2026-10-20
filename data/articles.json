@@ -20,6 +20,16 @@
     "hash": "489f6ca7905660a226cf15298bd0b0a6368991086736fe6dfa3f196546fb9831"
   },
   {
+    "title": "AWS Partner Central launches Program Navigator, Case Study Generator, and streamlined specialization review",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/partner-central-program-navigator/",
+    "source": "AWS What's New",
+    "service": "AWS Partner Central",
+    "category": "Release",
+    "summary": "AWS Partner Central now features Program Navigator, a unified experience that lets partners discover, apply for, and track AWS Specialization program applications in one place. Partners can browse specialization designations, view requirements and benefits, and submit applications through a guided, step-by-step workflow. The new Case Study Generator in AWS Partner Central gives partners a redesigned creation experience with three starting paths: build a case study directly with AI assistance, import from an existing customer success story URL, or auto-populate from an opportunity. Case studies created for go-to-market purposes now follow a streamlined review path, a lightweight policy validation that lets partners publish directly to AWS domains without a specialization review. The deeper specialization-level review applies only to case studies associated with Program Navigator applications. Additionally, AWS has streamlined the specialization application review process through Program",
+    "published": "2026-10-20T08:00:00Z",
+    "hash": "4901f6d5480686cb3f3e8cdf8fb8ffa1b16e71ed027ef8ba7d1f4600e2f46c60"
+  },
+  {
     "title": "AWS IAM Identity Center simplifies identity source changes from Active Directory",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/iam-identity-center-chg-id-src-from-ad/",
     "source": "AWS What's New",
@@ -28,6 +38,26 @@
     "summary": "AWS IAM Identity Center now retains your workforce identities and their assignments when you change your identity source from Active Directory to an external identity provider (IdP), such as Okta or Microsoft Entra ID, or to the Identity Center directory. Specifically, it preserves your users, groups, group memberships, permission set assignments, and application assignments. Previously, this change required you to recreate them in IAM Identity Center. IAM Identity Center helps you connect your workforce identities to AWS once and manage their access centrally across AWS applications and accounts. When you change your identity source from Active Directory, your existing identity store remains in place, so your users and groups keep the same IDs. As a result, users retain their access to AWS accounts and applications, and policies that reference your user IDs, group IDs, or identity store ID continue to work. To make this change, configure your new identity source with the standard setu",
     "published": "2026-10-20T08:00:00Z",
     "hash": "0ac06e4ff15dc2711146ed341390b2ac254f3fe33ce16696be07c3baf96fc80e"
+  },
+  {
+    "title": "Amazon Bedrock Guardrails now supports Standard tier for contextual grounding checks",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-guardrails-grounding-standard/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock",
+    "category": "Upgrade",
+    "summary": "Amazon Bedrock Guardrails now offers a Standard tier for contextual grounding checks, which detect and filter hallucinations by checking whether a model response is grounded in your reference source and relevant to the user's query. The Standard tier is more robust than the Classic tier. It supports responses that include reasoning or conversational content, scores differently worded responses with the same meaning more consistently, and provides more comprehensive language support, matching the Standard tier for content filters and denied topics. Amazon Bedrock Guardrails provides configurable safeguards for generative AI applications on any foundation model through the ApplyGuardrail API. Until now, contextual grounding checks applied strict grounding suited to summarization, paraphrasing, and question answering. With the Standard tier, you can also apply contextual grounding checks to conversational applications and to responses that reason over the source. You choose the tier for e",
+    "published": "2026-10-20T08:00:00Z",
+    "hash": "7fc4cba65891160e9fce8e4bf91d6e6a28452d8bbe5dd148c82066aaf0f75110"
+  },
+  {
+    "title": "Amazon Bedrock Advanced Prompt Optimization now supports prompt shortening",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-prompt-optimization-shortening/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock",
+    "category": "Upgrade",
+    "summary": "Amazon Bedrock Advanced Prompt Optimization now supports prompt shortening, an optional setting that reduces the length of your prompt while maintaining or improving your evaluation scores. Advanced Prompt Optimization optimizes prompts for any model on Amazon Bedrock against your own evaluation criteria. Until now, optimization focused on quality alone. Optimized prompts were often longer than the original. Longer prompts raise input token costs and can increase time to first token, which matters at scale and in latency-sensitive applications. When you turn on prompt shortening for a prompt template in your input dataset, the optimizer reduces the prompt's length. The optimized prompt is returned only when it is shorter than your original prompt and scores at least as high on your evaluation. Otherwise your original prompt is returned, so the setting never leaves you with a longer or lower-scoring prompt. Results include a compression ratio and the original and optimized token counts,",
+    "published": "2026-10-20T08:00:00Z",
+    "hash": "0a0d9f49d0c8a0864c97293e1a39e9e8d7902b09fc5f5cecc78bb31a19e578ce"
   },
   {
     "title": "Amazon Connect Customer Global Resiliency now provides business users visibility into resiliency readiness across linked Regions",
