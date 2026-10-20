@@ -1,5 +1,15 @@
 [
   {
+    "title": "Amazon Connect Customer Global Resiliency now provides business users visibility into resiliency readiness across linked Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-readiness-overview",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Service Update",
+    "summary": "Amazon Connect Customer Global Resiliency now provides a Global Resiliency page in the admin website, giving administrators a single place to review their Region switch readiness. The page shows an overall readiness status and lists the resources that Global Resiliency natively replicates, including which resource types are in sync, which are still pending synchronization, and which need action. For example, if a phone number or user is not associated with a traffic distribution group, the page flags it and lets the administrator associate the affected resources directly from the page. With this readiness overview, administrators can review their resiliency posture at any time and verify that their instance is ready for a Region switch. This feature is available in all AWS Regions where Amazon Connect Customer Global Resiliency is supported . To learn more, see Amazon Connect Customer admin guide.",
+    "published": "2026-10-19T21:45:00Z",
+    "hash": "c670237cbe43b001a5e3f454273e76071f891b2005ca8db24b81a7fe03278618"
+  },
+  {
     "title": "Amazon CloudWatch Omni is now available in additional AWS Regions",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-omni-8-regions/",
     "source": "AWS What's New",
@@ -8,6 +18,146 @@
     "summary": "AWS announces that Amazon CloudWatch Omni is now available in eight additional AWS Regions. CloudWatch Omni is an AI-powered observability experience, organized around your teams and the applications they run, that helps you observe and troubleshoot your applications and agents in one place. It combines the interoperability of OpenTelemetry with the scale and reliability of CloudWatch, and meets you where you work — a standalone web experience with single sign-on (SSO), or a local IDE extension. With CloudWatch Omni, You create spaces in your central accounts to see telemetry across your AWS accounts, Regions, and other clouds, including Azure and GCP. Omni discovers services, maps dependencies, and surfaces golden metrics automatically and you can interact with telemetry through chat, point-and-click, or your own tool via Agent Toolkit for AWS to find signals, build dynamic views, and reach root cause powered by AWS DevOps Agent. A dedicated agent observability experience adds an eval",
     "published": "2026-10-19T19:10:00Z",
     "hash": "fdfeff47e6246dfecda9b3e720df65b4027758e8d419ff87532e1ad583df539c"
+  },
+  {
+    "title": "Incomplete fix for CVE-2025-4318 code injection in Amazon @aws-amplify/codegen-ui-react",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-066-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS Amplify",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:13:43Z",
+    "hash": "f21cac3892d9628b3927560d361698fdd9b3d1db93a31a831f9ae4d9f04d4d15"
+  },
+  {
+    "title": "CVE-2026-16796 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-065-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:13:43Z",
+    "hash": "1ca8fa5c379d45b5b47c3d27500d96d29cbd2fa74a9db7d95851def74a33b634"
+  },
+  {
+    "title": "CVE-2026-15737 - Sensitive content disclosure via OpenTelemetry spans in AgentCore Python SDK",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-058-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:13:43Z",
+    "hash": "c364a24d53722b7e33e531db0f3bede5cd2f3c01654bddc9d1f8f82f103ac9ef"
+  },
+  {
+    "title": "CVE-2026-12283 - Issue with Athena Federated Query Synapse Connector",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-059-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Athena",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:13:43Z",
+    "hash": "384ef605b128520b7e6dc7edff7647e8199caeb0cb85b580ece642015590421e"
+  },
+  {
+    "title": "CVE-2026-13762 and CVE-2026-13763 - Issue with HTTP/2 multi-frame request body inspection in AWS WAF",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-048-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS WAF",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:13:26Z",
+    "hash": "52e02689c1165b56942b84dfbeab92e4041d9483da71e3b8900affde5a4d9968"
+  },
+  {
+    "title": "CVE-2026-13760 - OS Command Injection in NodejsFunction Docker Bundling in aws-cdk-lib",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-050-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS Cloud Development Kit",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:13:26Z",
+    "hash": "335e5f145a9c963f997fd08fa46e6874b6623225626247c48f0aed9a102fe9c7"
+  },
+  {
+    "title": "CVE-2026-12957 and CVE-2026-12958 - Issues in Language Servers for AWS and Amazon Q Developer Plugins",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-047-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Q Developer",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:13:26Z",
+    "hash": "5bca891986af1aab213bc3ce07ea4005c612e6150bbfc45bdb77fc9e91406c6e"
+  },
+  {
+    "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 & CVE-2026-8597)",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon SageMaker AI",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:13:10Z",
+    "hash": "a0c8b6adbb01d106a6a5dbf3c86f59d7d3cc78684fedd11cfa54aa8af9af3615"
+  },
+  {
+    "title": "CVE-2026-8838 - Remote Code Execution in amazon-redshift-python-driver",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-033-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Redshift",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:13:10Z",
+    "hash": "49a617c624e93d36163e96859eab9d1df91b5f598a257db88e933fcfb541fffc"
+  },
+  {
+    "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-028-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Redshift",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:13:10Z",
+    "hash": "7c5963bbfd5de9b3a3069b9a6528f846d245c47816602db638f79d28c03aea1e"
+  },
+  {
+    "title": "Issues with Amazon Athena ODBC Driver",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-013-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Athena",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:12:55Z",
+    "hash": "483e2641aa7ed096ba5d63a0b4c8dfd27bf91e0b282f363be54ae9f987eff10b"
+  },
+  {
+    "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS FreeRTOS",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:12:55Z",
+    "hash": "24eab2dc5b9ca415ede992cc4d814b8de9fedcb765c0d3a96bc847417864a600"
+  },
+  {
+    "title": "CVE-2026-7424 - Integer Underflow in DHCPv6 Sub-Option Parser in FreeRTOS-Plus-TCP",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-022-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS FreeRTOS",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:12:55Z",
+    "hash": "b08181202d121eed422d8990f0ad605813d28be06bdfa9995008a5b281fefb76"
+  },
+  {
+    "title": "CVE-2026-6437 - Mount Option Injection in Amazon EFS CSI Driver",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-016-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon EFS CSI Driver",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-19T18:12:55Z",
+    "hash": "1c747b623f08717dc2dc9fc9fc66f6be31d3dc7c230728b979da3114ba4813be"
   },
   {
     "title": "EC2 Image Builder now integrates with ASG for faster image builds",
@@ -30,6 +180,16 @@
     "hash": "e5b7d6473369cf1f1176ddd110b6d732632a309240265b739cfa6f5deda70329"
   },
   {
+    "title": "AWS IAM Identity Center now supports optimistic locking for users and groups in its identity store",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/iam-identity-store-optimistic-locking/",
+    "source": "AWS What's New",
+    "service": "AWS Identity and Access Management",
+    "category": "Upgrade",
+    "summary": "IAM Identity Center helps you configure the single sign-on experience of your workforce to AWS accounts and applications. You can now use optimistic locking for users and groups in the identity store, so that update and delete requests succeed only if the user or group hasn't changed since you last read it. This helps when multiple administrators or automated workflows modify the same user or group at nearly the same time, where previously one write could silently overwrite another. Each user and group now has a Revision value that changes every time the user's or group's attributes are modified, including through SCIM provisioning, Active Directory sync, or the IAM Identity Center console. Create, describe, update, and list operations return the current Revision, and you can pass it on a later UpdateUser, UpdateGroup, DeleteUser, or DeleteGroup request. The request succeeds only if the supplied Revision matches the current Revision. Otherwise, it returns a ConflictException, so your w",
+    "published": "2026-10-19T08:00:00Z",
+    "hash": "423fe748ee72d68821d65ccd1f0a32dd15b94959baa7b0046d123ce65399ff7e"
+  },
+  {
     "title": "AWS Partner Central adds Solution Matching Engine performance insights",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/solution-matching-engine-performance",
     "source": "AWS What's New",
@@ -48,6 +208,16 @@
     "summary": "Amazon CloudWatch log centralization is now available in AWS GovCloud (US) and 13 additional commercial Regions. CloudWatch log centralization copies log data from multiple AWS accounts and Regions into a single destination account, integrating with AWS Organizations for efficient aggregation without the need for custom solutions. With this launch, organizations in the AWS GovCloud (US) partition and commercial partition can each centralize logs across their accounts and Regions for centralized monitoring. You can scope centralization rules to your entire organization, specific organizational units, or selected accounts and copy logs into a single account while preserving source context through enriched system fields. CloudWatch log centralization is now additionally available in Africa (Cape Town), Asia Pacific (Hong Kong), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Malaysia), Asia Pacific (Melbourne), Canada West (Calgary), Europe (Milan), Europe (Spain), Europe ",
     "published": "2026-10-16T20:04:00Z",
     "hash": "80a846eff06d118f03100a84c12579601ce283664ec06cc4d70a9ae98182c8a5"
+  },
+  {
+    "title": "Amazon EMR Serverless now supports IPv6 and dual-stack connectivity",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-emr-serverless/",
+    "source": "AWS What's New",
+    "service": "Amazon EMR",
+    "category": "Upgrade",
+    "summary": "Amazon EMR Serverless now supports IPv6 and dual-stack connectivity, expanding beyond the IPv4-only connectivity that was previously available. You can now run your Apache Spark and Apache Hive jobs over IPv6 in your Amazon Virtual Private Cloud (VPC) by supplying dual-stack (IPv4 and IPv6) or IPv6-only subnets. This gives you greater flexibility in how your applications connect to data stores and services, while maintaining full backward compatibility with your existing IPv4 workloads. As Spark and Hive workloads scale to many workers, the IPv4 address space in your VPCs and subnets can become a constraint, and a growing number of organizations face compliance mandates that require IPv6 adoption. With dual-stack connectivity, your EMR Serverless applications accept both IPv4 and IPv6, making it easy to adopt IPv6 gradually while maintaining backward compatibility with your existing IPv4 workloads. With IPv6-only subnets, you can eliminate the need for IPv4 addresses entirely, overcomi",
+    "published": "2026-10-16T19:20:00Z",
+    "hash": "a4ad5d29035d44632cb832e0dc09c057fa9c38f39b5b4e173789a3b4c9dc85f5"
   },
   {
     "title": "AWS Lambda durable functions are now available in AWS GovCloud (US) Regions",
