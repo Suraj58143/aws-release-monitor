@@ -1,5 +1,25 @@
 [
   {
+    "title": "Amazon Aurora and Amazon RDS now support On-Demand Capacity Reservation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-aurora-rds-on-demand-capacity-reservations/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora",
+    "category": "Release",
+    "summary": "Starting today, you can reserve compute capacity for your Amazon Aurora and Amazon RDS DB instances in one or more Availability Zones for as long as you need it. Reserving capacity helps ensure that DB instance create, restore, scale-compute, and start operations don't fail because of insufficient capacity. On-Demand Capacity Reservation is designed for workloads that need assurance that specific DB instance capacity will be available when they need it for business-critical events, such as migrations, product launches, seasonal peaks, high-availability deployments, or disaster recovery. You choose the DB instance class, engine, Availability Zones, and reserved capacity per Availability Zone, and RDS holds that capacity for you. Capacity can be reserved in two or more Availability Zones to support Multi-AZ deployments. To use the reserved capacity, reference the reservation when you create, restore, modify, or start a DB instance. You can reserve capacity for immediate use with no commi",
+    "published": "2026-10-21T16:00:00Z",
+    "hash": "b8d8a37f1ec7b53aae47b0094cd4292d8d5472961e272f296553cf0f82ddeed9"
+  },
+  {
+    "title": "Amazon Connect Customer launches two new layouts for agent workspace",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-new-layouts-agent-workspace",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Release",
+    "summary": "Amazon Connect Customer now offers two different layouts that optimize screen space on the agent workspace. Contact center agents spend hours each day in the agent workspace, which includes all of the contact controls and applications they need to resolve customer issues. Agents who handle different channels and workflows want the workspace arranged differently, so that they can quickly read, respond, and access their tools. Now, administrators can choose the best layout for each team, maximizing agent efficiency and satisfaction. On the Modern layout, contact controls are at the top of the workspace, maximizing screen space for the applications beneath during voice calls. When agents handle chat, email, and task contacts on the Modern layout, they now have a taller, wider area to read and respond. The Classic layout offers a familiar experience for agents already using the agent workspace, now with contact controls that expand and contract by channel and a resizable agent assist appli",
+    "published": "2026-10-21T13:48:00Z",
+    "hash": "fdfd7120c427f43994efb7e0230dff622c78a28f03ea7b4f9d919e329ab35605"
+  },
+  {
     "title": "Announcing Amazon ECS Gateway, a managed ingress solution for your ECS services",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/announcing-amazon-ecs-gateway/",
     "source": "AWS What's New",
@@ -28,6 +48,16 @@
     "summary": "Try Amazon ECS Gateway, a new account-level resource that simplifies ingress networking for containerized workloads by dynamically provisioning and managing the necessary infrastructure on your behalf, with all resources created directly in your account.",
     "published": "2026-10-20T17:03:38Z",
     "hash": "09e215f8fa9ab4c40c9e2630222d785eb8323e33e98e63d7e4a139d0ea73005c"
+  },
+  {
+    "title": "Amazon WorkSpaces simplifies secure AI agent access to enterprise cloud desktops with less infrastructure to operate and manage",
+    "url": "https://aws.amazon.com/whats-new/2026/10/workspaces-ai-agents-oauth-connection-management",
+    "source": "AWS What's New",
+    "service": "Amazon WorkSpaces",
+    "category": "General Announcement",
+    "summary": "WorkSpaces for AI agents now handles authentication and desktop connections as part of the managed Model Context Protocol (MCP) service, so you can connect agents to governed cloud desktops, removing the need to write custom code. This makes it easy to use WorkSpaces with any client that supports MCP. Connecting an agent to a desktop previously required you to manage presession requirements; generate, invoke, and rotate streaming URLs manually, adding complexity every time a session expired. You can now create sessions with your existing AWS credentials through OAuth 2.0, and the service handles the connection lifecycle. You configure once which desktop stack to use, and your agents reach the right desktop without ever seeing or handling the underlying streaming connection. You can also query session state to see which desktop stack, fleet, and session an agent is connected to, and generate a link for real-time observability of your agent. This gives you visibility and auditability ove",
+    "published": "2026-10-20T17:00:00Z",
+    "hash": "5b32e64f62b33bbcfe2d7feaf05c3c48faf80d8f3da88d6c991a10d1cb3c8094"
   },
   {
     "title": "AWS announces TorchNeuron: Native PyTorch Support for AWS Trainium (Public Beta)",
