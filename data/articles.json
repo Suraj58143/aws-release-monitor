@@ -1,5 +1,55 @@
 [
   {
+    "title": "CVE-2026-112408 - Missing bucket ownership verification in Amazon SageMaker Python SDK default_bucket()",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-142-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon SageMaker AI",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-142-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/21/2026 12:30 PM PDT Description: The Amazon SageMaker Python SDK is an open-source library for training and deploying machine learning models on Amazon SageMaker. We identified CVE-2026-112408, an issue in the default_bucket() function. The SDK uses a predictably named Amazon S3 bucket and does not check that the caller's AWS account owns it. A remote actor who creates that bucket first could achieve code execution in a remote SageMaker execution environment and obtain IAM credentials. Impacted versions: - V2: < 2.257.3 - V3: >= 3.0.0 and < 3.10.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read the article",
+    "published": "2026-10-21T19:54:30Z",
+    "hash": "05816d0aaf18a59584f3df60afe9069c0d413e2773afcebaf676b192a8230163"
+  },
+  {
+    "title": "AWS Transform adds storage migration assessments for Amazon S3, EBS, EFS, and FSx",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/transform-assess-s3-ebs-efs-fsx/",
+    "source": "AWS What's New",
+    "service": "Amazon Simple Storage Service",
+    "category": "Upgrade",
+    "summary": "Migration assessments in AWS Transform now evaluate on-premises storage for migration to AWS. Instead of manually analyzing thousands of volumes across protocols, capacity, and performance, you upload a storage inventory and AWS Transform does the mapping for you. It matches each workload to the best-fit service, sizes the recommendation, and projects costs to produce a total cost of ownership business case. Bring NAS shares, SAN LUNs, direct-attached disks, or backup repositories via a NetApp Digital Advisor export, RVTools file, or other inventory. AWS Transform routes workloads across Amazon S3, Amazon EBS, Amazon EFS, and Amazon FSx (NetApp ONTAP, Windows File Server, OpenZFS, Lustre). Run what-if scenarios to compare deployment options such as Single-AZ vs. Multi-AZ or cost-optimized vs. performance-optimized, then ask follow-up questions about any result in chat. Storage migration assessments are available in all AWS Regions where AWS Transform is available. To learn more, see th",
+    "published": "2026-10-21T19:10:00Z",
+    "hash": "0c7511949265e54c9ff814a925b39a333bb53cd92adc6d8c2b2e7aab381fca47"
+  },
+  {
+    "title": "AWS Direct Connect announces 100G expansion in Manchester, England",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-direct-connect-100g-manchester/",
+    "source": "AWS What's New",
+    "service": "AWS Direct Connect",
+    "category": "General Announcement",
+    "summary": "Today, AWS announced the expansion of 10 Gbps and 100 Gbps dedicated connections with MACsec encryption capabilities at the existing AWS Direct Connect location in the Equinix MA3 data center near Manchester, England. You can now establish private, direct network access to all public AWS Regions (except those in China), AWS GovCloud Regions, and AWS Local Zones from this location. This is the third AWS Direct Connect location in England to provide 100 Gbps connections with MACsec encryption capabilities. The Direct Connect service enables you to establish a private, physical network connection between AWS and your data center, office, or colocation environment. These private connections can provide a more consistent network experience than those made over the public internet. For more information on the over 150 Direct Connect locations worldwide, visit the locations section of the Direct Connect product detail pages . Or, visit our getting started page to learn more about how to purch",
+    "published": "2026-10-21T17:21:00Z",
+    "hash": "63d6b02f43f805072e0a3d92e083820a02dee9fa3e3514e08d38e6725141f8d9"
+  },
+  {
+    "title": "Amazon Cognito extends multi-Region replication to AWS GovCloud (US) Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/cognito-multi-region-us-govcloud/",
+    "source": "AWS What's New",
+    "service": "Amazon Cognito",
+    "category": "Upgrade",
+    "summary": "Amazon Cognito multi-Region replication (MRR) now supports AWS GovCloud (US) Regions, extending the resilience benefits of MRR to more workloads. MRR lets you synchronize user and machine identity data, including credentials, user pool configurations, and federation setups, to a secondary user pool in a standby Region you designate, in near real-time. With user data in the standby Region, you can redirect traffic and keep authentication available if there is a disruption in your primary Region. Previously, MRR was available in 16 commercial Regions. You can now also use MRR to replicate between additional AWS Regions, helping you meet resilience, data residency, and compliance requirements in the Regions that best align with your business needs. MRR is available as an add-on for user pools in the Essentials or Plus feature tiers, and requires a multi-Region AWS KMS customer managed key (CMK). For the full list of AWS Regions where Amazon Cognito is available, see AWS Capabilities by Re",
+    "published": "2026-10-21T17:00:00Z",
+    "hash": "e612b3491f2ebfdc70f80925dc756306bb753726a67147e18f5944e9641b686e"
+  },
+  {
+    "title": "Amazon Aurora and Amazon RDS now support On-Demand Capacity Reservations",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-aurora-rds-on-demand-capacity-reservations/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora",
+    "category": "Release",
+    "summary": "Starting today, you can reserve compute capacity for your Amazon Aurora and Amazon RDS DB instances in one or more Availability Zones for as long as you need it. Reserving capacity helps ensure that DB instance create, restore, scale-compute, and start operations don't fail because of insufficient capacity. On-Demand Capacity Reservations are designed for workloads that need assurance that specific DB instance capacity will be available when they need it for business-critical events, such as migrations, product launches, seasonal peaks, high-availability deployments, or disaster recovery. You choose the DB instance class, engine, Availability Zones, and reserved capacity per Availability Zone, and RDS holds that capacity for you. Capacity can be reserved in two or more Availability Zones to support Multi-AZ deployments. To use the reserved capacity, reference the reservation when you create, restore, modify, or start a DB instance. You can reserve capacity for immediate use with no com",
+    "published": "2026-10-21T17:00:00Z",
+    "hash": "6103ae389c9f73aa294fbccf10be42733708c998be4d8d359c72e25521e2e3f3"
+  },
+  {
     "title": "Amazon Aurora and Amazon RDS now support On-Demand Capacity Reservation",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-aurora-rds-on-demand-capacity-reservations/",
     "source": "AWS What's New",
@@ -58,6 +108,16 @@
     "summary": "WorkSpaces for AI agents now handles authentication and desktop connections as part of the managed Model Context Protocol (MCP) service, so you can connect agents to governed cloud desktops, removing the need to write custom code. This makes it easy to use WorkSpaces with any client that supports MCP. Connecting an agent to a desktop previously required you to manage presession requirements; generate, invoke, and rotate streaming URLs manually, adding complexity every time a session expired. You can now create sessions with your existing AWS credentials through OAuth 2.0, and the service handles the connection lifecycle. You configure once which desktop stack to use, and your agents reach the right desktop without ever seeing or handling the underlying streaming connection. You can also query session state to see which desktop stack, fleet, and session an agent is connected to, and generate a link for real-time observability of your agent. This gives you visibility and auditability ove",
     "published": "2026-10-20T17:00:00Z",
     "hash": "5b32e64f62b33bbcfe2d7feaf05c3c48faf80d8f3da88d6c991a10d1cb3c8094"
+  },
+  {
+    "title": "Amazon WorkSpaces simplifies secure AI agent access to enterprise cloud desktops with less infrastructure to operate and manage",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/workspaces-ai-agents-oauth-connection-management",
+    "source": "AWS What's New",
+    "service": "Amazon WorkSpaces",
+    "category": "General Announcement",
+    "summary": "WorkSpaces for AI agents now handles authentication and desktop connections as part of the managed Model Context Protocol (MCP) service, so you can connect agents to governed cloud desktops, removing the need to write custom code. This makes it easy to use WorkSpaces with any client that supports MCP. Connecting an agent to a desktop previously required you to manage presession requirements; generate, invoke, and rotate streaming URLs manually, adding complexity every time a session expired. You can now create sessions with your existing AWS credentials through OAuth 2.0, and the service handles the connection lifecycle. You configure once which desktop stack to use, and your agents reach the right desktop without ever seeing or handling the underlying streaming connection. You can also query session state to see which desktop stack, fleet, and session an agent is connected to, and generate a link for real-time observability of your agent. This gives you visibility and auditability ove",
+    "published": "2026-10-20T17:00:00Z",
+    "hash": "b2af57c1ee0c7ea04885d4e8c1533d10a486e78d91a3173f7667ad95a21c588e"
   },
   {
     "title": "AWS announces TorchNeuron: Native PyTorch Support for AWS Trainium (Public Beta)",
