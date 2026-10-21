@@ -1,5 +1,25 @@
 [
   {
+    "title": "Announcing Amazon ECS Gateway, a managed ingress solution for your ECS services",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/announcing-amazon-ecs-gateway/",
+    "source": "AWS What's New",
+    "service": "Amazon ECS",
+    "category": "Release",
+    "summary": "AWS announces Amazon Elastic Container Service (Amazon ECS) Gateway, a new resource that simplifies ingress networking for containerized applications by dynamically provisioning and managing Application Load Balancers (ALBs) and their supporting resources directly in your account. With ECS Gateway, platform teams define organizational networking standards once on a gateway and associate it with one or more clusters, giving organizations a centralized way to govern how traffic reaches their ECS services. Application teams simply opt in to inherit those standards without requiring networking expertise. ECS Gateway offers host-based routing, allows up to 25 services to share an ALB to optimize infrastructure costs, and gives each service a unique Domain Name System (DNS) hostname. ECS manages the full lifecycle of the underlying infrastructure, provisioning the first ALB when your first service connects, adding more ALBs when capacity is reached, and removing them when no longer needed. Y",
+    "published": "2026-10-20T23:26:00Z",
+    "hash": "73679ed67deb273bebe3f2a3a4e28acee3a9e581e04d728aa401afe7b1d5211e"
+  },
+  {
+    "title": "Amazon DynamoDB global tables now support disassociating replicas",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/dynamodb-global-tables-disassociate/",
+    "source": "AWS What's New",
+    "service": "Amazon DynamoDB",
+    "category": "Service Update",
+    "summary": "Amazon DynamoDB global tables now support disassociating a replica without deleting its table or data. Global tables provide fully managed, multi-Region, multi-active replication. You can now stop replication to and from a replica and continue using the same table as a single-Region table. An account can leave a shared multi-account global table and continue using its table independently. You can also stop replication to a Region while keeping its table for local workloads, validation, or audit, without creating a replacement table or copying data. DynamoDB supports disassociating replicas in all AWS Regions for same-account and multi-account global tables that use multi-Region eventual consistency (MREC). To get started, use the AWS Management Console, AWS CLI, DynamoDB API, or AWS CloudFormation. For more information, see Disassociating replicas in the Amazon DynamoDB Developer Guide.",
+    "published": "2026-10-20T23:00:00Z",
+    "hash": "02309bcf88dcb5bc3c27dbd9028bcf49525992182d721a3388b64d2957cc0141"
+  },
+  {
     "title": "Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services",
     "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/",
     "source": "AWS News Blog",
@@ -58,6 +78,16 @@
     "summary": "Amazon Bedrock Advanced Prompt Optimization now supports prompt shortening, an optional setting that reduces the length of your prompt while maintaining or improving your evaluation scores. Advanced Prompt Optimization optimizes prompts for any model on Amazon Bedrock against your own evaluation criteria. Until now, optimization focused on quality alone. Optimized prompts were often longer than the original. Longer prompts raise input token costs and can increase time to first token, which matters at scale and in latency-sensitive applications. When you turn on prompt shortening for a prompt template in your input dataset, the optimizer reduces the prompt's length. The optimized prompt is returned only when it is shorter than your original prompt and scores at least as high on your evaluation. Otherwise your original prompt is returned, so the setting never leaves you with a longer or lower-scoring prompt. Results include a compression ratio and the original and optimized token counts,",
     "published": "2026-10-20T08:00:00Z",
     "hash": "0a0d9f49d0c8a0864c97293e1a39e9e8d7902b09fc5f5cecc78bb31a19e578ce"
+  },
+  {
+    "title": "Amazon ElastiCache Serverless for Valkey now supports online migration with zero downtime",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-elasticache-serverless-valkey-online-migration/",
+    "source": "AWS What's New",
+    "service": "Amazon ElastiCache",
+    "category": "Upgrade",
+    "summary": "Amazon ElastiCache Serverless for Valkey now supports online migration from self-managed Valkey and Redis OSS on Amazon EC2 with zero downtime. Zero downtime means zero Errors returned to the client during migration, measured the same way the ElastiCache SLA measures availability. Your application continues reading and writing through cutover, and you do not need third-party replication tools. Online migration runs in three steps. You prepare the migration, start the data sync, and complete the cutover. ElastiCache gives you a migration endpoint your application can point to when you prepare the migration, and data replicates continuously from your source once you start the sync. You choose when writes move to the serverless cache, with a manual cutover or an automatic one once your data is in sync. ElastiCache records each step as an event on the cache’s Events tab, with the reason for any failed step. Online migration connects to your source using encryption in transit (TLS) and auth",
+    "published": "2026-10-20T07:00:00Z",
+    "hash": "57b5ec9b85334c551fa7f540932d4a43efc1bd0d5971fc03a9a0024ebf1d1d94"
   },
   {
     "title": "Amazon Connect Customer Global Resiliency now provides business users visibility into resiliency readiness across linked Regions",
@@ -558,6 +588,16 @@
     "summary": "Amazon Location Service now offers a complete, interactive API Playground that lets developers explore and test every Places, Routes, and Maps API visually without writing code. With this release, all 14 Amazon Location Service Places, Maps and Routes APIs are available in an interactive API Playground, where developers can make real API calls, see results rendered on an interactive map, adjust parameters, and copy ready-to-use request snippets directly into their applications. The API Playground covers Amazon Location Service's Places, Routes, and Maps APIs: search and geocoding (Geocode, ReverseGeocode, Autocomplete, Suggest, SearchText, SearchNearby, and GetPlace), route planning and optimization (CalculateRoutes, CalculateRouteMatrix, CalculateIsolines, OptimizeWaypoints, and SnapToRoads), and mapping (Dynamic Map and GetStaticMap). Customers can simulate validating delivery addresses, planning truck-safe multi-stop routes, visualizing drive-time service areas, or embedding maps in",
     "published": "2026-10-13T18:46:00Z",
     "hash": "530d741deb52c622c29ebdf41673791bcc75b50b722959da7cd35712e87e1284"
+  },
+  {
+    "title": "Amazon Bedrock AgentCore Memory now supports configurable time-to-live for long-term memory",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-memory-long-term-memory-ttl",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Upgrade",
+    "summary": "Amazon Bedrock AgentCore Memory now lets you set a time-to-live (TTL) on long-term memory records, so they are automatically deleted after a retention period you define. By default, long-term memory records do not expire. With this launch, you can configure a TTL to meet data-retention requirements, control storage growth, and ensure that stale insights age out of a memory over time. You can configure retention on the resource or specific records. Configuring or removing a TTL requires the new bedrock-agentcore:UpdateMemoryRecordExpirySpecification permission, giving you independent control over who can set record retention. To learn more, see Set a time-to-live for long-term memory records in the Amazon Bedrock AgentCore Developer Guide. This feature is available in all AWS Regions where Amazon Bedrock AgentCore Memory is supported.",
+    "published": "2026-10-13T16:00:00Z",
+    "hash": "b9469456c6a0869e9c0b63753b1f3e536df1f7d2589198d2535e4f14f7366277"
   },
   {
     "title": "Bring deep SageMaker AI expertise to your coding agent with the AWS AI/ML skill in the Agent Toolkit for AWS",
