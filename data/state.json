@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-10-21T06:54:45Z",
-  "total_articles": 138,
-  "new_articles": 0,
+  "last_run": "2026-10-21T12:39:46Z",
+  "total_articles": 139,
+  "new_articles": 1,
   "sources": {
     "AWS What's New": {
       "url": "https://aws.amazon.com/new/",

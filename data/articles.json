@@ -60,6 +60,16 @@
     "hash": "0ac06e4ff15dc2711146ed341390b2ac254f3fe33ce16696be07c3baf96fc80e"
   },
   {
+    "title": "Amazon CloudWatch Alarms now supports tags in alarm actions payload",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-tags-on-alarm-actions-payload",
+    "source": "AWS What's New",
+    "service": "Amazon CloudWatch",
+    "category": "Upgrade",
+    "summary": "Today, Amazon CloudWatch announces support for including alarm tags in action payloads and Amazon EventBridge events, enabling customers to route and filter alarm notifications by tag without additional lookups. When enabled on an alarm, CloudWatch adds the alarm tags to the messages it sends to Amazon SNS, AWS Lambda, and Amazon EventBridge each time the alarm changes state. This option is designed for customers who route many alarms through a shared notification pipeline and need to identify the owning team, environment, or service directly from the message. With tags in actions payloads, customers can avoid the extra work of correlating tag metadata with alarm events after the fact. For example, a team that routes hundreds of alarms through a single SNS topic to a Lambda function previously had to call ListTagsForResource for each event to find the owning team before paging. With this feature, the tags arrive in the notification, so the function can route directly from the message. ",
+    "published": "2026-10-20T08:00:00Z",
+    "hash": "cb815111cda4a6ac10f03c5381d2114d391b7654df70166d5bab945c69d1279f"
+  },
+  {
     "title": "Amazon Bedrock Guardrails now supports Standard tier for contextual grounding checks",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-guardrails-grounding-standard/",
     "source": "AWS What's New",
