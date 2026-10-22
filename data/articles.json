@@ -1,5 +1,55 @@
 [
   {
+    "title": "CVE-2026-85781 - Unverified access point ownership in Amazon EFS CSI Driver",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-099-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon EFS CSI Driver",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-099-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 11:45 AM PDT Description: The Amazon EFS CSI Driver is an open-source Kubernetes Container Storage Interface (CSI) driver that lets Kubernetes workloads use Amazon EFS file systems. We identified CVE-2026-85781, an issue in the driver's volume-deletion logic. When the controller is configured with the non-default --delete-access-point-root-dir=true option, it did not verify that the EFS access point referenced by a PersistentVolume's volume handle belonged to the file system referenced by that same volume handle. An authenticated Kubernetes user with permission to create PersistentVolumes could use a crafted volume handle to cause the controller to recursively delete directories from an Amazon EFS file system that the user was not otherwise authorized to modify. This issue does not affect Amazon EFS itself; Amazon EFS access controls operated as designed. Impacted versions: <=",
+    "published": "2026-10-21T21:41:06Z",
+    "hash": "acd5c0bb9887377939c75cebbd41492574ef0abe4091a430d479f963c35aaeba"
+  },
+  {
+    "title": "CVE-2026-85654 - Code injection in the CDK generator in Amazon awslabs.dynamodb-mcp-server",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-097-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon DynamoDB",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-097-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 10:00 AM PDT Description: Amazon awslabs.dynamodb-mcp-server is an open-source Model Context Protocol (MCP) server that enables AI coding assistants to interact with Amazon DynamoDB, including table design, data modeling, and CDK infrastructure generation. We identified CVE-2026-85654, an improper neutralization of special elements used in a template engine in the CDK generator component. Under certain circumstances, a context-dependent actor could execute arbitrary code on the host that deploys the generated application via crafted table, index, or attribute names in a data model file. Impacted versions: >= 2.0.10 AND <= 2.1.5 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "published": "2026-10-21T21:41:06Z",
+    "hash": "e76dac07b3c0b1e5fad5e5f10cb6b4a1cf0c13942b4dae1c5fb53e7f3f4b9e8b"
+  },
+  {
+    "title": "CVE-2026-83551 - Cleartext storage of HMAC signing key in Amazon SageMaker Python SDK",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-093-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon SageMaker AI",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-093-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/01/2026 11:00 AM PDT Description: SageMaker Python SDK's @step and @remote decorator pipeline component uses an HMAC key to protect the integrity of serialized function payloads stored in S3. We identified an issue where the HMAC secret key is stored in cleartext within pipeline definitions and accessible via the DescribePipeline API. This allows an actor with a role in that account that has permissions to invoke DescribePipeline to extract the key, create cloud-pickled payloads with valid HMACs, and overwrite S3 objects, achieving code execution in another user's pipeline execution context within the same AWS account. Impacted versions: - HMAC Configuration in SageMaker Python SDK v3 < v3.11.0 - HMAC Configuration in SageMaker Python SDK v2 < v2.256.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "published": "2026-10-21T21:37:41Z",
+    "hash": "f608b8a2ad8fd80f9d7a228dc78d3a2971c8e13aceaedc0ab0378cd124f582f4"
+  },
+  {
+    "title": "CVE-2026-83497 - OpenSearch SQL Plugin - Unrestricted Java Deserialization in Cursor Pagination",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-092-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon OpenSearch Service",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-092-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/31/2026 11:30 AM PDT Description: OpenSearch is an open-source search and analytics engine. We identified CVE-2026-83497 where a remote authenticated user with basic read/search permissions can run arbitrary code on the server by providing a crafted cursor parameter to the plugins/sql endpoint. Affected Products & Versions: OpenSearch SQL Plugin (open-source, self-managed): - Affected: v2.8 to v3.6 - Fixed: versions 3.7 and 2.19.6 Amazon OpenSearch Service (AWS Managed): - Affected: v2.9 to v3.5 - Fixed: v2.9 to v3.5 (via service software update) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "published": "2026-10-21T21:37:41Z",
+    "hash": "52632f96edad7f8fd02b96dbd3cf0db778c0b2ed090f2103b467802a15213add"
+  },
+  {
+    "title": "CVE-2026-81849 - Path traversal in the aws:downloadContent plugin in amazon-ssm-agent",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-091-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS Systems Manager",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-091-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/28/2026 11:00 AM PDT Description: AWS Systems Manager Agent (amazon-ssm-agent) is Amazon software that runs on Amazon Elastic Compute Cloud (Amazon EC2) instances, edge devices, on-premises servers, and virtual machines (VMs). Amazon-ssm-agent makes it possible for Systems Manager to update, manage, and configure these resources. We identified CVE-2026-81849, where an improper limitation of a pathname to a restricted directory in the aws:downloadContent plugin in amazon-ssm-agent before 3.3.4515.0 might allow an authenticated remote user whose ssm:SendCommand permission is restricted to the AWS-DownloadContent document, to write arbitrary files outside the intended download directory with root privileges, via crafted object keys in the S3 source the document is directed to retrieve. This issue may lead to arbitrary code execution as root if specific sensitive files are overwritten. To",
+    "published": "2026-10-21T21:37:40Z",
+    "hash": "6e3432f8d5315b45fbfd9b442e4e954cf6fa9a9cdd16eb23263c84c783466995"
+  },
+  {
     "title": "CVE-2026-112408 - Missing bucket ownership verification in Amazon SageMaker Python SDK default_bucket()",
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-142-aws/",
     "source": "AWS Security Bulletins",
@@ -8,6 +58,126 @@
     "summary": "Bulletin ID: 2026-142-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/21/2026 12:30 PM PDT Description: The Amazon SageMaker Python SDK is an open-source library for training and deploying machine learning models on Amazon SageMaker. We identified CVE-2026-112408, an issue in the default_bucket() function. The SDK uses a predictably named Amazon S3 bucket and does not check that the caller's AWS account owns it. A remote actor who creates that bucket first could achieve code execution in a remote SageMaker execution environment and obtain IAM credentials. Impacted versions: - V2: < 2.257.3 - V3: >= 3.0.0 and < 3.10.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
     "published": "2026-10-21T21:32:10Z",
     "hash": "05816d0aaf18a59584f3df60afe9069c0d413e2773afcebaf676b192a8230163"
+  },
+  {
+    "title": "Issue with FreeRTOS-Kernel - CVE-2026-77234, CVE-2026-77235, CVE-2026-77236, CVE-2026-77237",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-086-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS FreeRTOS",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-086-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/21/2026 10:30 AM PDT Description: FreeRTOS-Kernel is a real-time operating system kernel for microcontrollers and small microprocessors. AWS identified four issues with FreeRTOS-Kernel, affecting multiple versions. - CVE-2026-77234: This issue affects configurations that use the FreeRTOS MPU together with software timers; applications that do not use the FreeRTOS MPU are not affected. - CVE-2026-77235: This issue affects ARM TrustZone (ARMv8-M) configurations; applications that do not use ARM TrustZone secure contexts are not affected. - CVE-2026-77236: This issue affects ARM TrustZone (ARMv8-M) configurations; applications that do not use ARM TrustZone secure contexts are not affected. - CVE-2026-77237: This issue affects builds with queue sets enabled; applications built without queue sets are not affected. Impacted versions: - CVE-2026-77234: >=7.0.0 AND <=11.3.0 (MPU-enabled ports",
+    "published": "2026-10-21T19:54:11Z",
+    "hash": "d549b6720b842a3bd0fb1f3f89a37df9bdae67164214f17aac66ae9a72b283af"
+  },
+  {
+    "title": "CVE-2026-77811 - Stored Cross-Site Scripting via Integration Template Asset in OpenSearch Dashboards",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-088-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon OpenSearch Service",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-088-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/21/2026 13:00 PM PDT Description: Amazon OpenSearch Service is a managed service that makes it easy to deploy, operate, and scale OpenSearch clusters. We identified CVE-2026-77811, a stored cross-site scripting issue in the dashboards-observability plugin in OpenSearch Dashboards. Improper input validation in the integrations static file endpoint allows a remote authenticated actor with write permissions to OpenSearch Dashboards saved objects to upload a custom integration containing arbitrary JavaScript. When another user accesses the static file endpoint directly, the script executes in their browser session and can perform actions on their behalf, including making API calls to OpenSearch with their privileges. Affected products & versions: OpenSearch Dashboards dashboards-observability plugin (open-source, self-managed): - Affected: versions before 3.4 and versions before 2.19.6 - ",
+    "published": "2026-10-21T19:54:11Z",
+    "hash": "456634f722e264fc08a43f95c5b6cb2daa395f7dd750081334990d7a891919d7"
+  },
+  {
+    "title": "CVE-2026-77810 - Issue with Athena Federated Query Neptune Connector",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-087-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Neptune",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-087-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/21/2026 12:30 PM PDT Description: Amazon Athena is a serverless, interactive query service that lets you analyze data directly in Amazon S3 using standard SQL. Athena Query Federation is a feature that allows you to connect to data sources outside of Amazon S3 like DynamoDB, Azure Synapse, and custom connectors using standard SQL syntax. These connectors are open source and deployed to the Athena service on a regular basis. We identified CVE-2026-77810, in the Neptune connector where a user with access to Neptune through Athena Federated Query could gain access to properties in the Lambda supplying the compute for the connector. Impacted versions: <=v2026.28.1 AND >=v2024.15.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "published": "2026-10-21T19:54:11Z",
+    "hash": "5436504cf9a21b25c668b8b3b0eeb260fcfaa41f3fe2b3a40d32e3c45aa8b611"
+  },
+  {
+    "title": "CVE-2026-75910 - Issue with Athena Federated Query Clickhouse Connector",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-084-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Athena",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-084-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/20/2026 13:00 PM PDT Description: Amazon Athena is a serverless, interactive query service that lets you analyze data directly in Amazon S3 using standard SQL. Athena Query Federation is a feature that allows you to connect to data sources outside of Amazon S3 like DynamoDB, Azure Synapse, and custom connectors using standard SQL syntax. These connectors are open source and deployed to the Athena service on a regular basis. We identified CVE-2026-75910. Incorrect privilege assignment in the ClickHouse connector deployment template before the v2026.17.1 release could allow an authenticated remote user to read arbitrary AWS Secrets Manager secrets in the deploying account by pointing the connector's connection string at an unrelated secret and at a database endpoint under the user's control, causing the connector to transmit the secret to that endpoint. Impacted versions: < V2026.17.1 P",
+    "published": "2026-10-21T19:53:57Z",
+    "hash": "9cfa8a8d4e75f148992b95855c396f16b655dfb3cfe98418658051da3c316900"
+  },
+  {
+    "title": "CVE-2026-75897 - Uncontrolled resource consumption in OpenSearch Dashboards capabilities route",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-082-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon OpenSearch Service",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-082-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/18/2026 10:00 AM PDT Description: OpenSearch Dashboards is the open-source visualization and management UI for OpenSearch, and ships as part of Amazon OpenSearch Service. We identified CVE-2026-75897, an improper input validation in the capabilities route handler in OpenSearch Dashboards. The handler does not bound the size of the request payload, which might allow remote attackers to cause a denial of service via a crafted HTTP request. Affected Products and Versions: OpenSearch \"Plugin Type\" Plugin (open-source, self-managed): - Affected: All versions from 1.3.0 through 3.7.0 inclusive, including all 2.x releases up to and including 2.19.6. The issue is inherited from upstream Kibana and is also present in Kibana 7.7.1 through 7.10.2. - Fixed: 3.8.0 Amazon OpenSearch Service (AWS Managed): - Affected: Engine versions OpenSearch 1.3, 2.11, 2.13, 2.15, 2.17, 2.19, 3.1, 3.3, and 3.5, a",
+    "published": "2026-10-21T19:53:57Z",
+    "hash": "e3da903ed63e3648cb373df59e9d2da11ae28fc5a87ecfde1f20c1c374583282"
+  },
+  {
+    "title": "CVE-2026-19642 & CVE-2026-19643 - Memory-safety issues in the Base64 decoder in the AWS SDK for C++",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-080-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS SDK",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-21T19:53:57Z",
+    "hash": "e3a7520664197ef0ad99d3f38934b7283b112f89fba19e3607e26e75e7e4e052"
+  },
+  {
+    "title": "CVE-2026-18428 - OpenSearch SQL Plugin - Async Query Validation Bypass",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-081-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon OpenSearch Service",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-081-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/13/2026 10:30 AM PDT Description: OpenSearch SQL plugin is a plugin that enables SQL and PPL query capabilities on OpenSearch clusters, including direct query integration with external data sources via Apache Spark. An issue exists where the Flint extension query handler validates SQL queries without sufficient restrictions, allowing a user with async query access to bypass the SQL grammar deny list via the direct query endpoint. Affected Products & Versions: OpenSearch SQL Plugin (open-source, self-managed): - Affected: v2.13 to v3.6 - Fixed: versions 3.7 and 2.19.6 Amazon OpenSearch Service (AWS Managed): - Affected: v2.13 to v3.5 - Fixed: v2.13 to v3.5 (via service software update) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "published": "2026-10-21T19:53:57Z",
+    "hash": "6c469ea2bf69f5414fbdc4801bc42168442db9572a9c0b93d732cfe96ffb98b1"
+  },
+  {
+    "title": "CVE-2026-18420 - Remote Code Execution via Prototype Pollution in OpenSearch Dashboards TSVB Plugin",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-085-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon OpenSearch Service",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-085-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/20/2026 13:30 PM PDT Description: Improper input validation in the Time Series Visual Builder (TSVB) plugin in OpenSearch Dashboards before 3.8 allows a remote authenticated user with standard data access permissions to execute arbitrary code on the server by sending a crafted JSON payload to the metrics visualization API endpoint. To mitigate this issue, users should upgrade to OpenSearch Dashboards 3.8 or later. Impacted products and versions: - OpenSearch-Dashboards (open-source, self-managed): >=3.0.0, <3.8.0 - OpenSearch-Dashboards (AWS Managed): >=3.0.0, <3.8.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "published": "2026-10-21T19:53:57Z",
+    "hash": "cf659bda44948a4831cb8957990e872bcc00493ce6a25312a7cafa7db05bf387"
+  },
+  {
+    "title": "CVE-2026-19311- Missing Authorization in OpenSearch Alerting Plugin",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-078-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon OpenSearch Service",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-21T19:53:56Z",
+    "hash": "17b1eb3683a9640dc40e8955c491779a2d60f45c7d18cc63120e9c770fd0436b"
+  },
+  {
+    "title": "CVE-2026-18954 - Incorrect authorization in the aggregation pipeline tool in Amazon AWS Labs DocumentDB MCP Server",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-076-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon DocumentDB",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-21T19:53:56Z",
+    "hash": "ace3f793e20c112d955807476bf53f95285d46db3beea51ca7db4c89aff0dde4"
+  },
+  {
+    "title": "CVE-2026-18952 - Missing Input Validation in OpenSearch Security Analytics Plugin",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-079-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon OpenSearch Service",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-21T19:53:56Z",
+    "hash": "919644eac2c16d45a72e48e6a13701f877bbf8e01374eedd8909ea0d6141fe91"
+  },
+  {
+    "title": "CVE-2026-18830 - Issue with Amazon Bedrock AgentCore harness – Insufficient Input Validation",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-073-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Security",
+    "summary": "",
+    "published": "2026-10-21T19:53:56Z",
+    "hash": "536ae5bb4dc2a9e41670adad1e5a00cda86e5577ade9922622bd798b60dcbc6e"
   },
   {
     "title": "AWS Transform adds storage migration assessments for Amazon S3, EBS, EFS, and FSx",
@@ -1320,66 +1490,6 @@
     "hash": "2882dca5eb20371b0b7d6cf9262d5996a881cf1963c885ad81f9932cb75ef91d"
   },
   {
-    "title": "CVE-2026-19642 & CVE-2026-19643 - Memory-safety issues in the Base64 decoder in the AWS SDK for C++",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-080-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "AWS SDK",
-    "category": "Security",
-    "summary": "",
-    "published": "2026-09-09T21:35:25Z",
-    "hash": "e3a7520664197ef0ad99d3f38934b7283b112f89fba19e3607e26e75e7e4e052"
-  },
-  {
-    "title": "CVE-2026-18954 - Incorrect authorization in the aggregation pipeline tool in Amazon AWS Labs DocumentDB MCP Server",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-076-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon DocumentDB",
-    "category": "Security",
-    "summary": "",
-    "published": "2026-09-09T21:35:25Z",
-    "hash": "ace3f793e20c112d955807476bf53f95285d46db3beea51ca7db4c89aff0dde4"
-  },
-  {
-    "title": "CVE-2026-18952 - Missing Input Validation in OpenSearch Security Analytics Plugin",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-079-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon OpenSearch Service",
-    "category": "Security",
-    "summary": "",
-    "published": "2026-09-09T21:35:25Z",
-    "hash": "919644eac2c16d45a72e48e6a13701f877bbf8e01374eedd8909ea0d6141fe91"
-  },
-  {
-    "title": "CVE-2026-19311- Missing Authorization in OpenSearch Alerting Plugin",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-078-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon OpenSearch Service",
-    "category": "Security",
-    "summary": "",
-    "published": "2026-09-09T21:35:24Z",
-    "hash": "17b1eb3683a9640dc40e8955c491779a2d60f45c7d18cc63120e9c770fd0436b"
-  },
-  {
-    "title": "CVE-2026-18830 - Issue with Amazon Bedrock AgentCore harness – Insufficient Input Validation",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-073-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon Bedrock AgentCore",
-    "category": "Security",
-    "summary": "",
-    "published": "2026-09-09T21:35:24Z",
-    "hash": "536ae5bb4dc2a9e41670adad1e5a00cda86e5577ade9922622bd798b60dcbc6e"
-  },
-  {
-    "title": "Issue with FreeRTOS-Kernel - CVE-2026-77234, CVE-2026-77235, CVE-2026-77236, CVE-2026-77237",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-086-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "AWS FreeRTOS",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-086-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/21/2026 10:30 AM PDT Description: FreeRTOS-Kernel is a real-time operating system kernel for microcontrollers and small microprocessors. AWS identified four issues with FreeRTOS-Kernel, affecting multiple versions. - CVE-2026-77234: This issue affects configurations that use the FreeRTOS MPU together with software timers; applications that do not use the FreeRTOS MPU are not affected. - CVE-2026-77235: This issue affects ARM TrustZone (ARMv8-M) configurations; applications that do not use ARM TrustZone secure contexts are not affected. - CVE-2026-77236: This issue affects ARM TrustZone (ARMv8-M) configurations; applications that do not use ARM TrustZone secure contexts are not affected. - CVE-2026-77237: This issue affects builds with queue sets enabled; applications built without queue sets are not affected. Impacted versions: - CVE-2026-77234: >=7.0.0 AND <=11.3.0 (MPU-enabled ports",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "d549b6720b842a3bd0fb1f3f89a37df9bdae67164214f17aac66ae9a72b283af"
-  },
-  {
     "title": "CVE-2026-87912 and CVE-2026-87913: Missing S3 bucket ownership verification in the AWS Security Agent plugin for aws-agents-for-devsecops and MCP Server",
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-105-aws/",
     "source": "AWS Security Bulletins",
@@ -1390,26 +1500,6 @@
     "hash": "c2f497caba5f48b8e4d69a30dd69f2e2e581f32315a13b912ecb06ec94275105"
   },
   {
-    "title": "CVE-2026-85781 - Unverified access point ownership in Amazon EFS CSI Driver",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-099-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon EFS CSI Driver",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-099-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 11:45 AM PDT Description: The Amazon EFS CSI Driver is an open-source Kubernetes Container Storage Interface (CSI) driver that lets Kubernetes workloads use Amazon EFS file systems. We identified CVE-2026-85781, an issue in the driver's volume-deletion logic. When the controller is configured with the non-default --delete-access-point-root-dir=true option, it did not verify that the EFS access point referenced by a PersistentVolume's volume handle belonged to the file system referenced by that same volume handle. An authenticated Kubernetes user with permission to create PersistentVolumes could use a crafted volume handle to cause the controller to recursively delete directories from an Amazon EFS file system that the user was not otherwise authorized to modify. This issue does not affect Amazon EFS itself; Amazon EFS access controls operated as designed. Impacted versions: <=",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "acd5c0bb9887377939c75cebbd41492574ef0abe4091a430d479f963c35aaeba"
-  },
-  {
-    "title": "CVE-2026-85654 - Code injection in the CDK generator in Amazon awslabs.dynamodb-mcp-server",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-097-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon DynamoDB",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-097-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 10:00 AM PDT Description: Amazon awslabs.dynamodb-mcp-server is an open-source Model Context Protocol (MCP) server that enables AI coding assistants to interact with Amazon DynamoDB, including table design, data modeling, and CDK infrastructure generation. We identified CVE-2026-85654, an improper neutralization of special elements used in a template engine in the CDK generator component. Under certain circumstances, a context-dependent actor could execute arbitrary code on the host that deploys the generated application via crafted table, index, or attribute names in a data model file. Impacted versions: >= 2.0.10 AND <= 2.1.5 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "e76dac07b3c0b1e5fad5e5f10cb6b4a1cf0c13942b4dae1c5fb53e7f3f4b9e8b"
-  },
-  {
     "title": "CVE-2026-84942 - Stored Cross-Site Scripting via Vega Expression Function Bypass in OpenSearch Dashboards",
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
     "source": "AWS Security Bulletins",
@@ -1418,95 +1508,5 @@
     "summary": "Bulletin ID: 2026-102-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/08/2026 12:30 PM PDT Description: A stored cross-site scripting (XSS) issue in the Vega expression function implementation in OpenSearch Dashboards allows a remote authenticated actor with dashboard write permissions to execute arbitrary JavaScript in the context of other users' browser sessions by saving a crafted Vega visualization. Affedted products & versions: OpenSearch Dashboards (open-source, self-managed): - Affected: v2.0.0, v2.1.0, v2.2.0, v2.3.0, v2.4.0, v2.5.0, v.2.6.0, v2.7.0, v2.8.0, v2.9.0, v2.10.0, v2.11.0, v2.12.0, v2.13.0, v2.14.0, v2.15.0, v2.16.0, v2.17.0, v2.18.0, v2.19.0, v3.0.0, v3.1.0, v3.2.0, v3.3.0, v3.4.0, v3.5.0 - Fixed: v2.19.5 and v3.6.0 Amazon OpenSearch Service (AWS Managed): - Affected: v2.3.0, v2.5.0, v2.7.0, v2.9.0, v2.11.0, v2.13.0, v2.15.0, v2.17.0, v2.19.0, v3.1.0, v3.3.0, v3.5.0 - Fixed: v2.3.0, v2.5.0, v2.7.0, v2.9.0, v2.11.0, v2.13.0, v2.15.0, ",
     "published": "2026-09-09T21:30:11Z",
     "hash": "7dfdf01cae764ebbda991fe85d0c040bdc56f90a3e850cae195118d86a573333"
-  },
-  {
-    "title": "CVE-2026-83551 - Cleartext storage of HMAC signing key in Amazon SageMaker Python SDK",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-093-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon SageMaker AI",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-093-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/01/2026 11:00 AM PDT Description: SageMaker Python SDK's @step and @remote decorator pipeline component uses an HMAC key to protect the integrity of serialized function payloads stored in S3. We identified an issue where the HMAC secret key is stored in cleartext within pipeline definitions and accessible via the DescribePipeline API. This allows an actor with a role in that account that has permissions to invoke DescribePipeline to extract the key, create cloud-pickled payloads with valid HMACs, and overwrite S3 objects, achieving code execution in another user's pipeline execution context within the same AWS account. Impacted versions: - HMAC Configuration in SageMaker Python SDK v3 < v3.11.0 - HMAC Configuration in SageMaker Python SDK v2 < v2.256.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "f608b8a2ad8fd80f9d7a228dc78d3a2971c8e13aceaedc0ab0378cd124f582f4"
-  },
-  {
-    "title": "CVE-2026-83497 - OpenSearch SQL Plugin - Unrestricted Java Deserialization in Cursor Pagination",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-092-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon OpenSearch Service",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-092-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/31/2026 11:30 AM PDT Description: OpenSearch is an open-source search and analytics engine. We identified CVE-2026-83497 where a remote authenticated user with basic read/search permissions can run arbitrary code on the server by providing a crafted cursor parameter to the plugins/sql endpoint. Affected Products & Versions: OpenSearch SQL Plugin (open-source, self-managed): - Affected: v2.8 to v3.6 - Fixed: versions 3.7 and 2.19.6 Amazon OpenSearch Service (AWS Managed): - Affected: v2.9 to v3.5 - Fixed: v2.9 to v3.5 (via service software update) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "52632f96edad7f8fd02b96dbd3cf0db778c0b2ed090f2103b467802a15213add"
-  },
-  {
-    "title": "CVE-2026-81849 - Path traversal in the aws:downloadContent plugin in amazon-ssm-agent",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-091-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "AWS Systems Manager",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-091-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/28/2026 11:00 AM PDT Description: AWS Systems Manager Agent (amazon-ssm-agent) is Amazon software that runs on Amazon Elastic Compute Cloud (Amazon EC2) instances, edge devices, on-premises servers, and virtual machines (VMs). Amazon-ssm-agent makes it possible for Systems Manager to update, manage, and configure these resources. We identified CVE-2026-81849, where an improper limitation of a pathname to a restricted directory in the aws:downloadContent plugin in amazon-ssm-agent before 3.3.4515.0 might allow an authenticated remote user whose ssm:SendCommand permission is restricted to the AWS-DownloadContent document, to write arbitrary files outside the intended download directory with root privileges, via crafted object keys in the S3 source the document is directed to retrieve. This issue may lead to arbitrary code execution as root if specific sensitive files are overwritten. To",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "6e3432f8d5315b45fbfd9b442e4e954cf6fa9a9cdd16eb23263c84c783466995"
-  },
-  {
-    "title": "CVE-2026-77811 - Stored Cross-Site Scripting via Integration Template Asset in OpenSearch Dashboards",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-088-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon OpenSearch Service",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-088-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/21/2026 13:00 PM PDT Description: Amazon OpenSearch Service is a managed service that makes it easy to deploy, operate, and scale OpenSearch clusters. We identified CVE-2026-77811, a stored cross-site scripting issue in the dashboards-observability plugin in OpenSearch Dashboards. Improper input validation in the integrations static file endpoint allows a remote authenticated actor with write permissions to OpenSearch Dashboards saved objects to upload a custom integration containing arbitrary JavaScript. When another user accesses the static file endpoint directly, the script executes in their browser session and can perform actions on their behalf, including making API calls to OpenSearch with their privileges. Affected products & versions: OpenSearch Dashboards dashboards-observability plugin (open-source, self-managed): - Affected: versions before 3.4 and versions before 2.19.6 - ",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "456634f722e264fc08a43f95c5b6cb2daa395f7dd750081334990d7a891919d7"
-  },
-  {
-    "title": "CVE-2026-77810 - Issue with Athena Federated Query Neptune Connector",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-087-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon Neptune",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-087-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/21/2026 12:30 PM PDT Description: Amazon Athena is a serverless, interactive query service that lets you analyze data directly in Amazon S3 using standard SQL. Athena Query Federation is a feature that allows you to connect to data sources outside of Amazon S3 like DynamoDB, Azure Synapse, and custom connectors using standard SQL syntax. These connectors are open source and deployed to the Athena service on a regular basis. We identified CVE-2026-77810, in the Neptune connector where a user with access to Neptune through Athena Federated Query could gain access to properties in the Lambda supplying the compute for the connector. Impacted versions: <=v2026.28.1 AND >=v2024.15.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "5436504cf9a21b25c668b8b3b0eeb260fcfaa41f3fe2b3a40d32e3c45aa8b611"
-  },
-  {
-    "title": "CVE-2026-75910 - Issue with Athena Federated Query Clickhouse Connector",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-084-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon Athena",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-084-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/20/2026 13:00 PM PDT Description: Amazon Athena is a serverless, interactive query service that lets you analyze data directly in Amazon S3 using standard SQL. Athena Query Federation is a feature that allows you to connect to data sources outside of Amazon S3 like DynamoDB, Azure Synapse, and custom connectors using standard SQL syntax. These connectors are open source and deployed to the Athena service on a regular basis. We identified CVE-2026-75910. Incorrect privilege assignment in the ClickHouse connector deployment template before the v2026.17.1 release could allow an authenticated remote user to read arbitrary AWS Secrets Manager secrets in the deploying account by pointing the connector's connection string at an unrelated secret and at a database endpoint under the user's control, causing the connector to transmit the secret to that endpoint. Impacted versions: < V2026.17.1 P",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "9cfa8a8d4e75f148992b95855c396f16b655dfb3cfe98418658051da3c316900"
-  },
-  {
-    "title": "CVE-2026-75897 - Uncontrolled resource consumption in OpenSearch Dashboards capabilities route",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-082-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon OpenSearch Service",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-082-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/18/2026 10:00 AM PDT Description: OpenSearch Dashboards is the open-source visualization and management UI for OpenSearch, and ships as part of Amazon OpenSearch Service. We identified CVE-2026-75897, an improper input validation in the capabilities route handler in OpenSearch Dashboards. The handler does not bound the size of the request payload, which might allow remote attackers to cause a denial of service via a crafted HTTP request. Affected Products and Versions: OpenSearch \"Plugin Type\" Plugin (open-source, self-managed): - Affected: All versions from 1.3.0 through 3.7.0 inclusive, including all 2.x releases up to and including 2.19.6. The issue is inherited from upstream Kibana and is also present in Kibana 7.7.1 through 7.10.2. - Fixed: 3.8.0 Amazon OpenSearch Service (AWS Managed): - Affected: Engine versions OpenSearch 1.3, 2.11, 2.13, 2.15, 2.17, 2.19, 3.1, 3.3, and 3.5, a",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "e3da903ed63e3648cb373df59e9d2da11ae28fc5a87ecfde1f20c1c374583282"
-  },
-  {
-    "title": "CVE-2026-18428 - OpenSearch SQL Plugin - Async Query Validation Bypass",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-081-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon OpenSearch Service",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-081-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/13/2026 10:30 AM PDT Description: OpenSearch SQL plugin is a plugin that enables SQL and PPL query capabilities on OpenSearch clusters, including direct query integration with external data sources via Apache Spark. An issue exists where the Flint extension query handler validates SQL queries without sufficient restrictions, allowing a user with async query access to bypass the SQL grammar deny list via the direct query endpoint. Affected Products & Versions: OpenSearch SQL Plugin (open-source, self-managed): - Affected: v2.13 to v3.6 - Fixed: versions 3.7 and 2.19.6 Amazon OpenSearch Service (AWS Managed): - Affected: v2.13 to v3.5 - Fixed: v2.13 to v3.5 (via service software update) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "6c469ea2bf69f5414fbdc4801bc42168442db9572a9c0b93d732cfe96ffb98b1"
-  },
-  {
-    "title": "CVE-2026-18420 - Remote Code Execution via Prototype Pollution in OpenSearch Dashboards TSVB Plugin",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-085-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon OpenSearch Service",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-085-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/20/2026 13:30 PM PDT Description: Improper input validation in the Time Series Visual Builder (TSVB) plugin in OpenSearch Dashboards before 3.8 allows a remote authenticated user with standard data access permissions to execute arbitrary code on the server by sending a crafted JSON payload to the metrics visualization API endpoint. To mitigate this issue, users should upgrade to OpenSearch Dashboards 3.8 or later. Impacted products and versions: - OpenSearch-Dashboards (open-source, self-managed): >=3.0.0, <3.8.0 - OpenSearch-Dashboards (AWS Managed): >=3.0.0, <3.8.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "cf659bda44948a4831cb8957990e872bcc00493ce6a25312a7cafa7db05bf387"
   }
 ]

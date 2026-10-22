@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-10-22T00:21:53Z",
+  "last_run": "2026-10-22T05:40:34Z",
   "total_articles": 151,
-  "new_articles": 3,
+  "new_articles": 0,
   "sources": {
     "AWS What's New": {
       "url": "https://aws.amazon.com/new/",
@@ -22,9 +22,9 @@
     "AWS Security Bulletins": {
       "url": "https://aws.amazon.com/security/security-bulletins/",
       "status": "ok",
-      "fetched": 43,
-      "normalized": 23,
-      "filtered_out": 20,
+      "fetched": 73,
+      "normalized": 40,
+      "filtered_out": 33,
       "error": ""
     }
   }
