@@ -5,8 +5,8 @@
     "source": "AWS Security Bulletins",
     "service": "Amazon SageMaker AI",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-142-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/21/2026 12:30 PM PDT Description: The Amazon SageMaker Python SDK is an open-source library for training and deploying machine learning models on Amazon SageMaker. We identified CVE-2026-112408, an issue in the default_bucket() function. The SDK uses a predictably named Amazon S3 bucket and does not check that the caller's AWS account owns it. A remote actor who creates that bucket first could achieve code execution in a remote SageMaker execution environment and obtain IAM credentials. Impacted versions: - V2: < 2.257.3 - V3: >= 3.0.0 and < 3.10.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read the article",
-    "published": "2026-10-21T19:54:30Z",
+    "summary": "Bulletin ID: 2026-142-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/21/2026 12:30 PM PDT Description: The Amazon SageMaker Python SDK is an open-source library for training and deploying machine learning models on Amazon SageMaker. We identified CVE-2026-112408, an issue in the default_bucket() function. The SDK uses a predictably named Amazon S3 bucket and does not check that the caller's AWS account owns it. A remote actor who creates that bucket first could achieve code execution in a remote SageMaker execution environment and obtain IAM credentials. Impacted versions: - V2: < 2.257.3 - V3: >= 3.0.0 and < 3.10.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+    "published": "2026-10-21T21:32:10Z",
     "hash": "05816d0aaf18a59584f3df60afe9069c0d413e2773afcebaf676b192a8230163"
   },
   {
@@ -68,6 +68,36 @@
     "summary": "Amazon Connect Customer now offers two different layouts that optimize screen space on the agent workspace. Contact center agents spend hours each day in the agent workspace, which includes all of the contact controls and applications they need to resolve customer issues. Agents who handle different channels and workflows want the workspace arranged differently, so that they can quickly read, respond, and access their tools. Now, administrators can choose the best layout for each team, maximizing agent efficiency and satisfaction. On the Modern layout, contact controls are at the top of the workspace, maximizing screen space for the applications beneath during voice calls. When agents handle chat, email, and task contacts on the Modern layout, they now have a taller, wider area to read and respond. The Classic layout offers a familiar experience for agents already using the agent workspace, now with contact controls that expand and contract by channel and a resizable agent assist appli",
     "published": "2026-10-21T13:48:00Z",
     "hash": "fdfd7120c427f43994efb7e0230dff622c78a28f03ea7b4f9d919e329ab35605"
+  },
+  {
+    "title": "Amazon S3 server access log delivery to Amazon CloudWatch Logs now available in five additional AWS Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-s3-server-access-logs-cloudwatch-logs-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudWatch Logs",
+    "category": "Release",
+    "summary": "Amazon S3 server access log delivery to Amazon CloudWatch Logs is now available in the AWS GovCloud (US) Regions, AWS European Sovereign Cloud, and AWS China Regions. With your access logs in CloudWatch Logs, you can query them as they arrive, set alarms, and encrypt them with AWS Key Management Service (AWS KMS) keys. This new delivery path complements the existing delivery of server access logs to S3 general purpose buckets, giving you more flexibility in how you monitor and analyze access to your data. With delivery to CloudWatch Logs, you can set alarms on error rates, monitor traffic patterns, investigate access incidents, and correlate S3 access activity with the rest of your operational data. S3 server access log delivery to CloudWatch Logs is now available in all AWS Regions. Amazon CloudWatch Logs charges for vended logs apply. For pricing details, visit Amazon CloudWatch pricing . To learn more, visit the Amazon S3 User Guide .",
+    "published": "2026-10-21T13:00:00Z",
+    "hash": "9998cee2d7dabdb52183f119eee4ebfc2fab51b648c25e98100a8be413615c33"
+  },
+  {
+    "title": "AWS Network Firewall now supports Route 53 Resolved IP Validation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/network-firewall-route-53-ip-validation/",
+    "source": "AWS What's New",
+    "service": "AWS Network Firewall",
+    "category": "Upgrade",
+    "summary": "AWS Network Firewall now supports IP validation, extending domain-based filtering beyond HTTP/HTTPS to protocols such as SFTP and SSH. This new capability validates that a connection's destination IP address was resolved through your VPC's Amazon Route 53 VPC Resolver, closing security gaps where clients could bypass domain rules. This feature enables Network Firewall customers to implement domain filtering rules for any protocol, not just HTTP/HTTPS, providing more flexible security policies than IP-based rules alone. It simplifies protection against Server Name Identifier (SNI) spoofing by validating the IPs resolved by the Route 53 VPC Resolver against the SNI, ensuring traffic only reaches legitimately resolved destinations. Organizations can now enforce consistent domain-based security policies across all outbound traffic types, from web applications to file transfer protocols, without complex workarounds. Additionally, Route 53 Resolver DNS Firewall can be used with your VPC Reso",
+    "published": "2026-10-21T08:00:00Z",
+    "hash": "2f8de99a0ea65e5e922c97801b8022248317ff2e1e048719843beb1dd1786559"
+  },
+  {
+    "title": "Amazon SageMaker AI now supports custom sequence lengths for serverless model customization jobs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-custom-sequence-lengths/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Today, Amazon SageMaker AI announces the ability to configure the sequence length used during your serverless model customization job. Amazon SageMaker AI serverless model customization supports fine-tuning for many open-weight models, including models from popular families including gpt-oss, Gemma, Llama, Nemotron, and Qwen. Previously, each fine-tuning recipe ran at a fixed sequence length that customers could not modify. Customers sometimes need to modify these parameters to achieve better results for their use case. Customers also asked for longer sequence lengths than the static defaults we supported on some models. Now, you can set sequence length parameters as part of the customization job's hyperparameters, anywhere up to the published maximum for your chosen model and technique. You can set the dataset_max_len hyperparameter for SFT and DPO jobs or set max_prompt_length and max_response_length hyperparameters for RFT jobs. This gives you more control to match your training dat",
+    "published": "2026-10-21T08:00:00Z",
+    "hash": "0d91e6442a322f25f73796e6380303083855a72c11499e29aec23ee08c8e3f94"
   },
   {
     "title": "Announcing Amazon ECS Gateway, a managed ingress solution for your ECS services",
