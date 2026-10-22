@@ -1,5 +1,25 @@
 [
   {
+    "title": "Amazon Connect Customer Profiles now supports customizing what agents see",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-customize-cp",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Upgrade",
+    "summary": "Amazon Connect Customer Profiles now allows administrators to customize which customer data that agents see in the agent workspace, and how it is displayed, using layouts they build in Profile Explorer. Customer Profiles provides agents with a real-time, unified view of each customer during interactions, combining contact history with customer data from multiple sources. Agents who handle different kinds of requests need different customer data in front of them. Within Profile Explorer, administrators can create and save each layout of Customer Profiles widgets, such as contact history, contact information, and lifetime value calculated attributes, and assign it to agents in place of the legacy Customer Profiles view. For example, an airline baggage claims agent sees contact history, active flights, and baggage ticket information, while a loyalty agent sees loyalty status, preferences, and upcoming flights. Layouts can also include an AI Profile Summary that focuses the agent's attenti",
+    "published": "2026-10-22T21:10:00Z",
+    "hash": "3221125fc9331adf42a832fa6a341fe8669981db11d7e2c9fbe41f03da589aa2"
+  },
+  {
+    "title": "Amazon OpenSearch Serverless now supports a 5-second default refresh interval",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-serverless-supports-5-second-refresh-interval/",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Upgrade",
+    "summary": "Starting today, Amazon OpenSearch Serverless reduces the default refresh interval to 5 seconds for both search and vector collections. The refresh interval controls how quickly newly ingested documents become available for search. By lowering the default from 10 seconds to 5 seconds, newly written data becomes searchable faster, giving applications quicker read-after-write visibility automatically, with no configuration changes and no action required on your part. This improvement applies to the next generation of Amazon OpenSearch Serverless and takes effect by default on both search and vector collections. Faster refresh is valuable for workloads that continuously ingest data and need near real-time retrieval, including full-text search over frequently updated content as well as vector use cases such as retrieval-augmented generation (RAG), semantic search, and recommendation and personalization systems. This means applications and AI agents can retrieve and act on the most recently ",
+    "published": "2026-10-22T18:34:00Z",
+    "hash": "becab1a73fb71cae29c49e7569084b8868d62b2469b989df6e6663ce5337db4d"
+  },
+  {
     "title": "AWS CloudFormation now simplifies stack update rollback operations",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-cloudformation-cdk/",
     "source": "AWS What's New",
@@ -28,6 +48,16 @@
     "summary": "Amazon SageMaker AI serverless model customization now supports training session APIs, giving customers full control over their post-training algorithm without provisioning or managing GPU infrastructure. Managed techniques, including SFT, DPO, and other reinforcement learning methods, let customers pick a technique and a model and have SageMaker AI run the training. With training session APIs, teams get to write the training loop, whether that's reproducing SFT or DPO on their own terms or implementing a custom loss, a new RL reward signal, a data curriculum, or an algorithm straight from the latest research. Operations such as forward_backward(), optim_step(), and sample() become API calls against a live, stateful session, so customers compose whatever training procedure their technique requires while SageMaker AI handles GPU allocation, model and LoRA loading, distributed execution, fault recovery, checkpoint storage, and security. Customers can call these operations directly from t",
     "published": "2026-10-22T16:30:00Z",
     "hash": "e122d908da223aa00482c67871005444f2317a2b64355cb43bb44b5387569174"
+  },
+  {
+    "title": "AWS Direct Connect announces 100G expansion in Bangalore, India",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-direct-connect-100g-bangalore/",
+    "source": "AWS What's New",
+    "service": "AWS Direct Connect",
+    "category": "General Announcement",
+    "summary": "Today, AWS announced the expansion of 100 Gbps dedicated connections at the existing AWS Direct Connect location in the Netmagic DC2 data center near Bangalore, India. You can now establish private, direct network access to all public AWS Regions (except those in China), AWS GovCloud Regions, and AWS Local Zones from this location. The Direct Connect service enables you to establish a private, physical network connection between AWS and your data center, office, or colocation environment. These private connections can provide a more consistent network experience than those made over the public internet. For more information on the over 150 Direct Connect locations worldwide, visit the locations section of the Direct Connect product detail pages . Or, visit our getting started page to learn more about how to purchase and deploy Direct Connect.",
+    "published": "2026-10-22T16:00:00Z",
+    "hash": "fb33b9699d48a74af695819b7b3f03474868d918282daa1756b8a3a0f20751f7"
   },
   {
     "title": "Amazon SageMaker AI now supports serverless model customization for Muse Glimmer, Qwen 3.8 and Ministral 3 models",
