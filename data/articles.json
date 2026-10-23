@@ -20,6 +20,16 @@
     "hash": "7dfdf01cae764ebbda991fe85d0c040bdc56f90a3e850cae195118d86a573333"
   },
   {
+    "title": "Amazon Connect Customer Global Resiliency now supports persistent chat across linked AWS Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-persistent-chat",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Upgrade",
+    "summary": "Amazon Connect Customer Global Resiliency now provides customers a mechanism to deliver long, persistent chat experiences across linked AWS Regions. With this capability, end users can resume previous conversations with full context, metadata, and transcripts carried over across Regions, eliminating the need for end users to repeat information and allowing agents to provide personalized service with access to the entire conversation history across AWS Regions. For example, an end user can start a chat in US-East (N. Virginia) and later come back to it in the linked US-West (Oregon) Region, continuing the same conversation with an agent with full conversation history and chat attachment. To adopt this capability, onboard to Global routing . This feature is available in all AWS Regions where Amazon Connect Customer Global Resiliency is supported. To learn more, visit Amazon Connect Customer Admin Guide .",
+    "published": "2026-10-23T17:00:00Z",
+    "hash": "7ebf98d2b70a5a7c6475d70197846c751f9acc21e884c57e2853eeb48ee6bcf5"
+  },
+  {
     "title": "AWS Transit Gateway and AWS Cloud WAN now support 1:1 NAT",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/",
     "source": "AWS What's New",
