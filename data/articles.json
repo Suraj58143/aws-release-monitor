@@ -10,6 +10,16 @@
     "hash": "3221125fc9331adf42a832fa6a341fe8669981db11d7e2c9fbe41f03da589aa2"
   },
   {
+    "title": "Amazon Connect Customer now supports customizing the Customer Profiles app on the agent workspace",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-customize-cp",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Upgrade",
+    "summary": "Amazon Connect Customer Profiles now allows administrators to customize which customer data that agents see in the agent workspace, and how it is displayed, using layouts they build in Profile Explorer. Customer Profiles provides agents with a real-time, unified view of each customer during interactions, combining contact history with customer data from multiple sources. Agents who handle different kinds of requests need different customer data in front of them. Within Profile Explorer, administrators can create and save each layout of Customer Profiles widgets, such as contact history, contact information, and lifetime value calculated attributes, and assign it to agents in place of the legacy Customer Profiles view. For example, an airline baggage claims agent sees contact history, active flights, and baggage ticket information, while a loyalty agent sees loyalty status, preferences, and upcoming flights. Layouts can also include an AI Profile Summary that focuses the agent's attenti",
+    "published": "2026-10-22T21:10:00Z",
+    "hash": "087cc4ff27bcff56ba22a9edee63eebd07203f08158c89b6198008c0794b8617"
+  },
+  {
     "title": "Amazon OpenSearch Serverless now supports a 5-second default refresh interval",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-serverless-supports-5-second-refresh-interval/",
     "source": "AWS What's New",
@@ -68,6 +78,16 @@
     "summary": "Amazon SageMaker AI now supports serverless model customization for Muse Glimmer, Qwen3.8 27B, and Ministral 3 3B, 8B, and 14B models. In addition to deploying these models on SageMaker AI, you can now adapt them to your specific domains and workflows, using supervised fine-tuning (SFT), direct preference optimization (DPO), and reinforcement fine-tuning (RFT) techniques. You can also adapt these models with either low-rank adaptation (LoRA) or full fine-tuning techniques. This launch adds these models to a wide variety of models available for serverless customization on SageMaker AI, including models from the Nova, Gemma 4, Nemotron 3.5, Qwen, Llama, gpt-oss, and DeepSeek families. Model customization lets you tailor foundation models with your proprietary data so a smaller, right-sized model can match frontier-model quality on your tasks, while also reducing cost and latency. You can use labeled data with SFT to improve accuracy on domain-specific tasks, preference data with DPO to a",
     "published": "2026-10-22T08:00:00Z",
     "hash": "e506a295f35083b5daaa294051ff6426a98ff96d64ee4dc9da85a0529df55798"
+  },
+  {
+    "title": "AgentCore Gateway now supports Bedrock InvokeModel APIs and model fallback",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-gateway-invokemodel-fallback/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Upgrade",
+    "summary": "Amazon Bedrock AgentCore Gateway now supports the Amazon Bedrock InvokeModel and InvokeModelWithResponseStream APIs on its inference endpoint, along with model fallback routing for inference traffic. With InvokeModel support, you can point your existing Amazon Bedrock SDK integration at the gateway and reach any model provider through one governed endpoint, without rewriting client code for each provider. With model fallback, the gateway automatically routes a request to an alternative model or provider when the primary destination is throttled, out of capacity, or unreachable, so your agents stay available without each client implementing its own retry logic. For fallback routing, you define an ordered chain of alternative destinations in a gateway rule, along with the conditions that trigger a switch, such as throttling, server errors, or response timeouts. A built-in circuit breaker skips destinations that are currently failing, so requests reach a healthy destination faster and you",
+    "published": "2026-10-22T08:00:00Z",
+    "hash": "1984a17785410716ab2f086327f064317b3508f140dc03c95bca946afca60f85"
   },
   {
     "title": "AWS Lambda MicroVMs is now available in 4 additional AWS regions",
