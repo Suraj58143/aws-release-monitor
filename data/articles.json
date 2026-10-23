@@ -1,5 +1,15 @@
 [
   {
+    "title": "AWS Transit Gateway and AWS Cloud WAN now support 1:1 NAT",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/",
+    "source": "AWS What's New",
+    "service": "AWS Transit Gateway",
+    "category": "General Announcement",
+    "summary": "AWS Transit Gateway and AWS Cloud WAN now provide managed one-to-one network address translation (NAT) directly on their attachments, through integration with Regional Private NAT Gateway. This enables customers to connect private networks that share the same IP address ranges without renumbering either network, deploying a NAT appliance, or writing return-traffic rules. Networks with overlapping Classless Inter-Domain Routing (CIDR) blocks have long been unable to communicate, a common blocker during mergers and acquisitions, when connecting partner networks over AWS Site-to-Site VPN, in multicloud connectivity, and when independently provisioned VPCs need to interconnect. Using this capability, customers can define address-translation rules on a AWS Transit Gateway or AWS Cloud WAN attachment, specifying the private IP range each source CIDR translates to, across Amazon VPC, AWS Site-to-Site VPN, AWS Direct Connect, and SD-WAN appliances connected through Transit Gateway Connect. Bot",
+    "published": "2026-10-23T15:43:00Z",
+    "hash": "bac5766ad6176e0f3770359fa4a3134b9b00b3825e8976c01d96873748f69672"
+  },
+  {
     "title": "Amazon Connect Customer Profiles now supports customizing what agents see",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-customize-cp",
     "source": "AWS What's New",
@@ -68,6 +78,16 @@
     "summary": "Today, AWS announced the expansion of 100 Gbps dedicated connections at the existing AWS Direct Connect location in the Netmagic DC2 data center near Bangalore, India. You can now establish private, direct network access to all public AWS Regions (except those in China), AWS GovCloud Regions, and AWS Local Zones from this location. The Direct Connect service enables you to establish a private, physical network connection between AWS and your data center, office, or colocation environment. These private connections can provide a more consistent network experience than those made over the public internet. For more information on the over 150 Direct Connect locations worldwide, visit the locations section of the Direct Connect product detail pages . Or, visit our getting started page to learn more about how to purchase and deploy Direct Connect.",
     "published": "2026-10-22T16:00:00Z",
     "hash": "fb33b9699d48a74af695819b7b3f03474868d918282daa1756b8a3a0f20751f7"
+  },
+  {
+    "title": "Amazon MSK Connect now supports pausing and resuming connectors",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-connect-pause-resume",
+    "source": "AWS What's New",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "category": "Upgrade",
+    "summary": "Amazon MSK Connect (Amazon Managed Streaming for Apache Kafka Connect) now supports pausing and resuming connectors, letting you temporarily pause a connector from processing records and resume it later. This is useful when you need to stop data flow during maintenance on a source database or a sink target, or to pause processing while you investigate an upstream or downstream issue. Amazon MSK Connect is a fully managed service that allows you to deploy, monitor, and scale Apache Kafka Connect connectors with Amazon MSK (Managed Streaming for Apache Kafka). Previously, pausing a connector meant deleting it and recreating it - a more disruptive operation, adding risk and operational overhead. With this launch, you can pause a running connector and resume it in place when you are ready — a paused connector keeps its configuration, capacity settings, and committed offsets, and its tasks continue processing from the offsets they last committed when you resume. This capability is available",
+    "published": "2026-10-22T15:00:00Z",
+    "hash": "04973da600ff86d2bbd544182e827a72cfe387c53aacc9dcac0fe77a1ba5d8e7"
   },
   {
     "title": "Amazon SageMaker AI now supports serverless model customization for Muse Glimmer, Qwen 3.8 and Ministral 3 models",
