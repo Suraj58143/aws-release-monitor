@@ -1,5 +1,25 @@
 [
   {
+    "title": "CVE-2026-87912 and CVE-2026-87913: Missing S3 bucket ownership verification in the AWS Security Agent plugin for aws-agents-for-devsecops and MCP Server",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-105-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Simple Storage Service",
+    "category": "Security",
+    "summary": "Read this article",
+    "published": "2026-10-23T17:45:18Z",
+    "hash": "c2f497caba5f48b8e4d69a30dd69f2e2e581f32315a13b912ecb06ec94275105"
+  },
+  {
+    "title": "CVE-2026-84942 - Stored Cross-Site Scripting via Vega Expression Function Bypass in OpenSearch Dashboards",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon OpenSearch Service",
+    "category": "Security",
+    "summary": "Read this article",
+    "published": "2026-10-23T17:43:59Z",
+    "hash": "7dfdf01cae764ebbda991fe85d0c040bdc56f90a3e850cae195118d86a573333"
+  },
+  {
     "title": "AWS Transit Gateway and AWS Cloud WAN now support 1:1 NAT",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/",
     "source": "AWS What's New",
@@ -8,6 +28,26 @@
     "summary": "AWS Transit Gateway and AWS Cloud WAN now provide managed one-to-one network address translation (NAT) directly on their attachments, through integration with Regional Private NAT Gateway. This enables customers to connect private networks that share the same IP address ranges without renumbering either network, deploying a NAT appliance, or writing return-traffic rules. Networks with overlapping Classless Inter-Domain Routing (CIDR) blocks have long been unable to communicate, a common blocker during mergers and acquisitions, when connecting partner networks over AWS Site-to-Site VPN, in multicloud connectivity, and when independently provisioned VPCs need to interconnect. Using this capability, customers can define address-translation rules on a AWS Transit Gateway or AWS Cloud WAN attachment, specifying the private IP range each source CIDR translates to, across Amazon VPC, AWS Site-to-Site VPN, AWS Direct Connect, and SD-WAN appliances connected through Transit Gateway Connect. Bot",
     "published": "2026-10-23T15:43:00Z",
     "hash": "bac5766ad6176e0f3770359fa4a3134b9b00b3825e8976c01d96873748f69672"
+  },
+  {
+    "title": "Amazon Corretto October 2026 Quarterly Updates",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-october-2026-quarterly-updates",
+    "source": "AWS What's New",
+    "service": "Amazon Corretto",
+    "category": "Release",
+    "summary": "On October 22, 2026 Amazon announced quarterly security and critical updates for Amazon Corretto Long-Term Supported (LTS) versions of OpenJDK. Corretto 27.0.1.0.10, 25.0.5.0.9, 21.0.13.0.10, 17.0.21.0.10, 11.0.33.0.9, and 8u512 are now available for download . Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK. Visit the Corretto home page to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a Corretto Apt, Yum, or Apk repo . Feedback is welcomed !",
+    "published": "2026-10-23T14:00:00Z",
+    "hash": "8f20cf1724f0688b45b8299727cd46cebfab367012dc0b3bceff4c4a5b85b8ee"
+  },
+  {
+    "title": "Amazon EMR on EKS reduces EMR charge by 30 percent",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/",
+    "source": "AWS What's New",
+    "service": "Amazon EMR",
+    "category": "Service Update",
+    "summary": "Amazon EMR announces a reduction of 30 percent in the EMR charge added to EKS when running EMR on EKS. This price decrease applies to both the per-vCPU-hour charge and the per-GB-hour charge, while the underlying Amazon EKS charges remain unchanged. All EMR workloads running on the EKS deployment option benefit from this change. Now, you can run Apache Spark workloads on Amazon Elastic Kubernetes Service (EKS) at a lower cost, and the new price automatically applies to your EMR on EKS workloads with no additional action required on your end. The 30% reduction in EMR on EKS pricing is available in all AWS Regions where Amazon EMR on EKS is available. To learn more about EMR on EKS, visit the Amazon EMR on EKS documentation and the Amazon EMR pricing page .",
+    "published": "2026-10-23T08:00:00Z",
+    "hash": "b7ad5858f7dc8860043606bcab63e02ea96cfc0d61da00414cdef9263885a8ad"
   },
   {
     "title": "Amazon Connect Customer Profiles now supports customizing what agents see",
@@ -30,6 +70,16 @@
     "hash": "087cc4ff27bcff56ba22a9edee63eebd07203f08158c89b6198008c0794b8617"
   },
   {
+    "title": "Amazon OpenSearch Service introduces intelligent ingestion for logs and documents in Amazon S3",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-intelligent-ingestion-logs-documents-s3",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "General Announcement",
+    "summary": "Amazon OpenSearch Serverless now offers intelligent ingestion, a fully managed feature that turns logs and documents stored in Amazon S3 into searchable content in Amazon OpenSearch Serverless (NextGen) collections . With intelligent ingestion, you can set up ingestion with a few clicks in the AWS Management Console or a single API call, with no ingestion infrastructure to manage. Intelligent ingestion supports observability logs and structured data in JSON, NDJSON, and JSON array formats, and unstructured files in PDF, Word, plain text, and Markdown formats. You choose an S3 source and a collection index, and intelligent ingestion handles the rest. It automatically detects data types, parses documents, describes images, chunks text, generates vector embeddings, and indexes the results. You don't need to manage ingestion or document-processing infrastructure, or size capacity in advance. Use ingestion jobs for one-time loads such as migrations and backfills, or ingestion streams to kee",
+    "published": "2026-10-22T20:54:00Z",
+    "hash": "2f8932a02d3234fa1803ef4d062071120368b447ea8c25d7fe90c4e7e92b6904"
+  },
+  {
     "title": "Amazon OpenSearch Serverless now supports a 5-second default refresh interval",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-serverless-supports-5-second-refresh-interval/",
     "source": "AWS What's New",
@@ -45,7 +95,7 @@
     "source": "AWS What's New",
     "service": "AWS CloudFormation",
     "category": "General Announcement",
-    "summary": "AWS CloudFormation now makes it simpler to complete an update rollback and get back to deploying. An update rollback returns your stack to a known good state. Starting today, if some resources cannot roll back automatically, force rollback enables you to complete the rollback it in a single operation. It works across every CloudFormation workflow, from the AWS CLI , and SDKs to AWS CDK and AI agents. With force rollback, CloudFormation completes the update rollback and returns your stack to a deployable state in a single operation, instead of requiring you to identify, list, and retry the operation for each affected resource. Any resource that still needs attention, such as one affected a change outside CloudFormation, is recorded for you to review and resolve it before your next deployment. To get started, run continue update rollback with the force rollback option, then create a drift-aware change set to review any configuration differences before your next deployment. To learn more,",
+    "summary": "AWS CloudFormation now makes it simpler to complete an update rollback and get back to deploying. An update rollback returns your stack to a known good state. Starting today, if some resources cannot roll back automatically, force rollback enables you to complete the rollback in a single operation. It works across every CloudFormation workflow, from the AWS CLI , and SDKs to AWS CDK and AI agents. With force rollback, CloudFormation completes the update rollback and returns your stack to a deployable state in a single operation, instead of requiring you to identify, list, and retry the operation for each affected resource. Any resource that still needs attention, such as one affected by a change outside CloudFormation, is recorded for you to review and resolve it before your next deployment. To get started, run continue update rollback with the force rollback option, then create a drift-aware change set to review any configuration differences before your next deployment. To learn more,",
     "published": "2026-10-22T17:30:00Z",
     "hash": "e7041f9d3af4c57d5be32a3cd3b8819650d5c376918448d387be30ce5f577879"
   },
@@ -1575,7 +1625,7 @@
     "source": "AWS Security Bulletins",
     "service": "AWS IoT",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-115-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/17/2026 12:00 PM PDT Description: AWS IoT Device SDK for Python (AWSIoTPythonSDK) is an open source SDK that lets IoT devices and gateways connect to AWS IoT Core over MQTT. We identified CVE-2026-92943 in the MQTT client TLS connection layer, where the client did not validate that the server certificate matched the AWS IoT Core endpoint hostname. On Python 3.7 and later, an adversary-in-the-middle positioned on the network could present a certificate issued for an unrelated hostname by any certificate authority in the device trust store, impersonate the AWS IoT Core endpoint, read device telemetry, and inject arbitrary MQTT messages that the device processes as authentic. Both SDK default connection paths were affected: X.509 mutual authentication on port 8883 and WebSocket with SigV4 on port 443. The port 443 ALPN path was not affected. Impacted versions: >=1.5.3 AND <=1.6.0 (on Pyt",
+    "summary": "Read this article",
     "published": "2026-09-17T19:18:01Z",
     "hash": "89c363f5e95a435b8aeeed20678d2347aa983a89881ab9280cd156ac7b3caa12"
   },
@@ -1585,7 +1635,7 @@
     "source": "AWS Security Bulletins",
     "service": "Amazon EKS",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-113-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/16/2026 12:30 PM PDT Description: Network Policy Agent is an EKS Policy management feature. We identified CVE-2026-86831, a cross-namespace NetworkPolicy bypass in Amazon EKS Network Policy Agent (aws-network-policy-agent) before v1.4.0. Pod identifiers are constructed by concatenating the pod name and namespace with a hyphen delimiter, which is a legal character in both Kubernetes pod names and namespace names. This ambiguity can produce identical identifiers for pods across different namespaces, potentially allowing NetworkPolicy enforcement to be bypassed. Impacted versions: - 1.14.0<1.22.3 Amazon VPC CNI Managed Add-on - < v1.4.0 Network Policy Agent Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "summary": "Read this article",
     "published": "2026-09-16T20:16:23Z",
     "hash": "a08e39a7a2557a894d61a2757e31d9eeb10e9573fde30ecde1b09b943b01cf38"
   },
@@ -1595,7 +1645,7 @@
     "source": "AWS Security Bulletins",
     "service": "AWS Identity and Access Management",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-112-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/14/2026 10:45 AM PDT Description: Temporary Elevated Access Management (TEAM) is an open source AWS sample solution for managing temporary elevated access via AWS IAM Identity Center. We identified CVE-2026-86830, where an authenticated user with application-level access could gain unintended temporary elevated access to AWS accounts managed by TEAM. Impacted versions: <1.5.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "summary": "Read this article",
     "published": "2026-09-14T18:04:59Z",
     "hash": "6e807e5e36439481f32bb07e57dfccb40d851644d7687ecbfa3d4c921795da15"
   },
@@ -1605,7 +1655,7 @@
     "source": "AWS Security Bulletins",
     "service": "AWS SDK",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-110-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 10:00 AM PDT Description: An issue exists in the the EventStream header decoder in AWS SDK for Go v2 in versions predating 2026-03-23. An actor can send a malformed EventStream response frame containing a crafted header value type byte outside the valid range, which can cause the host process to terminate. Impacted versions: < 2026-03-23 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "summary": "Read this article",
     "published": "2026-09-11T17:09:09Z",
     "hash": "e2431d1511284f3d17f98aa1f6a7f99ca34d4b4d926bebf7ec71545f9c3993aa"
   },
@@ -1615,28 +1665,8 @@
     "source": "AWS Security Bulletins",
     "service": "AWS Systems Manager",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-107-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/10/2026 11:30 AM PDT Description: AWS Systems Manager Agent (SSM Agent) is software that runs on managed nodes (EC2 instances, on-premises servers, and other supported machines) and processes requests from the AWS Systems Manager service, enabling capabilities including Session Manager port forwarding to remote hosts. We identified CVE-2026-89049, a server-side request forgery issue in the remote-host port forwarding functionality. Due to improper validation of equivalent address representations, an authenticated user with port-forwarding permission could bypass the remote destination denylist and reach link-local endpoints, potentially obtaining the managed instance's temporary IAM role credentials and acting with that role's permissions from outside the instance. Impacted versions: < 3.3.4851.0 (all versions supporting remote-host port forwarding) Please refer to the article below f",
+    "summary": "Read this article",
     "published": "2026-09-10T18:44:24Z",
     "hash": "2882dca5eb20371b0b7d6cf9262d5996a881cf1963c885ad81f9932cb75ef91d"
-  },
-  {
-    "title": "CVE-2026-87912 and CVE-2026-87913: Missing S3 bucket ownership verification in the AWS Security Agent plugin for aws-agents-for-devsecops and MCP Server",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-105-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon Simple Storage Service",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-105-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/10/2026 08:30 AM PDT Description: AWS Security Agent is a managed AWS service that provides AI-powered code security reviews, threat modeling, and penetration testing. We identified CVE-2026-87912, where a missing S3 bucket ownership verification in the AWS Security Agent plugin in Amazon aws-agents-for-devsecops before version 1.1.0 might allow remote attackers to obtain the private source archive of a scanned workspace, including credentials and infrastructure state contained in that archive, via a pre-registered storage bucket whose name is derived from a publicly known account identifier. We identified CVE-2026-87913, where a missing S3 bucket ownership verification in the AWS Security Agent MCP server before 0.2.0 might allow remote attackers to obtain the private source archive of a scanned workspace, including credentials and infrastructure state contained in that archive, via ",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "c2f497caba5f48b8e4d69a30dd69f2e2e581f32315a13b912ecb06ec94275105"
-  },
-  {
-    "title": "CVE-2026-84942 - Stored Cross-Site Scripting via Vega Expression Function Bypass in OpenSearch Dashboards",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon OpenSearch Service",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-102-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/08/2026 12:30 PM PDT Description: A stored cross-site scripting (XSS) issue in the Vega expression function implementation in OpenSearch Dashboards allows a remote authenticated actor with dashboard write permissions to execute arbitrary JavaScript in the context of other users' browser sessions by saving a crafted Vega visualization. Affedted products & versions: OpenSearch Dashboards (open-source, self-managed): - Affected: v2.0.0, v2.1.0, v2.2.0, v2.3.0, v2.4.0, v2.5.0, v.2.6.0, v2.7.0, v2.8.0, v2.9.0, v2.10.0, v2.11.0, v2.12.0, v2.13.0, v2.14.0, v2.15.0, v2.16.0, v2.17.0, v2.18.0, v2.19.0, v3.0.0, v3.1.0, v3.2.0, v3.3.0, v3.4.0, v3.5.0 - Fixed: v2.19.5 and v3.6.0 Amazon OpenSearch Service (AWS Managed): - Affected: v2.3.0, v2.5.0, v2.7.0, v2.9.0, v2.11.0, v2.13.0, v2.15.0, v2.17.0, v2.19.0, v3.1.0, v3.3.0, v3.5.0 - Fixed: v2.3.0, v2.5.0, v2.7.0, v2.9.0, v2.11.0, v2.13.0, v2.15.0, ",
-    "published": "2026-09-09T21:30:11Z",
-    "hash": "7dfdf01cae764ebbda991fe85d0c040bdc56f90a3e850cae195118d86a573333"
   }
 ]
