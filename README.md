@@ -1,7 +1,7 @@
 # AWS Release Monitor
 
 A GitHub-native dashboard for AWS What's New, the AWS News Blog, and AWS
-Security Bulletins. GitHub Actions collects announcements hourly; the committed
+Security Bulletins. GitHub Actions collects announcements daily; the committed
 JSON history is published as a static GitHub Pages dashboard.
 
 **No server, cloud infrastructure, local installation, framework, or always-on
@@ -11,7 +11,7 @@ process is required.**
 
 ```mermaid
 flowchart LR
-    A[GitHub Actions: hourly / manual] --> B[Python collector]
+    A[GitHub Actions: daily / manual] --> B[Python collector]
     B --> C[AWS official sources]
     C --> D[Normalize and classify]
     D --> E[SHA-256 deduplication]

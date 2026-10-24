@@ -43,8 +43,8 @@ remains private.
 ## Monitor a source manually
 
 In GitHub, open **Actions → Collect AWS announcements → Run workflow**. The
-hourly scheduled run starts at the top of each UTC hour. GitHub may delay
-scheduled workflows during periods of high load.
+scheduled run starts daily at **00:00 UTC**. GitHub may delay scheduled
+workflows during periods of high load.
 
 ## Run the dashboard for development
 
