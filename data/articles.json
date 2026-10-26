@@ -1,5 +1,45 @@
 [
   {
+    "title": "CVE-2026-89090 - Denial of service in the event stream header decoder in AWS SDK for Go v2",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-110-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS SDK",
+    "category": "Security",
+    "summary": "Read this article",
+    "published": "2026-10-25T03:13:38Z",
+    "hash": "e2431d1511284f3d17f98aa1f6a7f99ca34d4b4d926bebf7ec71545f9c3993aa"
+  },
+  {
+    "title": "CVE-2026-89049 - Server-side request forgery in the Session Manager port forwarding functionality in AWS Systems Manager Agent",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-107-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS Systems Manager",
+    "category": "Security",
+    "summary": "Read this article",
+    "published": "2026-10-25T03:13:38Z",
+    "hash": "2882dca5eb20371b0b7d6cf9262d5996a881cf1963c885ad81f9932cb75ef91d"
+  },
+  {
+    "title": "CVE-2026-87912 and CVE-2026-87913: Missing S3 bucket ownership verification in the AWS Security Agent plugin for aws-agents-for-devsecops and MCP Server",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-105-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Simple Storage Service",
+    "category": "Security",
+    "summary": "Read this article",
+    "published": "2026-10-25T03:11:39Z",
+    "hash": "c2f497caba5f48b8e4d69a30dd69f2e2e581f32315a13b912ecb06ec94275105"
+  },
+  {
+    "title": "CVE-2026-84942 - Stored Cross-Site Scripting via Vega Expression Function Bypass in OpenSearch Dashboards",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon OpenSearch Service",
+    "category": "Security",
+    "summary": "Read this article",
+    "published": "2026-10-25T03:11:39Z",
+    "hash": "7dfdf01cae764ebbda991fe85d0c040bdc56f90a3e850cae195118d86a573333"
+  },
+  {
     "title": "Web Search on AWS Bedrock now supports domain filtering and user location controls",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
     "source": "AWS What's New",
@@ -18,26 +58,6 @@
     "summary": "Web Search on Amazon Bedrock now supports two new controls that give you more precision over the results that ground a model's response: domain filtering and user location. Both are configured directly on the web_search tool in your existing OpenAI Responses API request. With domain filtering, you can restrict Web Search results to a set of domains you choose. Using the filters parameter, you specify up to 100 allowed_domains to limit results to trusted sources, or up to 100 blocked_domains to exclude sources you don't want. This is useful when you want responses grounded only in specific sites, or when you need to keep certain domains out of results. With user location, you can optionally specify location parameters so that Web Search can return results relevant to that geography. This helps with location-dependent questions, such as regional availability or local services. Domain filtering and user location are available in all AWS Regions where Web Search is supported: US East (N. V",
     "published": "2026-10-23T21:04:00Z",
     "hash": "32739c09e1127fa1a136b55376867e03367e856969b1e031e9799fd8f474bc8f"
-  },
-  {
-    "title": "CVE-2026-87912 and CVE-2026-87913: Missing S3 bucket ownership verification in the AWS Security Agent plugin for aws-agents-for-devsecops and MCP Server",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-105-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon Simple Storage Service",
-    "category": "Security",
-    "summary": "Read this article",
-    "published": "2026-10-23T17:45:18Z",
-    "hash": "c2f497caba5f48b8e4d69a30dd69f2e2e581f32315a13b912ecb06ec94275105"
-  },
-  {
-    "title": "CVE-2026-84942 - Stored Cross-Site Scripting via Vega Expression Function Bypass in OpenSearch Dashboards",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon OpenSearch Service",
-    "category": "Security",
-    "summary": "Read this article",
-    "published": "2026-10-23T17:43:59Z",
-    "hash": "7dfdf01cae764ebbda991fe85d0c040bdc56f90a3e850cae195118d86a573333"
   },
   {
     "title": "Amazon Connect Customer Global Resiliency now supports persistent chat across linked AWS Regions",
@@ -1678,25 +1698,5 @@
     "summary": "Read this article",
     "published": "2026-09-14T18:04:59Z",
     "hash": "6e807e5e36439481f32bb07e57dfccb40d851644d7687ecbfa3d4c921795da15"
-  },
-  {
-    "title": "CVE-2026-89090 - Denial of service in the event stream header decoder in AWS SDK for Go v2",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-110-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "AWS SDK",
-    "category": "Security",
-    "summary": "Read this article",
-    "published": "2026-09-11T17:09:09Z",
-    "hash": "e2431d1511284f3d17f98aa1f6a7f99ca34d4b4d926bebf7ec71545f9c3993aa"
-  },
-  {
-    "title": "CVE-2026-89049 - Server-side request forgery in the Session Manager port forwarding functionality in AWS Systems Manager Agent",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-107-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "AWS Systems Manager",
-    "category": "Security",
-    "summary": "Read this article",
-    "published": "2026-09-10T18:44:24Z",
-    "hash": "2882dca5eb20371b0b7d6cf9262d5996a881cf1963c885ad81f9932cb75ef91d"
   }
 ]
