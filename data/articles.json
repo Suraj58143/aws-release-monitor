@@ -1,5 +1,95 @@
 [
   {
+    "title": "Amazon WorkSpaces Core Managed Instances now supports ModifyVolume API",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-workspaces-cmi-modifyvolume/",
+    "source": "AWS What's New",
+    "service": "Amazon WorkSpaces",
+    "category": "Upgrade",
+    "summary": "Amazon WorkSpaces Core Managed Instances now supports the ModifyVolume API, which lets you change volume size, volume type, IOPS, or throughput in place, without detaching the volume or restarting the instance. Previously, changing storage capacity or performance on a deployed managed instance required rebuilding it. With ModifyVolume, you can increase volume size up to 16,384 GiB, switch between supported Amazon EBS volume types, adjust IOPS for gp3, io1, and io2 volumes, and modify throughput for gp3 volumes. The API supports idempotency tokens to prevent duplicate changes, and you can track progress with the Amazon EC2 DescribeVolumesModifications operation. ModifyVolume is available in all AWS Regions where Amazon WorkSpaces Core Managed Instances is available. To get started, call ModifyVolume directly, or use it through your WorkSpaces Core partner solution once available. To learn more, see ModifyVolume in the WorkSpaces Instances API Reference and Limitations in the Amazon EBS ",
+    "published": "2026-10-26T18:00:00Z",
+    "hash": "da044e2139a8bdf14c85c8802e3509bc385e0e47055d8523d18453982c4c0156"
+  },
+  {
+    "title": "Amazon SageMaker Unified Studio adds light mode support for IDC-based domains",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/smus-light-mode",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Release",
+    "summary": "Today, AWS announces light mode support in Amazon SageMaker Unified Studio for Identity Center (IDC) based domains. Customers can now configure the visual interface mode to match their preference, choosing between dark and light themes. With this launch, customers can set this visual preference in both IAM-based and IDC-based domains. Light mode helps improve readability in bright environments and provides a familiar visual experience for customers who prefer lighter interfaces. Combined with the existing dark mode, this update gives you full control over the appearance of your development environment, improving accessibility and reducing eye strain across varying lighting conditions. In SageMaker Unified Studio settings, you can choose 'Customize appearance' under your Profile settings to select between visual modes including dark mode, light mode, and device setting, which matches your operating system's setting. The setting persists across browsers and devices. This feature is avail",
+    "published": "2026-10-26T15:32:00Z",
+    "hash": "dfdc9711dd068ead4a0dc5b4222249fde633793303ed711d24c78d83248cc252"
+  },
+  {
+    "title": "Amazon Connect Customer expands testing and simulation to validate flow action outcomes",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-validate-flow-actions/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Bug Fix",
+    "summary": "Amazon Connect Customer now enables you to validate the outcomes of your customer experience flow actions during testing and simulation. In addition to confirming that an action started, you can now verify the data it returns when it completes, such as a Lambda function response, an Amazon Lex resolved intent, or the variables set by an Agentic CX block. When a test fails, you can pinpoint the exact action that returned an unexpected result instead of tracing it back from a downstream step, so you can resolve issues faster and launch flow changes with greater confidence. To learn more about this feature, see testing and simulation in the Connect Customer administrator guide. For a complete list of testing and simulation capabilities available by AWS Region, refer to Availability of Connect Customer features by Region . To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences, visit the Amazon Connect Customer we",
+    "published": "2026-10-26T15:00:00Z",
+    "hash": "fd16e8e965f904a49fdbf1edf3d45a6b0f08e5ea429d6c11f533dfcbf2eef186"
+  },
+  {
+    "title": "Amazon Connect Customer now lets you view metrics by customer lifetime value and repeat-caller status",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-boma-segment/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "General Announcement",
+    "summary": "Now you can view your metrics across customer segments: customer lifetime value (LTV) and repeat callers. See how any metric differs for repeat callers versus the rest of your contacts, or how results hold up among your highest-LTV customers; so you can spot the groups trending the wrong way before it shows up in the aggregate. Where a segment is underperforming, you can act. Route high-LTV customers to your most effective people, adjust the knowledge bases and self-service flows that repeat callers are falling back from, or refine agent guidance for segments where satisfaction is slipping. The segment tells you where to look; the metrics tell you what to fix.",
+    "published": "2026-10-26T13:47:00Z",
+    "hash": "eef9c2ba7f04d5df34ea26bb7c615b59c47e00a8798673b6235a56914bdd6d61"
+  },
+  {
+    "title": "Amazon Connect Customer now measures the outcomes that drive retention and revenue",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-boma-metrics/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Bug Fix",
+    "summary": "Amazon Connect Customer now scores the outcome of your customer interactions. It shows whether the customer left satisfied, is at risk of churning, made a purchase, or resolved their need in self-service. You can now see whether an interaction worked, not just how efficiently it ran. Each metric comes with a default definition you can adjust to match how your business defines success and are available both through the analytics dashboards and APIs.",
+    "published": "2026-10-26T13:31:00Z",
+    "hash": "3869a84e203e12ed1f32de21116dee0f787a370c283e84b103c5582465f11d80"
+  },
+  {
+    "title": "AWS Key Management Service now supports ML-KEM for post-quantum key encapsulation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/kms-ml-kem-post-quantum/",
+    "source": "AWS What's New",
+    "service": "AWS Key Management Service",
+    "category": "Upgrade",
+    "summary": "AWS Key Management Service (KMS) now supports Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM), a post-quantum cryptography standard under NIST FIPS 203 , which enables two parties to establish a shared secret. NIST designed ML-KEM to replace the classical key-establishment schemes, like DH/ECDH key agreement, and RSA-based key transport, in their strategic cryptographic roadmap (see NIST IR 8547 ). ML-KEM addresses the \"harvest now, decrypt later\" threat to those classical schemes, where an adversary records the key-establishment exchange today and recovers the shared secret once sufficiently powerful quantum computers become available. KMS supports all three ML-KEM key specs defined in NIST FIPS 203: ML-KEM-512, ML-KEM-768, and ML-KEM-1024. The Encapsulate API uses the public key to produce a random 32-byte shared secret and its ciphertext form. The Decapsulate API recovers the shared secret from ciphertext using the corresponding private key. KMS protects the private key of",
+    "published": "2026-10-26T08:00:00Z",
+    "hash": "fd25b91cabe0b285f6b358803539fe9e34b05b248a6eb2a0851d33e77444b11e"
+  },
+  {
+    "title": "AWS IAM Identity Center now supports cross-Region trusted identity propagation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-cross-region-tip/",
+    "source": "AWS What's New",
+    "service": "AWS Identity and Access Management",
+    "category": "Upgrade",
+    "summary": "Trusted identity propagation carries a user's identity with their request, so AWS services can grant permissions based on who the user is and their underlying group associations, and log that user's access for auditing. With cross-Region support, this identity context can now be propagated to AWS services running in different AWS Regions, giving you greater flexibility in how you architect and deploy across AWS Regions. Customers often distribute workloads across AWS Regions for many reasons including separating the compute from the data it queries, to running workloads where capacity is available, or for disaster recovery and global scale. Previously, trusted identity propagation required all of the AWS services accessing a user's identity to reside in the same AWS Region. To reach services in another AWS Region, customers had to either grant access through broad IAM roles that cannot distinguish individual users or consolidate all their services into a single AWS Region. With cross-R",
+    "published": "2026-10-26T08:00:00Z",
+    "hash": "bab6ca206f79cc0592ed24f1ae6f44e4ac2e63115885d37e0a2f9fb3ae5f5e73"
+  },
+  {
+    "title": "AWS EC2 Auto Scaling now supports Launch Before Terminate at account-level to replace instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-auto-scaling-launch-before-terminate/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Upgrade",
+    "summary": "AWS EC2 Auto Scaling now lets you enable Launch Before Terminate as the default replacement behavior across all Auto Scaling groups in your account. When enabled, Auto Scaling launches a replacement instance and waits for it to pass health checks before terminating the instance it replaces, helping your applications maintain full capacity and availability during instance replacement events. This applies to replacement events such as instance refreshes, rebalancing, health checks, and maximum-instance-lifetime replacements. You can enable Launch Before Terminate through AWS EC2 Auto Scaling account settings, which let you configure the behavior once at the account level instead of on each Auto Scaling group individually. You can manage the setting with the new `PutAccountSetting` and `DescribeAccountSettings` APIs, available through the AWS Management Console, AWS CLI, or AWS SDKs. Launch Before Terminate is available in all AWS Regions at no additional cost. To learn more, see Launch B",
+    "published": "2026-10-26T08:00:00Z",
+    "hash": "6e33581c1400f0fa96654ca3830ced8ea010bb77e09bbb37c1983048f7aafa72"
+  },
+  {
+    "title": "AWS Glue Data Catalog now supports OAuth for Apache Iceberg REST Catalog APIs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/glue-catalog-oauth-iceberg-rest/",
+    "source": "AWS What's New",
+    "service": "AWS Glue",
+    "category": "Upgrade",
+    "summary": "AWS Glue Data Catalog now supports OAuth 2.0 bearer token authentication for Apache Iceberg REST Catalog (IRC) APIs using AWS Sign-In. The Apache Iceberg REST Catalog specification defines OAuth 2.0 as its standard authentication mechanism, and query engines such as Apache Spark, Trino, and Apache Flink implement it natively. These engines and external integration partners can now authenticate to the Glue Data Catalog Iceberg endpoint using standard OAuth 2.0 bearer tokens, in addition to AWS Signature Version 4 (SigV4). You can now grant partners federated access to your Iceberg tables without distributing AWS credentials. Using OAuth 2.0 Token Exchange (RFC 8693), you exchange an OpenID Connect (OIDC) identity token for a short-lived, Glue-scoped bearer token and include it in IRC requests following the same standards-based pattern used across the Iceberg ecosystem. Access remains governed by AWS IAM and AWS Lake Formation permissions. Common use cases include enabling third-party an",
+    "published": "2026-10-26T04:00:00Z",
+    "hash": "e874fc286f3c068186b35e77131bedfcbf15e319752342ad2f2c544f5d52635b"
+  },
+  {
     "title": "CVE-2026-89090 - Denial of service in the event stream header decoder in AWS SDK for Go v2",
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-110-aws/",
     "source": "AWS Security Bulletins",
