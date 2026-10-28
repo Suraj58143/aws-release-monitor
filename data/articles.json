@@ -1,5 +1,65 @@
 [
   {
+    "title": "SageMaker MLflow Apps now support MLflow 3.16",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/mflow-version-3-16/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker AI MLflow Apps now support MLflow 3.16, bringing a redesigned tracing experience and faster experiment tracking to your generative AI and machine learning workflows. MLflow 3.16 improves debugging and analysis of generative AI applications and agents. The redesigned trace explorer is now the default, with adjustable row height, reorderable columns, custom columns from any trace tag or metadata field. This release also accelerates metric charts for experiments with large metric histories. New MLflow Apps are created on MLflow 3.16 by default. Existing MLflow Apps will be upgraded to MLflow 3.16 during an upcoming maintenance window, with no action required. MLflow 3.16 is available in all AWS Regions where MLflow Apps are available. To learn more, visit the SageMaker AI MLflow developer guide .",
+    "published": "2026-10-27T20:40:00Z",
+    "hash": "579f6efa9a47b8c80948f1634005e809378187ca1874a974f49cf8b3844da1bd"
+  },
+  {
+    "title": "Amazon Aurora serverless now supports up to 384 ACUs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora",
+    "category": "Upgrade",
+    "summary": "Amazon Aurora serverless now supports database capacity of up to 384 Aurora Capacity Units (ACUs) for Aurora PostgreSQL-Compatible Edition, a 50% increase from the previous maximum of 256 ACUs. Each ACU provides approximately 2 gibibytes (GiB) of memory with corresponding CPU and networking, so a single Aurora serverless database can now scale up to 768 GiB of memory. When the workload completes, Aurora serverless automatically scales down to zero. This makes Aurora serverless especially well-suited for agentic AI applications, which typically have bursts of activity, long idle windows, and unpredictable traffic patterns. Aurora serverless handles all of it automatically, scaling capacity with your agents, so you only pay for what you use. With 384 ACU support, customers can now use Aurora serverless for even more demanding workloads while continuing to scale down to zero when not in use, paying only for the capacity consumed. For new clusters, select a supported Aurora PostgreSQL engi",
+    "published": "2026-10-27T16:00:00Z",
+    "hash": "86242e0ff6548f89ed30f149bdcb87e3a5aa9d4f27e2984daaaa82f25068cada"
+  },
+  {
+    "title": "Amazon ElastiCache for Valkey now supports changing durability on existing clusters",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/elasticache-changing-durability/",
+    "source": "AWS What's New",
+    "service": "Amazon ElastiCache",
+    "category": "Upgrade",
+    "summary": "Amazon ElastiCache for Valkey now lets you enable or disable durability on your existing node-based clusters without creating a new cluster. Previously, you couldn't change the durability configuration of an existing cluster in place. This made it harder to move from caching to persistent data store use cases, or to adapt as your application requirements change. Now you can change durability at any point in your application's lifecycle. You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before responding to the client, designed for zero data loss at single-digit millisecond write latency. Asynchronous writes persist data after responding to the client, maintaining microsecond write latency at no additional cost. However, up to 10 seconds of uncommitted data could be lost in the rare event of a failure. Both options maintain microsecond read latency. You can now use ElastiCache for a broader set of ",
+    "published": "2026-10-27T15:21:00Z",
+    "hash": "933d6529a36269f6292923575433ad48182c4bd67fe09c4d8d67a356359f6e36"
+  },
+  {
+    "title": "Amazon Corretto October 2026 Patch Updates",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-oct-2026-patch-updates",
+    "source": "AWS What's New",
+    "service": "Amazon Corretto",
+    "category": "Security",
+    "summary": "On October 26, 2026 Amazon announced a patch update for the following Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto 27.0.1.0.11, 25.0.5.0.10, 21.0.13.0.11, 17.0.21.0.11, 11.0.33.0.10, and 8u512 are now available for download . Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK. Visit the Corretto home page to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a Corretto Apt, Yum, or Apk repo . Feedback is welcomed !",
+    "published": "2026-10-27T14:00:00Z",
+    "hash": "6a448a67ff676d61628c079eeef7bc871e2b4ac4ef9c0d3b3168824aeb5d5649"
+  },
+  {
+    "title": "Amazon Neptune now supports online index rebuild to reclaim storage",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/neptune-online-index-rebuild/",
+    "source": "AWS What's New",
+    "service": "Amazon Neptune",
+    "category": "Upgrade",
+    "summary": "Amazon Neptune Database now supports online index rebuild, a new capability that helps database administrators and application teams defragment Neptune indexes and reclaim unused storage space without taking their database offline. Over time, insert, update, and delete operations create gaps of unused space within data pages, keeping the VolumeBytesUsed metric artificially elevated even after data is deleted. This fragmentation increases I/O costs and degrades query performance for teams running Gremlin, openCypher, or SPARQL workloads at scale. With online index rebuild, read and write queries continue uninterrupted on both the writer instance and read replicas throughout the entire rebuild process. You can target all indexes, only quad indexes, or only dictionary indexes, making this feature well-suited for post-deletion cleanup, periodic maintenance, storage limit management, and performance tuning on heavily fragmented databases. Tunable concurrency and write buffer size settings l",
+    "published": "2026-10-27T08:00:00Z",
+    "hash": "451d3982c2ef1850c3ff44681b07f12e414e81510d38e67546858032ff761915"
+  },
+  {
+    "title": "Amazon ECR now supports replication backfill for existing container images",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/replication-backfill-amazon-ecr",
+    "source": "AWS What's New",
+    "service": "Amazon ECR",
+    "category": "Upgrade",
+    "summary": "Amazon Elastic Container Registry (Amazon ECR) now supports replication backfill, enabling you to replicate existing images in your private registry to your configured replication registry destinations. Previously, replication only applied to images pushed after the replication configuration was enabled, requiring customers to manually retag images to trigger replication of preexisting images. With replication backfill, you can now replicate your full image catalog to new or existing destinations with a single API call. Replication backfill is useful when expanding to a new AWS Region, validating disaster recovery readiness, updating replication rules, or ensuring complete image catalogs exist across Regions for compliance purposes. You can run up to ten backfill jobs concurrently, monitor progress and per-image results through new APIs, and stop a job at any time without deleting images that have already been replicated. Replication backfill is available in all AWS Regions where Amazo",
+    "published": "2026-10-26T20:24:00Z",
+    "hash": "1f8c74f10ae93c99bf9bc1fb2b6373945d7437eb8e920bea4698190d0f5b3000"
+  },
+  {
     "title": "Amazon WorkSpaces Core Managed Instances now supports ModifyVolume API",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-workspaces-cmi-modifyvolume/",
     "source": "AWS What's New",
@@ -8,6 +68,16 @@
     "summary": "Amazon WorkSpaces Core Managed Instances now supports the ModifyVolume API, which lets you change volume size, volume type, IOPS, or throughput in place, without detaching the volume or restarting the instance. Previously, changing storage capacity or performance on a deployed managed instance required rebuilding it. With ModifyVolume, you can increase volume size up to 16,384 GiB, switch between supported Amazon EBS volume types, adjust IOPS for gp3, io1, and io2 volumes, and modify throughput for gp3 volumes. The API supports idempotency tokens to prevent duplicate changes, and you can track progress with the Amazon EC2 DescribeVolumesModifications operation. ModifyVolume is available in all AWS Regions where Amazon WorkSpaces Core Managed Instances is available. To get started, call ModifyVolume directly, or use it through your WorkSpaces Core partner solution once available. To learn more, see ModifyVolume in the WorkSpaces Instances API Reference and Limitations in the Amazon EBS ",
     "published": "2026-10-26T18:00:00Z",
     "hash": "da044e2139a8bdf14c85c8802e3509bc385e0e47055d8523d18453982c4c0156"
+  },
+  {
+    "title": "Amazon IVS Low-Latency Streaming now provides a failover slate",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ivs-low-latency-streaming-failover-slate",
+    "source": "AWS What's New",
+    "service": "Amazon IVS",
+    "category": "Service Update",
+    "summary": "Amazon Interactive Video Service (Amazon IVS) Low-Latency Streaming now provides a failover slate, an animated image that IVS displays to viewers when a broadcaster's stream is unexpectedly interrupted. Instead of a buffering wheel or frozen frame, viewers see the slate until the broadcaster reconnects. Live playback then resumes automatically, without viewers needing to refresh their player. The failover slate helps you retain your audience during momentary disruptions and is ideal for broadcasters streaming from mobile devices or from locations with unreliable connectivity. You can enable the failover slate on new or existing channels and monitor slate activity with Amazon EventBridge events and Amazon CloudWatch metrics. Amazon IVS is a managed live streaming solution designed to make low-latency or real-time video available to viewers around the world. Visit the AWS Region table for a full list of AWS Regions where the Amazon IVS console and APIs for control and creation of video s",
+    "published": "2026-10-26T15:40:00Z",
+    "hash": "12aba9f8d68d960614875a77857e3b3cbfafe3f50bed3baf9b61d9a5d84b6936"
   },
   {
     "title": "Amazon SageMaker Unified Studio adds light mode support for IDC-based domains",
@@ -958,6 +1028,16 @@
     "summary": "Bulletin ID: 2026-139-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/16/2026 10:15 AM PDT Description: FreeRTOS-Plus-TCP is an open-source, thread-safe TCP/IP stack for the FreeRTOS kernel, distributed by Amazon for use on embedded and IoT devices. AWS identified two issues with FreeRTOS-Plus-TCP, affecting multiple versions. CVE-2026-102551: improper verification of the source of a communication channel in the IPv6 Router Advertisement handler. The handler does not fully validate that a received Router Advertisement originates from an on-link source before acting on it. Under certain conditions, a remote third-party might influence an endpoint's IPv6 gateway, prefix, and address configuration, potentially enabling interception of the device's IPv6 traffic. This issue is reachable in the library's default configuration, where ipconfigUSE_IPv6 and ipconfigUSE_RA are both enabled. CVE-2026-102552: improper verification of the source of a communication ch",
     "published": "2026-10-16T17:34:49Z",
     "hash": "cadf0ce7ed4dd780a7ac8ada6137d64d810291d920dd554f0ea4752157ba9379"
+  },
+  {
+    "title": "Amazon Connect Customer now enables you to use flow modules in agentic CX designer",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentic-cx-designer-flow-modules/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Bug Fix",
+    "summary": "Amazon Connect Customer now enables you to use flow modules as data requests in agentic CX designer, so you can build and apply reusable logic across your customer experience flows. You can run a flow module at a fixed step in a conversation with a Data request node, or give it to a Generative journey as a tool to call when the conversation needs it. With this launch, you can use flow modules to update customer profiles and cases, create tasks, look up data tables, send an SMS confirmation, or check hours of operation and staffing before escalating to a human agent. You can also retrieve data that sits inside a private network, such as core banking, policy, or claims systems. For example, a flow module can invoke an AWS Lambda function in your VPC to return an account balance or claim status in the middle of an interaction. This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia ",
+    "published": "2026-10-16T16:19:00Z",
+    "hash": "f2848b47341d884b356413a8f771fa78d77f05523f0293de80a02966a0a73c11"
   },
   {
     "title": "Second-generation AWS Outposts racks now supported in the AWS Mexico (Central) Region",

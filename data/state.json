@@ -1,14 +1,14 @@
 {
-  "last_run": "2026-10-27T03:23:11Z",
-  "total_articles": 179,
-  "new_articles": 9,
+  "last_run": "2026-10-28T03:39:25Z",
+  "total_articles": 187,
+  "new_articles": 8,
   "sources": {
     "AWS What's New": {
       "url": "https://aws.amazon.com/new/",
       "status": "ok",
       "fetched": 100,
-      "normalized": 69,
-      "filtered_out": 31,
+      "normalized": 70,
+      "filtered_out": 30,
       "error": ""
     },
     "AWS News Blog": {
