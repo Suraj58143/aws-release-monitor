@@ -1,5 +1,115 @@
 [
   {
+    "title": "Amazon Bedrock AgentCore CLI version 1.0 is now available",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore-cli-version-1-0-available/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Upgrade",
+    "summary": "AWS announces the general availability of Amazon Bedrock AgentCore CLI version 1.0 (@aws/agentcore 1.0.0), rebuilt with faster startup, a consistent command structure, and support for more AgentCore resources. The CLI helps developers create, develop, deploy, and operate AI agents and supporting resources from the terminal. With version 1.0, developers can use the project workflow or work directly with harnesses, runtimes, memory, identity, gateways, and payments without first adding them to a project. Developers can invoke existing resources by ID or ARN, open an interactive shell, export a harness, and use searchable menus, resource pickers, and guided workflows. Consistent global flags provide region selection, JSON output, debugging, and version information across commands. Existing projects can be migrated to AgentCore version 1 using the agentcore migrate command. Install AgentCore CLI version 1.0 from npm or explore the source on GitHub . To learn more, visit the Amazon Bedrock ",
+    "published": "2026-10-28T20:00:00Z",
+    "hash": "955603e2a5dbe025c1cdd711d096417b81af80c61c2e76d2d65cc792697c5f9f"
+  },
+  {
+    "title": "AWS Lambda supports Seekable OCI (SOCI) lazy loading for Lambda Managed Instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-seekable-oci-soci/",
+    "source": "AWS What's New",
+    "service": "AWS Lambda",
+    "category": "Upgrade",
+    "summary": "AWS Lambda now supports Seekable OCI (SOCI) for lazy loading Event Functions packaged as Open Container Initiative (OCI) images running on Lambda Managed Instances . With SOCI support, Lambda fetches only the files needed at each stage of the execution environment startup rather than downloading the entire image upfront, reducing container startup times by up to 70%. Customers building compute-intensive applications such as data processing pipelines, high-throughput API backends, and batch computation workloads require substantial memory and CPU resources to process large datasets, serve low-latency responses at scale, and run complex computations efficiently. Container images for these workloads can reach several gigabytes, and downloading and preparing the full image can take several minutes when provisioning new execution environments. SOCI support on Lambda Managed Instances eliminates this bottleneck by streaming only the required files at each stage of the execution environment s",
+    "published": "2026-10-28T18:44:00Z",
+    "hash": "4fc16effe92ddcc25eec278273d3fe62232b62a055d1c631c9b4e3bf3ad5c4bc"
+  },
+  {
+    "title": "Introducing time series collections for the next generation of Amazon OpenSearch Serverless",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/time-series-collection-next-generation-opensearch-serverless/",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Release",
+    "summary": "Today, we're announcing support for time series collections on the next generation of Amazon OpenSearch Serverless. With time series collections, you can ingest, store, and analyze logs, metrics, traces, and event data without provisioning or managing clusters. They absorb ingest spikes automatically, keep recent data fast to query, and make months or years of history searchable at low cost, all in the same collection. Time series collections add a new, lower-cost warm storage tier in addition to the existing hot storage tier, so customers can retain their infrequently accessed data without paying hot storage prices. Customers can choose how long data stays hot before transitiong to warm storage. With up to 100 TB of hot storage per collection, time series collections can handle high-volume observability workloads such as application monitoring, security analytics, and IoT telemetry. Alerting and anomaly detection are also now available, so customers can get notified about issues and s",
+    "published": "2026-10-28T18:35:00Z",
+    "hash": "280b223d57defc6c5a604f033903929c51c8d52481cd7cd6000b6f7eb83d3d5d"
+  },
+  {
+    "title": "Amazon EKS Dashboard now provides fleet-wide visibility into certificate authority (CA) rotation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-dashboard-fleet-wide-visibility-certificate-authority-ca-rotation/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "General Announcement",
+    "summary": "Today, Amazon Elastic Kubernetes Service (Amazon EKS) announces certificate authority (CA) rotation visibility in the Amazon EKS Dashboard, giving you a consolidated view of CA rotation across your clusters. The Amazon EKS Dashboard already provides centralized visibility into your clusters across AWS Regions and accounts, and it now includes CA rotation, so you can see where action is needed without checking each cluster individually. Each Amazon EKS cluster has its own CA, and clusters created since 2018 have CAs with a 10-year validity period that are now approaching the point where rotation activities should begin. In the EKS Dashboard, you can now see your clusters and their CA rotation status, which clusters have CAs approaching expiration, and upcoming automated rotation events, so platform teams who operate many clusters can prioritize action across their fleet from one place. The Amazon EKS Dashboard aggregates data across your accounts and Regions through AWS Organizations, s",
+    "published": "2026-10-28T18:07:00Z",
+    "hash": "d66008ba31790282c269ad5764b2ebd2bf8ae932b0d01998cdeef4b8ee31d95e"
+  },
+  {
+    "title": "AWS Lambda durable functions now exports live telemetry for execution insights",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/lambda-durable-telemetry/",
+    "source": "AWS What's New",
+    "service": "AWS Lambda",
+    "category": "General Announcement",
+    "summary": "AWS Lambda announces the Durable Execution Telemetry Exporter plugin for Lambda durable functions. This new observability plugin captures the step-by-step history of your durable executions and sends them to one or more destinations of your choice. You can use the exported data to gather operational and business insights and keep history beyond the standard retention period. We are also releasing a companion Model Context Protocol (MCP) server that lets AI agents such as Kiro query your exported telemetry data using natural language. Lambda durable functions helps you build resilient multi-step applications and AI workflows that run for up to one year. The new Telemetry Exporter sends data such as execution status, operation timing, step input and output, and errors to 13 built-in destinations. Destinations include Amazon CloudWatch Logs, Amazon S3 for Amazon Athena, Amazon DynamoDB, Amazon Aurora, and Amazon OpenSearch Service. You can redact sensitive fields before export and set a s",
+    "published": "2026-10-28T18:00:00Z",
+    "hash": "52340cd52108cab9cf03911dfe8e117be3cd33ce204eaa3f3d34dffc009d36a8"
+  },
+  {
+    "title": "Amazon ECS Managed Instances adds cross-instance and Spot consolidation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ecs-managed-instances-consolidation/",
+    "source": "AWS What's New",
+    "service": "Amazon ECS",
+    "category": "Service Update",
+    "summary": "Today, Amazon Elastic Container Service (Amazon ECS) Managed Instances introduces two infrastructure optimization updates: cross-instance and Spot consolidation. Cross-instance consolidation evaluates tasks running across multiple underutilized instances together, packing them onto fewer instances to raise utilization and lower costs. Spot consolidation extends this capability to Spot capacity, consolidating underutilized Spot Instances after first verifying replacement capacity is available. Amazon ECS Managed Instances provisions, configures, and operates right-sized Amazon EC2 instances for your workloads, balancing availability and cost. Its infrastructure optimization continuously monitors your fleet, reclaiming idle capacity and consolidating underutilized instances with graceful start-before-stop task replacement. Until now, optimization evaluated each instance in isolation for replacement, which worked well when a capacity provider was configured with diverse instance types. Ho",
+    "published": "2026-10-28T18:00:00Z",
+    "hash": "87b532c1e10815ff84d0d0aec3e0fad7454ad9178e22260d57629cac722f30e6"
+  },
+  {
+    "title": "Amazon EKS Auto Mode now supports Kubernetes Gateway API",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-auto-mode-kubernetes-gateway-api/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "Upgrade",
+    "summary": "Amazon EKS Auto Mode now supports the Kubernetes Gateway API, giving customers a standard, portable way to define how traffic reaches their applications. Customers can configure application load balancing using Gateway and HTTPRoute resources, and EKS Auto Mode provisions and manages the underlying AWS infrastructure automatically. With this launch, EKS Auto Mode customers can adopt the next-generation Kubernetes traffic management standard without installing or configuring a separate controller. Capabilities include HTTP and gRPC routing, cross-namespace traffic routing for multi-team environments, weighted traffic splitting, header-based routing, and automatic TLS certificate discovery through AWS Certificate Manager. Existing workloads using Ingress resources continue to work alongside Gateway API resources. To get started, see the Amazon EKS documentation . Gateway API support is included as part of EKS Auto Mode and is available in all AWS Regions where EKS Auto Mode is supported.",
+    "published": "2026-10-28T17:33:00Z",
+    "hash": "b1d2d39173ffb41595ccb730145b25a877adb93a336f00345173b6dd4a7455e6"
+  },
+  {
+    "title": "CVE-2026-118029 - Unverified ownership of the default Athena query result location in AWS SDK for pandas",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-153-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS SDK",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-153-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/28/2026 08:30 AM PDT Description: AWS SDK for pandas (awswrangler) is an open-source Python library that integrates pandas with AWS data services such as Amazon Athena, Amazon S3, and AWS Glue. We identified CVE-2026-118029 in the Athena module, where unverified ownership of the default query result location could allow a remote user to read Athena query results and tamper with result sets returned to the caller via a pre-created S3 bucket. Impacted versions: awswrangler < 3.16.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+    "published": "2026-10-28T15:40:38Z",
+    "hash": "6e76872dee8eaf62198867cf548156e531e3a8497f33086d8bd724ef3288b1fd"
+  },
+  {
+    "title": "AWS IAM Identity Center's Identity Store now supports change notifications through Amazon EventBridge",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-identity-store-change-notifications/",
+    "source": "AWS What's New",
+    "service": "Amazon EventBridge",
+    "category": "Upgrade",
+    "summary": "AWS IAM Identity Center's Identity Store now delivers real-time events to Amazon EventBridge when users, groups, or group memberships or the identity store itself is created, updated, or deleted. AWS IAM Identity Center Identity Store is a central repository that allows you to manage identities and access across AWS accounts and applications, serving as the identity source for AWS IAM Identity Center. This new capability helps you automatically respond to identity lifecycle events and support your security and compliance processes by detecting changes as they happen. With Identity Store change notifications, you can build automated workflows that respond to identity changes in your organization. For example, security teams can create EventBridge rules that trigger AWS Lambda functions to audit user provisioning activity, send alerts to security information and event management (SIEM) systems, or update access in downstream applications when users or groups change. Organizations that ma",
+    "published": "2026-10-28T08:00:00Z",
+    "hash": "eff6e8abe3c3b14c78906294e15526d6ef40726f500eb459ca84da1b876cf5df"
+  },
+  {
+    "title": "AWS Backup adds restore testing support for Amazon Redshift",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-adds-redshift-restore-testing/",
+    "source": "AWS What's New",
+    "service": "Amazon Redshift",
+    "category": "Upgrade",
+    "summary": "AWS Backup restore testing now supports Amazon Redshift. Restore testing helps you automate and periodically run restore tests of your backups, so you can confirm that your Amazon Redshift backups restore successfully and measure how long the restores take. You can now include Amazon Redshift in your restore testing plans alongside other supported AWS resources across storage, compute, and database services. Restore testing plans automatically select recovery points, run restores on a schedule, and measure restore job completion time against your recovery time objectives (RTO). This helps you evaluate recovery readiness and meet regulatory and compliance requirements for disaster recovery and business continuity. To get started, create a restore testing plan and assign your Amazon Redshift resources by Amazon Resource Name (ARN) or tag. Choose whether each test restores the latest or a random eligible recovery point. Optionally, use restore testing validation to confirm the restored re",
+    "published": "2026-10-28T08:00:00Z",
+    "hash": "7f4ab293a532c71a7043ef88268539f0bc7855d41a309a2bcd169ff6020f7e78"
+  },
+  {
+    "title": "Announcing the AWS Marketplace and Amazon Business unified storefront",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/marketplace-business-storefront/",
+    "source": "AWS What's New",
+    "service": "AWS Marketplace",
+    "category": "Release",
+    "summary": "Today, AWS Marketplace and Amazon Business announced the unified storefront. Organizations can now give their teams one curated catalog that puts software, data, and AI tools from AWS Marketplace alongside physical goods and supplies from Amazon Business. Many enterprises already buy from both, but they manage two catalogs with duplicated approval rules and separate reporting. The unified storefront can now give procurement teams one front door for both. Built on AWS Marketplace Storefront, the unified storefront lets administrators connect their organization's Amazon Business account and import Amazon Business products into their branded storefront. Administrators set governance rules once, and they apply across both catalogs. Buyers can browse AWS Marketplace listings and Amazon Business products in one place. Purchases of AWS Marketplace listings complete directly in the storefront and appear on the customer's AWS invoice. When a buyer selects an Amazon Business product, single sign",
+    "published": "2026-10-28T08:00:00Z",
+    "hash": "58bed869d7a6be346a3c97f696b875f67c81cbfafbacec8dbdee7b3999fef368"
+  },
+  {
     "title": "SageMaker MLflow Apps now support MLflow 3.16",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/mflow-version-3-16/",
     "source": "AWS What's New",
@@ -8,6 +118,16 @@
     "summary": "Amazon SageMaker AI MLflow Apps now support MLflow 3.16, bringing a redesigned tracing experience and faster experiment tracking to your generative AI and machine learning workflows. MLflow 3.16 improves debugging and analysis of generative AI applications and agents. The redesigned trace explorer is now the default, with adjustable row height, reorderable columns, custom columns from any trace tag or metadata field. This release also accelerates metric charts for experiments with large metric histories. New MLflow Apps are created on MLflow 3.16 by default. Existing MLflow Apps will be upgraded to MLflow 3.16 during an upcoming maintenance window, with no action required. MLflow 3.16 is available in all AWS Regions where MLflow Apps are available. To learn more, visit the SageMaker AI MLflow developer guide .",
     "published": "2026-10-27T20:40:00Z",
     "hash": "579f6efa9a47b8c80948f1634005e809378187ca1874a974f49cf8b3844da1bd"
+  },
+  {
+    "title": "Amazon Connect Customer supports inline attachment previews",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-attachment-previews/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Release",
+    "summary": "Amazon Connect Customer lets agents preview attachments directly in the agent workspace, reducing contact handling time and limiting the need to download sensitive customer information. Agents can preview PDFs, images, and text files across email, chat, and cases, navigate between attachments, and view multi-page documents without leaving the conversation. Amazon Connect Customer attachment previews is available in the US East (N. Virginia), US West (Oregon), Africa (Cape Town), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), and Europe (London) regions . To learn more and get started, please refer to the help documentation or visit the Amazon Connect Customer website.",
+    "published": "2026-10-27T19:15:00Z",
+    "hash": "fff6569abbf76e7c41a9be5c13e817cf246de8d777250ebc3282684a686a5f72"
   },
   {
     "title": "Amazon Aurora serverless now supports up to 384 ACUs",
@@ -20,12 +140,22 @@
     "hash": "86242e0ff6548f89ed30f149bdcb87e3a5aa9d4f27e2984daaaa82f25068cada"
   },
   {
+    "title": "Amazon ElastiCache expands data tiering to R8gd and R7gd nodes in Europe (Spain) and Asia Pacific (Hyderabad)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/elasticache-data-tiering-spain/",
+    "source": "AWS What's New",
+    "service": "Amazon ElastiCache",
+    "category": "Release",
+    "summary": "Amazon ElastiCache for Valkey data tiering is now available on Graviton4-based R8gd nodes in the AWS Europe (Spain) Region, and on Graviton3-based R7gd nodes in the Europe (Spain) and Asia Pacific (Hyderabad) Regions. Data tiering is a lower-cost way to scale your Valkey clusters to hundreds of terabytes of capacity. It uses solid state drives (SSDs) on each node alongside memory. When memory fills up, ElastiCache automatically moves the least recently used items to SSD. When your application reads an item stored on SSD, ElastiCache moves it back into memory before serving the request. Data tiering is a good fit for workloads that regularly access up to 20% of their dataset, and for applications that can tolerate some extra latency when they read data from SSD. R8gd nodes are powered by AWS Graviton4 processors. They deliver up to 47% higher throughput, up to 43% lower P99 latency, and up to 31% better price-performance than Graviton3-based nodes of the same size. R7gd nodes are powere",
+    "published": "2026-10-27T15:25:00Z",
+    "hash": "ef6a317dde6dc0cc752d71b0311d3e1ccfd60e4e9837f43d0f4da792575fe0e8"
+  },
+  {
     "title": "Amazon ElastiCache for Valkey now supports changing durability on existing clusters",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/elasticache-changing-durability/",
     "source": "AWS What's New",
     "service": "Amazon ElastiCache",
     "category": "Upgrade",
-    "summary": "Amazon ElastiCache for Valkey now lets you enable or disable durability on your existing node-based clusters without creating a new cluster. Previously, you couldn't change the durability configuration of an existing cluster in place. This made it harder to move from caching to persistent data store use cases, or to adapt as your application requirements change. Now you can change durability at any point in your application's lifecycle. You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before responding to the client, designed for zero data loss at single-digit millisecond write latency. Asynchronous writes persist data after responding to the client, maintaining microsecond write latency at no additional cost. However, up to 10 seconds of uncommitted data could be lost in the rare event of a failure. Both options maintain microsecond read latency. You can now use ElastiCache for a broader set of ",
+    "summary": "Amazon ElastiCache for Valkey now lets you enable or disable durability on your existing node-based clusters. Previously, you couldn't change the durability configuration of an existing cluster in place. This made it harder to move from caching to persistent data store use cases, or to adapt as your application requirements change. Now you can change durability at any point in your application's lifecycle. You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before responding to the client, designed for zero data loss at single-digit millisecond write latency. Asynchronous writes persist data after responding to the client, maintaining microsecond write latency at no additional cost. However, up to 10 seconds of uncommitted data could be lost in the rare event of a failure. Both options maintain microsecond read latency. You can now use ElastiCache for a broader set of use cases beyond caching where ",
     "published": "2026-10-27T15:21:00Z",
     "hash": "933d6529a36269f6292923575433ad48182c4bd67fe09c4d8d67a356359f6e36"
   },
