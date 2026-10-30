@@ -1,5 +1,85 @@
 [
   {
+    "title": "AWS Marketplace now enables partners to list once and sell through multiple subsidiary accounts",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-marketplace-subsidiary-account-authorization",
+    "source": "AWS What's New",
+    "service": "AWS Marketplace",
+    "category": "General Announcement",
+    "summary": "Today, AWS announces that AWS partners who operate multiple legal entities can publish a product listing once in their primary account and enable their local subsidiaries to sell it through direct private offers — eliminating the need to recreate and maintain duplicate listings across every account. From the primary account, which retains ownership of the listing, partners authorize which products each subsidiary can sell and which buyer countries it can extend private offers to. Each subsidiary transacts under its own local tax identity, selects the local currencies it supports, and sets its own disbursement preferences and bank account. The AWS Marketplace insights report in the primary account provides a consolidated view of offers, agreements, and renewals across all connected subsidiary accounts. Partners can revoke a subsidiary authorization or a subsidiary connection at any time, which immediately stops that subsidiary from creating new offers — agreements and offers already ext",
+    "published": "2026-10-29T20:12:00Z",
+    "hash": "c0f15ba0a25973652775d818ad1cb9f847147edc4abdfe714c578d420ff4fd07"
+  },
+  {
+    "title": "Amazon Aurora now supports post-quantum TLS key exchange",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-postgresql-post-quantum-tls-key-exchange/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora",
+    "category": "Upgrade",
+    "summary": "Starting today, Amazon Aurora PostgreSQL-Compatible Edition introduces support for post-quantum TLS (PQ-TLS) key exchange, providing you with post-quantum cryptography options for encrypting your data in transit. Amazon Aurora PostgreSQL versions 18 and higher support modification of the ssl_groups parameter. You can select cryptographic groups from the Amazon Aurora PostgreSQL allow list to align with your organization's security standards. Amazon Aurora is designed for high performance and availability at global scale with full PostgreSQL compatibility. It provides scale-to-zero serverless compute, Aurora Global Database for multi-Region resilience, Aurora I/O-Optimized for improved price performance on I/O-intensive workloads, and built-in security and continuous backups. To get started, take a look at our getting started page .",
+    "published": "2026-10-29T16:00:00Z",
+    "hash": "15aa4d65f3a9d3b7b81892c1cded42a0f6fc25971105212f1f425f6f2d57a257"
+  },
+  {
+    "title": "Amazon MSK Connect now supports updating connector plugins and worker configurations",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-connect-update-plugin-worker-configurations",
+    "source": "AWS What's New",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "category": "Upgrade",
+    "summary": "Amazon MSK Connect (Amazon Managed Streaming for Apache Kafka Connect) now lets you update the custom plugin and worker configuration of an existing connector. This is useful when you need to update the custom plugin to run a new version of your connector code, for example one with updated dependencies. You can also update the worker configuration to change worker-level settings, such as switching key and value converters or tuning producer and consumer properties for throughput and latency. Amazon MSK Connect is a fully managed service that allows you to deploy, monitor, and scale Apache Kafka Connect connectors with Amazon MSK (Managed Streaming for Apache Kafka). Previously, updating a connector's plugin or worker configuration meant deleting the connector and recreating it - a disruptive operation that added risk and operational overhead. With this launch, you can update a connector's plugin and worker configuration in place. The connector keeps its committed offsets, so its tasks ",
+    "published": "2026-10-29T15:00:00Z",
+    "hash": "5e06bd99655081274a7e3caba1c6b94a70c5dde7bb6a38c814a0a69e3362e097"
+  },
+  {
+    "title": "AWS Step Functions workflows now available as AI agent tools",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/",
+    "source": "AWS What's New",
+    "service": "AWS Step Functions",
+    "category": "Release",
+    "summary": "You can now use your AWS Step Functions workflows as tools for AI agents through Amazon Bedrock AgentCore Gateway. Your agent decides when to run a workflow and what input to pass, and Step Functions runs each step exactly as you defined it. Agents can use your existing Standard and Express workflows as tools. AWS Step Functions is a visual workflow service capable of orchestrating over 220 AWS services to help customers build distributed applications at scale. AgentCore Gateway connects AI agents to tools through the Model Context Protocol (MCP). With this launch, your agents can run multi-step business processes in the same order every time. For example, a customer support agent can start your refund workflow, and Step Functions runs the eligibility check, manager approval, and credit steps, so every refund follows your policy. Agents can also look up workflow runs, so an operations agent can tell your on-call engineer which order runs failed overnight and where, letting them go stra",
+    "published": "2026-10-29T08:00:00Z",
+    "hash": "535269148f5a3418a68e8feeb53418b2c1131adf853e9c963427a991be325e1f"
+  },
+  {
+    "title": "AWS Backup now supports cross-account management and cross-account backup in the AWS European Sovereign Cloud",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-cross-account-esc/",
+    "source": "AWS What's New",
+    "service": "AWS Backup",
+    "category": "Upgrade",
+    "summary": "AWS Backup now supports cross-account management, cross-account backup, and delegated administrators in the AWS European Sovereign Cloud (Germany) Region. These capabilities help you centrally manage, monitor, and copy backups across the accounts in your organization using AWS Organizations. With cross-account management, you can deploy organization-wide backup policies from your AWS Organizations management account or a delegated administrator account. You can also monitor backup, copy, and restore jobs across all of your organization accounts from one place. With cross-account backup, you can copy recovery points to a backup vault in another account in your organization, which adds protection against accidental or malicious deletion in the source account. You can also register a member account as a delegated administrator, so your teams can manage backups across your organization without needing access to your management account. There is no additional charge to use these capabilitie",
+    "published": "2026-10-29T08:00:00Z",
+    "hash": "65357e6294d8762675bcd5c9b2b8d12cae6e4e9d99375207e4657d14732902d6"
+  },
+  {
+    "title": "Amazon SageMaker AI now supports SOCI-indexed images to start training jobs in seconds",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-ai-soci-images-training/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Today, Amazon SageMaker AI announces support for Seekable OCI (SOCI)-indexed container images for training and processing jobs, so your jobs start running your code sooner. SOCI-indexed images start Amazon SageMaker AI training containers in seconds, cutting GPU idle time during image pulls by up to 90%, with no impact on training performance. Before a training or processing job can run, SageMaker AI downloads its container image to the instance. For deep learning images, which routinely exceed 10 GB, that download adds minutes to the start of every job, and you pay for that time. Now, when your image includes a SOCI index, SageMaker AI lazy-loads the image, fetching only the files needed to start the container and streaming the rest in the background as your code runs. To use this feature, reference a SOCI-indexed image from a private Amazon ECR repository in your training or processing job. You can use a pre-indexed AWS Deep Learning Container by changing the image tag to its -soci v",
+    "published": "2026-10-29T08:00:00Z",
+    "hash": "4ace8a696ac61de7f3bcbb08ce9cb93e4af56eb6dd9a64802644c42dce097128"
+  },
+  {
+    "title": "Amazon Managed Grafana now supports in-place upgrade to Grafana version 13.2",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/managed-grafana-upgrade-version-13-2/",
+    "source": "AWS What's New",
+    "service": "Amazon Managed Grafana",
+    "category": "Upgrade",
+    "summary": "Amazon Managed Grafana now supports in-place upgrade from Grafana version 12.4 to 13.2. Upgrading to version 13.2 brings features launched as part of open-source Grafana versions 13.0 to 13.2. These include Git Sync for dashboards, dynamic dashboards, and PromQL query support in the Amazon CloudWatch data source plugin. With Git Sync, you can treat dashboards as code by linking a workspace to a Git repository. Dashboard modifications can be tracked, reviewed, and reverted through version control. Dynamic dashboards bring a more adaptable approach to layout and paneling. You can construct responsive views driven by conditions that respond to the data and variables in scope. With Amazon CloudWatch data source plugin support for Prometheus Query Language, you can use PromQL to query metrics that CloudWatch takes in via its OpenTelemetry (OTLP) endpoint, in addition to the existing Metric Search and Metrics Insights query types. In-place upgrade to Grafana 13.2 is supported in all AWS regi",
+    "published": "2026-10-29T08:00:00Z",
+    "hash": "3bf807dcb0ebd0d2758867e288910f8d06a287258802d4d4d500fd5a323204d5"
+  },
+  {
+    "title": "Amazon DynamoDB Accelerator (DAX) is now available in additional Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/dax-additional-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon DynamoDB",
+    "category": "Release",
+    "summary": "Amazon DynamoDB Accelerator (DAX) is now available in two additional AWS Regions: Canada (Central) and Africa (Cape Town). DAX is a fully managed, highly available, in-memory cache for Amazon DynamoDB that delivers up to ten times performance improvement, from single-digit milliseconds to microseconds, even at millions of requests per second. With DAX, you can accelerate read-intensive and bursty workloads such as real-time bidding, gaming leaderboards, and retail product catalogs, while offloading read traffic from your DynamoDB tables. DAX is API-compatible with DynamoDB, so you can add microsecond-latency caching to your applications with minimal code changes. Customers can now keep cached data within the Region and meet low-latency requirements while benefiting from a fully managed service, including automated patching and failover. To learn more, see the Amazon DynamoDB Accelerator page . For the full list of Regions where DAX is available, see the AWS Regional Services page .",
+    "published": "2026-10-29T08:00:00Z",
+    "hash": "731d83eb0359a916ee778d390c9fae6d0d5740fd4ff168a462e0846154ca8a65"
+  },
+  {
     "title": "Amazon Bedrock AgentCore CLI version 1.0 is now available",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore-cli-version-1-0-available/",
     "source": "AWS What's New",
@@ -8,6 +88,16 @@
     "summary": "AWS announces the general availability of Amazon Bedrock AgentCore CLI version 1.0 (@aws/agentcore 1.0.0), rebuilt with faster startup, a consistent command structure, and support for more AgentCore resources. The CLI helps developers create, develop, deploy, and operate AI agents and supporting resources from the terminal. With version 1.0, developers can use the project workflow or work directly with harnesses, runtimes, memory, identity, gateways, and payments without first adding them to a project. Developers can invoke existing resources by ID or ARN, open an interactive shell, export a harness, and use searchable menus, resource pickers, and guided workflows. Consistent global flags provide region selection, JSON output, debugging, and version information across commands. Existing projects can be migrated to AgentCore version 1 using the agentcore migrate command. Install AgentCore CLI version 1.0 from npm or explore the source on GitHub . To learn more, visit the Amazon Bedrock ",
     "published": "2026-10-28T20:00:00Z",
     "hash": "955603e2a5dbe025c1cdd711d096417b81af80c61c2e76d2d65cc792697c5f9f"
+  },
+  {
+    "title": "Public endpoints for Amazon ElastiCache Serverless now in AWS GovCloud (US)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-elasticache-serverless-public-endpoints-govcloud/",
+    "source": "AWS What's New",
+    "service": "Amazon ElastiCache",
+    "category": "Upgrade",
+    "summary": "Amazon ElastiCache Serverless for Valkey now supports public endpoints in the AWS GovCloud (US) Regions. A public endpoint lets you connect to your cache from a serverless function or any application running outside a VPC, without setting up a VPN, a bastion host, or an SSH tunnel. With a public endpoint, ElastiCache Serverless gives you a fully managed cache with no VPC to configure and no infrastructure to provision, and you can create one in under a minute. Every connection uses IAM authentication over TLS 1.3, so there's no password to store or rotate. Connect using Valkey GLIDE 2.2 or later, which has built-in IAM support, or another Valkey client paired with the Developer Toolkit for ElastiCache, an open-source library that generates and refreshes IAM authentication tokens for you. With this expansion, public endpoints for ElastiCache Serverless are now available in all commercial AWS Regions, the AWS GovCloud (US) Regions, and the China Regions. There is no additional charge for",
+    "published": "2026-10-28T19:00:00Z",
+    "hash": "5b65465d0edf37082f6d228963cd4a033c2f9f3a7574ee47c3b10350e6acc902"
   },
   {
     "title": "AWS Lambda supports Seekable OCI (SOCI) lazy loading for Lambda Managed Instances",
