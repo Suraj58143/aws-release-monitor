@@ -1,5 +1,105 @@
 [
   {
+    "title": "Amazon Connect Customer automatically saves in-progress emails as drafts",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-email-draft-save/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "General Announcement",
+    "summary": "Amazon Connect Customer automatically saves in-progress emails as drafts, helping agents resume work without losing progress when connectivity is interrupted or when their browser is accidentally closed or refreshed. When agents return, their drafts are restored with the message body, recipients, subject line, and attachment references intact. Customers can also access saved draft data in their Amazon S3 buckets to build integrations with other applications.",
+    "published": "2026-10-30T19:30:00Z",
+    "hash": "beb63ad48c3b87c5c3102198217c0cc0b8421ebda7f470f0d2105411d7240228"
+  },
+  {
+    "title": "CVE-2026-119117 - Insertion of sensitive information into a log file and process argument list in the Amazon Kinesis Producer Library for Java",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-159-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Kinesis",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-159-AWS Publication Date: 10/30/2026 11:00 AM PDT Description: We published CVE-2026-119117. Insertion of sensitive information into a log file in Amazon Kinesis Producer Library for Java before 1.0.8, when the library's logger is configured at DEBUG log level, might allow local users to obtain the AWS credentials that the library resolved for the application. Separately, affected versions of the library pass these credentials to the native child process as command-line arguments, where a local user can read them from the process argument list. Impacted versions: - com.amazonaws:amazon-kinesis-producer <= 0.15.12 - oftware.amazon.kinesis:amazon-kinesis-producer < 1.0.8 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+    "published": "2026-10-30T18:18:40Z",
+    "hash": "d752a20650d7d78985db481a671dcf056ee4f452a00628cd1440c1e316c3668f"
+  },
+  {
+    "title": "Amazon CloudFront now provides viewer ISP and post-quantum TLS details",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-viewer-isp-post-quantum-visbility/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudFront",
+    "category": "General Announcement",
+    "summary": "Amazon CloudFront can now forward two new optional headers to your origin. The CloudFront-Viewer-ISP header contains the name of the viewer's internet service provider (ISP), so you can see which network a request came from. The CloudFront-Viewer-TLS-Details header describes the cryptography used on each viewer's TLS connection, so you can see whether a connection used post-quantum cryptography (PQC). With CloudFront-Viewer-ISP, you can break down traffic and performance by network. You can also isolate unusual traffic from a single provider. CloudFront-Viewer-TLS-Details includes the key exchange, signature scheme, and signature public key type for each connection. You can use it to measure the share of viewers that actually connect with PQC and identify clients that do not yet do so. To forward either header to your origin, add it to an origin request policy and attach the policy to your distribution. To get started, see adding CloudFront headers and controlling origin requests with ",
+    "published": "2026-10-30T18:15:00Z",
+    "hash": "a4d779e606ffca41599d867a9e0733a19ae681c54d8d494f1197df6380333de4"
+  },
+  {
+    "title": "CVE-2026-119086 - Missing type validation in xQueueSelectFromSet in FreeRTOS-Kernel",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-158-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS FreeRTOS",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-158-AWS Publication Date: 10/30/2026 10:30 AM PDT Description: FreeRTOS-Kernel is a real-time operating system kernel for microcontrollers and small microprocessors, distributed by Amazon. We identified CVE-2026-119086, the queue-set selection path does not fully validate that the referenced kernel object is a queue set before operating on it. On MPU-enabled builds with queue sets enabled, an unprivileged task can cause the kernel to write beyond the intended destination while executing in a privileged context, which affects the integrity of privileged execution. Applications that are built without queue sets are not affected. Impacted versions: >=V7.4.0 AND <=V11.3.2 (MPU-enabled ports with configUSE_QUEUE_SETS=1) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+    "published": "2026-10-30T17:39:33Z",
+    "hash": "45d69dbe6ede353346ef4fb926dc5410aadbb3e4fdda15150af2d3ca5d52d537"
+  },
+  {
+    "title": "Amazon MSK now supports TLS 1.3 for data in transit",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-tls/",
+    "source": "AWS What's New",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "category": "Upgrade",
+    "summary": "Amazon MSK now supports version 1.3 of Transport Layer Security (TLS) protocol for MSK Provisioned clusters through encryption policies. TLS 1.3 delivers faster, more secure encryption for streaming data and is increasingly required by compliance frameworks and enterprise security standards. It is also one of the prerequisites for post-quantum cryptography for protecting data against attacks that collect encrypted traffic now with the intent to decrypt it later. Customers can opt in to TLS 1.3 by selecting a named security policy in their MSK cluster configuration, with no change to existing clusters until a policy is applied. A named security policy defines which TLS version and cipher suites a cluster can accept. With this launch, Amazon MSK provides a set of policies customers can select and any connection that does not meet the selected policy requirements is rejected. This allows customers to stay in control of their security and compliance posture. Policies that support both TLS ",
+    "published": "2026-10-30T17:00:00Z",
+    "hash": "dea9e8feee4fc75c14aad93c6e5c20138196fcfe56e47576493276dc109b9f3f"
+  },
+  {
+    "title": "AWS WAF announces automatic SDK integration for Amazon CloudFront distributions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-waf-automatic-sdk-integration-amazon-cloudfront/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudFront",
+    "category": "General Announcement",
+    "summary": "AWS WAF announces automatic SDK integration for Amazon CloudFront distributions. When you enable it, CloudFront adds the script tag for the AWS WAF JavaScript SDK to the HTML it serves, with no change to your application code, build process, or deployment. The SDK supplies the client-side signals used by three AWS WAF managed rule groups: Bot Control at the targeted inspection level, Fraud Control account takeover prevention (ATP), and Fraud Control account creation fraud prevention (ACFP). Previously, supplying those signals required you to add a script tag to every page of every application you wanted to protect, and to maintain that tag across releases. For teams running many applications, or serving pages produced by systems they do not control, this created recurring work and a common source of misconfiguration, where a protection was enabled in AWS WAF but the client-side integration was missing. Enabling automatic SDK integration on the web ACL protecting your CloudFront distrib",
+    "published": "2026-10-30T15:57:00Z",
+    "hash": "005ac8a61bc199d5d6aa8353d1a4e7ac42657e1dc21af530314e5502e3f0456c"
+  },
+  {
+    "title": "Amazon Connect Customer now supports versioning and aliasing for flows",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-versioning-aliasing/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Upgrade",
+    "summary": "Amazon Connect Customer now supports versioning and aliasing for flows and flow modules, simplifying how you build, test, and deploy customer experience flows while minimizing impact to live end-customer traffic. With this launch, you can now create immutable versions of a flow and attach one or more friendly names (i.e., aliases) to a version, then point resources such as queues, quick connects, and phone numbers at an alias instead of a specific version. Rolling out a new version takes a single update, with no need to republish or relink each resource. For example, you can publish an updated customer experience flow as a new version and validate it in a test environment while live traffic stays on the current version, then repoint the production alias to move every phone number to the new version in a single update. This feature is available in all AWS Regions where Amazon Connect Customer is offered. To learn more, see Flow versioning and aliasing in the Amazon Connect Customer Admi",
+    "published": "2026-10-30T15:00:00Z",
+    "hash": "8f46c7fb7c5ba6d9be89e64c87e9edd0a805e1838a9b47bd4d84bca5c47592f0"
+  },
+  {
+    "title": "Managed Prometheus collectors now support Amazon MSK consumer-group metrics",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/prometheus-collectors-msk-metrics/",
+    "source": "AWS What's New",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "category": "General Announcement",
+    "summary": "Managed Prometheus collectors now support Amazon MSK consumer-group metrics for Amazon Managed Service for Prometheus and Amazon CloudWatch . The integration collects Kafka exporter metrics and consumer-group lag metrics from your Amazon MSK clusters. Managed Prometheus collectors discover and collect Prometheus metrics from your workloads, so you don't run and operate collection agents yourself. You ingest the collected metrics into an Amazon Managed Service for Prometheus workspace or into Amazon CloudWatch, where you query and analyze them. You monitor Kafka stream health and consumer performance with consumer-group metrics. This helps you detect processing bottlenecks in your streaming applications. This feature is available in all AWS Regions where managed Prometheus collectors are generally available. To learn more, see the documentation for Amazon Managed Service for Prometheus and Amazon CloudWatch .",
+    "published": "2026-10-30T08:00:00Z",
+    "hash": "d701bb79e766cbc7354af71862f4d7eaf28623d44c52a34924854d6d836c1b9c"
+  },
+  {
+    "title": "AWS Glue Data Catalog now supports Apache Iceberg table optimization in the US West (N. California) Region",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/glue-data-catalog-optimizers-us-west-1/",
+    "source": "AWS What's New",
+    "service": "AWS Glue",
+    "category": "Upgrade",
+    "summary": "AWS Glue Data Catalog now supports automatic table optimization for Apache Iceberg tables in the US West (N. California) Region. Apache Iceberg is an open table format that delivers fast query performance over large tables in data lakes. With this launch, you can enable table optimization for individual tables or for all tables in your Data Catalog. Apache Iceberg tables accumulate small files, snapshots, and unreferenced files with every write, which slows queries and increases storage costs over time. Table optimization continuously monitors your tables to compact small files in the background, remove snapshots that are past your retention settings, and delete unreferenced files that are no longer needed. You can monitor each run from the AWS Glue console, Amazon CloudWatch metrics, and logs. You can enable table optimization using the AWS Glue console, AWS CLI, or AWS SDKs. For the full list of Regions where table optimization is available, see Supported Regions for table optimizers",
+    "published": "2026-10-30T08:00:00Z",
+    "hash": "836ae488c3de495c03d82f74b0f0de0662de62609b1b86ba077be3cc25195db4"
+  },
+  {
+    "title": "Amazon SageMaker AI inference now supports GPU partitioning for real-time endpoints",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker AI inference now supports GPU partitioning, enabling you to run several models on a single GPU instead of dedicating a whole accelerator to each one. Using NVIDIA Multi-Instance GPU (MIG) technology, SageMaker AI divides a GPU into as many as seven isolated partitions, each with its own memory and compute. Customers serving small and mid-size models, such as fine-tuned variants, embedding models, rerankers, and classifiers, previously had to give every model an entire accelerator, so an instance hosted no more models than it had GPUs and paid for GPU capacity those models could never use. With GPU partitioning, you choose how to divide the GPUs behind your endpoint and place each model on a partition sized to fit it. Several models then share one accelerator with hardware-enforced isolation, so a busy model cannot take memory or throughput from the models beside it. Right-sizing an accelerator to a workload also opens up newer instance generations that would otherwise ",
+    "published": "2026-10-30T08:00:00Z",
+    "hash": "5a36fbc50431e78af28e6fbbdc1e9848df7c93b06907db8125bbcdeeb7fe3bc7"
+  },
+  {
     "title": "AWS Marketplace now enables partners to list once and sell through multiple subsidiary accounts",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-marketplace-subsidiary-account-authorization",
     "source": "AWS What's New",
@@ -50,6 +150,16 @@
     "hash": "65357e6294d8762675bcd5c9b2b8d12cae6e4e9d99375207e4657d14732902d6"
   },
   {
+    "title": "Amazon SageMaker Unified Studio now supports custom designations",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-custom-designations/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker Unified Studio now supports custom designations, named permission sets that control what actions individual project members can perform. Previously, project members could only be assigned Owner or Contributor designations, which provided nearly identical permissions. With custom designations, administrators define permission sets that align with their organization's personas and assign them to project members. Designations govern all actions within a project, providing administrators with a single permission model for separation of duties. Administrators create designations in the SageMaker Unified Studio administration portal by selecting permissions grouped into categories such as Catalog, Subscriptions, Connections, Notebooks, and Data Agent. For example, a \"Data Steward\" designation might include permissions to approve subscription requests and publish assets, while an \"Analyst\" designation is limited to querying data and running notebooks. Each designation is defi",
+    "published": "2026-10-29T08:00:00Z",
+    "hash": "4ca8a518472496aa5e98c66d43f62010de6fff3f016c40ce8935d5aa488640c9"
+  },
+  {
     "title": "Amazon SageMaker AI now supports SOCI-indexed images to start training jobs in seconds",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-ai-soci-images-training/",
     "source": "AWS What's New",
@@ -58,6 +168,16 @@
     "summary": "Today, Amazon SageMaker AI announces support for Seekable OCI (SOCI)-indexed container images for training and processing jobs, so your jobs start running your code sooner. SOCI-indexed images start Amazon SageMaker AI training containers in seconds, cutting GPU idle time during image pulls by up to 90%, with no impact on training performance. Before a training or processing job can run, SageMaker AI downloads its container image to the instance. For deep learning images, which routinely exceed 10 GB, that download adds minutes to the start of every job, and you pay for that time. Now, when your image includes a SOCI index, SageMaker AI lazy-loads the image, fetching only the files needed to start the container and streaming the rest in the background as your code runs. To use this feature, reference a SOCI-indexed image from a private Amazon ECR repository in your training or processing job. You can use a pre-indexed AWS Deep Learning Container by changing the image tag to its -soci v",
     "published": "2026-10-29T08:00:00Z",
     "hash": "4ace8a696ac61de7f3bcbb08ce9cb93e4af56eb6dd9a64802644c42dce097128"
+  },
+  {
+    "title": "Amazon Redshift announces hands-off automated cross-region backups",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-automated-cross-region-backups/",
+    "source": "AWS What's New",
+    "service": "Amazon Redshift",
+    "category": "Service Update",
+    "summary": "Amazon Redshift announces automated cross-region snapshot copy for Amazon Redshift. You can now have your Amazon Redshift provisioned cluster or serverless workgroup automatically backed up to the target AWS region(s) you choose. The automated cross-region snapshot copy feature will automatically, always copy the most recent snapshot with no manual intervention, continuously and incrementally and ensure your cluster is backed-up to the destination region(s), giving you additional options for business continuity. The benefit to enabling the new automated cross-region snapshot copy feature is that you do not need to manually intervene to initiate a cross-region snapshot copy when an unplanned outage event occurs. Also, this feature takes the most recent snapshot available on your system to copy to the destination region, so you don't have to wait for the next snapshot to be taken, making it independent of your snapshot schedule on your local cluster. To configure cross-region snapshot co",
+    "published": "2026-10-29T08:00:00Z",
+    "hash": "1b9f131c27f90fc1a35f5dca36e15b09bcbc50b051b33ce13579cb4dff263952"
   },
   {
     "title": "Amazon Managed Grafana now supports in-place upgrade to Grafana version 13.2",
