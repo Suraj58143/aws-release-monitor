@@ -1,5 +1,135 @@
 [
   {
+    "title": "CVE-2026-105811 - Authorization bypass through a user-controlled key in the Amazon Q Business Lambda hook sample in QnABot on AWS",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-126-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Q Business",
+    "category": "Security",
+    "summary": "Read this article Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "published": "2026-11-02T21:40:44Z",
+    "hash": "3af9d2b79288f33052a6422e6efa3763f34ac8d55fdbc23391ca7320526c6d09"
+  },
+  {
+    "title": "Amazon RDS now supports per snapshot billing",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-per-snapshot-billing/",
+    "source": "AWS What's New",
+    "service": "Amazon Relational Database Service",
+    "category": "Upgrade",
+    "summary": "Starting today, Amazon RDS supports per snapshot billing for Amazon RDS snapshots. Per snapshot billing allows you to get the cost of each individual snapshot. Previously, RDS snapshot charges were aggregated at the database instance level on the Cost and Usage report as well as the Cost Explorer. This meant that while understanding the snapshot charges, you could only see the aggregate view at the database instance instead of drilling down to each individual snapshot. Now, you can use cost allocation tags on your snapshots to see exactly how much each snapshot costs, giving you a better understanding of your backups spend and budgets. Per snapshot billing is enabled by default on all RDS snapshots for no additional charge. Per snapshot billing is available for all Amazon RDS engines in all commercial AWS Regions and the AWS GovCloud (US) Regions. To learn more, please visit our documentation .",
+    "published": "2026-11-02T18:43:00Z",
+    "hash": "1ac4b989c1f04f40f066295ee94b66ffb2cf981188e9ac5534542279be4b72a6"
+  },
+  {
+    "title": "Amazon Quick on desktop now uses your organization's existing Amazon Quick sign-in",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-quick-desktop-organization-sign-in/",
+    "source": "AWS What's New",
+    "service": "Amazon Quick",
+    "category": "General Announcement",
+    "summary": "For organizations that use Amazon Quick, the desktop application now signs users in with the same sign-in method the organization already uses for Quick on the web. Administrators no longer need to register an OIDC application in their identity provider or set up separate desktop sign-in before users can get started. If a user can sign in to Quick on the web, that user can sign in to the desktop application. To turn on desktop access, an administrator adds the desktop connector once in the Amazon Quick console. Users then enter their Quick account name, choose Sign In, and finish signing in through their browser. This works for accounts that use IAM Identity Center, IAM federation, or native Amazon Quick users. If your organization wants to manage desktop sign-in separately, you can still set up a dedicated identity provider configuration with providers such as Microsoft Entra ID, Google Workspace, Okta, or Ping Identity. Amazon Quick on desktop is available in AWS Regions that support",
+    "published": "2026-11-02T18:36:00Z",
+    "hash": "77550746e17f40716e931282a616b0e76da73bd20f05a02a2de861f4a26c9e27"
+  },
+  {
+    "title": "AWS Lambda now supports queues for Apache Kafka in self-managed Kafka event sources",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-queue-kafka-esm/",
+    "source": "AWS What's New",
+    "service": "AWS Lambda",
+    "category": "Upgrade",
+    "summary": "AWS Lambda now supports queues for Apache Kafka in self-managed Kafka event source mappings (ESM), for Kafka clusters that customers run themselves and for managed offerings such as Confluent Cloud. Customers can now scale processing for Kafka workloads beyond the partition count of a topic, increasing throughput during traffic spikes and improving processing resilience. Customers building event-driven Kafka workloads for use cases such as image and video encoding, fraud detection, notification delivery, and telemetry ingestion treat each event as an independent unit of work, where processing speed matters more than strict ordering. Previously, Kafka ESMs used the Kafka consumer group protocol, which assigns each partition to exactly one consumer within a consumer group. Customers needing higher parallelism had to over-partition topics or move traffic to a separate queuing system, adding infrastructure to operate and producer code to maintain. Queue support for self-managed Kafka ESMs ",
+    "published": "2026-11-02T17:00:00Z",
+    "hash": "76de4006949772d30dfda03a3becbf15137134e46ad06293d99ed467a77d2408"
+  },
+  {
+    "title": "Amazon Aurora MySQL 8.4.10 is now generally available",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-8410-available/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora MySQL",
+    "category": "Security",
+    "summary": "Starting today, Amazon Aurora MySQL-Compatible Edition 8.4 supports MySQL 8.4.10. We recommend upgrading to the newer minor versions to accept fixes for Common Vulnerabilities and Exposures (CVEs) in prior versions of MySQL and to benefit from bug fixes, performance improvements, and new functionality added by the MySQL community. For more details, refer to the Aurora MySQL 8.4 and MySQL 8.4.10 release notes. Aurora MySQL 8.4.10 adds support for global transaction identifiers (GTID) tags, which lets you assign a user-defined tag to GTIDs to help you identify and group related transactions in binary log replication. This release also adds support for a maximum of 50,000 simultaneous connections per DB instance, which allows connection-intensive applications to scale without adding a connection pooling layer. Learn more about maximum connections best practices in the Amazon Aurora MySQL User Guide . You can upgrade your databases during scheduled maintenance windows using automatic minor",
+    "published": "2026-11-02T17:00:00Z",
+    "hash": "82f71f951435a356c899c1493620a68995f236133dbde0e923cae7a4e1f29ca8"
+  },
+  {
+    "title": "Amazon Aurora MySQL 3.14 (compatible with MySQL 8.0.46) is generally available",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-314-available/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora MySQL",
+    "category": "Upgrade",
+    "summary": "Starting today, Amazon Aurora MySQL-Compatible Edition 3 (compatible with MySQL 8.0) supports MySQL 8.0.46, which includes community MySQL fixes and Aurora-specific improvements. In addition to operational improvements, Aurora MySQL 3.14 introduces support for post-quantum TLS (PQ-TLS) key exchange, providing you with post-quantum cryptography options for encrypting your data in-transit. For detailed information on this release, refer to Aurora MySQL 3 and MySQL 8.0.46 release notes. You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable automatic minor version upgrades and use the AWS Organizations Upgrade Rollout Policy to orchestrate upgrades across your clusters in phases. You can perform minor version upgrades in-place or via snapshot restore. This release is supported in all AWS Regions where Aurora MySQL is available. Amazon Aurora is designed for high performance and availability at glo",
+    "published": "2026-11-02T17:00:00Z",
+    "hash": "27b2d65d8846697051eb72caee1b6fdfd97928f512ddd98e7f464a627304f6c1"
+  },
+  {
+    "title": "CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-161-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS SDK",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-161-AWS Publication Date: 11/02/2026 08:30 AM PST Description: We are aware of CVE-2026-119301 in the Apache Iceberg write component, where improper neutralization of quoting syntax in SQL identifier construction could allow an authenticated user with permission to modify AWS Glue Data Catalog metadata to read any table that a separate, more privileged principal can access and write to the table that principal is updating via a crafted column name. Impacted versions: awswrangler >= 3.5.2, < 3.17.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+    "published": "2026-11-02T16:40:57Z",
+    "hash": "c299e4b32fbf799963386d35eafe336b0c4c9cc786aa391630375f6538d01944"
+  },
+  {
+    "title": "Amazon Connect Customer now supports Model Context Protocol (MCP) tools in flows",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Upgrade",
+    "summary": "Amazon Connect Customer now enables you to invoke Model Context Protocol (MCP) tools in customer experience flows through the new 'External Tool' block. With this launch, you can connect flows to third-party applications through Amazon Bedrock AgentCore Gateway and reuse the same tools used by your agentic experiences to retrieve data or trigger actions, without writing custom Lambda functions. For example, when a customer contacts a financial institution about a recent transaction, a flow can use the External Tool block to retrieve relevant context from a third-party application, such as case history from their CRM system, or transaction details from a banking platform. This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), and Asia Pacific (Tokyo). To learn more about this feature, refer to the administrator guide . To",
+    "published": "2026-11-02T16:00:00Z",
+    "hash": "58c5e060b150b4abbba165b3ad72ba08afe2f26156caa4f76ce9d5f6a8c227fb"
+  },
+  {
+    "title": "Amazon Connect Customer now supports Cases and External Tool events in the Wait block",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-wait-block-cases-tool-events/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Upgrade",
+    "summary": "Amazon Connect Customer now supports Cases and External Tool events in the Wait block, giving you more control over how your customer experience flows react to real-time data changes. In addition to waiting for a Lambda function to complete, you can now wait until a Connect Case field meets a specified condition or an External Tool invocation completes. This enables you to wait for critical information before advancing an interaction, reducing unnecessary transfers and saving time for both your end-customers and agents. For example, you can hold a flow until a refund status field is updated on a case, then automatically resume and route the interaction based on the outcome. To learn more about this feature, refer to the administrator guide and availability of Connect Customer features by Region . To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences, visit the Amazon Connect Customer website.",
+    "published": "2026-11-02T16:00:00Z",
+    "hash": "5263d3cb719130bb969b068610ff56ecb5e39fb803eb8dd9dfb8ef652cf80d9b"
+  },
+  {
+    "title": "EC2 Amazon Machine Images can now be scanned for vulnerabilities through Amazon Inspector",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-amis-scanned-through-inspector/",
+    "source": "AWS What's New",
+    "service": "Amazon Inspector",
+    "category": "Security",
+    "summary": "Amazon Inspector now extends its vulnerability scanning to EC2 Amazon Machine Images (AMIs), enabling you to identify software vulnerabilities in your AMIs without launching instances or installing additional software. This helps you fix issues at the source before AMIs are used to launch instances across your fleet. With this capability, you can run continuous evaluations to monitor your AMI catalog for newly discovered vulnerabilities, or perform targeted one-time scans for specific AMIs directly from the EC2 Console. You can enable AMI scanning for an account or across your entire organization in Amazon Inspector. For AWS Security Hub customers, you can enable AMI scanning as an add-on across your organization, and findings are also delivered to Security Hub. Based on the scan results, you can enable the Allowed AMIs setting and specify security criteria that AMIs must meet to be available within your account and enforce this setting across the entire organization using Declarative ",
+    "published": "2026-11-02T08:00:00Z",
+    "hash": "730b17f2cc8556e8ddd4a3fcb62f70bbdc33e1962c25a6adc436f7401b1cb46f"
+  },
+  {
+    "title": "Announcing an updated text detection model for Amazon Textract",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/textract-text-detection-model/",
+    "source": "AWS What's New",
+    "service": "Amazon Textract",
+    "category": "Release",
+    "summary": "Amazon Textract now provides an updated text detection model that improves accuracy, expands language support, and enhances multilingual table extraction. The updated model applies to the DetectDocumentText and AnalyzeDocument APIs and requires no changes to your Amazon Textract API requests or response schema. Your applications are served by the updated model automatically, so you can continue calling Amazon Textract exactly as before. The updated model expands language coverage to more than 40 languages, including Albanian, Arabic, Basque, Belarusian, Bosnian, Bulgarian, Chinese (Simplified and Traditional), Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Hebrew, Hindi, Hungarian, Icelandic, Italian, Japanese, Korean, Latvian, Lithuanian, Luxembourgish, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian Cyrillic, Serbian Latin, Slovak, Slovenian, Spanish, Swedish, Turkish, Turkmen, and Ukrainian, enabling reliable processing of previously unsupporte",
+    "published": "2026-11-02T08:00:00Z",
+    "hash": "69d6c503f2a06ff1293dddbe7efbe15e52c605d648dedd5c175bc5af77f2e173"
+  },
+  {
+    "title": "Amazon Textract now available in Asia Pacific (Tokyo) and Europe (Zurich)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/textract-tokyo-zurich/",
+    "source": "AWS What's New",
+    "service": "Amazon Textract",
+    "category": "Release",
+    "summary": "Amazon Textract is now available in the Asia Pacific (Tokyo) and Europe (Zurich) Regions. Amazon Textract is a machine learning service that automatically extracts text, handwriting, and data from scanned documents, going beyond simple optical character recognition (OCR) to identify and extract text and structured data. At launch in these Regions, Amazon Textract supports text detection and document analysis. This includes the DetectDocumentText, AnalyzeDocument, StartDocumentTextDetection, GetDocumentTextDetection, StartDocumentAnalysis, and GetDocumentAnalysis operations. The AnalyzeExpense, AnalyzeID, and AnalyzeLending operations, and Custom Queries (adapters), are not available in these Regions at this time. With this launch, Amazon Textract is available in a total of 18 AWS Regions: US East (Ohio), US East (N. Virginia), US West (N. California), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Europe",
+    "published": "2026-11-02T08:00:00Z",
+    "hash": "be5bc07525c8d3637ed9c7c79f1048c1990a9bc4078dc864fbf867806bf0a16e"
+  },
+  {
+    "title": "Amazon CloudFront now supports self-service increases in AWS Service Quotas",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-self-service-quotas/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudFront",
+    "category": "Upgrade",
+    "summary": "Amazon CloudFront now supports AWS Service Quotas, so you can view, monitor, and request increases for 28 CloudFront quotas from the Service Quotas console or API. Until now, increasing a quota on resources such as distributions, cache policies, origins, or alternate domain names meant opening a support case and waiting for manual review. If you have AWS Business Support or higher, requests for limit increases within published thresholds are now approved automatically. For example, you can raise your distribution quota from 500 to 1,000, or the number of alternate domain names per distribution from 100 to 500, without opening a support case. Some quotas also publish usage metrics to Amazon CloudWatch every 5 minutes, so you can set alarms and request an increase before you reach a limit.. This feature is available in all AWS Regions where Amazon CloudFront is supported. To get started, visit the Service Quotas console to view and request increases for your CloudFront quotas. To learn m",
+    "published": "2026-11-02T08:00:00Z",
+    "hash": "90ab0c7a0c865e14b90077e3943bd0b37f5d5d651748236382e40418684ac88d"
+  },
+  {
     "title": "Amazon Connect Customer automatically saves in-progress emails as drafts",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-email-draft-save/",
     "source": "AWS What's New",
@@ -98,6 +228,16 @@
     "summary": "Amazon SageMaker AI inference now supports GPU partitioning, enabling you to run several models on a single GPU instead of dedicating a whole accelerator to each one. Using NVIDIA Multi-Instance GPU (MIG) technology, SageMaker AI divides a GPU into as many as seven isolated partitions, each with its own memory and compute. Customers serving small and mid-size models, such as fine-tuned variants, embedding models, rerankers, and classifiers, previously had to give every model an entire accelerator, so an instance hosted no more models than it had GPUs and paid for GPU capacity those models could never use. With GPU partitioning, you choose how to divide the GPUs behind your endpoint and place each model on a partition sized to fit it. Several models then share one accelerator with hardware-enforced isolation, so a busy model cannot take memory or throughput from the models beside it. Right-sizing an accelerator to a workload also opens up newer instance generations that would otherwise ",
     "published": "2026-10-30T08:00:00Z",
     "hash": "5a36fbc50431e78af28e6fbbdc1e9848df7c93b06907db8125bbcdeeb7fe3bc7"
+  },
+  {
+    "title": "Amazon Quick Introduces Quick Essentials",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-quick-essentials/",
+    "source": "AWS What's New",
+    "service": "Amazon Quick",
+    "category": "Upgrade",
+    "summary": "Amazon Quick introduces Quick Essentials for enterprises. The plan makes it easier for organizations to get started with all the features of Quick such as AI-powered chat, Research, Flows, and Apps, and lets users view and interact with Quick Sight dashboards and reports and then manage adoption at the desired pace. In AWS Regions where Amazon Quick is available, Quick Sight Reader users are upgraded to Quick Essentials at no additional per-user cost. With Quick Essentials, Quick Sight Readers can ask their dashboards questions in plain language, like what drove a revenue dip in March, and dig into the details with follow-up questions. They can turn the answer into a document, presentation, or spreadsheet for their team. When they need more context, Research pulls from their data, files, and the web into a detailed report with citations. If they need the same update every week, Flows can build it and send it automatically. When they need a tool that doesn't exist yet, like a request tr",
+    "published": "2026-10-30T08:00:00Z",
+    "hash": "d12bf7a8517afb6baf8ae3f7aff6a3eb42e32cc063430a792f55144ac99a8346"
   },
   {
     "title": "AWS Marketplace now enables partners to list once and sell through multiple subsidiary accounts",
@@ -1925,7 +2065,7 @@
     "source": "AWS Security Bulletins",
     "service": "AWS Toolkit",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-129-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/08/2026 10:30 PM PDT Description: AWS Toolkit for Visual Studio Code is an open source extension that lets developers work with AWS services, including Amazon CodeCatalyst, from within Visual Studio Code. We identified CVE-2026-107332, an issue in the CodeCatalyst connection handler. When a user connected to a CodeCatalyst Dev Environment, the extension cached the user's CodeCatalyst bearer token to a file with world-readable permissions and did not remove the file after the session ended. A local user or process on the same machine with access to the file system was able to read this file and obtain the bearer token. Impacted versions: < 4.10.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "summary": "Read this article",
     "published": "2026-10-08T17:43:09Z",
     "hash": "a242706c2b568596a772419c424067326fb600b8e3886d3db0b0516de2b4d44e"
   },
@@ -1965,7 +2105,7 @@
     "source": "AWS Security Bulletins",
     "service": "Amazon Athena",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-128-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/07/2026 13:00 PM PDT Description: Missing authorization checks in Amazon Athena engine version 3 request handling could have allowed an authenticated user to read limited query metadata (AWS account identifiers and SQL statement text) from other AWS accounts. AWS remediated the issue on September 1, 2026, and has confirmed no customer metadata was accessed. Query results, credentials, and Amazon S3 data were not affected. No customer action is required. Resolution: This issue was addressed service-side on September 1, 2026. Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "summary": "Read this article Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
     "published": "2026-10-07T20:19:18Z",
     "hash": "ce8f455b478378e407a90cdf81062920443b26f3312910a1efac6c79c423f6f2"
   },
@@ -1978,16 +2118,6 @@
     "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8gb instances, powered by the latest-generation AWS Graviton4 processors, are available in the US East (Ohio), US West (N. California), EU (Frankfurt, Ireland, Paris, Stockholm), and Africa (Cape Town) regions. The new instances provide up to 30% better compute performance than AWS Graviton3-based EC2 instances. At up to 300 Gbps EBS bandwidth and 1600K IOPS, C8gb instances offer higher EBS performance compared to same-sized equivalent Graviton4-based instances. Take advantage of the higher block storage performance offered by these new EBS optimized EC2 instances to scale the performance and throughput of workloads such as high-performance file systems, while optimizing the cost of running your workloads. For increased scalability, these instances offer instance sizes up to 48xlarge, up to 384 GiB of memory, up to 300 Gbps of EBS bandwidth, up to 400 Gbps of networking bandwidth. These instances support Elastic Fabric Adapter ",
     "published": "2026-10-07T18:26:00Z",
     "hash": "d59295e28b240d8b4b4c26377349ebe8b988c1aa9081a51a46e94fb369f829a4"
-  },
-  {
-    "title": "CVE-2026-105811 - Authorization bypass through a user-controlled key in the Amazon Q Business Lambda hook sample in QnABot on AWS",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-126-aws/",
-    "source": "AWS Security Bulletins",
-    "service": "Amazon Q Business",
-    "category": "Security",
-    "summary": "Bulletin ID: 2026-126-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/06/2026 13:00 PM PDT Description: QnABot on AWS is a sample solution of a multi-channel, multi-language conversational interface (chatbot) that responds to your customer's questions, answers, and feedback. We identified CVE-2026-105811 in the optional Amazon Q Business Lambda hook sample of QnABot on AWS. The Amazon Q Business Lambda hook sample (q-business-lambda-hook) is an optional integration sample included in the QnABot on AWS repository. It requires separate, manual deployment and additional setup; it is not deployed automatically with QnABot. Customers who have not deployed this sample are not affected and do not need to take action. Authorization bypass through a user-controlled key in the sample included with QnABot on AWS versions 7.0.0 through 7.4.5 might allow an authenticated remote user to read arbitrary Amazon S3 objects in the deploying AWS account. To remediate this ",
-    "published": "2026-10-07T18:25:26Z",
-    "hash": "3af9d2b79288f33052a6422e6efa3763f34ac8d55fdbc23391ca7320526c6d09"
   },
   {
     "title": "AWS Config now supports 77 new resource types",
@@ -2005,7 +2135,7 @@
     "source": "AWS Security Bulletins",
     "service": "Amazon Bedrock AgentCore",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-127-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/06/2026 13:30 PM PDT Description: bedrock-agentcore-starter-toolkit is an AWS-maintained open-source Python package, distributed via GitHub and PyPI, that provides a command-line interface for importing Amazon Bedrock Agents into local development environments. We identified CVE-2026-105812, a code injection issue that could allow arbitrary code execution when a specially crafted agent is imported and subsequently run or deployed, and CVE-2026-106032, an external reference handling issue that could cause unintended network requests or local file access during agent import. Affected versions: >= 0.1.4 and <= 0.3.13 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "summary": "Read this article Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
     "published": "2026-10-06T20:41:24Z",
     "hash": "907324acbf3d40a17d8e1e4c601633af347ede1e311d805a918fdb14150e0f4b"
   },
