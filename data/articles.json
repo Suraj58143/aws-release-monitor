@@ -1,5 +1,85 @@
 [
   {
+    "title": "Amazon S3 Tables now offer managed migration of Apache Hive tables to Apache Iceberg",
+    "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/",
+    "source": "AWS News Blog",
+    "service": "Amazon S3 Tables",
+    "category": "Upgrade",
+    "summary": "You can now migrate existing Apache Hive datasets in Amazon S3 to fully managed Apache Iceberg tables in Amazon S3 Tables, with no pipelines to build or compute to provision, while production workloads keep running.",
+    "published": "2026-11-04T23:34:52Z",
+    "hash": "96438bd62fce368900c47cb4b7af627e598c2462e5773d52727f048a98dc76a4"
+  },
+  {
+    "title": "CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon EKS",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-170-AWS Publication Date: 11/04/2026 13:30 PM PST Description: We identified CVE-2026-122266, an issue in Amazon EKS Network Policy Agent (aws-network-policy-agent). Improper isolation of shared eBPF connection tracking state might allow an authenticated adjacent user to bypass NetworkPolicy ingress enforcement on co-located pods. Impacted versions: - aws-network-policy-agent < 1.3.7 - Amazon VPC CNI Managed Add-on < 1.22.3 Refer to the article below for the most up-to-date and complete information. Read this article",
+    "published": "2026-11-04T21:53:42Z",
+    "hash": "66719e35ce98b3c0029f58a516d19f21140ce39eeb6c72c16373413dbe6f483f"
+  },
+  {
+    "title": "Amazon ECS Managed Daemons can now collect json-file logs from application containers on Amazon ECS Managed Instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-managed-instances-json-file-log-driver/",
+    "source": "AWS What's New",
+    "service": "Amazon ECS",
+    "category": "Release",
+    "summary": "Amazon Elastic Container Service (Amazon ECS) introduces json-file log driver support for Amazon ECS Managed Instances and log driver volumes for Amazon ECS Managed Daemons. Together, these features let you collect application logs with the observability agent of your choice and forward them to any destination you choose. With this launch, your application containers on ECS Managed Instances can write their logs as local files in standard Docker json-file format, which most observability agents read natively. Your managed daemons can directly read these files through a volume mount, without specifying host bind mount paths or requiring root privileges. As a result, one managed daemon on each instance can collect logs from every application container that uses the json-file log driver. Amazon ECS keeps each container's logs in a dedicated directory named with the container ID and retains them until the container is removed, so your managed daemon can use native file-based log collection",
+    "published": "2026-11-04T21:29:00Z",
+    "hash": "06e7f2cd2446b53cafacc67c131830a5ba241292040dcb5143d91d8abc3c6e82"
+  },
+  {
+    "title": "Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-mongodb-compatibility-asia-pacific-taipei-new-zealand-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon DocumentDB",
+    "category": "Release",
+    "summary": "Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions, adding to the list of available Regions where you can use Amazon DocumentDB. Amazon DocumentDB is a fully managed, native JSON database that makes it simple and cost-effective to operate critical document workloads at virtually any scale without managing infrastructure. Amazon DocumentDB is designed to give you the scalability and durability you need when operating mission-critical MongoDB workloads. Storage scales automatically up to 128 TiB without any impact to your application. In addition, Amazon DocumentDB natively integrates with Amazon CloudWatch, AWS CloudTrail, AWS Lambda, AWS Backup, and more. Amazon DocumentDB supports millions of requests per second and can be scaled out to 15 low-latency read replicas in minutes with no application downtime. To learn more about Amazon DocumentDB, please visit the Amazon DocumentDB product page and pricing pa",
+    "published": "2026-11-04T19:00:00Z",
+    "hash": "7cde1b985cf93f6d059de65f14590304cacd79e1b523fdc94c7772a019868253"
+  },
+  {
+    "title": "Amazon Connect Customer now shows associated cases in contact records",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-contact-records/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "General Announcement",
+    "summary": "Amazon Connect Customer now includes case IDs and reference numbers in contact records, helping supervisors and analysts understand which customer issues drive contact volume. Cases track issues, such as refund requests or billing disputes, across interactions and teams. Supervisors can now identify the cases associated with an interaction directly on the Contact Details page without searching individual cases. Analysts can access the same information through the DescribeContact API and contact event streams to measure the number of interactions per case. Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town). To learn more and get started, visit the Cases webpage and documentation .",
+    "published": "2026-11-04T17:00:00Z",
+    "hash": "6603c48f7f7e373aff7005ea008e2aa554d60971640dd65dd6ebf55ca11d554b"
+  },
+  {
+    "title": "Amazon S3 Tables now provide a simple, cost-effective path for data lake modernization",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-tables-managed-migration-hive-to-iceberg/",
+    "source": "AWS What's New",
+    "service": "Amazon S3 Tables",
+    "category": "Upgrade",
+    "summary": "Amazon S3 Tables now offer managed migration of your Apache Hive tables to Apache Iceberg. Iceberg adds ACID transactions, schema evolution, and time travel to your data lake, but moving off Hive usually means building a migration pipeline for each table, which can take weeks. You can now let S3 Tables manage your migration, resulting in query-ready Iceberg tables that stay optimized as data grows. S3 Tables validate, convert, and copy your data while production workloads keep running. To lower migration risk, you can review each step, sync destination tables with source changes as often as you need, or roll back to your source data. You pay only for the data that the job copies, with no charge for the Hive-to-Iceberg conversion, and source objects in S3 Intelligent-Tiering stay in their current access tier. If your tables use Snappy compression, S3 Tables recompress them to Zstandard (ZSTD) and compact them, which reduces storage and object count and improves query performance. To get",
+    "published": "2026-11-04T08:00:00Z",
+    "hash": "fe83e3e3847efe4873260cb1314e6f6cf459e1028bddc8794f9ba749b80eaf15"
+  },
+  {
+    "title": "Amazon EC2 and VPC now display related resources for all resource types",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-vpc-related-resources-all-types/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Amazon Elastic Compute Cloud (Amazon EC2), Amazon Virtual Private Cloud (Amazon VPC), and AWS Global View now display related resources for all resource types in their consoles. Previously, only security groups had an option to view related resources. Now you can see relationships for all EC2 and VPC resource types, including EC2 instances, Amazon Elastic Block Store (Amazon EBS) volumes, Launch Templates, Auto Scaling groups, subnets, route tables, and more. The Related Resources tab has also been moved to the console toolbar for easier access. This capability helps you better understand your infrastructure dependencies and troubleshoot issues more efficiently. For example, when investigating an EC2 instance issue, you can quickly view its associated EBS volumes, security groups, subnets, and route tables without navigating between multiple console pages. Network administrators can now trace connections from a subnet to its associated route tables, network ACLs, and instances, streaml",
+    "published": "2026-11-04T08:00:00Z",
+    "hash": "22d5b6f6ca57965beca50509d354ad6eda86570a53fc26a8258145d4522ed135"
+  },
+  {
+    "title": "New features for Amazon EC2 Capacity Manager",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-capacity-manager-supportability-and-fulfillment/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Service Update",
+    "summary": "Amazon EC2 Capacity Manager now offers real-time supportability checks and capacity fulfillment metrics. Real-time supportability checks help customers find capacity by scoring how well each instance type and Availability Zone can support a request, without launching or reserving instances. Capacity fulfillment metrics show how much capacity was delivered against the amount requested. Global enterprises that run thousands of workloads across hundreds of accounts often spread each one across multiple instance types and Availability Zones, giving Amazon EC2 more options to fulfill each request. Starting today, customers can use the supportability checks in Capacity Manager to understand which Availability Zones and instance types give them the best chance of getting the capacity they need. The check returns a High, Medium, or Low score for each option, plus an overall score. Additionally, with fulfillment metrics, customers can measure fulfillment rates across their AWS organization, acc",
+    "published": "2026-11-04T07:00:00Z",
+    "hash": "9ac0373d576a03b83d7fdc43f029d84f2135e0463bfe2a90f3c7cb5a973d60e5"
+  },
+  {
     "title": "CVE-2026-119084 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver Connection Parameters",
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-168-aws/",
     "source": "AWS Security Bulletins",
@@ -48,6 +128,16 @@
     "summary": "AWS Config now supports 10 additional AWS resource types across key services including Amazon ElastiCache and Amazon QuickSight. This expansion provides greater coverage over your AWS environment, enabling you to more effectively discover, assess, audit, and remediate an even broader range of resources. With this launch, if you have enabled recording for all resource types, then AWS Config will automatically track these new additions. The newly supported resource types are also available in Config rules and Config aggregators. You can now use AWS Config to monitor the following newly supported resource types in all AWS Regions where the resources are available: Resource Types: AWS::Billing::BillingView AWS::MPA::IdentitySource AWS::Connect::HoursOfOperation AWS::Notifications::OrganizationalUnitAssociation AWS::ElastiCache::CacheCluster AWS::NotificationsContacts::EmailContact AWS::ElastiCache::ReplicationGroup AWS::Oam::Link AWS::MediaLive::SignalMap AWS::QuickSight::Agent",
     "published": "2026-11-03T16:00:00Z",
     "hash": "f216d4cd7c303b66d86e445f744cd120e113dbed83e673638d6f4c28b4878e72"
+  },
+  {
+    "title": "Amazon CloudWatch now supports API keys for OpenTelemetry traces",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-api-keys-opentelemetry/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudWatch",
+    "category": "Upgrade",
+    "summary": "Amazon CloudWatch now supports bearer token authentication, using API keys (bearer tokens), as an additional option for sending OpenTelemetry traces to the AWS X-Ray OpenTelemetry Protocol (OTLP) traces endpoint. Any OTLP/HTTP client that can set an Authorization header, including the OpenTelemetry Collector and OpenTelemetry SDK exporters, can now authenticate with a bearer token instead of signing requests with AWS Signature Version 4 (SigV4). This helps teams send traces from workloads that can't use the AWS SDK or short-term credentials, such as applications running on premises or in other clouds, CI/CD pipelines, and third-party tools that support only a static Authorization header. SigV4 remains the recommended authentication method for sending traces to CloudWatch, and the AWS Distro for OpenTelemetry (ADOT) SDKs continue to use SigV4 by default with no changes required. Traces sent with either method get the same CloudWatch capabilities, including Transaction Search, Amazon Clo",
+    "published": "2026-11-03T08:00:00Z",
+    "hash": "26af094131f28e09bcb58421f2db22766c0239f8fd3a0a9ae211c7056975a712"
   },
   {
     "title": "Amazon EKS Capabilities now supports Argo CD Notifications",
