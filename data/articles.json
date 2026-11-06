@@ -1,5 +1,135 @@
 [
   {
+    "title": "AWS Security Hub now provides an SBOM inventory for your compute resources",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/",
+    "source": "AWS What's New",
+    "service": "AWS Security Hub",
+    "category": "Security",
+    "summary": "Today, AWS announces that AWS Security Hub now provides a Software Bill of Materials (SBOM) inventory, giving central security teams a continuously updated, organization-wide view of the software packages and applications installed on their compute resources. Security Hub builds the inventory from the SBOMs that Amazon Inspector generates for Amazon EC2 instances, Amazon ECR container images, and AWS Lambda functions, with no additional configuration. The SBOM page lists each package with its version, type, and the number of resources where it is installed. You can filter and group the list by package attributes, account, and region. On the resource detail page, the Installed software tab lists every package on that resource, so you can judge its function and criticality while triaging any finding. You can also query the inventory through the Security Hub API. The SBOM inventory is included with Security Hub Essentials at no additional cost. It requires no new enablement and populates ",
+    "published": "2026-11-06T00:30:00Z",
+    "hash": "a1b5a450b9df41f94fb65a1b3fdb61533c8fa5339cb620ca3b02c5908490d0f8"
+  },
+  {
+    "title": "Announcing Web Answer on Amazon Bedrock AgentCore",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/web-answer-amazon-bedrock/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Release",
+    "summary": "Today, we are announcing the general availability of Web Answer on Amazon Bedrock AgentCore. Web Answer is a managed tool that returns a synthesized, grounded, cited answer to a natural-language question in a single call, so agent builders can attach it to an agent and get back a finished answer grounded in current web sources, without building and maintaining their own search, retrieve, synthesis, and citation pipeline. Web Answer builds on Web Search on Amazon Bedrock AgentCore, which launched in June, extending it from \"find the web content\" to \"return the finished answer,\" a capability customers have been asking for. With Web Answer, your agent sends a question and receives a synthesized cited answer in one tool call. Web Answer works like an agent; it plans its own searches, runs several in parallel, and decides when it has gathered enough evidence to answer. You stay in control of the boundaries, with domain include, deny lists and publish-date filters that scope where it looks. ",
+    "published": "2026-11-05T20:56:00Z",
+    "hash": "3e6f24e27dba14837c20622b910e295130870580b446cbd4753e7b88ddb8f1f8"
+  },
+  {
+    "title": "Amazon DynamoDB now supports bulk put items",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-dynamodb-now-supports-bulk-put-items/",
+    "source": "AWS What's New",
+    "service": "Amazon DynamoDB",
+    "category": "Upgrade",
+    "summary": "Today, AWS announces the general availability of bulk put items for Amazon DynamoDB, a fully managed feature that writes data from Amazon S3 into your existing DynamoDB tables. Many DynamoDB applications use data that other systems produce and store in Amazon S3. Writing this data into existing DynamoDB tables has typically meant building custom pipelines and managing table capacity. With bulk put items, developers and data engineers can write this data without impacting existing workloads or building a custom ingestion pipeline, in a cost-efficient way. You point bulk put items at the S3 location of your input files, and DynamoDB handles the rest. Each item supports its own condition expression, so you can enforce insert-only or version-guarded writes. The Standard tier fits most workloads, and the Accelerated tier is for more time-sensitive workloads. Common use cases include daily refreshes, large catalog enrichments, backfills, and migrations. Bulk put items with Standard tier is a",
+    "published": "2026-11-05T18:00:00Z",
+    "hash": "298959aab156c6c70958c60452c4cc5998f84b0be27001e1c4f4bb6b202c8125"
+  },
+  {
+    "title": "Amazon Cognito announces 99.99% Service Level Agreement for the Plus feature plan",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-sla-update/",
+    "source": "AWS What's New",
+    "service": "Amazon Cognito",
+    "category": "General Announcement",
+    "summary": "Starting November 1, 2026, the Amazon Cognito Service Level Agreement (SLA) commits to a Monthly Uptime Percentage of 99.99% for user pools on the Plus feature plan, up from 99.9%. User pools already on Plus are automatically covered by the new Service Commitment. User pools on Essentials and Lite stay at the 99.9% Service Commitment with no change to their terms. To qualify for the 99.99% Service Commitment, you can switch a user pool to the Plus feature plan using the AWS Management Console, AWS Command Line Interface (CLI), or AWS Software Development Kits (SDKs). The Plus feature plan also includes threat protection features such as adaptive authentication, compromised credentials detection, and threat and user activity logging and export. For full terms and exclusions, see the Amazon Cognito SLA . To learn more about feature plans, see user pool feature plans .",
+    "published": "2026-11-05T18:00:00Z",
+    "hash": "d7a238bcd19b39cc5f3137f0b0fcf5c1752596a846dc61b793d5293e7dc8d140"
+  },
+  {
+    "title": "IAM Roles Anywhere now supports automatic certificate revocation checking",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/iam-roles-anywhere-cdp/",
+    "source": "AWS What's New",
+    "service": "AWS Identity and Access Management",
+    "category": "Upgrade",
+    "summary": "AWS Identity and Access Management (IAM) Roles Anywhere now supports automatic revocation checking using certificate revocation list (CRL) distribution points (CDPs). This helps keep revocation checks in sync with your certificate authority (CA) and can help improve your security posture. When you enable this capability on a trust anchor, IAM Roles Anywhere reads the CDP URLs embedded in authenticating certificates, downloads the corresponding CRLs, and denies credential requests that use revoked certificates. Previously, to check revocation status, you had to import CRLs into IAM Roles Anywhere and re-import them each time your CA published an update, which added operational overhead. With this launch, IAM Roles Anywhere downloads CRLs from your CDPs and refreshes them periodically, so you no longer need to re-import them. You can use this capability with AWS Private Certificate Authority or your own public key infrastructure (PKI), provided your certificates include publicly accessib",
+    "published": "2026-11-05T17:38:00Z",
+    "hash": "b011f53f53e1f859ab4390b8ca6e6069503a916dbc1acf8a2b0a03afbd19530f"
+  },
+  {
+    "title": "Amazon OpenSearch Service optimized engine now supports agent traces",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-support-traces",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Upgrade",
+    "summary": "Today, the Amazon OpenSearch Service optimized engine adds support for agent traces, including OpenTelemetry traces. Your traces and logs now live in the same place. You can follow a request or an agent session from start to finish, find the step that failed or slowed down, and check the related logs without switching tools. The optimized engine maps OpenTelemetry logs and traces to object, nested, and flat object fields, with support for multi-valued arrays. Span events, span links, prompts, and tool calls retain their nested structure, allowing field-level queries without flattening data during ingestion. On hot-tier data, the engine supports update, delete, and upsert operations by document ID. When data arrives late or with errors, you can correct it in place, so your dashboards and alerts work from accurate data. In OpenSearch UI, you can analyze this data with Discover Traces, application performance monitoring, the service map, and the agent traces and sessions views. These feat",
+    "published": "2026-11-05T17:00:00Z",
+    "hash": "f7dadc72f49aeff80280d0d0baac84adfe18588e24709cfb6c0b9a63f626e158"
+  },
+  {
+    "title": "Amazon FSx for Lustre delivers 16x higher metadata IOPS on Intelligent-Tiering file systems",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-fsx-for-lustre-intelligent-tiering-16x-higher-metadata-iops",
+    "source": "AWS What's New",
+    "service": "Amazon FSx",
+    "category": "Upgrade",
+    "summary": "Amazon FSx for Lustre now supports up to 192,000 metadata I/O operations per second (IOPS) on file systems that use the Intelligent-Tiering storage class, 16x higher than the previous maximum of 12,000 IOPS. The FSx for Lustre Intelligent-Tiering storage class delivers the lowest-cost and only fully elastic Lustre file storage in the cloud. It is optimized for workloads that mix hot and cold data and do not require consistent SSD-level performance. A file system's metadata IOPS determine how many files and directories you can create, list, read, and delete per second. Today's launch allows you to scale to even higher levels of performance, accelerate time-to-results, and optimize your storage costs for metadata-intensive machine learning research and high-performance computing (HPC) workloads. Higher metadata IOPS are available on new FSx for Lustre Intelligent-Tiering file systems in all AWS Regions where the Intelligent-Tiering storage class is available. For more information about t",
+    "published": "2026-11-05T15:39:00Z",
+    "hash": "2cddb48c1ed85f9868bb6b0cb07465e606a54f52e5a4480b59df996ec6dfd95d"
+  },
+  {
+    "title": "AWS Security Hub Network Scanning now available in AWS GovCloud (US)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-network-scanning-govcloud/",
+    "source": "AWS What's New",
+    "service": "AWS Security Hub",
+    "category": "Security",
+    "summary": "AWS Security Hub Network Scanning feature is now supported in AWS GovCloud (US). Network Scanning probes your resources from the internet to detect actual reachability, not just what could be reachable based on security group rules and route tables. It discovers public IP addresses, virtual machines, and load balancers across your AWS environments, identifies reachable ports, and determines what services are running behind them. This complements Security Hub's existing network reachability findings, which identify configurations that could make a resource reachable from the internet. Network Scanning confirms that configurations do exist which make a resource reachable from the internet. Each reachable port generates a Security Hub finding with evidence of the port and service discovered. Security Hub Exposures then automatically correlates these findings with other findings and resource configurations to determine broader risk. Existing customers can enable Network Scanning in individ",
+    "published": "2026-11-05T09:00:00Z",
+    "hash": "5d28ca122fe9564b12e3a297c9ce36b3d399e2f9d0bb7843ce73b1e49efb739f"
+  },
+  {
+    "title": "AWS WAF AI traffic monetization now supports fiat payouts through Stripe",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-stripe-fiat-payouts/",
+    "source": "AWS What's New",
+    "service": "AWS WAF",
+    "category": "Upgrade",
+    "summary": "AWS WAF AI traffic monetization now integrates with Stripe. Publishers, content owners, and API providers can collect stablecoin payments from AI bots and agents that settle in local currency directly to their Stripe balance. With this launch, customers can monetize agent access without holding stablecoins or managing a crypto wallet. Stripe is now available as a new payout method alongside existing stablecoin payouts. To get started, connect your Stripe account to AWS WAF through Stripe Connect in the AWS WAF console. Your existing pricing and agent policies work unchanged. When an agent requests protected content, AWS WAF returns an HTTP 402 response with the valid payment credential types that it accepts. Once the agent returns with a valid payment credential and makes the request again, the content is returned ungated. Revenue from all payment providers appears in the AWS WAF console revenue analytics. The Stripe integration is available at no additional charge to all AWS WAF custo",
+    "published": "2026-11-05T08:00:00Z",
+    "hash": "540826f3a67ef3f8e927d30d2e1cc72d5daf8a9c4a39ede427d18954a0ce93c0"
+  },
+  {
+    "title": "AWS Lambda durable functions increases default execution and API quotas",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-functions-default-quotas/",
+    "source": "AWS What's New",
+    "service": "AWS Lambda",
+    "category": "General Announcement",
+    "summary": "AWS Lambda durable functions has increased default quotas for running executions and API request rates. The new quotas below apply in all AWS Regions except US East (N. Virginia), US West (Oregon), and Europe (Ireland), which have twice these quotas. Running durable executions per account (1 million to 5 million) Function invocation rate to start durable executions (300 to 3,000 requests per second) CheckpointDurableExecution and GetDurableExecutionState (1,000 to 10,000 requests per second) SendDurableExecutionCallbackSuccess, SendDurableExecutionCallbackFailure, and SendDurableExecutionCallbackHeartbeat (300 to 3,000 requests per second) GetDurableExecution and StopDurableExecution (30 to 300 requests per second) GetDurableExecutionHistory and ListDurableExecutionsByFunction (15 to 150 requests per second) AWS Lambda durable functions helps you build resilient multi-step applications and AI workflows that execute for up to one year, with built-in checkpointing, automatic retries, and",
+    "published": "2026-11-05T08:00:00Z",
+    "hash": "3c4b7bcd581e6822284d59f28d8a4201f5245fcce8b6220e59ae2610a4af05b9"
+  },
+  {
+    "title": "Amazon SageMaker AI Studio Now Supports IAM Identity Center Multi-Region Replication",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-ai-studio-iam/",
+    "source": "AWS What's New",
+    "service": "AWS Identity and Access Management",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker AI now supports IAM Identity Center (IdC) multi-region replication, enabling you to deploy SageMaker AI Studio domains in different regions from your IdC instance's primary region. Previously, the primary IdC instance had to reside in the same region as the SageMaker AI Studio domain; now customers can replicate their primary IdC instance into the region where they wish to use SageMaker AI Studio domains. This capability helps customers maintain compliance while utilizing centralized workforce identity management. As an Amazon SageMaker AI Studio administrator, you can deploy SageMaker AI domains that align with your workforce's location and data residency requirements, independent of where your primary IdC instance is set up. Organizations can retain their primary IdC instance in one region while operating SageMaker AI Studio workloads in compliance-mandated regions, support global operations through centralized identity management, and satisfy data sovereignty requir",
+    "published": "2026-11-05T08:00:00Z",
+    "hash": "a58e1bc7c3f9230aac9e59229580fb8f199b8bce538daa1fcb862f8da4ff3edf"
+  },
+  {
+    "title": "Amazon Q Developer in console is now the AWS assistant",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/q-developer-renamed-aws-assistant/",
+    "source": "AWS What's New",
+    "service": "Amazon Q Developer",
+    "category": "General Announcement",
+    "summary": "Amazon Q Developer in the AWS Management Console and Console Mobile Apps is now called the AWS assistant. Previously, customers interacted with Amazon Q Developer across these surfaces. Now, the AWS assistant provides the same personalized, account-aware guidance and actions with a name that immediately communicates what the product does. The AWS assistant simplifies how customers build, operate, and optimize on AWS. The AWS assistant is currently offered for free. Existing Amazon Q Developer Pro subscribers will automatically retain their Pro Tier capabilities under the AWS assistant. The AWS assistant is available globally. To learn more, visit aws.amazon.com/products/assistant/ .",
+    "published": "2026-11-05T08:00:00Z",
+    "hash": "7c6a3423ea31565c581250f249e318ca66ae603d6d9557038cfba255887d620b"
+  },
+  {
+    "title": "﻿﻿AWS Systems Manager Parameter Store now allows organization and validation with built-in data types",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-ssm-parameter-store-allows-organization-validation-with-new-data-types/",
+    "source": "AWS What's New",
+    "service": "AWS Systems Manager Parameter Store",
+    "category": "Upgrade",
+    "summary": "AWS Systems Manager Parameter Store now supports 13 new parameter data types that automatically validate parameter values when you create or update a parameter. With built-in validation, you can stop malformed configuration values, such as an invalid IP address, AWS account ID, or JSON document, before your applications read them, without writing your own validation logic. These types allow you to better organize your parameters across your workloads. You can filter by type when calling the DescribeParameters API or when browsing parameters in the Parameter Store console. The following data types are available for both standard and advanced parameters: aws:region, aws:account:id, boolean, integer, float, binary, hostname, email, ipv4-address, and ipv6-address. Three more data types, url, json, and jsonc, are available for advanced parameters. Parameter Store checks the value when you call PutParameter and rejects any value that doesn't match its data type. New data types work with Stri",
+    "published": "2026-11-05T05:00:00Z",
+    "hash": "f3f303f0ac901af57a1db135634d0b1440f90b3024e7a01ce558b74bd6519f1f"
+  },
+  {
     "title": "Amazon S3 Tables now offer managed migration of Apache Hive tables to Apache Iceberg",
     "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/",
     "source": "AWS News Blog",
