@@ -1,5 +1,85 @@
 [
   {
+    "title": "CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Aurora PostgreSQL",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-166-AWS Publication Date: 11/06/2026 10:00 AM PST Description: We identified two issues in the Babelfish TDS protocol layer: - CVE-2026-119923: A memory-safety issue in the TDS connection-handshake handling could allow a remote, unauthenticated actor to affect the database process. - CVE-2026-119924: A memory-safety issue in the TDS remote-procedure-call request handling could allow a remote, authenticated actor to read adjacent process memory or cause a denial of service. Refer to the article below for the most up-to-date and complete information. Read this article",
+    "published": "2026-11-06T18:46:27Z",
+    "hash": "f5c819d4e7eed7f0ec2277f4d5fffd64a4d09d4a3dc84d29db57f8a5ee536eff"
+  },
+  {
+    "title": "CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-173-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS Systems Manager",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-173-AWS Publication Date: 11/06/2026 09:00 AM PST Description: We identified CVE-2026-122193, an OS command injection issue in an example provided in the set-up documentation. The example included a script that creates AWS Systems Manager (SSM) documents (Rex-RO and Rex-RW) for running scripts on managed instances. Due to how the example script handled input parameters, a user with permissions to invoke the SSM document could supply crafted input that would run unintended operating system commands on the managed instance, outside of the REX sandbox. The scriptArgs parameter is affected by the same class of issue. Impacted versions: This is not an issue in a shipped REX artifact version. Refer to the article below for the most up-to-date and complete information. Read this article",
+    "published": "2026-11-06T17:19:55Z",
+    "hash": "38e03ce80212646e205abf591c00d66f6f2ece5c2dd421565089a897df8b0430"
+  },
+  {
+    "title": "Amazon Redshift expands SUPER data type to store strings up to 16 million bytes",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-redshift-expands-super-to-16-million-bytes/",
+    "source": "AWS What's New",
+    "service": "Amazon Redshift",
+    "category": "Upgrade",
+    "summary": "Amazon Redshift now supports individual strings up to 16 million bytes within SUPER data types . Once you opt in through a database parameter, this enhancement applies when ingesting structured or semi-structured data from JSON, PARQUET, TEXT, and CSV source files, and when transforming data through extract load and transform (ELT) processes. Previously, individual strings within SUPER data types were limited to 65,535 bytes. Storing large individual strings in the SUPER data type helps avoid complex pre-loading transformations needed to store the source data in Amazon Redshift. You can now directly ingest large individual strings greater than 65,535 bytes without extra processing (for example, lengthy documents like terms and conditions and contracts), making them queryable using SQL. Once the data is in Amazon Redshift, you can use the flexibility of PartiQL language to explore and navigate through the data or use string functions to transform the data. Functions such as JSON_PARSE ,",
+    "published": "2026-11-06T16:00:00Z",
+    "hash": "da1c1e862a345b7a9a90b30472560b8477da20042f96b4ed409f3790962548c7"
+  },
+  {
+    "title": "Amazon MSK Replicator is now available in AWS GovCloud (US-East, US-West) Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-replicator-additional-aws-regions",
+    "source": "AWS What's New",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "category": "Release",
+    "summary": "You can now use Amazon MSK Replicator in the AWS GovCloud (US-East, US-West) Regions to replicate streaming data across Amazon MSK clusters and from external Apache Kafka clusters including on-premises, self-managed on AWS, or other cloud providers to Amazon MSK Provisioned clusters. MSK Replicator is a feature of Amazon MSK that automates data replication between Kafka clusters, eliminating the need to manage custom replication infrastructure or configure open-source tools. With MSK Replicator, you can easily build regionally resilient streaming applications for increased availability and business continuity. MSK Replicator provides automatic asynchronous replication across Kafka clusters, eliminating the need to write custom code, manage infrastructure, or setup cross-region networking. MSK Replicator automatically scales the underlying resources so that you can replicate data on-demand without having to monitor or scale capacity. MSK Replicator also replicates the necessary Kafka me",
+    "published": "2026-11-06T16:00:00Z",
+    "hash": "5fc47b4285fd7dc3acaabf8279066bb5d0cc0384cae9a2e48012b83a6f6e13e5"
+  },
+  {
+    "title": "AWS launches support for amortization of EC2 Capacity Blocks for ML",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "AWS Data Exports for Cost and Usage Report (CUR) 2.0 and AWS Cost Explorer now amortize the upfront fee for Amazon EC2 Capacity Blocks for ML across the duration of each reservation. You can see the amortized cost of each instance launched into a Capacity Block and the amortized cost of unused capacity, so you can attribute your upfront fee to the workloads that used it and identify capacity that went unused. Previously, a Capacity Block's upfront fee appeared as a single charge on the purchase date, making it difficult to see how that cost was spread across usage over the reservation. Now the amortized cost appears alongside your instance usage, so you can allocate GPU costs to the teams, projects, and applications that ran on the reserved capacity. You can also see what share of your reservation went unused and plan future Capacity Block purchases. In CUR 2.0, the amortized costs appear in the reservation_amortized_upfront_fee_for_billing_period, reservation_effective_cost columns, a",
+    "published": "2026-11-06T15:00:00Z",
+    "hash": "547884319ca615c4d05e242308e0ea9d92956a144a271298921dac9901fd4b07"
+  },
+  {
+    "title": "Capacity Reservation Resource Groups now support Amazon EC2 Capacity Blocks and interruptible Capacity Reservations in AWS GovCloud (US) Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/capacity-reservation-resource-groups-support-in-aws-govcloud-regions",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Starting today, you can add Amazon EC2 Capacity Blocks for ML and interruptible Capacity Reservations to Capacity Reservation Resource Groups in AWS GovCloud (US) Regions. Amazon EC2 offers different reservation offerings such as On-Demand Capacity Reservations (ODCRs), interruptible Capacity Reservations, and Capacity Blocks for ML. Previously, a Capacity Reservation Resource Group could only include ODCRs. Now you can add any type of Capacity Reservation to a Capacity Reservation Resource Group, making it easier to launch EC2 instances across your entire portfolio of reserved capacity. To use this feature, create a Capacity Reservation Resource Group, add any Capacity Reservation to it, and then target the group in your launch request. When using EC2 Fleet and EC2 Auto Scaling groups, you can also specify your prioritization preferences across reservation types, and configure automatic fall back to EC2 On-Demand capacity when there is no capacity remaining across your reservations. T",
+    "published": "2026-11-06T14:00:00Z",
+    "hash": "39aa58daea6c54346e56f2d66729d6dc891f198f09de6737a799d4e727b105d4"
+  },
+  {
+    "title": "AWS Glue Data Catalog now supports catalog-vended credentials with Apache Iceberg REST catalog federation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/glue-catalog-vended-credentials-iceberg/",
+    "source": "AWS What's New",
+    "service": "AWS Glue",
+    "category": "Upgrade",
+    "summary": "AWS Glue Data Catalog now supports external catalog's vended credentials in Apache Iceberg REST catalog federation. You can now read external Iceberg tables from Amazon Athena, Amazon EMR, Amazon Redshift, and AWS Glue using coarse-grained table grants in your external Iceberg catalog. Glue Data Catalog already federates to external Iceberg REST catalogs through an AWS IAM role that you configure with access to your Amazon S3 buckets. This enhancement in Glue Data Catalog provides another way to connect to an external Iceberg catalog and read only the tables that the external catalog authorizes. It uses temporary security credentials that are scoped to the Amazon S3 storage prefix and vended by your external Iceberg catalog. AWS Lake Formation manages access control when you query an external table using any AWS analytics engine, letting you restrict access further down to specific rows and columns and share external Iceberg tables across AWS accounts. This feature is available through",
+    "published": "2026-11-06T08:00:00Z",
+    "hash": "fa891b607552644f16969ccb42c6d1d3fbb378083d5cfa4732cfece125266d0b"
+  },
+  {
+    "title": "Amazon Simple Email Service is now available in six new AWS Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-simple-email-service-new-aws-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon SES",
+    "category": "Release",
+    "summary": "Amazon Simple Email Service (Amazon SES) is now available in the Asia Pacific (New Zealand, Melbourne, Taipei, Thailand), Mexico (Central), EU (Spain). Customers can now use these new Regions to leverage Amazon SES to send emails and, if needed, to help manage data requirements. Amazon SES is a scalable, cost-effective, and flexible cloud-based email service that allows digital marketers and application developers to send marketing, notification, and transactional emails from within any application. To learn more about Amazon SES, visit this page . With this launch, Amazon SES is available in 35 AWS Regions globally: US East (N. Virginia, Ohio), US West (N. California, Oregon), AWS GovCloud (US-West, US-East), Asia Pacific (Osaka, Mumbai, Hyderabad, Sydney, Singapore, Seoul, Tokyo, Jakarta, Malaysia, New Zealand, Melbourne, Taipei, Thailand), Canada (Central, Calgary), EU (Ireland, Frankfurt, London, Paris, Stockholm, Milan, Zurich,Spain), Middle East (Bahrain, UAE), Israel (Tel Aviv),",
+    "published": "2026-11-06T08:00:00Z",
+    "hash": "e405218533bec9aad491d943953b3706cb36a9cd32223c69cdb1ccfb870b9d3f"
+  },
+  {
     "title": "AWS Security Hub now provides an SBOM inventory for your compute resources",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/",
     "source": "AWS What's New",
@@ -118,6 +198,16 @@
     "summary": "Amazon Q Developer in the AWS Management Console and Console Mobile Apps is now called the AWS assistant. Previously, customers interacted with Amazon Q Developer across these surfaces. Now, the AWS assistant provides the same personalized, account-aware guidance and actions with a name that immediately communicates what the product does. The AWS assistant simplifies how customers build, operate, and optimize on AWS. The AWS assistant is currently offered for free. Existing Amazon Q Developer Pro subscribers will automatically retain their Pro Tier capabilities under the AWS assistant. The AWS assistant is available globally. To learn more, visit aws.amazon.com/products/assistant/ .",
     "published": "2026-11-05T08:00:00Z",
     "hash": "7c6a3423ea31565c581250f249e318ca66ae603d6d9557038cfba255887d620b"
+  },
+  {
+    "title": "Amazon EC2 now publishes ImdsV1Enabled CloudWatch metric",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-imdsv1enabled-cloudwatch-metric/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Upgrade",
+    "summary": "Amazon EC2 now supports an ImdsV1Enabled CloudWatch metric, giving customers visibility into which of their EC2 instances still have Instance Metadata Service Version 1 (IMDSv1) enabled. You can use this metric to track your migration to IMDSv2 across your accounts and Regions, at scale. With the ImdsV1Enabled metric, you can configure CloudWatch dashboards and alarms to track instances that still allow IMDSv1, identify migration gaps, and prioritize remediation, without building your own tooling to check the metadata options of instances across accounts and Regions. This gives you a reliable, ongoing signal to track and complete your IMDSv2 migration. The ImdsV1Enabled CloudWatch metric is available in all AWS Regions at no additional cost. To learn more, see the ImdsV1Enabled CloudWatch metric in the Amazon EC2 User Guide . For step-by-step migration instructions, see Transition to IMDSv2 in the Amazon EC2 User Guide .",
+    "published": "2026-11-05T08:00:00Z",
+    "hash": "10d7def04826c510df5fcfcd1906376be444c17e4476c6fd296043d624e53d74"
   },
   {
     "title": "﻿﻿AWS Systems Manager Parameter Store now allows organization and validation with built-in data types",
@@ -425,7 +515,7 @@
     "source": "AWS Security Bulletins",
     "service": "Amazon Kinesis",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-159-AWS Publication Date: 10/30/2026 11:00 AM PDT Description: We published CVE-2026-119117. Insertion of sensitive information into a log file in Amazon Kinesis Producer Library for Java before 1.0.8, when the library's logger is configured at DEBUG log level, might allow local users to obtain the AWS credentials that the library resolved for the application. Separately, affected versions of the library pass these credentials to the native child process as command-line arguments, where a local user can read them from the process argument list. Impacted versions: - com.amazonaws:amazon-kinesis-producer <= 0.15.12 - oftware.amazon.kinesis:amazon-kinesis-producer < 1.0.8 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+    "summary": "Read this article",
     "published": "2026-10-30T18:18:40Z",
     "hash": "d752a20650d7d78985db481a671dcf056ee4f452a00628cd1440c1e316c3668f"
   },
