@@ -710,6 +710,16 @@
     "hash": "731d83eb0359a916ee778d390c9fae6d0d5740fd4ff168a462e0846154ca8a65"
   },
   {
+    "title": "Amazon Connect Customer Outbound Campaigns now provides journey analytics",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-journey-analytics/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "General Announcement",
+    "summary": "Amazon Connect Customer Outbound Campaigns now provides flow designer analytics for journeys, so you can see directly on a journey flow how many customers reached each step and which branch they took. A journey is a multi-step outbound campaign that reaches your customers by voice, email, SMS, or WhatsApp, and branches based on customer behavior. Campaign managers can use these metrics to find the steps in a journey that need changes. A collections team running a payment reminder journey can see how many customers moved from the first SMS reminder to a follow-up call. If the SMS step shows a high error rate, the team can add an email step to its error branch so future customers on that path still get a reminder. You can use flow designer analytics for journeys in the following AWS Regions: US East (N. Virginia), US West (Oregon), Africa (Cape Town), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), and Eur",
+    "published": "2026-10-29T00:33:00Z",
+    "hash": "44e0cc26d26b647dcbe25117b1e82cdd0e81ed75f373c4d74fc3bd522fb230b6"
+  },
+  {
     "title": "Amazon Bedrock AgentCore CLI version 1.0 is now available",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore-cli-version-1-0-available/",
     "source": "AWS What's New",
