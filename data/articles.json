@@ -1,5 +1,135 @@
 [
   {
+    "title": "Amazon Bedrock AgentCore now offers a Web Search API",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Release",
+    "summary": "Today, AWS announces the general availability of the Web Search API on Amazon Bedrock AgentCore, which lets you search the web with a single API call. Web Search on AgentCore has been available as an MCP tool through AgentCore Gateway. The new InvokeWebSearch API gives applications, custom agent loops, and data pipelines search results with no resources to create. The API returns ranked results from the Amazon-operated web index behind Web Search on AgentCore. Each result includes a text extract and, when available, the page title, URL, and publication time. You can filter each request by domain and publication time, for example to find recent product announcements or check a claim against trusted domains. You call the API with the AWS SDKs or the AWS Command Line Interface (AWS CLI) and authorize calls with AWS Identity and Access Management (IAM). You can call it from your virtual private cloud (VPC) through AWS PrivateLink and log requests as AWS CloudTrail data events. Web Search A",
+    "published": "2026-11-10T00:00:00Z",
+    "hash": "9e10bbee45928d34eefe09cf05d4872716582a0a022ba67bfcba557c767e02b3"
+  },
+  {
+    "title": "CVE-2026-124034, CVE-2026-124035: Issues with Amazon Braket SDK",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-175-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Braket",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-175-AWS Publication Date: 11/09/2026 14:15 PM PST Description: Amazon Braket SDK is an open source Python library that customers use to run quantum tasks and hybrid jobs on Amazon Braket. We identified CVE-2026-124034, an issue in the local hybrid job input data download in the Amazon Braket SDK. And we identified CVE-2026-124035, an issue in the error mitigation schema validation in Amazon Braket Schemas, the library the Amazon Braket SDK uses to parse quantum task results. Impacted versions: - amazon-braket-sdk >= 1.10.0 AND < 1.127.7 - amazon-braket-schemas >= 1.17.0 AND < 1.32.2 Refer to the article for the most up-to-date and complete information. Read this article",
+    "published": "2026-11-09T22:42:12Z",
+    "hash": "d3a2eddd20b5782ef250dffbbe9e4a405634e09200575d5792e7614fccc05701"
+  },
+  {
+    "title": "Amazon CloudWatch Logs announces account-level retention policies",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-log-retention/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudWatch Logs",
+    "category": "Upgrade",
+    "summary": "Amazon CloudWatch Logs now supports account-level retention policies, so you can use a single policy to set how long log data is kept across all or subset of log groups in an AWS account. Account-level policies allow platform and security teams to bring each log group in line with their retention standards. With today's launch, you can create policies that cover all log groups in the account or apply to a specific set of log groups with names that start with a prefix, such as /aws/lambda. You can additionally choose whether it applies to existing log groups or only new ones. When more than one policy matches a log group, the longest retention period applies. For example, a central platform team can set a 90-day baseline for the account and a 1-year policy for log groups that start with /security to meet audit requirements, without tracking individual log group names. Account-level retention policies are available in all commercial AWS Regions except Middle East (Bahrain), and Middle Ea",
+    "published": "2026-11-09T22:15:00Z",
+    "hash": "5e43a78dc70ac178b251bbc0826d503eb375a578705814d761c60abbaf40e6c9"
+  },
+  {
+    "title": "AWS Glue adds 100 new native connectors for popular SaaS applications",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-glue-adds-100-new-native-connectors/",
+    "source": "AWS What's New",
+    "service": "AWS Glue",
+    "category": "Upgrade",
+    "summary": "AWS Glue now supports 100 new native connectors that simplify access to data in popular SaaS and REST API-based applications. Previously, bringing data from SaaS applications into AWS required writing custom code. Now, teams can create a connection once in the AWS Glue Data Catalog and reuse it across ETL jobs with the same permissions model they already use for AWS Glue. The new connectors span generative AI, finance, payments, marketing, product analytics, human resources, engineering, IT operations, and collaboration tools. AI teams can bring usage and cost data from model providers such as Anthropic to track generative AI adoption and spend. Finance teams can consolidate transactions from applications such as Adyen, Square, and Xero for faster reporting. Product and marketing teams can combine billing, usage, and campaign data from tools such as Chargebee, Amplitude, and Klaviyo to understand customer lifetime value. HR teams can unify workforce data from systems such as BambooHR a",
+    "published": "2026-11-09T21:33:00Z",
+    "hash": "f9cf3510ac4c7be69248d598afc5946043f674c18d89f7a3be82280e51a4519d"
+  },
+  {
+    "title": "Amazon Quick is now AWS Quick",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-quick-aws-quick/",
+    "source": "AWS What's New",
+    "service": "Amazon Quick",
+    "category": "Service Update",
+    "summary": "Amazon Quick, the AI workspace built only for work, is now AWS Quick, a name that reflects the enterprise security and governance built into Quick from the start as an AWS service. The new name now appears across the Quick website, the web, desktop, and mobile apps, and AWS documentation. Existing customers don't need to take any action, and Quick works the same way it did before. Amazon Quick Sight, the business intelligence capability in Quick, is now AWS Quick Sight. Quick Sight customers can keep using their dashboards, datasets, and analyses just as they do today, with no changes to their data, settings, or pricing. With Quick, teams use AI agents to research, analyze, and act across the data and applications they already use, regardless of vendor. Quick understands your role, your team, and how your work connects, and anyone can build agents, apps, and automations in plain language that become shared assets for the whole team. Quick is HIPAA eligible and holds compliance certific",
+    "published": "2026-11-09T19:00:00Z",
+    "hash": "f5c2695a708487dc7a3615b8faaa9d0a49307e314af86fa1c06b04cf3b1c4280"
+  },
+  {
+    "title": "Amazon Connect Customer launches evaluation form templates",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-customer-evaluation-form-templates/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Release",
+    "summary": "Amazon Connect Customer now provides evaluation form templates so managers don't have to build forms from scratch, reducing the time to deploy automated evaluations of human and AI agent performance. These templates cover typical customer interaction scenarios: customer service, inbound sales, and self-service. Each template assesses human and AI agent behaviors. For example, the customer service template includes questions such as \"Did the agent show empathy toward the customer's issue?\" Templates also include questions that assess business outcomes such as customer satisfaction and attrition risk, so managers can see how agent behaviors relate to outcomes. Managers can use the templates as-is or customize them before deploying. This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Singapore), Asia Pacific (Sydney), and Asia Pacific (Tokyo). To learn more, visit our document",
+    "published": "2026-11-09T18:00:00Z",
+    "hash": "12104b2d074eebbb09ac9fcd8e601547667218b4211d7cf31faa894f8788a90b"
+  },
+  {
+    "title": "Introducing an open-source UI for graph analytics over data lakes with Amazon Neptune Analytics",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-graphover-datalakes-generally-available",
+    "source": "AWS What's New",
+    "service": "Amazon Neptune Analytics",
+    "category": "Release",
+    "summary": "Today, AWS is introducing an open-source solution with a local web UI that helps customers turn data lake records into graphs for analysis with Amazon Neptune Analytics. By projecting selected records and relationships, customers can investigate connections across tables and run graph algorithms without building their own ETL pipelines. For example, a customer could project accounts and transactions into a graph to explore how accounts are connected or identify communities that may warrant investigation. Doing this today often means writing queries to prepare node and relationship data, creating a Neptune Analytics graph, and managing the import. Customers may also need to build a selective projection so they do not load an entire dataset for a narrower question. The new UI brings those steps into single workflow. To run graph analytics over iceberg tables, customers select an Athena catalog and database, define a property graph using SQL/PGQ, and preview rows before import. The soluti",
+    "published": "2026-11-09T17:00:00Z",
+    "hash": "abdf803f9fe9ca76318de9965b0c9a28cfae7abf0a18fbb49ed9be10ebb70467"
+  },
+  {
+    "title": "Amazon DocumentDB Serverless now provides up to 35% higher throughput",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/documentdb-serverless-platform-version-4/",
+    "source": "AWS What's New",
+    "service": "Amazon DocumentDB",
+    "category": "Upgrade",
+    "summary": "Amazon DocumentDB Serverless now provides up to 35% higher throughput with the launch of platform version 4. Platform versions represent improvements in performance, scaling capabilities, or features, and are automatically managed at the cluster level. All new serverless clusters launch on the latest platform version available in your AWS Region. You can upgrade existing clusters on platform version 3 to platform version 4 by applying the serverless-platform-version-update pending maintenance action. This gives you control over when to apply the update, either immediately or during your next scheduled maintenance window. After you upgrade to a newer platform version, you can't downgrade to a previous version. You can view the platform version of a cluster in the AWS Management Console or through the ServerlessV2PlatformVersion field of the DescribeDBClusters API. For more information, see Amazon DocumentDB serverless scaling capacity and Checking and upgrading the platform version of a",
+    "published": "2026-11-09T16:00:00Z",
+    "hash": "bb898e41533724b0830832507c7e23972abf1f01a6ecec391ff72c5cab51204f"
+  },
+  {
+    "title": "Amazon Athena introduces system tables for observability, auditing, and usage analytics",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/athena-system-tables/",
+    "source": "AWS What's New",
+    "service": "Amazon Athena",
+    "category": "Release",
+    "summary": "Amazon Athena now offers system tables which automatically capture your usage data and make it available for observability, usage analysis, and audit use cases. When you enable system tables, usage data is available within minutes of query completion across your workgroups and stored as service-managed, read-only Iceberg tables on Amazon S3 Tables with configurable retention. You can query it directly with Athena, while AWS manages the tables for you, including schema definition, partitioning, compaction, and snapshot maintenance, removing all operational burden. Athena provides usage data through APIs like GetQueryExecution, CloudWatch metrics, and CloudTrail logs. With this launch, usage data is also available as iceberg tables that you can search, filter, aggregate, and join directly without building or maintaining custom pipelines. Platform teams can query the query_executions table to build cost allocation dashboards that show data scanned by workgroup, by user, or by table using ",
+    "published": "2026-11-09T16:00:00Z",
+    "hash": "75e9e5cf9cce3ab19da56023a314cbcd88ff2eabe73d003d8e398a4304bc697b"
+  },
+  {
+    "title": "Introducing AWS Nitro Sandboxes on Amazon EKS, ECS and EC2 for hardware isolated pods, tasks and VMs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "Release",
+    "summary": "AWS Nitro Sandboxes are now available as lightweight VMs managed by the Nitro Hypervisor. You can use Nitro Sandboxes for an Amazon EKS pod, or Amazon ECS task, or lightweight Virtual Machines (VMs), including AI agents running inside them, in their own hardware-isolated virtual machine powered by the AWS Nitro System . Each workload gets the isolation boundary of a Nitro isolated virtual machine. This allows you to safely run untrusted, multi-tenant, or regulated workloads within the resources of a single instance. Nitro Sandboxes run on your EC2 instances with near-native EC2 performance and inherits Nitro-hypervisor isolation. You can also validate your workloads through cryptographic attestation, so that secrets are released only to Nitro Sandboxes that have proven their integrity. With Nitro Sandboxes, you can safely execute LLM-generated code in an isolated environment of its own all while improving utilization and lowering compute costs by securely sharing a single EC2 instance ",
+    "published": "2026-11-09T08:00:00Z",
+    "hash": "9bb08919564060042af8d80f4a91b1cf5a8e7a072716bc41791eb24e7bf43f97"
+  },
+  {
+    "title": "Amazon S3 Access Points for Amazon FSx are now available in additional AWS Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/s3-access-points-fsx-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon FSx",
+    "category": "Release",
+    "summary": "You can now attach Amazon S3 Access Points to your Amazon FSx for NetApp ONTAP file systems in 4 additional AWS Regions, and to your Amazon FSx for OpenZFS file systems in 20 additional AWS Regions. With this capability, your file data in Amazon FSx is accessible for use with the broad range of artificial intelligence, machine learning, and analytics services and applications that work with S3, while your data continues to reside on your FSx file system. An S3 Access Point for Amazon FSx is an S3 endpoint that gives S3-based applications and services access to the data on your FSx file system through the Amazon S3 API, without copying or moving that data. For example, you can connect generative AI applications and agents to your file data with Amazon Bedrock Knowledge Bases so they deliver relevant, contextual responses. Users can query the same data in place with Amazon Athena or transform it with AWS Glue, and you can share files with partners over SFTP, FTPS, and FTP using AWS Trans",
+    "published": "2026-11-09T08:00:00Z",
+    "hash": "5f565dd868d12e7a0d3d97384bacc7bab7267ad175224fea2a65692dec82e70d"
+  },
+  {
+    "title": "Amazon Route 53 Profiles now supports multiple Profiles per VPC",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-profiles-multiple-per-vpc/",
+    "source": "AWS What's New",
+    "service": "Amazon Route 53",
+    "category": "Upgrade",
+    "summary": "Amazon Route 53 Profiles now lets you associate more than one Profile with a VPC. Previously, a VPC could have only one Profile, so teams that managed Route 53 configurations separately (for example, security teams managing DNS Firewall rule groups while cloud infrastructure and network admin teams manage private hosted zones and Resolver forwarding rules) all had to share a single Profile and associate their private hosted zones, Resolver rules, and DNS Firewall rule groups with it. With this launch, you can now associate multiple Profiles with the same VPC and set a priority for every Profile. Route 53 evaluates a VPC's Profiles in priority order, starting with the lowest number, so you can keep shared Route 53 configurations in one Profile and team-specific configurations in another without merging them, while assigning them the right priority. Combined with the granular IAM permissions launched in March 2026, multiple Profiles per VPC improves security posture by letting each team ",
+    "published": "2026-11-09T08:00:00Z",
+    "hash": "7051629dbd084dd2cb7b400707830fd70e88efa7c4c41c9286268008729d8c75"
+  },
+  {
+    "title": "Amazon EKS Auto Mode and Karpenter now support Dynamic Resource Allocation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-auto-mode-karpenter-dra/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "Upgrade",
+    "summary": "Amazon Elastic Kubernetes Service (Amazon EKS) now supports Dynamic Resource Allocation (DRA) for NVIDIA GPUs and Elastic Fabric Adapter (EFA) network devices when using Amazon EKS Auto Mode and Karpenter. You can now define the device attributes your Kubernetes workloads need with DRA, share GPU devices across Pods, and allocate topology-aligned GPU and EFA devices while Amazon EKS Auto Mode and Karpenter dynamically scale Amazon EC2 instances based on workload demand. With DRA, you define ResourceClaim or ResourceClaimTemplate objects that describe what GPU or EFA devices can be allocated to workloads, by model, architecture, or other attributes. When running distributed training or inference, you can define PCIe-aligned GPU and EFA devices for optimal performance. Workloads then request those DRA objects in their configuration, and Karpenter automatically launches the lowest-cost instances that match. When using Amazon EKS Auto Mode, the NVIDIA DRA driver and EFA DRA driver (DRANET)",
+    "published": "2026-11-09T06:00:00Z",
+    "hash": "336797982314a57ee15c301fbdae71010d125a43ab8ac199598a525b0eef9b11"
+  },
+  {
     "title": "CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL",
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/",
     "source": "AWS Security Bulletins",
@@ -255,7 +385,7 @@
     "source": "AWS What's New",
     "service": "Amazon DocumentDB",
     "category": "Release",
-    "summary": "Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions, adding to the list of available Regions where you can use Amazon DocumentDB. Amazon DocumentDB is a fully managed, native JSON database that makes it simple and cost-effective to operate critical document workloads at virtually any scale without managing infrastructure. Amazon DocumentDB is designed to give you the scalability and durability you need when operating mission-critical MongoDB workloads. Storage scales automatically up to 128 TiB without any impact to your application. In addition, Amazon DocumentDB natively integrates with Amazon CloudWatch, AWS CloudTrail, AWS Lambda, AWS Backup, and more. Amazon DocumentDB supports millions of requests per second and can be scaled out to 15 low-latency read replicas in minutes with no application downtime. To learn more about Amazon DocumentDB, please visit the Amazon DocumentDB product page and pricing pa",
+    "summary": "Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions, adding to the list of available Regions where you can use Amazon DocumentDB. Amazon DocumentDB is a fully managed, native JSON database that makes it simple and cost-effective to operate critical document workloads at virtually any scale without managing infrastructure. Amazon DocumentDB is designed to give you the scalability and durability you need when operating mission-critical MongoDB workloads. In addition, Amazon DocumentDB natively integrates with Amazon CloudWatch, AWS CloudTrail, AWS Lambda, AWS Backup, and more. Amazon DocumentDB supports millions of requests per second and can be scaled out to 15 low-latency read replicas in minutes with no application downtime. To learn more about Amazon DocumentDB, please visit the Amazon DocumentDB product page and pricing page . You can create an Amazon DocumentDB cluster from the AWS Management Console , ",
     "published": "2026-11-04T19:00:00Z",
     "hash": "7cde1b985cf93f6d059de65f14590304cacd79e1b523fdc94c7772a019868253"
   },
@@ -435,7 +565,7 @@
     "source": "AWS Security Bulletins",
     "service": "AWS SDK",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-161-AWS Publication Date: 11/02/2026 08:30 AM PST Description: We are aware of CVE-2026-119301 in the Apache Iceberg write component, where improper neutralization of quoting syntax in SQL identifier construction could allow an authenticated user with permission to modify AWS Glue Data Catalog metadata to read any table that a separate, more privileged principal can access and write to the table that principal is updating via a crafted column name. Impacted versions: awswrangler >= 3.5.2, < 3.17.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+    "summary": "Read this article",
     "published": "2026-11-02T16:40:57Z",
     "hash": "c299e4b32fbf799963386d35eafe336b0c4c9cc786aa391630375f6538d01944"
   },
