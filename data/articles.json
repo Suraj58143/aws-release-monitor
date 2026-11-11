@@ -1,5 +1,155 @@
 [
   {
+    "title": "Amazon EC2 G7 instances now available in additional regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-g7-additional-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Amazon Elastic Compute Cloud (Amazon EC2) G7 instances powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs are now available in Europe (London), Asia Pacific (Mumbai, Sydney) and South America (Sao Paulo) Regions. G7 instances deliver up to 4.6x AI inference performance and up to 2.1 graphics performance compared to G6 instances. G7 instances also deliver faster performance for GPU-accelerated data analytics workloads. Customers can use G7 instances for deploying AI models for language translation, video and image analysis, speech recognition and recommender systems. They also accelerate graphics workloads such as creating and rendering real-time, cinematic-quality graphics and game streaming. Additionally, G7 instances support video transcoding, spatial computing, and data analytics workloads. G7 instances feature up to 8 NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs with 32 GB of memory per GPU and custom Intel Xeon 6 processors. They support up to 192 virtual CPUs (vCPU",
+    "published": "2026-11-10T19:30:00Z",
+    "hash": "313b40499815e65ac0de823f0399c39c83263695a7f351d1633402514d477533"
+  },
+  {
+    "title": "Amazon OpenSearch Service announces managed cross-Region disaster recovery",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-managed-cross-region-disaster-recovery/",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Service Update",
+    "summary": "Amazon OpenSearch Service now offers managed cross-Region disaster recovery, so you can meet strict availability and business continuity requirements for mission-critical search, AI, and analytics workloads without building or maintaining replication yourself. After you create domains in two Regions, you can pair them with a single API call or a few steps in the AWS Management Console. Managed disaster recovery delivers a recovery point objective (RPO) of under one minute and a recovery time objective (RTO) of under 20 minutes. The secondary domain stays continuously in sync with the primary. For planned events such as maintenance or Region rotation, a switchover swaps the two domains' roles with zero data loss. If your primary domain becomes unavailable, a failover promotes the secondary, with data loss limited to the replication lag. After a failover, you restore protection by pairing the new primary with a secondary domain. You can monitor replication health and lag with Amazon Clou",
+    "published": "2026-11-10T19:00:00Z",
+    "hash": "5ec2a9d82dcfa9ea1a1cf28db082ef340615aff1acdaf37ce867f32c2bdffce9"
+  },
+  {
+    "title": "Amazon RDS for PostgreSQL announces Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-extended-support/",
+    "source": "AWS What's New",
+    "service": "Amazon RDS for PostgreSQL",
+    "category": "Security",
+    "summary": "Amazon Relational Database Service (RDS) for PostgreSQL announces Amazon RDS Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822. Amazon RDS Extended Support provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVE) and bugs beyond a major version's end of standard support date, giving you more time to upgrade to a new major version. You can upgrade your database using Amazon RDS Blue/Green Deployments , in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the Amazon RDS for PostgreSQL User Guide . Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the Amazon RDS Management Console or by using the AWS Command Line Interface (AWS CLI).",
+    "published": "2026-11-10T17:00:00Z",
+    "hash": "e8eeee32d0ffb0225a0449969e8fe11964332aa917ba1db2428d9e71e5aee1eb"
+  },
+  {
+    "title": "Amazon RDS for MySQL 26.10 is now available in Amazon RDS Database Preview Environment",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-mysql-26-10-preview-environment/",
+    "source": "AWS What's New",
+    "service": "Amazon RDS for MySQL",
+    "category": "Bug Fix",
+    "summary": "Starting today, Amazon RDS for MySQL 26.10 is available in the Amazon RDS Database Preview Environment , allowing you to evaluate the pre-release of MySQL 26.10 on Amazon RDS for MySQL. MySQL 26.10 includes bug fixes, security patches, and some improvements to READ COMMITTED workload performance and purge lag warnings in the error log. On busy READ COMMITTED workloads, NUMA systems performance could be impacted as each read view that closed required a global mutex. Read-view objects can now be reused which eliminates the global mutex on closure. The error log now reports warnings when the history-list length (HLL) crosses innodb_max_purge_lag and when purge lag begins delaying DML, so you can detect purge backlogs before they affect performance. To learn more, please refer to the MySQL 26.10 release notes . Amazon RDS Database Preview Environment database instances are retained for a maximum period of 60 days and are automatically deleted after the retention period. Amazon RDS database",
+    "published": "2026-11-10T17:00:00Z",
+    "hash": "52152604928f4474022505a553a10461c816434003883d3c5352f56507df68ce"
+  },
+  {
+    "title": "AWS Partner Central now provides an improved business planning experience",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-business-planning/",
+    "source": "AWS What's New",
+    "service": "AWS Partner Central",
+    "category": "Service Update",
+    "summary": "AWS Partner Central now offers a new business planning experience in the AWS Console. AWS Partners can initiate plans for growing their AWS business or collaborate on plans initiated by AWS teams. Partners can collaborate with AWS partner development, technology, marketing, and specialist teams to define plan narratives, goals, and initiatives. AI-assisted plan readiness scores help partners identify areas to improve, while real-time tracking shows progress against goals. Partners can also add attachments and export plans to prepare for business reviews. Partners can use application programming interfaces (APIs) and software development kits (SDKs) to integrate business planning into their workflows. Programmatic notifications are also available. Business planning is available to AWS Partners who are actively engaged with AWS Partner management teams. AWS Partner Central is available in the US East (N. Virginia) Region. To get started, sign in to AWS Partner Central and choose Business",
+    "published": "2026-11-10T16:00:00Z",
+    "hash": "ae24329611ed5139db1cd4f96c29f38eeca98fade341c0dfb256a3228099f6cd"
+  },
+  {
+    "title": "Amazon S3 Access Grants now support listing grants across multiple AWS accounts",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-access-grants-list-across-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon Simple Storage Service",
+    "category": "Release",
+    "summary": "Amazon S3 Access Grants can now discover and list all your grants across multiple AWS accounts with a single API call, eliminating the need to query each account separately. A single ListCallerAccessGrants call returns grants from your own S3 Access Grants instance and every instance shared with you, giving you a complete view of the S3 data you can access. By setting the new InstanceScope parameter to ALL in your ListCallerAccessGrants request, S3 Access Grants queries every instance shared with you through AWS Resource Access Manager (AWS RAM) and returns all the grants in one combined response, each identifying the account that owns it. Additionally, when you request credentials with GetDataAccess for an S3 path and set InstanceScope to ALL , S3 Access Grants locates the owning account for you, routes the request to its instance, and returns credentials for the matching grant. This capability is now available in all AWS Regions where S3 Access Grants is available, at no additional c",
+    "published": "2026-11-10T14:00:00Z",
+    "hash": "ee4c7fdb427690e1ba4e4aff9dc8f08c7bc07a68471cee542c330cb6fad7d3f0"
+  },
+  {
+    "title": "Amazon Bedrock adds bedrock-runtime endpoint support for Daybreak models",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-daybreak-on-amazon-bedrock-runtime/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock",
+    "category": "Security",
+    "summary": "Eligible customers can now access OpenAI’s specialized cybersecurity models Daybreak Red: GPT-5.6 Cyber and Daybreak Blue: GPT-5.6 Sol through the bedrock-runtime endpoint on Amazon Bedrock. Daybreak Blue is the starting point for most security teams across defensive workflows, including vulnerability discovery, detection engineering, and incident response. Daybreak Red is designed for advanced, authorized tasks such as vulnerability research, exploit reproduction, and mitigation development. For these tasks, a lower refusal threshold, matched by stronger identity verification, monitoring, and access controls, improves the speed and depth of an investigation. Your inference data is not used for model training, and neither model requires you to opt in to sharing your data with OpenAI. On the bedrock-runtime endpoint, the models are available through US and Global cross-Region inference (CRIS) profiles. Access to the models requires enrollment in Daybreak access from OpenAI. To enroll, c",
+    "published": "2026-11-10T10:14:00Z",
+    "hash": "35bee1581f51a07de4c799bbd76bd2edd3f3c6562f281f5fd01f61d3a840aec0"
+  },
+  {
+    "title": "AWS Network Firewall launches next-generation firewall policy",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-launches-ngfw-policy/",
+    "source": "AWS What's New",
+    "service": "AWS Network Firewall",
+    "category": "Release",
+    "summary": "Today, AWS announces next-generation firewall (NGFW) policy for AWS Network Firewall, a new policy model that provides security teams with a simpler policy structure and increased rule capacity. AWS Network Firewall is a managed network security service that protects your Amazon VPCs with access control and threat detection. The new policy model strengthens your security posture by layering firewall and IPS protections instead of combining them, which also makes policies easier to manage. You author firewall rules that enforce deny-by-default access control, such as allowing traffic only to approved domains. For IPS rules, you can use managed rule groups from AWS or AWS Marketplace partners, which update automatically as new threats emerge. You can also create your own custom IPS rule groups. Firewall and IPS rules each have their own capacity, so you no longer trade one off against the other. For rules you don't share across policies, you can create embedded rule groups that draw capa",
+    "published": "2026-11-10T08:00:00Z",
+    "hash": "72be8895015e107e4c214407e17c493afa3e1e36e9dec28b9fbc266b6eeed696"
+  },
+  {
+    "title": "AWS Marketplace SaaS free trials now convert automatically to paid subscriptions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace-free-trial-conversion/",
+    "source": "AWS What's New",
+    "service": "AWS Marketplace",
+    "category": "Service Update",
+    "summary": "Today, AWS Marketplace announces that free trials of usage-based software as a service (SaaS) products can now convert automatically to paid subscriptions. When a free trial ends, the buyer's subscription continues at the seller's usage-based pricing, so buyers pay only for what they use after the trial. This helps sellers turn more trial users into paying customers. Buyers get a simple way to evaluate software before they buy, with no new subscription and no interruption in access. Sellers can offer a free trial of 7 to 90 days that converts to a paid subscription at the price they set. For example, a data team can try an analytics product for 30 days and, if it meets their needs, keep using it after the trial ends. Buyers see the trial length, conversion date, and pricing before they subscribe. They receive reminder emails before the trial converts and can cancel at any time before conversion at no charge. Sellers can create a free trial in AWS Partner Central, or update an existing ",
+    "published": "2026-11-10T08:00:00Z",
+    "hash": "470a05eeacacb5fa7c221bc9a1946b0febba0f3ba9a69e5966d2cdf949f4b239"
+  },
+  {
+    "title": "Amazon S3 Tables now support S3 server access logging",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-tables-server-access-logging/",
+    "source": "AWS What's New",
+    "service": "Amazon S3 Tables",
+    "category": "Service Update",
+    "summary": "Amazon S3 Tables now support server access logging, providing you detailed records of the requests made to your table buckets. You can now track table operations, namespace management, and data access to support security audits, access analysis, and cost attribution. Log delivery is available at no additional cost, and you pay only for the storage of the log files. When you enable server access logging on a table bucket, S3 delivers logs for requests to all tables and namespaces in that bucket to a general purpose bucket in the same account and Region. Each record captures the requester, operation, table name, namespace, response status, and request timing, using the same space-delimited format as S3 server access logs for general purpose buckets. This lets you reuse your existing log analysis workflows to query S3 Table logs with any query engine of your choice such as Amazon Athena and DuckDB. Server access logging for S3 Tables is available in all AWS Regions where S3 Tables are ava",
+    "published": "2026-11-10T08:00:00Z",
+    "hash": "8751b8ae8712e81c80cab0dc5189f91787090e1fe1f1def993defd95d67f23db"
+  },
+  {
+    "title": "Amazon GameLift Servers now supports Game Session Placement Insights",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/gamelift-game-session-insights/",
+    "source": "AWS What's New",
+    "service": "Amazon GameLift Servers",
+    "category": "Upgrade",
+    "summary": "Amazon GameLift Servers now offers Game Session Placement Insights, delivering detailed, per-placement diagnostic logs for game session queue routing. Amazon GameLift Servers routes game session placement requests through queues that evaluate multiple fleet locations based on latency and cost factors. This feature is designed for game developers and engineers who need greater transparency into how their game session queues operate. Previously, developers had limited visibility into why placements succeeded, failed, or timed out, making queue optimization difficult. Game Session Placement Insights captures which fleet locations were evaluated, the player latency and cost factors that influenced routing decisions, and the final placement outcome for every placement. This enables teams to identify patterns such as consistently slow placements, repeated failures, or sessions landing in unexpected locations, and to tune their queues to improve the overall player experience. You can enable t",
+    "published": "2026-11-10T08:00:00Z",
+    "hash": "4e27c3439185a221a84b953db94e6a5a291b117d39a7e52a7511c55db11eb7f8"
+  },
+  {
+    "title": "Amazon ElastiCache Serverless now supports vector, full-text and hybrid searches plus aggregations",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-elasticache-serverless-search-aggregations/",
+    "source": "AWS What's New",
+    "service": "Amazon ElastiCache",
+    "category": "Upgrade",
+    "summary": "Amazon ElastiCache Serverless for Valkey now supports vector, full-text, and hybrid search, along with aggregations. Applications searching live data often face a hard trade-off between latency and recall, along with delays before updates become searchable. With search on ElastiCache Serverless, applications can search data with latency as low as microseconds at up to 99% recall for vector search, while serving billions of queries per day. Updates are searchable in as little as microseconds, as soon as writes complete. Search on ElastiCache Serverless is ideal for latency-sensitive applications with unpredictable traffic and for teams that want to get started with search quickly. You can combine search types in a single query, tune recall as needed, and analyze results with server-side aggregations. Developers can give every agent, session, or task its own datastore for memory and context retrieval, so agents can experiment, fail, and retry without touching production or each other. Ea",
+    "published": "2026-11-10T08:00:00Z",
+    "hash": "bcfae87021eda9eb140b723ca99e22eb9442446f36d9e46a5fd236e6ce2c02b2"
+  },
+  {
+    "title": "CloudWatch PromQL alarms now support EC2 and Application Auto Scaling",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-alarms-autoscaling-group-actions",
+    "source": "AWS What's New",
+    "service": "Amazon CloudWatch",
+    "category": "General Announcement",
+    "summary": "Amazon CloudWatch alarms that use Prometheus Query Language (PromQL) can now trigger Amazon EC2 and Application Auto Scaling step and simple scaling policies. You can scale your EC2 Auto Scaling groups on CloudWatch OpenTelemetry metrics using the same kind of PromQL queries you use for dashboards and alerting. In this release, PromQL alarms also support EC2 Auto Scaling simple and step scaling policies. Target tracking is not currently a supported policy type for PromQL alarms. Teams moving to OpenTelemetry can scale capacity on the same metrics as the rest of their monitoring, instead of keeping separate classic metric alarms for scaling. For step scaling, how far the value is past the threshold in your PromQL query decides which step applies. The query must return a single series and compare it to a threshold. You can add EC2 Auto Scaling and Application Auto Scaling actions in the CloudWatch console when you create or edit an alarm, or with the PutMetricAlarm API, AWS CLI, AWS SDKs",
+    "published": "2026-11-10T03:00:00Z",
+    "hash": "a56e4ac7bd09231727fd22d740f9ac945b15fb009746905153a948d28fc31064"
+  },
+  {
+    "title": "Amazon OpenSearch Service now lets you validate and roll back version upgrades",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service/upgrades/",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Upgrade",
+    "summary": "Amazon OpenSearch Service now supports clone-based upgrades, which let you validate a new OpenSearch version alongside your current one and cut over to it only when you're satisfied. If you find a problem, you can cancel before you cut over or roll back afterward. With clone-based upgrades, you can move to new versions with more confidence. When you start a clone-based upgrade, OpenSearch Service copies the data from your existing cluster (the primary cluster) to a second cluster running the new version (the cloned cluster). While the primary cluster keeps serving your workload, you can run the same search queries on both clusters and compare their performance using Amazon CloudWatch metrics. After you finish validating, you can cut over to the cloned cluster. If you keep the previous version for a retention period you choose, you can roll back to it at any time during that period. You can start and manage a clone-based upgrade from the AWS Management Console, the AWS CLI, or the OpenS",
+    "published": "2026-11-10T02:30:00Z",
+    "hash": "e98cff04d45e6077212fbf1c54e7e86d9400a8767e7e3714dec04d34e7691972"
+  },
+  {
+    "title": "Amazon DocumentDB (with MongoDB compatibility) now supports post-quantum TLS, wildcard indexes, and $unionWith in version 8.0.3",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-8-0-3/",
+    "source": "AWS What's New",
+    "service": "Amazon DocumentDB",
+    "category": "Upgrade",
+    "summary": "Amazon DocumentDB (with MongoDB compatibility) 8.0.3 adds hybrid post-quantum key exchange for TLS, wildcard indexes, the $unionWith aggregation stage, and new change stream events. Post-quantum TLS protects data in transit from traffic that is recorded today and decrypted later with a quantum computer. The new MongoDB APIs let you move more MongoDB workloads to Amazon DocumentDB without changing application code. What's new in 8.0.3: Post-quantum TLS: TLS 1.3 connections use hybrid key exchange based on the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) when the client supports it. Other clients keep using classical key exchange. Two new Amazon CloudWatch metrics, TLSHandshakesClassical and TLSHandshakesPostQuantum, count the handshakes of each type. Wildcard indexes: index every field, or every field under a path, to query documents with dynamic schemas. Aggregation: $unionWith combines results from multiple collections in one pipeline. $lookup and $graphLookup work in vie",
+    "published": "2026-11-10T00:00:00Z",
+    "hash": "d9b92f45f2288dc4b21c5f7f7da1729b3096a6580c0c86f9404f6dcf37c5acf6"
+  },
+  {
     "title": "Amazon Bedrock AgentCore now offers a Web Search API",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/",
     "source": "AWS What's New",
@@ -628,6 +778,16 @@
     "summary": "Amazon CloudFront now supports AWS Service Quotas, so you can view, monitor, and request increases for 28 CloudFront quotas from the Service Quotas console or API. Until now, increasing a quota on resources such as distributions, cache policies, origins, or alternate domain names meant opening a support case and waiting for manual review. If you have AWS Business Support or higher, requests for limit increases within published thresholds are now approved automatically. For example, you can raise your distribution quota from 500 to 1,000, or the number of alternate domain names per distribution from 100 to 500, without opening a support case. Some quotas also publish usage metrics to Amazon CloudWatch every 5 minutes, so you can set alarms and request an increase before you reach a limit.. This feature is available in all AWS Regions where Amazon CloudFront is supported. To get started, visit the Service Quotas console to view and request increases for your CloudFront quotas. To learn m",
     "published": "2026-11-02T08:00:00Z",
     "hash": "90ab0c7a0c865e14b90077e3943bd0b37f5d5d651748236382e40418684ac88d"
+  },
+  {
+    "title": "AWS Compute Optimizer now supports additional Amazon EC2 instance types in the AWS GovCloud (US) Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-compute-optimizer-amazon-ec2/",
+    "source": "AWS What's New",
+    "service": "AWS Compute Optimizer",
+    "category": "Upgrade",
+    "summary": "AWS Compute Optimizer now provides rightsizing recommendations for 389 additional Amazon Elastic Compute Cloud (Amazon EC2) instance types in AWS GovCloud (US-West) and 276 in AWS GovCloud (US-East) Regions. Customers running regulated and government workloads can find the same cost and performance opportunities on current-generation instance types without manual analysis. Compute Optimizer has expanded support to include the latest generation families in every workload category. The additions include Compute Optimized (C7i, C7i-flex, C8g, C8gn), General Purpose (M7i, M7i-flex, M8g, M8gd, M8i, M8i-flex), Memory Optimized (R7i, R8g, R8gd, R8i, R8i-flex), Memory Intensive (X2iedn, X8i), and Storage Optimized (I7i, I7ie, I8g, I8ge) instance types. With this expansion, Compute Optimizer supports 724 instance types across 102 families in AWS GovCloud (US-West) and 542 instance types across 69 families in AWS GovCloud (US-East), in both EC2 instance and EC2 Auto Scaling group recommendations",
+    "published": "2026-10-30T22:50:00Z",
+    "hash": "395f0286f68c004daa39123a522cabab3f356e15717d3808ff45fdd299087179"
   },
   {
     "title": "Amazon Connect Customer automatically saves in-progress emails as drafts",
