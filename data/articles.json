@@ -1,5 +1,65 @@
 [
   {
+    "title": "Ornith-1.0-9B and Ornith-1.0-35B models now available on Amazon SageMaker JumpStart",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/ornith-1-0-9b-ornith-1-0-35b-on-sagemaker-jumpstart/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Release",
+    "summary": "DeepReinforce AI's Ornith-1.0-9B and Ornith-1.0-35B models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models are part of the Ornith 1.0 family of open-source, self-scaffolding agentic coding models released under the MIT license, achieving state-of-the-art performance among open-source models of comparable size on coding benchmarks such as Terminal-Bench 2.1, SWE-Bench, NL2Repo, and OpenClaw. These models address different agentic coding challenges with specialized capabilities: Ornith-1.0-9B is a lightweight 9B-parameter dense model post-trained on Qwen 3.5 9B, designed for efficient single-GPU deployment. With a 256K-token context window and 32 decoder layers, it is well-suited for individual developers and small teams running agentic coding workflows on a single GPU — including laptops with consumer-grade hardware. Its self-improving training framework uses reinforcement learning to jointly opti",
+    "published": "2026-11-11T23:36:00Z",
+    "hash": "c22c75161593d0caf7ec1894a4b3b387d584c3bdb855dd18f03eb968b4bbb927"
+  },
+  {
+    "title": "Amazon EKS Provisioned Control Plane now offers a 24 GB etcd database on 4XL and 8XL tiers",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-provisioned-control-plane-larger-etcd-database/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "Upgrade",
+    "summary": "Amazon Elastic Kubernetes Service (Amazon EKS) now offers a larger 24 GB etcd database, up from 16 GB, for 4XL and 8XL Provisioned Control Plane clusters. etcd is the key-value store in the Kubernetes control plane that holds your cluster state, so its size limits how many Kubernetes objects your cluster can store. With 50% more capacity, you can run bigger clusters with more pods, jobs, events, and custom resources. The larger database gives more headroom to workloads that create and update many Kubernetes objects, such as large-scale AI/ML training and inference, batch processing, and CI/CD pipelines. When the etcd database fills up, you can’t add or change objects in your cluster, so the extra headroom helps keep these workloads running as they scale. To get the larger database, choose the 4XL or 8XL tier of Provisioned Control Plane on a cluster running EKS version 1.34 or later. Existing clusters on the 4XL and 8XL tiers running these versions get the larger database automatically",
+    "published": "2026-11-11T19:45:00Z",
+    "hash": "1af1fd330e74fde81bf56b7be958f35a3a7657f4db99d71d36bf32d7f9d44017"
+  },
+  {
+    "title": "Amazon Cognito now supports user pool session management",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-session-management/",
+    "source": "AWS What's New",
+    "service": "Amazon Cognito",
+    "category": "Upgrade",
+    "summary": "Amazon Cognito now supports session management for user pools, giving you visibility into and control over the sessions your users establish when they sign in to your applications. Single sign-on (SSO) sessions are created when a user signs in through managed login and let them access other app clients without re-authenticating. Token sessions are created when a user signs in to an app client and receives tokens. Session management lets you list a user's active SSO and token sessions across all devices and app clients and revoke any of them on demand. You can also now configure how long each app client reuses an SSO session before requiring re-authentication, instead of the previous fixed one-hour duration. Each session includes details such as session type, app client ID, device type, last activity time and location, and initial sign-in time, so you can build your own end-user or admin session experiences. You can revoke an individual session, optionally with its linked sessions, or u",
+    "published": "2026-11-11T19:00:00Z",
+    "hash": "e6a93aec1c32f1d4607fdc991b3b6f58f09af37bc98af72acdf9f5337a4b2fb8"
+  },
+  {
+    "title": "AWS Lambda MicroVMs now supports the x86 CPU architecture",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-microvms-x86-architecture/",
+    "source": "AWS What's New",
+    "service": "AWS Lambda",
+    "category": "Security",
+    "summary": "AWS Lambda MicroVMs now supports the x86 CPU architecture, so you can run your existing x86 applications, tools, and software dependencies without recompiling or porting them. When you create a MicroVM image, you can now choose between x86 and Arm (AWS Graviton) to give each user or job an isolated MicroVM on the architecture your workload uses. Lambda MicroVMs is a serverless compute primitive that provides VM-level isolation, near-instant launch and resume, and state preservation for running user or AI-generated code, in applications such as AI coding assistants, CI/CD runners, interactive development environments, and vulnerability scanners. Today’s launch enables you to run x86-based workloads on Lambda MicroVMs as-is. For workloads that run on Arm, you can continue using AWS Graviton processors which is the default CPU architecture option. To start building x86 workloads on Lambda MicroVMs, choose the x86 architecture when you create a MicroVM image from your Dockerfile, then laun",
+    "published": "2026-11-11T18:00:00Z",
+    "hash": "c3d7bff70e3890dc8a915f341f89ab9acbe0a63806a0c3298f305b9cc050124a"
+  },
+  {
+    "title": "Amazon EKS Auto Mode now supports security groups for Pods",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-auto-mode-security-groups-for-pods/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "Security",
+    "summary": "Amazon EKS Auto Mode now supports security groups for Pods, letting you apply dedicated Amazon EC2 security group rules to individual Pods. Different workloads on the same node can carry different security groups, giving your Pods network-level segmentation without creating separate node pools for each application. Security groups for Pods extends your existing AWS network controls to the Pod level, so your Pods can reach resources such as Amazon RDS and Amazon ElastiCache databases that authorize connections by security group under the same rules the rest of your VPC uses. You define which Pods receive which security groups with a SecurityGroupPolicy resource, and Pods not matched by a policy keep using their node’s security groups. Security groups for Pods is included as part of EKS Auto Mode at no additional charge and is available on clusters running Kubernetes version 1.36 or later, in all AWS Regions where EKS Auto Mode is supported. To learn more, see Security groups for Pods in",
+    "published": "2026-11-11T17:26:00Z",
+    "hash": "1502715a09f79c93cc7fc316cbd69c19b061f6678421051534f6953cfeb71ca9"
+  },
+  {
+    "title": "Amazon SES now supports higher limits for email identities, tenants, and configuration sets",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ses-higher-resource-limits/",
+    "source": "AWS What's New",
+    "service": "Amazon SES",
+    "category": "Upgrade",
+    "summary": "Amazon Simple Email Service (Amazon SES) now supports higher limits for email identities, tenants, and configuration sets. You can view your current usage against each limit and request increases in the AWS Service Quotas console. A single account can now keep pace with your growth, so you no longer need to split email workloads across several accounts to stay within per-account limits. Customers running multi-tenant workloads often create a separate email identity, tenant, or configuration set for each customer, brand, or AI agent they serve. As you add more customers, brands, and AI agents, these resources can multiply quickly, and higher limits let all of these workloads grow in one account. To help you manage larger accounts, you can now also search these resources by name or status. Higher limits for email identities, tenants, and configuration sets are available in all AWS Regions where Amazon SES is available. To learn more, see Service quotas in Amazon SES in the Amazon SES Dev",
+    "published": "2026-11-11T08:00:00Z",
+    "hash": "2b9b82c807b95a37ca15c194f2c456f1fecd89e2b17b1bf8aa125a2588d5e86a"
+  },
+  {
     "title": "Amazon EC2 G7 instances now available in additional regions",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-g7-additional-regions/",
     "source": "AWS What's New",
@@ -285,8 +345,8 @@
     "source": "AWS Security Bulletins",
     "service": "Amazon Aurora PostgreSQL",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-166-AWS Publication Date: 11/06/2026 10:00 AM PST Description: We identified two issues in the Babelfish TDS protocol layer: - CVE-2026-119923: A memory-safety issue in the TDS connection-handshake handling could allow a remote, unauthenticated actor to affect the database process. - CVE-2026-119924: A memory-safety issue in the TDS remote-procedure-call request handling could allow a remote, authenticated actor to read adjacent process memory or cause a denial of service. Refer to the article below for the most up-to-date and complete information. Read this article",
-    "published": "2026-11-06T18:46:27Z",
+    "summary": "Read this article",
+    "published": "2026-11-06T19:03:08Z",
     "hash": "f5c819d4e7eed7f0ec2277f4d5fffd64a4d09d4a3dc84d29db57f8a5ee536eff"
   },
   {
@@ -515,7 +575,7 @@
     "source": "AWS Security Bulletins",
     "service": "Amazon EKS",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-170-AWS Publication Date: 11/04/2026 13:30 PM PST Description: We identified CVE-2026-122266, an issue in Amazon EKS Network Policy Agent (aws-network-policy-agent). Improper isolation of shared eBPF connection tracking state might allow an authenticated adjacent user to bypass NetworkPolicy ingress enforcement on co-located pods. Impacted versions: - aws-network-policy-agent < 1.3.7 - Amazon VPC CNI Managed Add-on < 1.22.3 Refer to the article below for the most up-to-date and complete information. Read this article",
+    "summary": "Read this article",
     "published": "2026-11-04T21:53:42Z",
     "hash": "66719e35ce98b3c0029f58a516d19f21140ce39eeb6c72c16373413dbe6f483f"
   },
@@ -585,8 +645,8 @@
     "source": "AWS Security Bulletins",
     "service": "Amazon Redshift",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-168-AWS Publication Date: 11/03/2026 13:00 PM PST Description: We identified CVE-2026-119084, an issue in Amazon Redshift JDBC Driver versions prior to 2.3.0. Under certain conditions, the driver could load and execute arbitrary classes when processing JDBC connection URL parameters or AWS credentials profile fields. Impacted versions: Amazon Redshift JDBC Driver < 2.3.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
-    "published": "2026-11-03T21:32:29Z",
+    "summary": "Read this article",
+    "published": "2026-11-03T21:35:57Z",
     "hash": "ecab275264cdad360b791bafae1e70f266030de8258efe545e287c6726a52ba8"
   },
   {
@@ -605,8 +665,8 @@
     "source": "AWS Security Bulletins",
     "service": "AWS Amplify",
     "category": "Security",
-    "summary": "Bulletin ID: 2026-167-AWS Publication Date: 11/03/2026 10:30 AM PST Description: maplibre-gl-js-amplify is an open-source AWS Amplify library that integrates Amazon Location Service with MapLibre GL JS to render maps, markers, popups, and geofencing controls in web applications. We identified CVE-2026-121652, where a stored cross-site scripting (XSS) issue in the library's popup and geofence-control rendering. Impacted versions: <= 4.0.2 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
-    "published": "2026-11-03T18:54:53Z",
+    "summary": "Read this article",
+    "published": "2026-11-03T19:22:49Z",
     "hash": "2c62820cdb762e0f2603cde90e8b85859e430a7b05324661ecb68cfd7678577d"
   },
   {
