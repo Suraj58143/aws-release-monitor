@@ -1,5 +1,165 @@
 [
   {
+    "title": "Amazon Cognito now supports OAuth 2.0 token exchange",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/",
+    "source": "AWS What's New",
+    "service": "Amazon Cognito",
+    "category": "Upgrade",
+    "summary": "Amazon Cognito now supports OAuth 2.0 token exchange (RFC 8693). Amazon Cognito helps you add sign-up, sign-in, and access control to your web applications, mobile applications, and AI agents. With token exchange, a service or AI agent acting on a user's behalf can exchange the user's token for a new token scoped to a specific downstream service. Previously, a service that called another service on a user's behalf had to forward the user's original token or build and maintain its own token minting logic. With token exchange, you can issue a new token that has a narrower scope than the original token, is bound to a single audience, and comes without a refresh token. When you include an actor token, Cognito adds an act claim that identifies the intermediary, so downstream services can tell a request that an agent made on a user's behalf from one the user made directly. For example, a Model Context Protocol (MCP) server can exchange a user's token for a narrowly scoped token to call a bac",
+    "published": "2026-11-12T22:00:00Z",
+    "hash": "60ec7839735afccc072c61a396da8d12753c7e72d5061aceb36d193ce013ff76"
+  },
+  {
+    "title": "CVE-2026-126793 - Privilege escalation in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon Aurora PostgreSQL",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-182-AWS Publication Date: 11/12/2026 13:00 PM PST Description: An untrusted search path issue in Aurora PostgreSQL dialect detection in the AWS Advanced Go Wrapper from release 2026-04-06 (awssql/v2.0.0) and before release 2026-07-29 (awssql/v2.0.3) could allow a remote authenticated user to escalate privileges to those of another database user, including a member of the rds_superuser role, via a crafted function that runs when that user connects to an Aurora PostgreSQL cluster through an affected version of the wrapper. Impacted versions: AWS Advanced Go Wrapper >=2026-04-06, <2026-07-29 Refer to the article for the most up-to-date and complete information.",
+    "published": "2026-11-12T21:11:28Z",
+    "hash": "beaae068185a20a493ec8738288f004c2f2dd1f9a67e0060ae6a8663be936914"
+  },
+  {
+    "title": "CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS SDK",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-181-AWS Publication Date: 11/12/2026 13:00 PM PST Description: We identified CVE-2026-127119, an issue in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0. When a cluster is created without an explicit log location, the library uses a predictable default S3 bucket name for the cluster logs without verifying that the caller's account owns that bucket. A remote actor who creates that bucket first could read the cluster's logs, including job step output. Impacted versions: >= 1.1.0 AND < 3.18.0 Refer to the article for the most up-to-date and complete information.",
+    "published": "2026-11-12T19:07:08Z",
+    "hash": "a295e41abc7764ad253ca9e46547fcff036e8254fd03393f2258d0c01879cdac"
+  },
+  {
+    "title": "Amazon Aurora and RDS now support Graviton5-based R9g database instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-rds-postgresql-mysql-mariadb-r9g-instances/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora",
+    "category": "Service Update",
+    "summary": "AWS Graviton5-based R9g database instances are now generally available for Amazon Aurora with PostgreSQL compatibility and MySQL compatibility, and for Amazon RDS for PostgreSQL, MySQL, and MariaDB. Graviton5-based R9g instances provide up to a 30% performance improvement and up to a 22% price-performance improvement for on-demand pricing over Graviton4-based instances of equivalent sizes on Amazon Aurora, depending on database engine, version, and workload. Built on the AWS Nitro System, R9g instances are available in nine sizes, from large to 48xlarge. They deliver up to 192 vCPUs, an 8:1 ratio of memory to vCPU, up to 100 Gbps of networking bandwidth, and up to 72 Gbps of bandwidth to Amazon Elastic Block Store (Amazon EBS). You can get started using the R9g database instances through the Amazon RDS Management Console or by using the AWS Command Line Interface (CLI). The instances are available in US East (N. Virginia, Ohio), US West (Oregon), and Europe (Frankfurt) regions. For the",
+    "published": "2026-11-12T19:02:00Z",
+    "hash": "94ddbfb81cd8be7eb41d477f1973d22f72e73861ce16929c49d9cd05e97d890e"
+  },
+  {
+    "title": "Amazon MWAA now supports fine-grained access control with IAM Identity Center and multi-team environments",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/mwaa-fine-grained-access-control/",
+    "source": "AWS What's New",
+    "service": "AWS Identity and Access Management",
+    "category": "Upgrade",
+    "summary": "Amazon Managed Workflows for Apache Airflow (Amazon MWAA) now supports fine-grained access control, giving administrators precise control over who can access which workflows and resources in an Apache Airflow environment. Fine-grained access control is delivered through two new capabilities: IAM Identity Center integration and multi-team environments. With IAM Identity Center integration, users sign in to the Apache Airflow UI with their corporate identity provider. Authorization is evaluated per request using IAM policies attached to IAM Identity Center Permission Sets, with condition keys that scope access by resource type (DAGs, connections, variables, pools, and more), action, and specific resource ID. With multi-team environments, several teams can share a single MWAA environment. Each team gets its own DAG folder in Amazon S3, and users see only shared DAGs plus their own teams' DAGs based on IAM Identity Center group membership. Teams reduce cost through shared infrastructure an",
+    "published": "2026-11-12T18:00:00Z",
+    "hash": "5a966757762a4bd68731371500354ab79d37d9bfce7badbbc95bfdd465b443dd"
+  },
+  {
+    "title": "Amazon Connect Customer supports merging and linking related cases in the agent workspace",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-merge-link/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "General Announcement",
+    "summary": "Amazon Connect Customer now lets agents merge and link related cases in the agent workspace, so they can resolve customer issues faster and respond consistently. When a customer contacts a business about the same issue more than once, or on different channels, the history can end up split across several cases. Agents can merge those cases into one case with a single, consolidated history. For example, an agent can merge the chat and email cases a customer opened about a delayed shipment. Agents can also link related cases, such as cases from different customers affected by the same issue, so they can coordinate one consistent response for every affected customer. Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town). To learn more and get started, visit the Cases webpage and documen",
+    "published": "2026-11-12T17:00:00Z",
+    "hash": "d90f083ce3cf6fb5375d1780fc3650b759a9c034a6d90435e67df84c29a8a50b"
+  },
+  {
+    "title": "Amazon SNS now supports push notifications in four additional AWS Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sns-push-four-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon Simple Notification Service",
+    "category": "Upgrade",
+    "summary": "Amazon Simple Notification Service (Amazon SNS) now supports sending push notifications in the Asia Pacific (Hyderabad), Asia Pacific (Melbourne), Europe (Zurich), and AWS GovCloud (US-East) Regions. Amazon SNS is a fully managed pub/sub service that provides message delivery to multiple endpoints, including AWS Lambda, Amazon SQS, Amazon Data Firehose, HTTP, SMS (via AWS End User Messaging), push notifications, and email. With this launch, customers in these four additional Regions can use Amazon SNS to send push notifications to the following supported push notification services: Amazon Device Messaging (ADM), Apple Push Notification Service (APNs), Baidu Cloud Push (Baidu), Firebase Cloud Messaging (FCM), and Windows Push Notification Services (WNS). For the full list of Regions from which you can send push notifications, see Supported Regions and Countries in the Amazon SNS Developer Guide. For more information, see the Amazon SNS push notifications documentation .",
+    "published": "2026-11-12T16:00:00Z",
+    "hash": "70be2290a012a780a01ac6ceec7413277eed55be68fa114b9f6b361ba082a447"
+  },
+  {
+    "title": "EC2 Image Builder console now integrates with the DevOps Agent for troubleshooting and resource creation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-image-builder-devops-agent-integration",
+    "source": "AWS What's New",
+    "service": "Amazon EC2 Image Builder",
+    "category": "Bug Fix",
+    "summary": "EC2 Image Builder now integrates with the AWS DevOps Agent directly in the Image Builder console, enabling you to troubleshoot failed image pipelines and create resources directly from the console chat panel. You can diagnose up to 50 failed pipelines at once and ask follow-up questions in the same conversation. You can also choose to create resources by describing what you want, and the agent populates the console with values the service has already validated. With this integration, diagnosing a failed pipeline no longer requires manually inspecting build logs, cross-referencing error codes, or iterating through configuration fixes, saving you significant time and expertise. The agent reads build logs, workflow steps, components, and network configuration, then provides the root cause and the steps to fix it. For resource creation, the agent verifies the configuration before populating the console for you to review and submit. If you troubleshoot or build with your own AI agents, the ",
+    "published": "2026-11-12T08:00:00Z",
+    "hash": "8c9e0236fafc2141945287853866a12042c6b31c45bb374e9255beb0f5ef5e56"
+  },
+  {
+    "title": "AWS Glue announces automatic version upgrades for Apache Spark jobs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/glue-spark-auto-upgrades/",
+    "source": "AWS What's New",
+    "service": "AWS Glue",
+    "category": "Upgrade",
+    "summary": "AWS Glue introduces automatic version upgrades, a capability that keeps your Apache Spark jobs current on the latest AWS Glue runtime without manual coordination. Staying current on supported runtimes gives your jobs the latest security patches, performance improvements, and support for evolving table formats such as Apache Iceberg. Auto upgrades include multiple levels of validations including assessing jobs for compatibility with the upgraded runtime, obtaining your consent before executing jobs on a newer version, and validating upgraded job runs against each job's established output profile, so your jobs upgrade with the right guardrails in place. By setting a job's version to \"Auto\", upgrades that once required weeks of planning and execution now happen automatically. Platform teams can standardize runtime versions across large fleets without chasing individual job owners, and business units without a central upgrade team can keep their jobs current hands-free. Each job is validat",
+    "published": "2026-11-12T08:00:00Z",
+    "hash": "6178130cdb61d28d19795f70e4c5c1a4345bc9e0f049387ce3d39180840d7ff8"
+  },
+  {
+    "title": "AWS Cloud WAN now supports BGP communities on Direct Connect attachments for routing policy",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloud-wan-bgp-community-directconnect/",
+    "source": "AWS What's New",
+    "service": "AWS Direct Connect",
+    "category": "Upgrade",
+    "summary": "AWS Cloud WAN now supports BGP communities on Direct Connect attachments, enabling advanced routing controls for enterprise hybrid networks. Previously, Cloud WAN Routing Policy evaluated BGP communities only on Site-to-Site VPN and Connect attachments. Now, customers can tag routes with routing intent on-premises, apply filtering and path preference rules inside Cloud WAN, and propagate communities back to their on-premises routers over Direct Connect. With this capability, enterprises can simplify hybrid network orchestration by signaling routing policies dynamically from on-premises environments. Customers can match community tags to filter production versus disaster recovery traffic, prioritize preferred paths, or restrict regional propagation. This eliminates the need for VPN overlay workarounds and manual policy replication, reducing operational complexity and misconfiguration risk. BGP community support on AWS Cloud WAN Direct Connect attachments is available in all AWS Regions ",
+    "published": "2026-11-12T08:00:00Z",
+    "hash": "2af2e463849244389fe8ad45840209651e94874f75e6d64b096ea2e557ec9134"
+  },
+  {
+    "title": "AWS Backup now supports resource modifiers for Amazon EKS restores",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-resource-modifiers-eks/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "Upgrade",
+    "summary": "Today, AWS Backup announces support for resource modifiers when restoring Amazon Elastic Kubernetes Service (Amazon EKS) backups. Resource modifiers let you transform Kubernetes resources during a restore, so you can adapt a restored cluster to its target environment. When you restore an EKS backup that has been copied across accounts or across AWS Regions, the restored cluster can carry references tied to the source environment, such as IAM roles, database endpoints, and Amazon ECR registry URIs. Previously, you had to locate and update these references manually after every restore, which was time consuming and error prone. With resource modifiers, you can define transformation rules once via a YAML file, and AWS Backup applies them automatically as part of the restore, improving the reliability of your cross-account and cross-Region disaster recovery workflows. AWS Backup support for resource modifiers for Amazon EKS backups is available in all commercial AWS Regions and AWS GovCloud",
+    "published": "2026-11-12T08:00:00Z",
+    "hash": "ac191b369fb51adadf78cdb583d0bc07d29faa7e5795e0ef04d09642743598fe"
+  },
+  {
+    "title": "AWS Backup adds logically air-gapped vault support for Amazon EBS Snapshots Archive",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-lag-vault-ebs-archive/",
+    "source": "AWS What's New",
+    "service": "AWS Backup",
+    "category": "Upgrade",
+    "summary": "AWS Backup logically air-gapped vault now supports Amazon EBS Snapshots Archive. Logically air-gapped vaults are a type of AWS Backup vault that allows secure sharing of backups across accounts and AWS Organizations, supporting direct restore to reduce recovery time from a data loss event. You can now archive Amazon EBS backups held in a logically air-gapped vault to Amazon EBS Snapshots Archive, a low-cost tier for snapshots you rarely access. A logically air-gapped vault stores immutable backups that are locked by default, and isolated with encryption using AWS owned keys or customer-managed keys. This helps you meet long-term retention and compliance requirements at lower storage cost. You can get started using the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. In a backup plan rule that runs monthly or less often, specify a logically air-gapped vault as the primary backup destination or copy destination. Then enable Archive Amazon EBS snapshots in the backup rul",
+    "published": "2026-11-12T08:00:00Z",
+    "hash": "a2e9dd6e09c167f9eb7cee41edaafefdbd5fca822335a4690d7947acb0e0ad28"
+  },
+  {
+    "title": "Amazon Route 53 Domains now supports self-service restore for expired and deleted domains",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-domains-self-service-restore/",
+    "source": "AWS What's New",
+    "service": "Amazon Route 53",
+    "category": "Upgrade",
+    "summary": "Amazon Route 53 Domains now lets you restore an expired or recently deleted domain yourself, using the Amazon Route 53 console, AWS CLI, or AWS SDKs. Previously, restoring a domain required a request to AWS Support. Now you can recover a domain lost to a missed renewal, an expired payment method, or an accidental deletion, and restore the website, email, and applications that depend on it. To restore a domain, you enter the domain name, review the restoration price, accept the charge, and submit the request. Route 53 works with the top-level domain (TLD) registry to reactivate the registration and return the domain to your AWS account. Most TLD registries support restoration, and each registry sets how long after expiration or deletion a domain can still be restored. Restoring a domain typically costs more than registering or renewing one. To learn more, see Restoring an expired or deleted domain in the Route 53 Developer Guide, or visit the Amazon Route 53 Domains page . For a complet",
+    "published": "2026-11-12T08:00:00Z",
+    "hash": "776e911885b4a4b805d92e243f3cb5f89f036030802ebd8095a4773ff6b639be"
+  },
+  {
+    "title": "Amazon Managed Service for Apache Flink introduces enhanced snapshots",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/managed-flink-enhanced-snapshots/",
+    "source": "AWS What's New",
+    "service": "Amazon Managed Service for Apache Flink",
+    "category": "Upgrade",
+    "summary": "Amazon Managed Service for Apache Flink now supports enhanced snapshots, a capability that lets you capture, export, and restore application state across Apache Flink applications and AWS Regions, so you can run blue/green deployments, easily migrate self-managed workloads to Amazon Managed Service for Apache Flink without losing state, and keep backup in a secondary Region for cross-Region recovery. To deploy an application update without pausing processing for blue/green deployments, create an enhanced snapshot from an application and use it to start a second application. To migrate a self-managed workload, import its Apache Flink savepoint into Amazon Managed Service for Apache Flink as an enhanced snapshot. For cross-Region recovery, export an enhanced snapshot to an Amazon Simple Storage Service (Amazon S3) bucket, and replicate the exported state to a bucket in a secondary Region. Enhanced snapshots are available today for applications on Apache Flink 1.20 and later in all AWS Re",
+    "published": "2026-11-12T08:00:00Z",
+    "hash": "e33830405e2c2eac77cab825df35df87fa1e5e8c605544dc384e7fd32a2e9488"
+  },
+  {
+    "title": "Amazon FSx for Lustre lowers the entry cost of Intelligent-Tiering file systems by 75%",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/fsx-lustre-intelligent-tiering-lower-throughput/",
+    "source": "AWS What's New",
+    "service": "Amazon FSx",
+    "category": "Release",
+    "summary": "Amazon FSx for Lustre is reducing the minimum provisioned throughput capacity and metadata IOPS on Intelligent-Tiering file systems by 75%, allowing you to use Intelligent-Tiering even more cost-effectively for high-performance computing (HPC) and machine learning workloads that start with small datasets and grow over time. The FSx for Lustre Intelligent-Tiering storage class delivers the lowest-cost and only fully elastic Lustre file storage in the cloud. It is optimized for workloads that mix hot and cold data and do not require consistent SSD-level performance. A file system's throughput capacity determines the read and write speeds supported by its underlying file servers, and its level of metadata IOPS determines how many files and directories you can create, read, and delete per second. Today’s launch reduces the minimum throughput capacity on an Intelligent-Tiering file system from 4,000 to 1,000 MBps and the minimum metadata performance from 6,000 to 1,500 IOPS. The lower throu",
+    "published": "2026-11-12T08:00:00Z",
+    "hash": "774f79373bdeedbb61897793138eee86cc1575656eb52b022bcda0199a594c4f"
+  },
+  {
+    "title": "The next generation AgentCore runtime is now the default",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/new-agentcore-runtime-default/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Service Update",
+    "summary": "Starting today, new runtimes in Amazon Bedrock AgentCore use the next generation of AgentCore runtime by default. The new runtime restores each session from a snapshot of your initialized agent, scales compute and memory with the work, and scales idle agents to zero. Every session still runs in its own hardware-isolated Firecracker microVM. Your agents can run heavy work like compiling a large codebase, driving a browser, or loading a local model inside the session. Sessions scale to 8 vCPU and 32 GB of memory and support container images up to 10 GB. On a 2 GB image, sessions start in under 2 seconds at P75, down from 29.7 seconds on the previous generation. Idle agents scale to zero, and memory is reclaimed within minutes of release. For multi-turn agents, that means up to 68% less billed memory per session. Existing runtimes stay on the current version until you move them. To move an existing runtime, or to use the next generation in a Region where it isn't the default yet, set plat",
+    "published": "2026-11-12T05:00:00Z",
+    "hash": "a0b55dd8ef34588efc8f3702a7a3e8775aa19874c146c028fd7899a103e363c7"
+  },
+  {
     "title": "Ornith-1.0-9B and Ornith-1.0-35B models now available on Amazon SageMaker JumpStart",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/ornith-1-0-9b-ornith-1-0-35b-on-sagemaker-jumpstart/",
     "source": "AWS What's New",
