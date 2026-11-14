@@ -1,5 +1,75 @@
 [
   {
+    "title": "Aurora PostgreSQL with express configuration now supported in CloudFormation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-postgresql-cloudformation/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora PostgreSQL",
+    "category": "Upgrade",
+    "summary": "Aurora PostgreSQL now supports express configuration in AWS CloudFormation for infrastructure as code deployment. This launch enables you to automate the infrastructure deployment of your Aurora clusters through CloudFormation templates while benefiting from the speed of express configuration. Aurora PostgreSQL clusters created with express configuration allow you to create and query an Aurora serverless database in seconds. The new withExpressConfiguration createOnly property on the AWS::RDS::DBCluster resource creates both the cluster and its primary database instance from one property declaration. You don't need to model or manage the instance separately in your CloudFormation template. This simplifies your templates and makes it easier to manage Aurora clusters with express configuration through infrastructure as code. The CloudFormation support is available in all AWS Regions where Aurora PostgreSQL with express configuration is offered. To learn more, see the Aurora User Guide an",
+    "published": "2026-11-13T16:00:00Z",
+    "hash": "7db55efa706bc55f2cb7fae0c77c41e7717bdaee2a5b3ae768db5767d820cf78"
+  },
+  {
+    "title": "AWS Security Hub CSPM now supports centralized configuration with AWS Organizations declarative policies",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-cspm-org-policies/",
+    "source": "AWS What's New",
+    "service": "AWS Organizations",
+    "category": "Security",
+    "summary": "AWS Security Hub CSPM now supports AWS Organizations declarative policies. You can use them to enable Security Hub CSPM across all accounts and Regions in your organization and to define which security standards and controls are enabled. Policies can apply broadly to every account and Region, or target specific account and Region combinations. Declarative policies help keep each account's configuration aligned with its attached policy, which helps prevent configuration drift. You can also apply them automatically to new accounts, so each account starts with a baseline configuration as soon as it's created. Declarative policies are now the recommended way to manage Security Hub CSPM across an organization. They align with how other security services, such as Amazon GuardDuty, Amazon Inspector, and AWS Security Hub allow customers to manage configuration of the service. They also provide more flexibility, such as configuring Region-specific settings. You can continue to use central confi",
+    "published": "2026-11-13T08:00:00Z",
+    "hash": "546d8188e5dc0e9e787df59e622bcf7d9eae646abf04119d41ce665ffa96ab0e"
+  },
+  {
+    "title": "AWS Secrets Manager now supports cross-account replication",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/secrets-manager-cross-account/",
+    "source": "AWS What's New",
+    "service": "AWS Secrets Manager",
+    "category": "Upgrade",
+    "summary": "AWS Secrets Manager now supports cross-account replication, enabling you to maintain a synchronized copy of a primary secret in a secondary AWS account for cross-account access, backup, and disaster recovery. Cross-account replication extends the existing multi-Region replication capability across account boundaries. With cross-account replication, platform or security teams can own and rotate a secret centrally, and each consuming account gets a local, always-current copy without any shared KMS keys or cross-account secret policies. The replica secret is a full, independent resource, encrypted with a customer managed KMS key owned by the replica account. Secrets Manager updates it automatically whenever the primary secret's value changes, including rotations. You can keep a live copy of critical secrets in a dedicated recovery or failover account, isolated from ransomware or a compromised primary account. If needed, the replica can be promoted to a standalone secret. Cross-account rep",
+    "published": "2026-11-13T08:00:00Z",
+    "hash": "6959fe24ad13e899b51acfd0f7e08ad99d177e8d08f57e49297dad3b9494ecff"
+  },
+  {
+    "title": "AWS Marketplace now supports VAT credit notes for deemed supply refunds",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace-vat-credit-notes/",
+    "source": "AWS What's New",
+    "service": "AWS Marketplace",
+    "category": "Upgrade",
+    "summary": "AWS Marketplace sellers can now submit Value Added Tax (VAT) credit notes for refunded deemed supply transactions through a self-service experience in AWS Partner Central. Previously, VAT was disbursed to sellers for eligible transactions, and when a buyer was later refunded, sellers had to contact AWS to submit the corresponding credit note. This launch simplifies post-refund VAT documentation for sellers. Sellers can view eligible refund line items in the VAT on deemed supply section, select the refunds covered by a credit note, upload a PDF or the applicable electronic invoice format, and track the submission status. Sellers can consolidate multiple eligible refunds into a single credit note where applicable and review the associated financial adjustment in the Seller Insights reporting. These capabilities are available for eligible AWS Marketplace transactions, including Channel Partner Private Offer (CPPO) transactions, in supported EU member states, Norway, and the United Kingdom",
+    "published": "2026-11-13T08:00:00Z",
+    "hash": "b6219a61af966277ee6ccc8792c3f94abc9612bf739d2a15dd249035f7daca18"
+  },
+  {
+    "title": "AWS Batch on Amazon EKS adds Linux capabilities, seccomp, and pod-level settings",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-batch-eks-security-context/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "Upgrade",
+    "summary": "AWS Batch now supports additional Kubernetes security context settings in Amazon EKS job definitions, including Linux capabilities, seccomp profiles, and pod-level settings. For EKS clusters that enforce the Kubernetes Pod Security Standards restricted profile, you can now run AWS Batch jobs with only the privileges and system calls they require. To get started, use the RegisterJobDefinition API to set capabilities and seccompProfile in a container's securityContext , or set securityContext in podProperties to define pod-wide settings such as fsGroup . Container-level settings override pod-level defaults. You can configure these settings through the AWS Management Console, AWS CLI, AWS SDKs, or AWS CloudFormation. The additional security context settings for AWS Batch on Amazon EKS are now supported in all AWS Regions where AWS Batch is available. For more information, see the Amazon EKS properties section in the AWS Batch User Guide .",
+    "published": "2026-11-13T08:00:00Z",
+    "hash": "c9cf748dfd439da6b6e23b313e97adf8ccf93d554894d4139a94b7e3a43fca55"
+  },
+  {
+    "title": "Amazon SageMaker Unified Studio now supports layout customization for designations",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-studio-layout-customization/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker Unified Studio now supports layout customization, a new capability that gives domain administrators control over which tools and left navigation items project members see based on their designation. Organizations with data engineering, analytics, and machine learning teams on a single platform can configure a layout within each designation definition, and that layout applies across every project in the domain without per-project configuration. Previously, all project members saw the same interface regardless of their role, creating confusion and potential governance issues. With layout customization, administrators define a layout as part of a designation that specifies which left navigation items are visible for project members assigned to that designation. When a project member opens a project, SageMaker Unified Studio resolves the member's designation and renders only the tools included in their designation's layout. For example, a SQL analyst designation can be con",
+    "published": "2026-11-13T08:00:00Z",
+    "hash": "8a0ebb7f94694a6f4cf8fea93347f669231cd89df15a08c5b4ff001d85cb9aa5"
+  },
+  {
+    "title": "Amazon Bedrock AgentCore Identity now supports OAuth 2.0 discovery URLs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-agentcore-oauth2-discovery/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Upgrade",
+    "summary": "Amazon Bedrock AgentCore Identity now supports OAuth 2.0 authorization server discovery URLs for both inbound JWT authorization and outbound OAuth credential providers. This update enables developers to configure AgentCore with OAuth 2.0 authorization servers that do not use OpenID Connect (OIDC). Previously, AgentCore Identity accepted only OIDC discovery URLs. Authorization servers that implement OAuth 2.0 without OIDC publish their metadata at a different well-known path and could not be used with AgentCore. With this launch, you can use either OIDC or OAuth 2.0 authorization server discovery URLs when you configure a JWT authorizer or a custom OAuth credential provider on AgentCore. This feature is available in all AWS Regions where Amazon Bedrock AgentCore is available, at no additional cost. To learn more, see Configure inbound JWT authorizer and Add OAuth client using custom provider in the Amazon Bedrock AgentCore Developer Guide .",
+    "published": "2026-11-13T08:00:00Z",
+    "hash": "28d9f05d090f9e1574af683d58eb61870fd606d95ceb80e71e295bd2546f4dc3"
+  },
+  {
     "title": "Amazon Cognito now supports OAuth 2.0 token exchange",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/",
     "source": "AWS What's New",
@@ -120,6 +190,16 @@
     "hash": "a2e9dd6e09c167f9eb7cee41edaafefdbd5fca822335a4690d7947acb0e0ad28"
   },
   {
+    "title": "Amazon Route 53 now supports record set protection",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-route-53-record-set-protection/",
+    "source": "AWS What's New",
+    "service": "Amazon Route 53",
+    "category": "Upgrade",
+    "summary": "Amazon Route 53 now supports record set protection, which helps DNS administrators prevent accidental changes to critical DNS records in their hosted zones. This feature allows you to protect records such as those at the zone apex, MX records, and production endpoints directly in the hosted zone. Any change to a protected record is blocked until the protection is removed by an authorized user. Previously, to lock specific records, you had to write record-level conditions into the IAM policies of every user and role that could change your hosted zones. When those policies blocked a change, the caller had no indication of whether the record was protected or why. Now you can protect records by name and type directly in the hosted zone. A single protection covers all records with that name and type, including records with different set identifiers; weighted, latency, and other routing policy records are protected together. You can also create a protection proactively before the record exis",
+    "published": "2026-11-12T08:00:00Z",
+    "hash": "88f73bafe9c187e42c203c7eb9c9ff3320b9f2d7b6d3f9f6cd24e9ad4f0e1fb0"
+  },
+  {
     "title": "Amazon Route 53 Domains now supports self-service restore for expired and deleted domains",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-domains-self-service-restore/",
     "source": "AWS What's New",
@@ -150,6 +230,16 @@
     "hash": "774f79373bdeedbb61897793138eee86cc1575656eb52b022bcda0199a594c4f"
   },
   {
+    "title": "Amazon Connect Customer now supports batch actions on up to 100 cases at once",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-batch-actions-100-cases/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Upgrade",
+    "summary": "Cases in Amazon Connect Customer now lets agents and supervisors assign, comment on, and update the status of up to 100 cases at once, so teams spend less time on repetitive case updates. When one issue affects many customers, such as a shipping delay or a service outage, teams no longer need to update each case one at a time. Agents and supervisors with the appropriate permissions can select the related cases and change the assignee, add a comment, or close them in a single action. Developers can also use batch APIs to make the same updates programmatically. Cases is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town). To learn more and get started, visit the Cases webpage and documentation .",
+    "published": "2026-11-12T08:00:00Z",
+    "hash": "81e8a00cadee5a4826b9032f0466e05e4277c5701cd82f20c972ead39cc7c9d7"
+  },
+  {
     "title": "The next generation AgentCore runtime is now the default",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/new-agentcore-runtime-default/",
     "source": "AWS What's New",
@@ -168,6 +258,16 @@
     "summary": "DeepReinforce AI's Ornith-1.0-9B and Ornith-1.0-35B models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models are part of the Ornith 1.0 family of open-source, self-scaffolding agentic coding models released under the MIT license, achieving state-of-the-art performance among open-source models of comparable size on coding benchmarks such as Terminal-Bench 2.1, SWE-Bench, NL2Repo, and OpenClaw. These models address different agentic coding challenges with specialized capabilities: Ornith-1.0-9B is a lightweight 9B-parameter dense model post-trained on Qwen 3.5 9B, designed for efficient single-GPU deployment. With a 256K-token context window and 32 decoder layers, it is well-suited for individual developers and small teams running agentic coding workflows on a single GPU — including laptops with consumer-grade hardware. Its self-improving training framework uses reinforcement learning to jointly opti",
     "published": "2026-11-11T23:36:00Z",
     "hash": "c22c75161593d0caf7ec1894a4b3b387d584c3bdb855dd18f03eb968b4bbb927"
+  },
+  {
+    "title": "Amazon OpenSearch Serverless supports intelligent ingestion for time series collection",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-serverless-nextgen-time-series-intelligent-ingestion",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Upgrade",
+    "summary": "The next generation of Amazon OpenSearch Serverless now supports intelligent ingestion for time series collections. You can bring logs and event data from Amazon S3 into a time series collection without operating an ingestion pipeline. With intelligent ingestion, you can now complete the setup and get data ingested with a few clicks in the AWS Management Console or with a single API call. Intelligent ingestion detects the data type, parses each record, and indexes it into your collection. It works with observability logs in JSON, NDJSON, and JSON arrays. Use an ingestion job for one-time loads, use an ingestion stream to keep the collection up to date as new objects arrive in S3, or backfill and then stream. Source buckets can be in the same AWS account as the collection or in a different one. Capacity scales with your workload up to the collection's configured limit, and you pay only for active processing. Once ingested, your data gets everything time series collections already provid",
+    "published": "2026-11-11T20:54:00Z",
+    "hash": "34d736176b20d5518aac267978ea3c025317a4261c4ff8d7d47f07272acd2ece"
   },
   {
     "title": "Amazon EKS Provisioned Control Plane now offers a 24 GB etcd database on 4XL and 8XL tiers",
@@ -308,6 +408,16 @@
     "summary": "Today, AWS Marketplace announces that free trials of usage-based software as a service (SaaS) products can now convert automatically to paid subscriptions. When a free trial ends, the buyer's subscription continues at the seller's usage-based pricing, so buyers pay only for what they use after the trial. This helps sellers turn more trial users into paying customers. Buyers get a simple way to evaluate software before they buy, with no new subscription and no interruption in access. Sellers can offer a free trial of 7 to 90 days that converts to a paid subscription at the price they set. For example, a data team can try an analytics product for 30 days and, if it meets their needs, keep using it after the trial ends. Buyers see the trial length, conversion date, and pricing before they subscribe. They receive reminder emails before the trial converts and can cancel at any time before conversion at no charge. Sellers can create a free trial in AWS Partner Central, or update an existing ",
     "published": "2026-11-10T08:00:00Z",
     "hash": "470a05eeacacb5fa7c221bc9a1946b0febba0f3ba9a69e5966d2cdf949f4b239"
+  },
+  {
+    "title": "Announcing Accelerated Compute Insights for Amazon CloudWatch",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/accelerated-compute-insights-cloudwatch/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudWatch",
+    "category": "Release",
+    "summary": "Amazon CloudWatch now offers accelerated compute insights, a capability that provides monitoring and observability for self-hosted AI inference workloads running in Amazon EKS clusters. Previously, platform and AI teams lacked fleet-level visibility into their accelerators, whether workloads were running efficiently, and what was causing performance issues. Accelerated compute insights collects telemetry from across the inference stack to help teams identify idle accelerators, optimize workloads to reduce costs, and troubleshoot common inference issues such as high time to first token. Getting started is as simple as enabling the Amazon CloudWatch Observability add-on for Amazon EKS, which discovers every NVIDIA GPU in the cluster automatically. Curated views in the CloudWatch console let you monitor from the fleet level down to an individual workload or accelerator. Teams can see which workloads are idle, which are underutilized, and the estimated cost per token for each inference wor",
+    "published": "2026-11-10T08:00:00Z",
+    "hash": "4cffa620790c779456a4b6e688796da467e684b488118845390b943795bc57c5"
   },
   {
     "title": "Amazon S3 Tables now support S3 server access logging",
