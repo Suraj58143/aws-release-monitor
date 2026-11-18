@@ -1,5 +1,415 @@
 [
   {
+    "title": "Amazon WorkSpaces Applications adds support for smart card redirection",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-applications-smart-card-redirection/",
+    "source": "AWS What's New",
+    "service": "Amazon WorkSpaces Applications",
+    "category": "Upgrade",
+    "summary": "Amazon WorkSpaces Applications now supports smart card redirection on single-session and multi-session fleets, so users can access the smart card connected to their local device from applications inside their streaming session. It also extends smart card sign-in, previously limited to single-session fleets, to multi-session fleets. This launch helps public sector, healthcare, and other regulated organizations that use Common Access Card (CAC) or Personal Identity Verification (PIV) cards run those workflows on multi-session fleets. Administrators can turn smart card sign-in for Active Directory and smart card redirection on or off independently for each stack. Smart card sign-in lets users sign in to domain-joined streaming instances with their smart card instead of a password, while redirected smart cards support in-session authentication, digital signing, and email encryption. For example, a government agency can move CAC users from single-session to multi-session fleets and keep CAC",
+    "published": "2026-11-17T23:46:00Z",
+    "hash": "027f1b0bf0e8a74dd2501a4909fc66a2b7b232e1f9c9f7c27037e137345faccf"
+  },
+  {
+    "title": "Introducing the Apache Spark Optimization Agent for Amazon EMR Serverless",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-optimization-agent/",
+    "source": "AWS What's New",
+    "service": "Amazon EMR",
+    "category": "Release",
+    "summary": "Amazon EMR Serverless now offers the Apache Spark optimization agent, which analyzes completed Spark job runs and delivers cost and performance optimization recommendations in seconds. You can select a cost or performance goal, and the agent returns specific configuration changes with the telemetry evidence and plain-language reasoning behind each suggestion. The agent can analyze a single run or compare it against a known-good baseline to pinpoint what changed. You access it from the EMR Serverless console or through the SageMaker Unified Studio MCP Server. The agent takes the job's configuration, logs, and Spark telemetry together with your chosen intent and returns recommendations computed by a deterministic recommendation engine. The engine reads all job artifacts together to identify what is driving runtime and cost: too little parallelism, a skewed join key, memory pressure forcing spill, idle executors, or capacity provisioned beyond what the job uses. The configurations the eng",
+    "published": "2026-11-17T22:25:00Z",
+    "hash": "76e7703f1e57b530d48a23c6a31a7f7cb24751ee135d3c83ecf9ac18d4fd6424"
+  },
+  {
+    "title": "Amazon EMR 8.2 is now available",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-emr-8.2/",
+    "source": "AWS What's New",
+    "service": "Amazon EMR",
+    "category": "Release",
+    "summary": "Amazon EMR 8.2 is now available with new features across Amazon EMR on EC2, Amazon EMR on EKS, and Amazon EMR Serverless. This release upgrades Apache Spark to 4.1.3, Apache Iceberg to 1.11.0, and Delta Lake to 4.2.0, and it is designated a Long Term Support (LTS) release. This release makes it easier to run secure, governed analytics at scale — you can now write to the same Delta Lake table on Amazon S3 from multiple clusters concurrently, refresh Iceberg materialized views incrementally, and propagate end-user identity from Spark jobs and interactive sessions all the way to AWS Lake Formation and Amazon S3 so access is authorized and audited as the original user. Amazon EMR 8.2 expands governance and performance across all three deployment options. New features include concurrent Delta Lake writes using Amazon S3 conditional writes (no DynamoDB log store required), and Lake Formation fine-grained access control (FGAC) now covers materialized views, governed user-defined functions, mo",
+    "published": "2026-11-17T22:25:00Z",
+    "hash": "310a3a7540782baffb296c0030a83fbb6e4324574ec01ee020a9ea578a1001a8"
+  },
+  {
+    "title": "Amazon EC2 C8ine instances are now available in AWS Europe (Ireland) region",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c8ine",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8ine instances are available in the AWS Europe (Ireland) region. C8ine instances are powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS. These instances feature the latest sixth generation AWS Nitro cards, delivering up to 43% higher performance compared to previous generation C6in instances. C8ine instances offer up to 2.5 times higher packet performance per vCPU versus prior generation network optimized instances, providing up to 2x higher network throughput for traffic going through Internet gateways compared to existing C6in network optimized instances. C8ine instances are designed for security and network virtual appliances, including virtual firewalls, load balancers, and Telco 5G UPF workloads. Amazon EC2 C8ine instances are available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and Europe (Ireland, Frankfurt) regions. C8ine instances are available via Savings Pl",
+    "published": "2026-11-17T22:00:00Z",
+    "hash": "bc19e81009a5f91d2e746d09eae561b7417aa465a82cd8ad242b8213994bded1"
+  },
+  {
+    "title": "Amazon EC2 C8gn instances are now available in AWS Israel (Tel Aviv) region",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c8gn/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8gn instances, powered by the latest-generation AWS Graviton4 processors, are available in the AWS Israel (Tel Aviv) region. The C8gn instances provide up to 30% better compute performance than Graviton3-based Amazon EC2 C7gn instances. Amazon EC2 C8gn instances feature the latest 6th generation AWS Nitro Cards, and offer up to 600 Gbps network bandwidth, the highest network bandwidth among network optimized EC2 instances. Take advantage of the enhanced networking capabilities of C8gn to scale performance and throughput, while optimizing the cost of running network-intensive workloads such as network virtual appliances, data analytics, CPU-based artificial intelligence and machine learning (AI/ML) inference. For increased scalability, C8gn instances offer instance sizes up to 48xlarge, up to 384 GiB of memory, and up to 120 Gbps of bandwidth to Amazon Elastic Block Store (EBS). C8gn instances support Elastic Fabric Adapter (EFA",
+    "published": "2026-11-17T22:00:00Z",
+    "hash": "f07eb868abbe82908b76d088239c72d2b47bf9237cd3b9144db77e0eb7e3ab2d"
+  },
+  {
+    "title": "Amazon ECR now supports global authentication tokens for private registries",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/global-authentication-amazon-ecr",
+    "source": "AWS What's New",
+    "service": "Amazon ECR",
+    "category": "Upgrade",
+    "summary": "Amazon Elastic Container Registry (Amazon ECR) now supports global authentication tokens for private registries. Previously, you needed to request a separate authentication token in each AWS Region where you push or pull container images. Now, you can request a single token from the AWS Sign-In CreateBearerToken API and use it across all ECR private registries in the same AWS partition. Teams that run proxy services to route container pulls across Regions, a common pattern for optimizing latency or availability, previously had to request, refresh, and coordinate a separate token for every Region behind the proxy. With global tokens, the proxy manages one token for all Regions in the AWS partition. Global tokens are valid for 12 hours by default, but can be configured to be as low as 5 minutes. These tokens work with the Docker CLI, and the Amazon ECR Docker Credential Helper. Existing regional authentication tokens continue to work as before. Global authentication tokens are available ",
+    "published": "2026-11-17T21:37:00Z",
+    "hash": "e0b23d102f87359adb70386004cae0871be3d000dce3c206eb4d51b57ca1636c"
+  },
+  {
+    "title": "AWS Security Hub now infers resource criticality from installed software and usage",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-resource-criticality/",
+    "source": "AWS What's New",
+    "service": "AWS Security Hub",
+    "category": "Security",
+    "summary": "Today, AWS Security Hub adds installed software and resource usage as signals for resource criticality, which indicates how important a resource is to your business. Security Hub uses criticality to rank exposure findings, so that central security teams can prioritize the exposures that affect their most important resources. Security Hub already infers criticality from resource tags and names, but inconsistently tagged resources often have an Unknown criticality, which makes their exposures harder to prioritize. With installed software and resource usage as additional signals, more of your resources receive a meaningful criticality with no tagging or configuration required. For example, an EC2 instance that runs a database engine and serves steady traffic receives a higher criticality than an instance that runs only monitoring agents and sits idle. These signals are included with the Security Hub Essentials plan at no additional cost and require no new enablement. To learn more, see Re",
+    "published": "2026-11-17T20:00:00Z",
+    "hash": "b9def4e699c1fc278434c447dacf96c5c520353bd7b72bac038b92fcb33be4c4"
+  },
+  {
+    "title": "Amazon Bedrock AgentCore Memory now supports short-term memory retention of up to 10 years",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-memory-10-year-retention",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Upgrade",
+    "summary": "Amazon Bedrock AgentCore Memory now lets you keep short-term memory events for up to 10 years, up from one year. Developers can now use short-term memory as a long-lived record of agent conversations and interactions. This helps when that history needs to stay available for a long time, such as for compliance and audit, for users who come back after months away, or for agents that need to look back at past sessions. You set retention on the memory resource, and it's applied to each event when the event is created, so existing events keep their original retention. Standard short-term memory storage charges apply for as long as you keep the data. This feature is available in all AWS Regions where AgentCore Memory is available. To get started, see the AgentCore Memory documentation .",
+    "published": "2026-11-17T19:22:00Z",
+    "hash": "abe634dba0813778379d4ee2cd791eafea7de7830f70d59c9d52812d4be554b6"
+  },
+  {
+    "title": "Amazon API Gateway REST APIs now support JWT authorizers",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-rest-authorizers-jwt/",
+    "source": "AWS What's New",
+    "service": "Amazon API Gateway",
+    "category": "General Announcement",
+    "summary": "Amazon API Gateway now offers a native JWT authorizer for REST APIs, a new authorizer type that validates JSON Web Tokens directly in the gateway. Until now, validating tokens from an OpenID Connect or OAuth 2.0 identity provider other than Amazon Cognito required a Lambda authorizer. You now configure token validation instead of writing and operating code for it. You can define one or more issuers, the audiences accepted for each, the signing algorithms you permit, and any additional claims a token may present. API Gateway verifies each token's signature, issuer, audience, expiry, and claims on every request. You can attach one authorizer to many methods and require different scopes on each. This fits machine-to-machine APIs, mobile and web backends, and multi-tenant APIs that accept tokens from several identity providers. The JWT authorizer works on Regional, edge-optimized, and private REST APIs, and is available in all commercial AWS Regions and the AWS GovCloud (US) Regions. To ge",
+    "published": "2026-11-17T19:22:00Z",
+    "hash": "1494848e298da7cc7630643c583879082f7197e8d79350a8f194d03d47da5b0c"
+  },
+  {
+    "title": "Amazon Bedrock AgentCore Memory now provides full session summaries",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-memory-full-session-summaries",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "General Announcement",
+    "summary": "Amazon Bedrock AgentCore Memory now keeps a full session summary for every session. It's a single record that gives a snapshot of what happened in the conversation. Summary chunks cover the conversation in more detail, while the full session summary captures the overall picture of where the session stands. AgentCore Memory updates it as new events arrive, so it always reflects the session so far. This works well for developers who want a quick recap rather than a play-by-play. Full session summaries come with the summary strategy and need no extra setup. Every memory that has a summary strategy gets them automatically, including existing sessions. Each summary is stored as a long-term memory record next to the session's summary chunks. You retrieve it with the Memory operations you already use, and you can filter by record type to return only full session summaries. This feature is available in all AWS Regions where AgentCore Memory is available. To get started, see the Summary strateg",
+    "published": "2026-11-17T19:17:00Z",
+    "hash": "6a20f6162ac12b12241c351bca1d16e86e181c7299abd2d3640d0bbe1a7c2ea5"
+  },
+  {
+    "title": "AWS Lambda now supports scale to and from zero for Lambda Managed Instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-managed-instances-scale-to-zero/",
+    "source": "AWS What's New",
+    "service": "AWS Lambda",
+    "category": "Upgrade",
+    "summary": "AWS Lambda now supports scale to and from zero for Event Functions running on Lambda Managed Instances (LMI). Lambda automatically scales execution environments for your function to zero during idle periods and scales them back up when requests arrive, without requiring you to provision minimum capacity. This makes LMI cost-effective for intermittent workloads such as asynchronous processing, development, and test environments. Lambda Managed Instances lets you run Lambda functions on your Amazon EC2 instances while maintaining the operational simplicity of Lambda. With Lambda Managed Instances, you can access specialized compute configurations and drive cost efficiency through EC2 pricing advantages, without managing infrastructure. Previously, customers needed to keep a minimum number of execution environments running even when there was no traffic. With this launch, Lambda scales execution environments for your function to zero after a period with no activity, and provisions them ag",
+    "published": "2026-11-17T19:00:00Z",
+    "hash": "a260bc36b41f59c7b552e842137af544fb8144cbd24949b8e4d7d13e5df3686f"
+  },
+  {
+    "title": "Amazon SageMaker now supports AI data preparation capabilities to build high-quality datasets for model development",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-ai-data-prep-capabilities/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Building high-quality training datasets has traditionally required weeks of manual labeling and data cleaning. Amazon SageMaker now offers AI data preparation capabilities that help data scientists and ML engineers build high-quality training and evaluation datasets for both text-based model customization and traditional ML. Teams can generate synthetic examples grounded in their own documents, auto-label records at scale with confidence scores, incorporate expert feedback through human review, evaluate data quality, and transform data for their chosen training or evaluation technique. Synthetic data generation creates training, evaluation, and test data from a specification grounded in your documents. Auto-labeling labels data at scale with built-in task types including classification, named entity recognition, extractive question answering, ordinal rating, and summarization, plus custom tasks. Rows below your confidence threshold go to a human review queue in the Label Studio Communi",
+    "published": "2026-11-17T19:00:00Z",
+    "hash": "6bd322cb661b1220dbe0c8e695d787ebead3ca8049359798532162cd9474c1ea"
+  },
+  {
+    "title": "Amazon DynamoDB caching is now available with Amazon ElastiCache Serverless for Valkey",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/dynamodb-caching-elasticache/",
+    "source": "AWS What's New",
+    "service": "Amazon ElastiCache",
+    "category": "Release",
+    "summary": "Today, AWS announces the general availability of DynamoDB caching with Amazon ElastiCache Serverless for Valkey, a serverless alternative to Amazon DynamoDB Accelerator (DAX) that delivers sub-millisecond read latency for frequently accessed DynamoDB data. Previously, if you needed faster reads than the single-digit millisecond latency of DynamoDB, you had to provision and scale DAX nodes or run your own cache and keep it in sync with DynamoDB. Now you can access DynamoDB table data from a write-through cache that updates as data changes and scales automatically to meet changing workload demands, with no clusters or nodes to manage. DynamoDB caching requires no application logic changes and minimal configuration. You choose which DynamoDB tables and APIs to cache and how long to retain cached data. Your application's IAM credentials are used to access DynamoDB, so existing access control policies are automatically applied. DynamoDB caching is available in all commercial and AWS GovClou",
+    "published": "2026-11-17T18:54:00Z",
+    "hash": "758023b3ce47db6c6114f7a5579f0eee8602f71cac3c816c2451c00050484252"
+  },
+  {
+    "title": "Amazon OpenSearch UI is now available in the Africa (Cape Town) Region",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/opensearch-ui-available-africa-cape-town-region",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Upgrade",
+    "summary": "Amazon OpenSearch UI has expanded to the AWS Africa (Cape Town) Region, bringing availability to 25 AWS Regions. OpenSearch UI provides a single endpoint to query, visualize, and analyze data across Amazon OpenSearch Service domains running OpenSearch version 1.3 or later and OpenSearch Serverless collections, including Classic and NextGen. One OpenSearch UI application can connect to multiple domains and collections. Workspaces organize dashboards, saved queries, and other content, with purpose-built experiences for observability, security analytics, and search. The Discover interface supports multiple data sources and query languages, including Piped Processing Language (PPL) and SQL. It also includes a data selector, query autocomplete, and an updated design. OpenSearch UI runs separately from your domains and collections, giving you access to the latest UI capabilities without requiring cluster upgrades. To get started, create an OpenSearch UI application using the Amazon OpenSearc",
+    "published": "2026-11-17T18:34:00Z",
+    "hash": "7836f58e1daf327ad86e3d4e91c33eca93ddec9e81f00b1dcff79b3773dd8984"
+  },
+  {
+    "title": "Amazon Bedrock AgentCore now offers free monthly web search queries",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-agentcore-free-web-search-queries/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Service Update",
+    "summary": "Amazon Bedrock AgentCore now offers 5,000 free web search queries per month through the Web Search Tool in AgentCore gateway and the Web Search API. AgentCore helps developers build, deploy, and operate highly effective agents securely at scale. Developers can now build and test agents with web search capabilities at no cost for their first 5,000 queries each month. The free allowance applies automatically, with no setup required. It is shared across supported AWS Regions and by all accounts in an organization, and resets each month. Additional queries are billed at standard rates without interrupting your agents. Free web search queries are available in all AWS Regions that support the Web Search Tool and Web Search API: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), Asia Pacific (Sydney), and Asia Pacific (Tokyo). To learn more, see AgentCore pricing , Web Search Tool in the AgentCore Developer Guide , and the AgentCore product page .",
+    "published": "2026-11-17T18:00:00Z",
+    "hash": "511777e72fc934dbd2d09da43db251711afb6ed66122670b8dbed194a26469d5"
+  },
+  {
+    "title": "AWS Config announces managed conformance packs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-config-managed-conformance-packs",
+    "source": "AWS What's New",
+    "service": "AWS Config",
+    "category": "Service Update",
+    "summary": "AWS Config now offers managed conformance packs. AWS builds and maintains these packs for specific compliance and governance frameworks. When you deploy one, you choose a framework, and AWS Config evaluates your resources against it. AWS keeps the pack up to date as things change. When new AWS Config managed rules map to the framework's controls, or when the framework itself is revised, AWS updates your deployed pack automatically. Because AWS maintains a consistent pack definition in every supported Region, you can deploy the same framework across Regions without building or maintaining Region-specific rule sets. With managed conformance packs you no longer have to track framework changes or update rules yourself. Previously, to evaluate resources against a framework such as PCI DSS or SOC 2, you started from a sample conformance pack template, customized it for your environment, and then updated it yourself whenever new rules became available or the framework changed. Managed conform",
+    "published": "2026-11-17T17:49:00Z",
+    "hash": "b1ce265b9285703e0d550d447bcacaa52898ed3ffa4d51a3adb807757bc78bc3"
+  },
+  {
+    "title": "Amazon Aurora DSQL now offers SQL statement statistics in Database Insights",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-dsql-statement-statistics/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora",
+    "category": "General Announcement",
+    "summary": "Amazon Aurora DSQL now records statistics for each SQL statement your cluster runs and publishes them as Amazon CloudWatch OpenTelemetry (OTel) metrics. You can view them in Amazon CloudWatch Database Insights. For each statement, you see how often it runs, how long it takes, the rows it scans, returns, or changes, and the DPUs it uses. Statement statistics measure every successful statement rather than sampling activity. Use them to find the statements that take the most time, run most often, or cost the most. In Database Insights, choose a statement under Top SQL to see its normalized SQL text and per-call charts. You can also query the metrics with PromQL in CloudWatch. Turn on statement statistics for each cluster in the Aurora DSQL console or the API when you create or update the cluster. Statement statistics are available in all AWS Regions where Aurora DSQL is available. Standard CloudWatch metrics and Logs charges apply, with no additional Aurora DSQL charge. To learn more, see",
+    "published": "2026-11-17T17:37:00Z",
+    "hash": "a500bdf411c8b70a663db91bf65fbd9991824175bff56480c35bea7d3de18ec8"
+  },
+  {
+    "title": "Amazon WorkSpaces Advisor now helps you find issues before your users notice them (Public Preview)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-advisor-proactive-troubleshooting-preview",
+    "source": "AWS What's New",
+    "service": "Amazon WorkSpaces",
+    "category": "Release",
+    "summary": "When a WorkSpace is slow or won't connect, the IT administrator trying to help has traditionally had to dig through Amazon CloudWatch metrics, logs, and configuration data across multiple tools to find out why. And in the meantime, the user on the other end can't get their work done. In April this year, we launched Amazon WorkSpaces Advisor, an AI-powered agent that helps IT administrators diagnose and fix WorkSpaces performance, connectivity and provisioning issues and get users back to work faster. With Advisor, administrators can investigate a WorkSpace from the console and, in minutes, see the likely root cause and recommended actions they can take right away. Since then, we've continued to invest in Advisor so your team can spend less time chasing down issues one by one, and more time on the projects your business is counting on you to deliver. Today, we're excited to announce the preview of proactive troubleshooting in WorkSpaces Advisor, which moves your team from reacting to in",
+    "published": "2026-11-17T16:00:00Z",
+    "hash": "ed009cb492f59df0f80cc0541916ca396f6fed1e995baa2c9b4b8bf7e666ce73"
+  },
+  {
+    "title": "Amazon VPC, AWS Transit Gateway, and AWS Cloud WAN now offer a 99.999% availability SLA for cross-Region traffic",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/vpc-tgw-cloudwan-99999-sla/",
+    "source": "AWS What's New",
+    "service": "AWS Transit Gateway",
+    "category": "Service Update",
+    "summary": "AWS now offers a 99.999% availability service level agreement (SLA) for cross-Region traffic over Amazon Virtual Private Cloud (Amazon VPC) cross-Region peering, AWS Transit Gateway, and AWS Cloud WAN, with a new capability called Multipath Resilience. Multipath Resilience makes it easier to improve the resilience of mission-critical applications that send traffic across Regions, such as payment processing, financial trading, telephony, and live media streaming. The AWS backbone is highly resilient and connects Regions over physically diverse fiber paths. When a path fails, such as during a fiber cut, the network's automatic sub-second rerouting moves traffic to a healthy path. In the rare event that such mechanisms do not resolve the issue in a timely manner, such as when there's a partial degradation, it might take minutes for connectivity to be reestablished. Some applications, such as payment processing, financial trading, telephony, and live media streaming, can't tolerate single-",
+    "published": "2026-11-17T16:00:00Z",
+    "hash": "e8d661d14e8c6d1e5f555858f64bb9518790e31a858617610033f8f9e5c540e4"
+  },
+  {
+    "title": "Amazon MSK Standard Brokers now support Graviton4-based M8g instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-msk-standard-brokers-graviton4-m8g-instances/",
+    "source": "AWS What's New",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "category": "Upgrade",
+    "summary": "AWS Graviton4-based M8g instances are now generally available for Standard Brokers in Amazon Managed Streaming for Apache Kafka (Amazon MSK). Compared to Standard Brokers on M7g, M8g delivers up to 35% lower P99 produce latency and 30% faster catch-up for consumers that fall behind. Standard Brokers on M8g are available today across all AWS regions where MSK Standard Brokers and M8g instances are available. For pricing, refer to the Amazon MSK pricing page . To get started, use the AWS Management Console or API to create a new cluster with Standard Brokers on M8g or start an in-place migration of an existing cluster from Standard Brokers on M7g to M8g. To learn more, see the Amazon MSK Developer Guide .",
+    "published": "2026-11-17T16:00:00Z",
+    "hash": "0fafd3725236bc4598d52a0d192cd143d448013cd20dc2510ba5a9c22fb8a9fe"
+  },
+  {
+    "title": "Amazon MSK Express Brokers now support Graviton4-based M8g instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-msk-express-brokers-graviton4-m8g-instances/",
+    "source": "AWS What's New",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "category": "Service Update",
+    "summary": "AWS Graviton4-based M8g instances are now generally available for Express Brokers in Amazon Managed Streaming for Apache Kafka (Amazon MSK). Compared to Express Brokers on M7g, M8g delivers 15% lower compute costs, up to 45% lower P99 produce latency, and 2x faster catch-up for consumers that fall behind. Additionally, customers no longer pay the broker-side cost when moving data across Availability Zones between clients and brokers, reducing total cross-AZ data transfer costs by 50%. Together, lower data transfer and broker-hour charges result in up to 30% cost savings compared to Express Brokers on M7g. MSK Express Brokers are designed to deliver up to 3x more throughput per broker, scale up to 20x faster, and reduce recovery time by 90% compared to Standard Brokers running Apache Kafka. Express Brokers on M8g further improve on M7g with better economics and performance along with existing Express capabilities. Customers running Apache Kafka on external clusters, including on-premise",
+    "published": "2026-11-17T16:00:00Z",
+    "hash": "27a80ec70cf29627c1f69d9ea6f832563d7d1d2c87fed57d3dc29bd2bd17071a"
+  },
+  {
+    "title": "Amazon Corretto November 2026 Critical Security Patch Updates",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-corretto-nov-2026-updates/",
+    "source": "AWS What's New",
+    "service": "Amazon Corretto",
+    "category": "Security",
+    "summary": "On Nov 17, 2026, Amazon announced critical security patch update (CSPU) for Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto 27.0.1.1.4, 25.0.5.1.2, 21.0.13.1.2, 17.0.21.1.2, 11.0.33.1.1, and 8u514 are now available for download . Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK. Visit Corretto home page to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a Corretto Apt, Yum, or Apk repo . Feedback is welcomed !",
+    "published": "2026-11-17T15:00:00Z",
+    "hash": "c5b80dc925b3438a26327f3aa583cbaafa64f28afc5eba517a5b21757c3de0c3"
+  },
+  {
+    "title": "Amazon API Gateway REST APIs now support JWT authorizers",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-rest-jwt-authorizers/",
+    "source": "AWS What's New",
+    "service": "Amazon API Gateway",
+    "category": "General Announcement",
+    "summary": "Amazon API Gateway now offers a native JWT authorizer for REST APIs, a new authorizer type that validates JSON Web Tokens directly in the gateway. Until now, validating tokens from an OpenID Connect or OAuth 2.0 identity provider other than Amazon Cognito required a Lambda authorizer. You now configure token validation instead of writing and operating code for it. You can define one or more issuers, the audiences accepted for each, the signing algorithms you permit, and any additional claims a token may present. API Gateway verifies each token's signature, issuer, audience, expiry, and claims on every request. You can attach one authorizer to many methods and require different scopes on each. This fits machine-to-machine APIs, mobile and web backends, and multi-tenant APIs that accept tokens from several identity providers. The JWT authorizer works on Regional, edge-optimized, and private REST APIs, and is available in all commercial AWS Regions and the AWS GovCloud (US) Regions. To ge",
+    "published": "2026-11-17T15:00:00Z",
+    "hash": "8b8df3650b5fa183ab6f2ce27944f5e033fda01c4ed0af0e7a870dda657e5b0f"
+  },
+  {
+    "title": "Amazon S3 now provides post-quantum TLS visibility in AWS CloudTrail",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-post-quantum-tls-aws-cloudtrail/",
+    "source": "AWS What's New",
+    "service": "AWS CloudTrail",
+    "category": "Upgrade",
+    "summary": "Amazon S3 now records the TLS key exchange algorithm in AWS CloudTrail for S3 requests, so you can see which requests and clients use post-quantum TLS (PQ-TLS). With this visibility, you can measure the share of your S3 traffic that is protected with post-quantum cryptography, and identify the applications, SDK versions, and IAM principals that still connect with classical key exchange and need to be upgraded. The new keyExchange value in the tlsDetails field of CloudTrail management and data events shows the key exchange negotiated on each TLS connection, such as the hybrid post-quantum algorithm X25519MLKEM768 or a traditional algorithm such as x25519. For example, you can query your CloudTrail logs to find the user agents of S3 requests that did not use ML-KEM, then prioritize those clients for your post-quantum migration. The keyExchange value is recorded for requests to general purpose buckets, directory buckets, table buckets, and vector buckets, including requests made through A",
+    "published": "2026-11-17T14:00:00Z",
+    "hash": "6db99261f18f6327cd15c7131938c316c4453dc0031b9ea9f49ab878d4e38140"
+  },
+  {
+    "title": "Amazon S3 adds post-quantum TLS key exchange support to additional S3 endpoints",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-post-quantum-tls-key-exchange-support/",
+    "source": "AWS What's New",
+    "service": "Amazon Simple Storage Service",
+    "category": "General Announcement",
+    "summary": "Amazon S3 adds post-quantum TLS (PQ-TLS) key exchange support to S3 Vectors and AWS PrivateLink for Amazon S3 interface endpoints. This extends the post-quantum cryptography support already available on regional S3, S3 Tables, and S3 Express One Zone endpoints. S3 Vectors endpoints and PrivateLink interface endpoints now support Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM), one of the National Institute of Standards and Technology (NIST) standardized post-quantum cryptographic algorithms. PQ-TLS key exchange is available to all clients configured to use the ML-KEM key exchange algorithm. S3 Vectors and PrivateLink endpoints automatically negotiate the strongest key exchange that your client software supports, so clients that support ML-KEM receive the benefits of PQ-TLS key exchange without any changes to your applications or endpoint configuration. PQ-TLS key exchange for S3 Vectors and AWS PrivateLink for S3 is supported at no additional cost in all AWS Regions. To learn",
+    "published": "2026-11-17T14:00:00Z",
+    "hash": "5feed2c336568b07ab76b7fa58f4e1279ed2ca945a774f5005db665a04ee444e"
+  },
+  {
+    "title": "Cost Optimization Hub now supports stopping idle Amazon EC2 instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cost-hub-stop-idle-ec2/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Upgrade",
+    "summary": "AWS Cost Optimization Hub now lets you stop idle Amazon EC2 instances directly from your recommendations. Cost Optimization Hub consolidates and prioritizes cost optimization recommendations across your AWS accounts and Regions, including idle resources. Previously, stopping an idle instance required you to leave Cost Optimization Hub and identify the specific instance in the Amazon EC2 console. Now you can stop it from the Savings opportunities page in Cost Optimization Hub. When you choose Stop next to an idle instance recommendation, a confirmation shows the instance, its account and Region, what the instance loses when it stops, such as instance store data and data in memory, and what continues to bill, such as EBS volumes and Elastic IP addresses. Stopping does not terminate the instance or delete its EBS volumes, and you can start it again from the EC2 console. Stop needs no separate setup and uses your existing permissions. To receive idle resource recommendations, turn on Cost ",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "c10bf4f5d44d1274bcbc632b64d288027d5d7ead8b956c3aeea73fb642422baa"
+  },
+  {
+    "title": "AWS WAF announces simplified onboarding for Bot Control targeted protection",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-bot-control-onboarding/",
+    "source": "AWS What's New",
+    "service": "AWS WAF",
+    "category": "General Announcement",
+    "summary": "Today, AWS WAF announces a simplified console experience for Bot Control at the targeted inspection level. A single setting, Targeted bot control, turns on targeted protection for your Amazon CloudFront distributions with the configuration AWS recommends. It comes with two additions to the Bot Control managed rule group: bot confidence levels, which summarize the targeted detections on each request as High, Medium, or Low, and a LATEST version that keeps you on the newest detections automatically. Together, they help you protect your applications against sophisticated and AI-powered bots without writing label match rules or changing application code. The targeted inspection level uses machine learning and client-side signals to detect evasive bots. Previously, acting on those signals meant integrating the AWS WAF JavaScript SDK into every page, learning dozens of labels, and writing label match rules to combine them. Now, the rule group combines the detections into one confidence level",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "b7baca4991c1f6bb0d925b498787ea0ead1f90015010c405e009bbc718439eb0"
+  },
+  {
+    "title": "AWS Transit Gateway supports native integration with Gateway Load Balancer",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/transit-gateway-gwlb-integration/",
+    "source": "AWS What's New",
+    "service": "AWS Transit Gateway",
+    "category": "Upgrade",
+    "summary": "AWS Transit Gateway now supports network function attachments of type Gateway Load Balancer, simplifying the deployment and management of network security across your AWS network. With a network function attachment, you can connect your transit gateway to a Gateway Load Balancer VPC endpoint service that fronts firewalls and other security appliances without complex VPC configurations. Transit Gateway creates and manages the Gateway Load Balancer endpoints in the Availability Zones you choose, removing the need to create dedicated endpoint subnets and route tables. The endpoint service can be in another AWS account. Network function attachments also support context sharing with security services. Transit Gateway adds resource context to traffic sent to your firewall, including the transit gateway attachment, VPC, subnet, and security groups. Your firewall can use this context alongside IP addresses to enforce segmentation policies. This capability is available in all commercial AWS Reg",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "8472a7451e975d76f712befd0762dbc03e961ac7485b93bb26e5997106fb146d"
+  },
+  {
+    "title": "AWS Transit Gateway now shares resource context with firewalls for segmentation policies",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/transit-gateway-firewall-context-sharing/",
+    "source": "AWS What's New",
+    "service": "AWS Transit Gateway",
+    "category": "Upgrade",
+    "summary": "AWS Transit Gateway now supports context sharing with security services, such as attached firewalls, allowing you to use Amazon Virtual Private Clouds (VPCs), VPC subnets, VPC security groups, and transit gateway attachments in firewall policies alongside IP addresses. Until now, attached firewalls segmented traffic by IP address, which is hard to plan and maintain, or by resource tags, which firewalls periodically synchronize with IP addresses and can miss new workloads in between. With this feature, you can enforce segmentation based on how workloads and attachments are defined in AWS. Transit Gateway embeds resource context in the traffic it sends to your firewall, which can enforce the right policy from the first packet. For example, you can apply threat protection to traffic between web-tier and database-tier security groups, block development VPCs from reaching production VPCs, apply a common inspection policy to traffic entering AWS through AWS Direct Connect and AWS Site-to-Sit",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "54b0d07a1729643fc972fd29f96a4cfc2ef509e810c580497e3416c629a37466"
+  },
+  {
+    "title": "AWS Split Cost Allocation Data now supports Amazon S3",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/split-cost-allocation-data-s3/",
+    "source": "AWS What's New",
+    "service": "Amazon Simple Storage Service",
+    "category": "Upgrade",
+    "summary": "Starting today, you can allocate the storage and request costs of a shared Amazon S3 general purpose bucket to the prefixes in that bucket in the AWS Cost and Usage Report (CUR). Organizations often store data for many teams, applications, or tenants in one bucket under different prefixes, such as `marketing/` and `finance/`. Until now, attributing that bucket's bill to each prefix required custom pipelines built on S3 Inventory or Storage Lens reports and your own pricing logic. With Split Cost Allocation Data for Amazon S3, Amazon S3 Storage Lens publishes prefix-level storage and request metrics to AWS Billing and Cost Management, which allocates the bucket's storage and Tier 1 and Tier 2 request costs to the deepest matching prefix in the range of prefix levels you choose. Each prefix line item carries its full prefix path as AWS-generated cost allocation tags, so you can total cost by top-level prefix, team, or application, and reconcile it back to the bucket. You can use this dat",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "1833e0f2f546ac25eda8255efceb122fa3bbb448b64f86bbb6d18939514c2e9a"
+  },
+  {
+    "title": "AWS Split Cost Allocation Data now supports Amazon S3",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/s3-split-cost-allocation/",
+    "source": "AWS What's New",
+    "service": "Amazon Simple Storage Service",
+    "category": "Upgrade",
+    "summary": "You can now allocate the storage and request costs of a shared Amazon S3 general purpose bucket to its prefixes in the AWS Cost and Usage Report (CUR). Many organizations store data for multiple teams, applications, or tenants in one bucket under different prefixes such as \"marketing/\" and \"finance/\". Previously, splitting that bucket's bill by prefix required custom pipelines and your own pricing logic. With this new capability, S3 Storage Lens publishes prefix-level storage and request metrics to AWS Billing and Cost Management. Billing and Cost Management then allocates the bucket's storage and Tier 1 and Tier 2 request costs to the deepest matching prefix in the range of prefix levels you choose. Each prefix line item carries its full prefix path as AWS-generated cost allocation tags, so you can total costs by top-level prefix, team, or application, and reconcile it back to the bucket. You can use this data for chargeback and showback, and to see which prefixes drive your S3 spend.",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "94bc0ea2ada623a6a9cd4676324894076196d15ee0bf5976f0a2bf2483ea08e1"
+  },
+  {
+    "title": "AWS Lambda durable functions now supports pausing and deleting executions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-pause-delete/",
+    "source": "AWS What's New",
+    "service": "AWS Lambda",
+    "category": "Upgrade",
+    "summary": "AWS Lambda durable functions now lets you pause a running durable execution and resume it later without losing its progress. When you resume an execution, it continues from its last checkpoint on the same function version. By default, time spent paused doesn't count toward the execution timeout. You can also now delete a completed execution's data before its retention period ends. With Lambda durable functions, you can build resilient multi-step applications and AI workflows that run for up to one year, with built-in checkpointing and automatic retries. With this launch, when a downstream service is degraded or a model provider's rate limit is reached, you can pause affected executions while you resolve the issue instead of letting the retries run out. You can also delete an execution's history, checkpoint data, and input and output payloads after it succeeds, fails, stops, or times out. For example, you can delete an execution whose input contains personal data, or clean up failed exe",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "51d7471394b87bab754c179dd312ad25e97bd8193a246d6d48f566437688e4c6"
+  },
+  {
+    "title": "AWS IAM announces Access Troubleshooter to debug access denied errors",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/iam-access-troubleshooter/",
+    "source": "AWS What's New",
+    "service": "AWS Identity and Access Management",
+    "category": "General Announcement",
+    "summary": "AWS Identity and Access Management (IAM) introduces Access Troubleshooter , a new capability that gives you visibility into the full authorization context behind access denied errors so you can resolve them without trial-and-error. Previously, developers relied on the Amazon Resource Name (ARN) of the denying policy to debug a denial, with no visibility into the authorization context or other policies evaluated in the request that could contribute to the denial. This made troubleshooting access issues time-consuming and inefficient. Starting today, access denied error messages for supported services and APIs will include a unique identifier that you can use to retrieve details of the authorization performed by the service. You gain visibility into what policies were evaluated for each request, the authorization context of those requests, and the results of the evaluation. This enables you to identify the root cause of authorization issues quickly, streamlining your access management wo",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "377bc357a7f40121c217067b94083100b64d31eebf62673237165e5e3a5f5586"
+  },
+  {
+    "title": "Amazon SageMaker HyperPod now supports cluster operations for tracking scaling and on-demand Deep Health Check requests",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-cluster-ops/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker HyperPod introduces cluster operations, giving you visibility into every scaling and on-demand deep health check request from submission to completion. When a request runs into errors, the SageMaker AI console shows an alert that links directly to that request's error events. With continuous provisioning, HyperPod brings capacity online in the background as it becomes available, retries failed nodes automatically, and lets you run multiple scaling requests at the same time. Cluster operations show you when each request finishes and which request caused the activity on your cluster. When a scale-up falls short of its target, you can go directly to the failure reason. Each scaling or on-demand deep health check request creates a cluster operation that tracks the request from submission to completion, including whether it is still in progress and what it changed on each instance group. Events that HyperPod records while working on the request are linked to its operation. ",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "9316802d1ee64c23080e292753a92a79679c2a68945b9e6675433cb8b5014aab"
+  },
+  {
+    "title": "Amazon Route 53 Resolver DNS Firewall now supports Infoblox Threat Defense (Preview)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route53-dns-firewall-infoblox-preview/",
+    "source": "AWS What's New",
+    "service": "Amazon Route 53",
+    "category": "Upgrade",
+    "summary": "Amazon Web Services announces the preview of Infoblox Threat Defense on Amazon Route 53 Resolver DNS Firewall . Security administrators can now apply Infoblox threat intelligence directly in DNS Firewall rules to preemptively protect applications in their Amazon Virtual Private Clouds (VPCs) from cyber threats, by subscribing to the Infoblox product listing on AWS Marketplace from the Route 53 DNS Firewall console. With this launch, you can add Infoblox managed rules to your DNS Firewall rule groups to filter and block queries to malicious and high-risk domains at the DNS layer. Infoblox continuously updates its threat intelligence feeds to preemptively protect cloud workloads from phishing, malware, ransomware and other advanced attacks. You can apply these protections to DNS queries from your VPCs and to hybrid traffic forwarded through Route 53 Resolver endpoints, so security teams keep consistent DNS policies across AWS and on-premises environments and add a layer of protection on ",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "274db941dade8f6ff5b662a9d646f79f481bd1e3d66a7551db83002ce258df66"
+  },
+  {
+    "title": "Amazon Route 53 Resolver DNS Firewall now supports automated allow-list generation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-dns-firewall-auto-allowlists/",
+    "source": "AWS What's New",
+    "service": "Amazon Route 53",
+    "category": "Upgrade",
+    "summary": "Amazon Route 53 Resolver DNS Firewall now automatically generates domain allow-lists from your VPCs' observed DNS query traffic, helping you enforce least-privilege DNS access and reduce the risk of DNS-based data exfiltration. Previously, implementing a least-privilege model required security teams to manually analyze DNS query logs to identify the domains their VPCs depend on before deploying allow-list rules. This created operational overhead and delayed enforcement of a deny-by-default (walled-garden) posture. With automated allow-list generation, DNS Firewall analyzes DNS query traffic using a lookback window configurable from 1 hour to 7 days to create an allow-list of observed domains. It then continuously monitors DNS queries and flags newly observed domains, so you can review them before adding them to the allow-list. You can deploy the rule across multiple VPCs and accounts using AWS Firewall Manager or Route 53 Profiles. This capability is available at no additional cost to ",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "270e8046469f4d6ac79a2448158d714120125dd34f27067e873a9561f09cd788"
+  },
+  {
+    "title": "Amazon Route 53 Global Resolver is now available over AWS Cloud WAN for hybrid networks",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-global-resolver-cloud-wan/",
+    "source": "AWS What's New",
+    "service": "Amazon Route 53",
+    "category": "Upgrade",
+    "summary": "Amazon Route 53 Global Resolver now supports anycast DNS resolution for private connections managed through your AWS Cloud WAN configuration. This enables organizations with hybrid networks to resolve DNS queries to public and private domains over existing AWS Direct Connect or AWS VPN connections, with automatic multi-region failover for high availability. Previously, customers had to either deploy and manage separate Resolver endpoints in each AWS Region and customer location, with no automatic failover between AWS Regions, or use Global Resolver with internet-reachable anycast IPs, making it hard for clients without internet access or those restricted by compliance requirements to take advantage of Global Resolver's anycast DNS resolution. With this launch, customers with clients configured with private connectivity over your Cloud WAN network get all the benefits of Global Resolver: automatic regional failover for higher availability, centralized DNS filtering with Route 53 DNS Fir",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "f6caba3ca679b41d97f805374709274d311c17a80381a4584c2e73b6b1736697"
+  },
+  {
+    "title": "Amazon Kinesis Data Streams announces queues to simplify and reduce costs of real-time processing",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/kinesis-data-streams-queues/",
+    "source": "AWS What's New",
+    "service": "Amazon Kinesis",
+    "category": "Upgrade",
+    "summary": "Amazon Kinesis Data Streams now supports queues, a simpler and more cost-effective way to process a stream. Because queues track the delivery state of each record, your consumer instances receive records instead of leasing shards, acknowledge each record when processing is complete, and scale beyond the number of shards. Kinesis Data Streams consumers can reduce the cost of processing data by up to 43% by using queues instead of the Kinesis Client Library. You no longer run a DynamoDB table or custom metrics, and you use compute more efficiently. Queues in Kinesis Data Streams are powered by Amazon SQS. Built on that foundation, a queue delivers records at least once, redelivers records your consumers do not acknowledge, and provides built-in dead-letter handling for records that keep failing. Each queue publishes its own CloudWatch metrics, so you can scale consumer instances on records waiting to be received and alarm on records that repeatedly fail. Use queues for applications that ",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "31eda846c5518fbe3ad66a54e5e1926c67100e70450e77ccc0022a32d63e5107"
+  },
+  {
+    "title": "Amazon EKS Auto Mode now rightsizes Pods to reduce compute costs (Preview)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/eks-auto-mode-pod-rightsizing-preview/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "Release",
+    "summary": "Amazon Elastic Kubernetes Service (Amazon EKS) introduces resource optimization for EKS Auto Mode, a new capability that rightsizes the CPU and memory requests of running Pods based on their actual usage. CPU and memory requests are often set at deploy time and rarely revisited, and Auto Mode provisions EC2 instances to fit them. Rightsizing lets Auto Mode run the same Deployments and StatefulSets on fewer or smaller instances, without hand tuning and at no additional charge. Turn on resource optimization by creating a ClusterResourceOptimizationPolicy in your EKS cluster, review its recommendations in the default Recommend mode, and switch to Apply mode when you're ready to resize running Pods in place, without recreating them. For example, a platform team running Java services under Argo CD can rightsize every application namespace without editing templates or creating GitOps drift, while resource optimization keeps memory above each Java heap and raises memory after an out-of-memory",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "bc8c74fdd3e28609759ff4f027f46ace9ca08c80773c01dfe23a2a47007b9724"
+  },
+  {
+    "title": "Amazon Connect Customer now supports case and calculated template variables",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-case-and-calculated-attributes/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Upgrade",
+    "summary": "Amazon Connect Customer message templates, which personalize each message with details about its recipient, now support case fields from Cases and calculated attributes from Customer Profiles, such as a customer's most frequent contact channel. Companies that send updates about a claim, an order, or an application need each message to reflect that customer's record. Template authors can insert case fields, including custom fields that administrators define, and Connect Customer fills in the current value for each recipient every time it sends a message that uses the template. A claims manager at an insurance company can build one email template that pulls each claim's reference number and status from its case, so every policyholder receives an update about their own claim. A retailer can add a custom calculated attribute, such as each customer's total orders in the past year, to a loyalty email so every customer sees their own count. Developers can pass these values when they render a ",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "0989ef1c04ff070bf323b5a917bda4910c9fb7ea09427be3aa00fe060bce8ea8"
+  },
+  {
+    "title": "Amazon S3 Storage Lens now tracks S3 Intelligent-Tiering access tiers",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-storage-lens-s3-intelligent-tiering-access-tiers/",
+    "source": "AWS What's New",
+    "service": "Amazon Simple Storage Service",
+    "category": "General Announcement",
+    "summary": "Amazon S3 Storage Lens now provides storage metrics for each S3 Intelligent-Tiering access tier. You can see object counts and storage bytes in every tier across your buckets. This helps you track how your data moves between tiers, estimate storage costs, and measure your savings. S3 Storage Lens gives you visibility across your organization into storage usage and activity to help you optimize costs and performance. Access tier metrics appear in your S3 Storage Lens dashboards and metrics exports alongside your existing metrics. S3 Storage Lens also now publishes prefix metrics to AWS Billing and Cost Management, so you can allocate shared bucket costs to teams and applications with split cost allocation data for S3. To get started, enable access tier metrics in your S3 Storage Lens advanced tier configuration. Access tier metrics are available in all AWS Regions, except the AWS China Regions and the AWS GovCloud (US) Regions. To learn more, visit the S3 Storage Lens documentation . Fo",
+    "published": "2026-11-17T07:00:00Z",
+    "hash": "3add31aa07f7af752064d8d71f8f229aee9eeed07557e7c8808b8b5c6243e16b"
+  },
+  {
     "title": "Amazon ECR now replicates image deletions across regions and accounts",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/replication-deletes-amazon-ecr",
     "source": "AWS What's New",
@@ -120,6 +530,26 @@
     "hash": "a045c86e0d34a0e0472da6ded0f3b2a1e48cdc8f31d788e9edc12ac181248e6c"
   },
   {
+    "title": "AWS Security Hub now detects when vulnerable software is running on Amazon EC2 instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-detects-vulnerable-software/",
+    "source": "AWS What's New",
+    "service": "AWS Security Hub",
+    "category": "Security",
+    "summary": "AWS Security Hub now detects when software with a known vulnerability is actively running on your Amazon EC2 instances. Exposure findings now include a new trait, *The EC2 instance is running software with a known vulnerability*. These findings get a higher severity rating than findings for the same vulnerability where the software isn't running. This helps your security team focus on the vulnerabilities that pose the greatest risk, without investing time and resources to investigate if the software is actually in use. Security teams managing thousands of instances can now prioritize patching based on actual runtime risk. Security Hub correlates data from Amazon GuardDuty Runtime Monitoring and Amazon Inspector VM Scanner to detect running vulnerable software. It then combines this with other signals to generate exposure findings for EC2 resources that may be at risk, so you can prioritize response and remediation. This capability is available at no additional cost with the AWS Securit",
+    "published": "2026-11-16T08:00:00Z",
+    "hash": "603aa2b84f59ddc83ebcc469359474f21d4f494bd9e12bc4e9a45a89ccc444c6"
+  },
+  {
+    "title": "AWS Security Hub Network Scanning now supports scanning Amazon Relational Database Service (Amazon RDS) database instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-network-scanning-rds/",
+    "source": "AWS What's New",
+    "service": "Amazon Relational Database Service",
+    "category": "Security",
+    "summary": "AWS Security Hub Network Scanning now scans Amazon RDS DB instances to identify those that are reachable from the internet. Network Scanning automatically discovers existing and new RDS DB instances in your accounts and scans each instance that has Public Access configured. For each reachable port associated with a DB instance, Security Hub creates a finding with details about the instance and the reachable port. RDS scanning gives you more visibility into which resources in your environment are reachable from the internet. You can then investigate and update their access settings as needed. RDS scanning is turned on automatically for all customers who already have Network Scanning enabled. Network Scanning probes your resources from the internet to detect reachability, beyond what security group rules and route tables suggest. Security Hub Exposures then correlates these findings with other findings and resource configurations to assess broader risk. Existing Security Hub customers ca",
+    "published": "2026-11-16T08:00:00Z",
+    "hash": "cae6925e7e3aacfe52fb6eb1abd4c514fc419575cc17a7eb972b6873c8414e17"
+  },
+  {
     "title": "AWS Secrets Manager adds managed external secrets support for Auth0, Okta, and Palo Alto Networks",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/secrets-manager-managed-external-secrets-auth0-okta-palo-alto/",
     "source": "AWS What's New",
@@ -128,6 +558,16 @@
     "summary": "AWS Secrets Manager now supports managed external secrets for Auth0, Okta, and Palo Alto Networks. Long-lived credentials that are not rotated increase the risk of unauthorized access if exposed. Rotating a third-party credential requires coordinated updates to the external service and every application that uses it. You set a rotation schedule from the AWS Management Console or API. Secrets Manager rotates the credential and stores the current value without a custom rotation Lambda function. Secrets Manager offers self-rotation and administrator-assisted rotation for Auth0 credentials. With self-rotation, the target application replaces its own secret. With administrator-assisted rotation, a separate Auth0 application with Management API permissions replaces the target application's secret. For Okta, Secrets Manager offers administrator-assisted rotation with a separate administrator JSON Web Token (JWT) key and validates the replacement before deactivating the old secret. For Palo Al",
     "published": "2026-11-16T08:00:00Z",
     "hash": "ffdb8b214b38a10091f9c41d034a6b75e8454466591f4c32e380f7a5c5613ffd"
+  },
+  {
+    "title": "AWS Network Firewall now supports context-aware rules with AWS Transit Gateway-attached firewalls",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-context-aware-rules/",
+    "source": "AWS What's New",
+    "service": "AWS Network Firewall",
+    "category": "Upgrade",
+    "summary": "AWS Network Firewall attached to AWS Transit Gateway now allows you to use context-aware rules in your firewall policy. Network Firewall is a managed firewall and intrusion prevention service that inspects and filters traffic across your virtual private clouds (VPCs). With context-aware rules, you write rules that reference context from VPC resources instead of IP addresses. This makes it easier to apply consistent security controls as your organization grows. Existing rules automatically cover new workloads, so you don't need to update rules manually. Context-aware rules match traffic using VPCs, subnets, security groups, and Transit Gateway attachment identifiers, collectively known as context identifiers. You can reference context identifiers in a rule's source for any protocol, and in its destination for TCP-based protocols such as HTTP, TLS, and SSH. Flow and alert logs include context identifiers, so you can investigate activity based on context. Context-aware rules are available",
+    "published": "2026-11-16T08:00:00Z",
+    "hash": "cb50569d81cb6a9fc0e067d7be0c42cb5882aae8d9ca808a9cbfa1aa6e6dbd32"
   },
   {
     "title": "AWS IAM Identity Center now supports ForceAuthn in SAML requests",
