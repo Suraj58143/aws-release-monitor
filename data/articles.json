@@ -1,5 +1,215 @@
 [
   {
+    "title": "Amazon OpenSearch Memory is now generally available",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-memory-generally-available/",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Release",
+    "summary": "Today, AWS announced the general availability of Amazon OpenSearch Memory, a new serverless capability in Amazon OpenSearch Service for adding persistent memory to AI agents. OpenSearch Memory stores agent interactions as searchable events, derives useful memories, and retrieves relevant context across sessions, so agents can recall prior decisions, earlier interactions, and user preferences without replaying the full conversation history to the model. Customers can give agents long-term memory without provisioning infrastructure or building separate extraction, indexing, consolidation, and retrieval systems. OpenSearch Memory stores the original events verbatim, makes them searchable within seconds, and asynchronously derives structured memories. It manages the full memory lifecycle, including extraction, embedding, indexing, consolidation (adding, updating, or skipping memories as new information arrives), and retrieval using keyword, semantic, and hybrid search. Customers control ac",
+    "published": "2026-11-18T21:09:00Z",
+    "hash": "c1dd7634ab50e44a22bb730a1e63cb5bb57a0f3abb14fe400bdbb0cd1a0da659"
+  },
+  {
+    "title": "Introducing the Apache Spark Optimization Agent for AWS Glue ETL",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-aws-glue-etl/",
+    "source": "AWS What's New",
+    "service": "AWS Glue",
+    "category": "Release",
+    "summary": "AWS Glue ETL now offers the Apache Spark Optimization Agent, which analyzes completed Spark job runs and delivers cost and performance optimization recommendations within minutes. You can select a cost or performance goal, and the agent returns specific configuration changes with the telemetry evidence and reasoning behind each suggestion. You can use the agent on any completed job run from the AWS Glue console, or from your own tools through the Amazon SageMaker Unified Studio MCP Server. The agent takes the job's configuration, logs, and Spark telemetry together with your chosen goal and returns recommendations computed by a deterministic recommendation engine. The engine reads all job artifacts together to identify what is driving runtime and cost: too little parallelism, a skewed join key, memory pressure forcing spill, idle executors, or capacity provisioned beyond what the job uses. When cost and performance trade off, the agent improves the metric you chose while keeping any reg",
+    "published": "2026-11-18T20:00:00Z",
+    "hash": "031da3c180fc4edda09b1b683f2916841477d11766753400ebc4e3c38f7507ed"
+  },
+  {
+    "title": "Amazon SageMaker AI now supports cross-Region inference routing",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-cross-region-routing/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Today, Amazon SageMaker AI announces cross-Region inference routing, which helps keep inference applications available when a region runs short of capacity by sending requests to endpoints deployed in other AWS Regions and AWS accounts. Models served on accelerated instances can reach capacity limits in a single Region, and an unhealthy endpoint can lead to throttling and errors for end users. Previously, teams had to build and maintain their own routing, health checks, and retry logic across Regions. With cross-Region inference routing in SageMaker AI, developers create an inference router, register the real-time endpoints, asynchronous endpoints, and inference components they already run, and point their applications at the router. The router prefers endpoints in its own Region, shifts new requests to healthy destinations in other Regions as errors rise, and returns traffic gradually after the local endpoint recovers. Existing endpoints, models, and containers do not change. Endpoint",
+    "published": "2026-11-18T20:00:00Z",
+    "hash": "7cd3fec80c7c6a10fee01b8047cd19360cb710d4ea14712327399e2e280060df"
+  },
+  {
+    "title": "AWS Lambda now supports GPU instances for Event Functions on Lambda Managed Instances",
+    "url": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+    "source": "AWS News Blog",
+    "service": "AWS Lambda",
+    "category": "Upgrade",
+    "summary": "AWS Lambda now supports GPU instances (G-series) for Event Functions running on Lambda Managed Instances, enabling serverless GPU workloads like machine learning inference, media processing, and rendering. Lambda handles all infrastructure tasks, including instance lifecycle, driver management, and auto scaling, while maximizing GPU utilization across concurrent requests with standard EC2 pricing plus a management fee",
+    "published": "2026-11-18T19:39:07Z",
+    "hash": "c2e5486565e65d20afa992e65ff4fae2478997a0b6617d33137d34ae5f7c6a6d"
+  },
+  {
+    "title": "Amazon CloudFront standard logging now supports CMCD and additional log fields",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-standard-logging-cmcd-fields",
+    "source": "AWS What's New",
+    "service": "Amazon CloudFront",
+    "category": "Upgrade",
+    "summary": "Amazon CloudFront standard logging now supports additional access log fields that were previously available only in CloudFront real-time logs. You can now include these fields in your standard logs and deliver them to Amazon S3, Amazon CloudWatch Logs, or Amazon Data Firehose, without setting up an additional data stream for real-time logs. The new fields include the IP address of the CloudFront server that handled the request, identifiers that separate traffic on a primary distribution from traffic on a staging distribution, and a media quality confidence score. They also include Common Media Client Data (CMCD) fields, which video players send with each request to report details like bitrate, buffer length, and playback session ID. Streaming teams can use these fields to match playback problems that viewers see with CloudFront delivery data, which makes troubleshooting faster. These fields are available in all CloudFront edge locations, and standard logging pricing applies. To learn m",
+    "published": "2026-11-18T19:28:00Z",
+    "hash": "339deef922f1efe74fa5144351a72c1880f9844f1233ac46f9643eb654676489"
+  },
+  {
+    "title": "AWS Lambda adds support for GPU instances on Lambda Managed Instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-gpu-managed-instances/",
+    "source": "AWS What's New",
+    "service": "AWS Lambda",
+    "category": "Upgrade",
+    "summary": "AWS Lambda now supports GPU-accelerated Event Functions on Lambda Managed Instances using EC2 G-series instances . You can now run GPU-accelerated workloads including AI inference, media processing, 3D rendering, scientific computing, and financial simulations on Lambda without managing GPU drivers, frameworks, or scaling. Lambda runs multiple invocations concurrently in each execution environment and scales responsively based on GPU utilization, CPU utilization, and concurrency to keep your GPUs busy and reduce costs. GPU-accelerated functions integrate with the same 200+ AWS event sources as other Event Functions, so you can add GPU compute as another step in your serverless application. Running GPU workloads today requires customers to provision hardware, manage driver and framework dependencies, and build custom scaling and capacity management. With this launch, you can go from code to a running GPU workload in minutes. Lambda provides GPU base images preconfigured with frameworks ",
+    "published": "2026-11-18T18:00:00Z",
+    "hash": "9361291bb29b9036a1b1c410134c1cfda3c99033a61c97b78806420d2a85dfe3"
+  },
+  {
+    "title": "Amazon CloudFront Announces WebSocket and gRPC Support for Origin Mutual TLS",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudfront-origin-mtls-websockets-grpc/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudFront",
+    "category": "Upgrade",
+    "summary": "Amazon CloudFront (CF) now supports WebSocket and gRPC traffic to application origins in AWS regions, with mutual TLS authentication between CF and the application origin (origin mTLS). Customers can now use TLS certificates to authenticate requests from CloudFront while setting up WebSocket or gRPC connections to their origins. Origin mTLS protects internet facing applications that need persistent, bidirectional or streaming connections, such as chat platforms, collaborative editing tools or live dashboards from unauthenticated requests. Previously, customers serving WebSocket or gRPC traffic through CloudFront had to use shared secrets or IP allow-lists to identify requests originating from CloudFront. This was operationally complex and did not provide strong authentication. With Origin mTLS, customers can use one TLS based authentication for HTTP, WebSocket and gRPC traffic to an application origin. This works with application origins within AWS such as Application Load Balancer and",
+    "published": "2026-11-18T18:00:00Z",
+    "hash": "c963764231e6d8a67d3e5b425f1cd223ea56b914d52cd522dcc45796c00b643e"
+  },
+  {
+    "title": "Amazon RDS for MySQL supports MySQL minor version 8.4.13",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-mysql-8413-available/",
+    "source": "AWS What's New",
+    "service": "Amazon RDS for MySQL",
+    "category": "Security",
+    "summary": "Starting today, Amazon Relational Database Service (Amazon RDS) for MySQL supports MySQL minor version 8.4.13, the latest minor released by community MySQL. We recommend upgrading to the newer minor versions to accept fixes for Common Vulnerabilities and Exposures (CVEs) in prior versions of MySQL and to benefit from bug fixes, performance improvements, and new functionality added by the MySQL community. Learn more about the enhancements in RDS for MySQL 8.4.13 in the Amazon RDS user guide and MySQL 8.4.13 release notes. You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable automatic minor version upgrades and use the AWS Organizations Upgrade Rollout Policy to orchestrate upgrades across your instances in phases, validating on lower-priority environments before upgrading your most critical ones. You can perform minor version upgrades in-place or via snapshot restore. Learn more about performi",
+    "published": "2026-11-18T17:00:00Z",
+    "hash": "4f3dda72dcd666faa0e7d66ce7dd82260bd75ed53649a7fe8c2cc6edb97080b4"
+  },
+  {
+    "title": "Amazon RDS for MySQL now supports MySQL major version 9.7",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-mysql-974-available/",
+    "source": "AWS What's New",
+    "service": "Amazon RDS for MySQL",
+    "category": "Upgrade",
+    "summary": "Starting today, Amazon RDS for MySQL supports MySQL major version 9.7, the latest Long-Term Support release from MySQL community. Amazon RDS for MySQL 9.7 launches with community MySQL 9.7.4. This launch introduces support for the Replication Applier Metrics component, JSON Duality Views, and Hypergraph Optimizer. The Replication Applier Metrics help you diagnose replication lag by adding two Performance Schema tables that report per-channel applier backlog, throughput, and wait statistics, along with each worker's progress on its current transaction. JSON Duality Views let applications read and write the same relational tables as JSON documents. The Hypergraph Optimizer is an opt-in query optimizer that can improve execution plans for complex, multi-join queries. For more details, refer to the MySQL 9.7.4 release notes and the Amazon RDS for MySQL release notes . You can upgrade your database using Amazon RDS Blue/Green Deployments , in-place upgrade, or restore from a snapshot. Learn",
+    "published": "2026-11-18T17:00:00Z",
+    "hash": "c22ab35381ff510aebbc033c9cee62d01d08b6b2e91b4e0e2b87d81c3ab0aa47"
+  },
+  {
+    "title": "Amazon EKS Hybrid Nodes reduces price for large hosts",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-hybrid-nodes-pricing-change/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "Service Update",
+    "summary": "Amazon Elastic Kubernetes Service (Amazon EKS) Hybrid Nodes now has lower pricing for large nodes, capping the billed vCPU per node at 32 vCPU, so you are no longer charged for vCPUs above that per node threshold. Amazon EKS Hybrid Nodes lets you use your existing on-premises and edge infrastructure as nodes in Amazon EKS clusters. You can now use your largest servers, including those with GPUs, with Amazon EKS Hybrid Nodes at lower cost. With this change, the Amazon EKS Hybrid Nodes cost of a large server no longer grows with its vCPU count. At the first pricing tier, a 64 vCPU node now costs 50% less than before, and a 256 vCPU node costs 88% less, as both are now billed only for 32 vCPUs. This makes Amazon EKS Hybrid Nodes more cost-effective for large bare-metal and GPU servers running compute-intensive workloads, such as AI/ML training and inference, that must stay on-premises for data residency, latency, or regulatory reasons. The pricing change applies automatically to all new h",
+    "published": "2026-11-18T17:00:00Z",
+    "hash": "1802bc25a09661eef80ef4f802b55247a9e0acbddff001e33e6e7c7cd1f40c79"
+  },
+  {
+    "title": "Amazon Cognito now supports point-in-time recovery",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-point-in-time-recovery/",
+    "source": "AWS What's New",
+    "service": "Amazon Cognito",
+    "category": "Upgrade",
+    "summary": "Amazon Cognito now supports point-in-time recovery (PITR), so you can restore the user data in a user pool to an earlier time. Amazon Cognito helps you implement secure sign-in and access control for users, AI agents, and microservices. Previously, you had to build and maintain your own export and restore process, and restored users received new identifiers and had to reset their passwords. With PITR, you choose a recovery point, preview how many users, groups, multi-factor authentication (MFA) settings, and passkeys the recovery will create, update, or delete, and then start or cancel the recovery. Recovered users keep their identifiers, passwords, MFA settings, and passkeys, so they can sign in without resetting their credentials. For example, if a script deletes or modifies users by mistake, you can restore the user data to the moment before it ran. PITR is enabled automatically for user pools on the Essentials and Plus feature plans at no additional charge. The recovery window is u",
+    "published": "2026-11-18T17:00:00Z",
+    "hash": "fbd2ef46bfc0b8ecbef2d2fc5dcbcd72a28fbd0c1ab193e66d98adc62bd1d455"
+  },
+  {
+    "title": "Amazon RDS now supports fast storage volume initialization",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-fast-storage-volume-initialization/",
+    "source": "AWS What's New",
+    "service": "Amazon Relational Database Service",
+    "category": "Upgrade",
+    "summary": "Amazon RDS now initializes storage volumes faster when you perform a point-in-time restore (PITR), create a read replica, or convert a Single-AZ instance to Multi-AZ. Each of these operations creates storage volumes from a snapshot, and the data blocks are downloaded from Amazon S3 before you can access them. With fast storage volume initialization, you get a fully performant DB instance in a predictable amount of time. Previously, the initialization rate varied with your workload and with which blocks were accessed. As there was no dedicated bandwidth, so you could see increased I/O latency and had no way to tell when an instance would reach full performance. Now, each database instance is initialized at up to 4 TiB per hour, across every gp3 and io2 storage volume attached to the instance. If concurrent initialization across your account exceeds the available bandwidth, the remaining blocks initialize on a best-effort basis, so initialization is never slower than today. Your DB insta",
+    "published": "2026-11-18T16:00:00Z",
+    "hash": "9647a798e274e10e0ef1737a103558a3ef0774b5d695702138edb35621701536"
+  },
+  {
+    "title": "Amazon CloudFront Functions now supports network calls",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-functions-network-calls/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudFront",
+    "category": "Upgrade",
+    "summary": "Amazon CloudFront Functions can now make network calls and act on the response during a request. CloudFront Functions runs lightweight JavaScript at CloudFront edge locations to customize requests and responses. Previously, if your logic depended on data from another service, you had to use Lambda@Edge or move that logic to your origin. Now your functions can use real-time data to personalize, authenticate, or route requests at the edge, close to your viewers. With the new cf.fetch() method, your functions can call your API endpoints and use the response to decide how to handle each request. For example, you can check an AI agent's permissions and usage budget so that only authorized requests reach your API or MCP server, or send request signals to a security or fraud detection service to block or challenge bad traffic. With cf.beacon() , you can send analytics events in the background without slowing down viewers, even for content served from cache. Both methods take advantage of the ",
+    "published": "2026-11-18T16:00:00Z",
+    "hash": "ea8e696410dc9fc1de103e5029dba80db0cb509f7b7c65c43325416324dab2cd"
+  },
+  {
+    "title": "AWS Lambda now supports customer-managed runtimes, giving platform teams centralized control over runtime contents and updates",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-customer-managed-runtimes/",
+    "source": "AWS What's New",
+    "service": "AWS Lambda",
+    "category": "Upgrade",
+    "summary": "AWS Lambda now supports customer-managed runtimes for Lambda Event Functions (formerly Lambda functions). Customer-managed runtimes are a standalone resource type that fully decouples runtime management from function deployment. Platform teams gain centralized control over the runtime contents, updates, access, and lifecycle, including the ability to push updates to shared components without per-function redeployments. Application teams consume the runtime from their functions in the same way as a Lambda-managed runtime, preserving their familiar developer experience. Many organizations require every function to include approved components, such as SDKs, certificates, and security or monitoring tools. Previously, sharing these through Lambda Layers or container images meant redeploying every function to pick up a change. With customer-managed runtimes, platform teams manage these components in a central runtime, packaged as OCI container images in Amazon ECR and compatible with existin",
+    "published": "2026-11-18T15:00:00Z",
+    "hash": "d96715082bec9e8a1566163ec0205e614f790d18122bc0c4e96dc0c582e5e782"
+  },
+  {
+    "title": "AWS IAM account access manager is now even easier to deploy and use",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/iam-account-access-manager-easier/",
+    "source": "AWS What's New",
+    "service": "AWS Identity and Access Management",
+    "category": "General Announcement",
+    "summary": "Deploying and using AWS Identity and Access Management (IAM) account access manager is now even easier: you can use AWS managed policies to enable and administer it; you can include it in your infrastructure-as-code (IaC) configurations; and its role assignments are integrated in a growing number of third-party identity and entitlement management solutions. Administering workforce access with account access manager requires permissions across several services, including AWS IAM Identity Center, AWS Organizations, AWS KMS, and AWS IAM. Previously, defining administrative access required hand-assembling multi-service IAM policies. The new AWS managed policies enable faster ramp up with broadly scoped job-aligned permissions for: 1/ Full administrator (AWSAccountAccessManagerAdministrator) - used to enable and manage account access manager in the AWS organization management account and to map users/groups to IAM roles; 2/ Entitlement Manager (AWSAccountAccessManagerEntitlementManager) - u",
+    "published": "2026-11-18T08:00:00Z",
+    "hash": "63cfa27d683cba99917956a32d6a8c4f7ef43ce0f34c19902e24ee779aecacb2"
+  },
+  {
+    "title": "AWS Control Tower now supports existing Amazon S3 bucket for log delivery",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/control-tower-existing-s3-log-bucket/",
+    "source": "AWS What's New",
+    "service": "AWS Control Tower",
+    "category": "Upgrade",
+    "summary": "AWS Control Tower now lets you use an existing Amazon S3 bucket in your landing zone to store AWS Config and AWS CloudTrail logs. Previously, AWS Control Tower required you to use the Amazon S3 bucket it creates and manages for log storage. Now, customers who want full control of bucket policies, lifecycle rules, and logging infrastructure can consolidate centralized logs in an Amazon S3 bucket they already manage. You can use your own Amazon S3 bucket for both AWS Config and AWS CloudTrail, giving you full control of bucket policies, lifecycle rules, and logging infrastructure. You can switch between self-managed and AWS Control Tower managed buckets at any time, and your Amazon S3 buckets are preserved during landing zone updates, resets, and decommissioning. The bucket must be owned by an AWS account in your organization, be located in your AWS Control Tower home Region, and be preconfigured with the bucket policy that AWS Control Tower requires. This feature is supported in landing",
+    "published": "2026-11-18T08:00:00Z",
+    "hash": "02ba4fdf999ef122afbc3bb841d942bf49732602207e5d14082c4da969c99ee6"
+  },
+  {
+    "title": "Amazon ElastiCache now supports distributed KV caching for self-hosted LLM inference",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/announcing-distributed-kv-caching-for-self-hosted-llms-with-amazon-elasticache/",
+    "source": "AWS What's New",
+    "service": "Amazon ElastiCache",
+    "category": "Upgrade",
+    "summary": "Amazon ElastiCache for Valkey now offers fully managed distributed KV caching, a new capability that reduces self-hosted large language model (LLM) inference costs by up to 40% and time to first token (TTFT) by up to 80%. Customers who self-host LLMs pay for redundant GPU work because small, isolated caches on each server can't hold or share the growing context AI agents and chat applications resend. Distributed KV caching extends GPU-local caches with a shared tier so any server can reuse KV state for days across sessions, routing shifts, and server failures. GPUs can fetch cached KV state in milliseconds to serve more requests and respond faster. Distributed KV caching runs on cache.i8ge.48xlarge nodes in the same Availability Zone as the GPU fleet and connects to GPUs through Remote Direct Memory Access (RDMA) over Elastic Fabric Adapter (EFA). Distributed KV caching works with open-weight, fine-tuned, and custom models, whether they use full, sparse, hybrid, or other attention desi",
+    "published": "2026-11-18T08:00:00Z",
+    "hash": "756b5b50e973930a534af387bd61f96bbb45b7ebcfeb4fc703b234bb1cc6d494"
+  },
+  {
+    "title": "Amazon CloudWatch simplifies network performance monitoring for your Amazon Virtual Private Cloud (VPC)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudwatch-network-path-monitoring/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudWatch",
+    "category": "Service Update",
+    "summary": "Amazon CloudWatch Network Monitoring now allows you to monitor the health of the AWS network paths that your workloads take by using performance monitors. Performance monitors provide near real-time visibility into whether the AWS network is healthy for your workloads, without installing any software. Performance monitors report per-path metrics such as latency, a network impact score that shows network health, and traffic volume across all flows in your VPCs. You simply select the VPCs you want to monitor, and metrics are available within minutes. Using telemetry AWS already collects, with no additional services to enable, performance monitors determine the paths your traffic takes, within and across Availability Zones, across AWS Regions, and to AWS services, for TCP, UDP, and ICMP traffic. They then score each path by comparing it with its own recent history and with all other paths AWS measures at the same time. For example, a path that suddenly degrades, or degrades with many othe",
+    "published": "2026-11-18T08:00:00Z",
+    "hash": "8e4faac38bb0bb9d040211366d834245463ad53880572b41b53e6b9ebac4c55d"
+  },
+  {
+    "title": "Amazon Aurora DSQL now supports audit logging",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-dsql-audit-logging/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora",
+    "category": "Upgrade",
+    "summary": "Amazon Aurora DSQL now supports database-internal audit logging, a fully managed capability that captures SQL statements executed on your cluster. Previously, AWS CloudTrail recorded who connected to a DSQL cluster, but not what they did once inside it. Now, financial institutions and regulated enterprises can meet production compliance requirements by capturing DDL, DML, DCL, and SELECT statements with full statement text, bind parameters, acting principal (both PostgreSQL role and AWS IAM identity), timestamp, table name, and transaction identifier. With audit logging, you can feed SIEM systems directly from Amazon S3, satisfy auditor requirements for change accountability, and reconstruct events after security incidents. Logs are delivered as structured JSON to your S3 bucket via CloudWatch Vended Logs. Configuration requires a single SQL setting—no extension to load and no log-shipping pipeline to build. Audit logging is available in all AWS Regions where Aurora DSQL is available. ",
+    "published": "2026-11-18T08:00:00Z",
+    "hash": "df03674bba5c10d82f1987010734362298e3b0796ad445c2819d5740d3ee33a0"
+  },
+  {
+    "title": "Amazon S3 Replication adds exclusions and Multi-Region key resolution",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-replication-exclusions-multi-region-key-resolution/",
+    "source": "AWS What's New",
+    "service": "Amazon Simple Storage Service",
+    "category": "Service Update",
+    "summary": "You can now replicate data in Amazon S3 buckets with fewer replication rules using two new S3 Replication capabilities, exclusions and Multi-Region key resolution. Buckets that many tenants or applications share often need many rules to skip certain data or to match encryption keys in each AWS Region. With these capabilities, customers who manage multi-tenant and shared buckets can replace many replication rules with a single rule. With exclusions, you can replicate an entire bucket while skipping specific prefixes or tagged objects, such as logs or experimental data. With Multi-Region key resolution, S3 Replication encrypts each replica with the matching AWS Key Management Service (AWS KMS) Multi-Region key in the destination Region, so replicas meet the same encryption requirements as their source objects. For example, a bucket that stores data for hundreds of tenants, each with its own Multi-Region key, can replicate with a single rule, including tenants you add later. Exclusions an",
+    "published": "2026-11-18T07:00:00Z",
+    "hash": "d5c35c3f0fe72e5ddc669e707610877f383fb3a0adb65633fd97b2569b24df53"
+  },
+  {
+    "title": "Amazon SageMaker HyperPod now supports higher pod density on EKS-orchestrated clusters",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-higher-pod-density/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker HyperPod now supports higher pod density per node on EKS-orchestrated clusters, allowing you to get more out of every instance. This leaves more room for your applications alongside system DaemonSets for monitoring, logging, and security, and helps increase GPU, CPU and memory utilization on nodes, allowing you to run the same work using fewer instances. As you schedule more pods, the Amazon VPC CNI automatically adds network capacity to the node. Autoscaling with Karpenter also supports the higher pod capacity, so new nodes take on more pods as your cluster scales out. Here are a few examples of workloads that benefit from higher pod density: Model inference - Serve more model replicas or more models from each GPU instance, including on smaller types such as ml.g5 and ml.g6. Interactive development - Host more notebooks, IDEs, and data science environments on each node. GPU partitioning - Use all the Multi-Instance GPU (MIG) slices on instances such as ml.p5en.48xlarg",
+    "published": "2026-11-18T01:45:00Z",
+    "hash": "e58db4ed3f857fb3f835b4f038ad9160dffaa840df9d199a73c1b9d8052eb32e"
+  },
+  {
     "title": "Amazon WorkSpaces Applications adds support for smart card redirection",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-applications-smart-card-redirection/",
     "source": "AWS What's New",
@@ -120,6 +330,16 @@
     "hash": "6bd322cb661b1220dbe0c8e695d787ebead3ca8049359798532162cd9474c1ea"
   },
   {
+    "title": "Amazon Cognito now supports authentication level and method token claims",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-acr-amr-token/",
+    "source": "AWS What's New",
+    "service": "Amazon Cognito",
+    "category": "Upgrade",
+    "summary": "Amazon Cognito now supports authentication context class reference (ACR) and authentication methods reference (AMR), by adding ACR and AMR claims to access, ID, and refresh tokens. Your application can use the authentication level (ACR) to make authorization decisions, such as requiring additional factors for sensitive operations. It can also use completed methods (AMR), such as time-based one-time password (TOTP), for auditing and compliance. Amazon Cognito defines four authentication levels based on the factors a user completes, from password-only (level 1) to a password with a TOTP (level 4). Each token reflects the level achieved during sign-in, so your application can make authorization decisions based on how a user authenticated. If your application requires a stronger level, you can request a target level in your application's sign-in flow or through managed login, and Amazon Cognito issues new tokens once the user completes the required factors. You can also customize ACR level",
+    "published": "2026-11-17T19:00:00Z",
+    "hash": "69b406ae66014d914a0648b470b60684228ca4e9b78afc6121d0ef4ed526ec25"
+  },
+  {
     "title": "Amazon DynamoDB caching is now available with Amazon ElastiCache Serverless for Valkey",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/dynamodb-caching-elasticache/",
     "source": "AWS What's New",
@@ -130,6 +350,16 @@
     "hash": "758023b3ce47db6c6114f7a5579f0eee8602f71cac3c816c2451c00050484252"
   },
   {
+    "title": "Amazon OpenSearch Serverless now supports ingest pipelines",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/opensearch-serverless-support-ingest-pipelines",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Upgrade",
+    "summary": "Amazon OpenSearch Serverless now supports ingest pipelines, so you can clean, enrich, and vectorize documents inside your collection as they are indexed, without running separate preprocessing infrastructure. Teams building search, log analytics, and generative AI applications can replace data-prep code in Lambda functions or ETL jobs with transformations that apply consistently to every document, regardless of how it is ingested. You can use ingest pipelines to normalize and clean data with processors such as copy, date, dot_expander, join, lowercase, uppercase, remove, rename, set, and trim. For semantic and AI search, you can chunk long text with text_chunking and generate embeddings at ingest time with text_embedding, text_image_embedding, and sparse_encoding. The ml_inference processor calls any model you have connected and lets you map its input and output fields yourself. You create and manage pipelines with the familiar OpenSearch _ingest/pipeline APIs. You can test a pipeline ",
+    "published": "2026-11-17T18:43:00Z",
+    "hash": "7a9c43314c351ab09ea76e2ac93405dfc3c89dfea15a108d37668222df9356a3"
+  },
+  {
     "title": "Amazon OpenSearch UI is now available in the Africa (Cape Town) Region",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/opensearch-ui-available-africa-cape-town-region",
     "source": "AWS What's New",
@@ -138,6 +368,16 @@
     "summary": "Amazon OpenSearch UI has expanded to the AWS Africa (Cape Town) Region, bringing availability to 25 AWS Regions. OpenSearch UI provides a single endpoint to query, visualize, and analyze data across Amazon OpenSearch Service domains running OpenSearch version 1.3 or later and OpenSearch Serverless collections, including Classic and NextGen. One OpenSearch UI application can connect to multiple domains and collections. Workspaces organize dashboards, saved queries, and other content, with purpose-built experiences for observability, security analytics, and search. The Discover interface supports multiple data sources and query languages, including Piped Processing Language (PPL) and SQL. It also includes a data selector, query autocomplete, and an updated design. OpenSearch UI runs separately from your domains and collections, giving you access to the latest UI capabilities without requiring cluster upgrades. To get started, create an OpenSearch UI application using the Amazon OpenSearc",
     "published": "2026-11-17T18:34:00Z",
     "hash": "7836f58e1daf327ad86e3d4e91c33eca93ddec9e81f00b1dcff79b3773dd8984"
+  },
+  {
+    "title": "Amazon OpenSearch Ingestion Service now supports next-generation time series collections",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-ingestion-service-nextgen-time-series-collections",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Upgrade",
+    "summary": "Amazon OpenSearch Ingestion service now supports time series collections in the next generation of Amazon OpenSearch Serverless as a pipeline destination. You can stream logs, metrics, traces and event data into time series collections with fully managed pipelines. You don't have to run your own collectors or write custom ingestion code. OpenSearch Ingestion delivers data from the sources you already use, including OpenTelemetry, Amazon S3, Amazon Kinesis Data Streams, Amazon MSK, Amazon DynamoDB, and HTTP endpoints. Before indexing, pipelines can filter, enrich, transform, and route data with built-in processors. For example, you can parse and normalize log fields, mask sensitive data, or split a stream into separate indexes. Pipelines scale automatically with your workload. Time series collections add a lower-cost warm storage tier and built-in alerting and anomaly detection. Together they give you an observability pipeline from collection to analysis with no clusters to manage. To g",
+    "published": "2026-11-17T18:20:00Z",
+    "hash": "4a5bd26d0a8c9d1b5dbd0f735e69cb1552157dc40328d5d0eace053f91aa1576"
   },
   {
     "title": "Amazon Bedrock AgentCore now offers free monthly web search queries",
@@ -288,6 +528,26 @@
     "summary": "AWS Transit Gateway now supports context sharing with security services, such as attached firewalls, allowing you to use Amazon Virtual Private Clouds (VPCs), VPC subnets, VPC security groups, and transit gateway attachments in firewall policies alongside IP addresses. Until now, attached firewalls segmented traffic by IP address, which is hard to plan and maintain, or by resource tags, which firewalls periodically synchronize with IP addresses and can miss new workloads in between. With this feature, you can enforce segmentation based on how workloads and attachments are defined in AWS. Transit Gateway embeds resource context in the traffic it sends to your firewall, which can enforce the right policy from the first packet. For example, you can apply threat protection to traffic between web-tier and database-tier security groups, block development VPCs from reaching production VPCs, apply a common inspection policy to traffic entering AWS through AWS Direct Connect and AWS Site-to-Sit",
     "published": "2026-11-17T08:00:00Z",
     "hash": "54b0d07a1729643fc972fd29f96a4cfc2ef509e810c580497e3416c629a37466"
+  },
+  {
+    "title": "AWS Transform now supports migration to AWS Outposts",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-outposts-migration/",
+    "source": "AWS What's New",
+    "service": "AWS Outposts",
+    "category": "Upgrade",
+    "summary": "AWS Transform now supports AWS Outposts as a migration target. You can migrate workloads onto your Outposts from on-premises environments, another Outpost, or a different Availability Zone or Region. AWS Transform is a collaborative enterprise IT transformation service powered by agentic AI that accelerates cloud migration, application modernization, and continuous tech debt reduction. Run your migration with AI agents in AWS Transform for migrations, or use AWS Transform MGN , the rehost engine within AWS Transform, directly from its console. If you run workloads on Outposts for low latency, local data processing, or data residency, migrating them has meant manual effort or legacy tooling, often with a detour through the Region and an AMI copy. Now you choose subnets on the Outpost for your migration, and AWS Transform continuously replicates your source servers at the block level, directly from your source environment to the Outpost. You launch test instances before cutover and cut o",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "15cf7f40da198d8ffa43e849d4dd011face3c2632eb8e5be211384fa72038820"
+  },
+  {
+    "title": "AWS Transform now provides Well-Architected Agent reviews",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/transform-well-architected-agent/",
+    "source": "AWS What's New",
+    "service": "AWS Well-Architected Tool",
+    "category": "Bug Fix",
+    "summary": "AWS Transform for migrations now includes Well-Architected reviews of target networks as it migrates and modernizes infrastructure to AWS. These recommendations, provided by the AWS Well-Architected Agent in public preview, are based on the latest best practices across security, reliability, and cost optimization pillars, and are applied directly to your target network, so you don't have to update the infrastructure after deployment on AWS. While migrating networks, design gaps typically surface after deployment, making fixes costly, requiring separate review and update cycles. For teams migrating large on-premises networks, this capability catches improvement opportunities early in the planning stage. AWS Well-Architected Agent provides recommendations, such as re-addressing spoke VPCs using non-RFC1918 addresses and governing CIDR allocation, and AWS Transform applies them to the network design. Post-deployment recommendations are documented for you as downloadable artifact from AWS ",
+    "published": "2026-11-17T08:00:00Z",
+    "hash": "7b6e98c0a8bac7161c765a8fa2a282c96709183762ac446b7b5a8f8e0572d9e8"
   },
   {
     "title": "AWS Split Cost Allocation Data now supports Amazon S3",
