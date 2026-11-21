@@ -1,14 +1,14 @@
 {
-  "last_run": "2026-11-20T05:24:11Z",
-  "total_articles": 476,
+  "last_run": "2026-11-21T05:16:53Z",
+  "total_articles": 529,
   "new_articles": 53,
   "sources": {
     "AWS What's New": {
       "url": "https://aws.amazon.com/new/",
       "status": "ok",
       "fetched": 100,
-      "normalized": 80,
-      "filtered_out": 20,
+      "normalized": 71,
+      "filtered_out": 29,
       "error": ""
     },
     "AWS News Blog": {
@@ -22,8 +22,8 @@
     "AWS Security Bulletins": {
       "url": "https://aws.amazon.com/security/security-bulletins/",
       "status": "ok",
-      "fetched": 38,
-      "normalized": 13,
+      "fetched": 37,
+      "normalized": 12,
       "filtered_out": 25,
       "error": ""
     }
