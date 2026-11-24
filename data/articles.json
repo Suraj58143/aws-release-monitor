@@ -1,5 +1,235 @@
 [
   {
+    "title": "Amazon EC2 X8i instances are now available in the Asia Pacific (New Zealand) Region",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-x8i-new-zealand/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Asia Pacific (New Zealand) Region. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances. X8i instances are designed for memory-intensive workloads like SAP HANA, large databases, data analytics, and Electronic Design Automation (EDA). Compared to X2i instances, X8i instances offer up to 50% higher SAPS performance, up to 47% faster PostgreSQL performance, 88% faster Memcached performance, and 46% faster AI inference performance. X8i instances come in 14 sizes, from large to 96xlarge, including two bare metal options. To get started, visit the AWS Management Console",
+    "published": "2026-11-23T23:21:00Z",
+    "hash": "d4a52e64d38b1c86f1c451f9265d9a44cc1f50f123aafe1875f7c12486fcbf37"
+  },
+  {
+    "title": "Amazon SageMaker HyperPod now supports managed observability and user management extensions for Slurm clusters",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-extensions/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker HyperPod now supports managed cluster extensions for Slurm clusters. You can install, configure, update, and remove managed features through the SageMaker AI console or API. The first two extensions cover observability and user management. Earlier, every observability or user management change for HyperPod Slurm clusters meant editing lifecycle scripts and then replacing or rerunning nodes. Now, HyperPod manages these features for you, and you keep lifecycle scripts and custom AMIs for your organization's own software. For each extension, you declare a configuration. HyperPod validates it and applies it to every node, including nodes you add later. It then reports the extension's status and the health of each node. The observability extension collects node, GPU, Elastic Fabric Adapter (EFA), Slurm job, and Slurm cluster metrics. It sends them to Amazon CloudWatch or Amazon Managed Service for Prometheus, and you can add Amazon Managed Grafana dashboards. The user manag",
+    "published": "2026-11-23T20:00:00Z",
+    "hash": "c8588324cda7decdeca5b476a86398eb7109f3de319aaa6a41400437fca55fc6"
+  },
+  {
+    "title": "AWS WAF introduces simplified pricing",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-introduces-simplified-pricing/",
+    "source": "AWS What's New",
+    "service": "AWS WAF",
+    "category": "Service Update",
+    "summary": "AWS WAF now offers simplified pricing that follows what you protect instead of how you configure it. Previously, you paid separate charges for each web ACL, rule, rule group subscription, and capacity tier, making every security decision a billing calculation. Now, your bill follows three dimensions: the resources you protect, the traffic AWS WAF inspects, and the level of protection you apply. This makes the cost-benefit trade-off easy to understand, and adding or changing rules no longer changes your rate. The new model makes protection costs predictable before you deploy. Each web ACL now includes up to 2,500 WCU at no extra charge, up from 1,500, and you can add rules such as Bot Control common protections or the Anti-DDoS rule group without additional fees. You pay a resource fee for each protected resource, a base request fee for every request AWS WAF inspects, and a premium request fee only for traffic evaluated by advanced protections like Bot Control targeted protections, Frau",
+    "published": "2026-11-23T18:51:00Z",
+    "hash": "162160ab607afcd50860a8395313c96d4f745b21af472ba5832cb3fba7cce76b"
+  },
+  {
+    "title": "AWS WAF announces automated discovery and protection for LLM, MCP, and A2A endpoints using Amazon Bedrock Guardrails",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/waf-ai-endpoint-discovery-protection/",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock",
+    "category": "General Announcement",
+    "summary": "Automated AI endpoint discovery and protection are now generally available, enabling you to discover language model (LLM), Model Context Protocol (MCP), and Agent2Agent (A2A) endpoints behind Amazon API Gateway, Application Load Balancers, and Amazon CloudFront across your AWS Organization and protect them using AWS WAF. Discovery is available through the new API Gateway API Portal, which recognizes the AI endpoints among the APIs it discovers automatically from traffic logs and service configuration records, with no agents to deploy or logs to forward. An undocumented, public-facing MCP server appears as a shadow API. For unprotected AI endpoints, customers can enable protection using WAF. Protection is available through the new AWS WAF AI Security managed rule group, which protects your AI endpoints. AWS WAF implements protocol recognition and compliance checks to block malformed MCP and A2A messages. When you enable content inspection, the rule group calls Amazon Bedrock Guardrails ",
+    "published": "2026-11-23T18:47:00Z",
+    "hash": "58b9b4fb8aa2599b6a14784c0e6c1aeebabc127ecfc7575a88c8089ad15d7b83"
+  },
+  {
+    "title": "Amazon Connect Customer launches the ability to force logout agents directly from the analytics dashboard",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-force-logout/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Release",
+    "summary": "Amazon Connect Customer now allows supervisors to force logout agents directly from the real-time analytics dashboard, eliminating the need to manually contact agents to end their sessions. Force logout ends all active agent sessions and records the logout event in the Login/Logout report, so agent timecards stay complete. For example, a supervisor identifies an agent who left their workstation without logging out after a shift, and force logs them out from the dashboard, preventing idle time from accruing on the agent's timecard. Agent force logout is available in all AWS Regions where Amazon Connect Customer is offered. To learn more about analytics dashboards, see the Amazon Connect Customer Administrator Guide . To learn more about Amazon Connect Customer, visit the Amazon Connect Customer website .",
+    "published": "2026-11-23T18:35:00Z",
+    "hash": "d585f2746e1d2416af3f9e7d84f33670e99c01b36c3e303fad23fe5d9e958ff1"
+  },
+  {
+    "title": "Amazon Connect Customer now lets you test AI model version upgrades for automated evaluations",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-customer-test-ai-model-version-upgrades-automated-evaluations",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Upgrade",
+    "summary": "Amazon Connect Customer now enables managers to test new AI model versions for automated evaluations before switching, so evaluation scores remain consistent through model upgrades. When a new version becomes available, managers can test how it would score the same contacts compared to the current version of the model. This lets managers catch scoring differences across models and adjust evaluation criteria before those differences affect agent performance results. Managers also have the flexibility to choose how evaluation forms handle model updates. They can automatically upgrade to the latest model version for ongoing accuracy improvements or stay on a specific version for consistent scoring. This feature is supported in all AWS commercial regions where Amazon Connect Customer is offered. To learn more, visit our documentation and our webpage .",
+    "published": "2026-11-23T18:00:00Z",
+    "hash": "84b19467e0f7bb9ddbd171a94634bb4f055ff93762bed62c140cbc7058a06de0"
+  },
+  {
+    "title": "Amazon Connect Customer expands automated performance evaluations to 45 new languages",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-customer-expands-automated-performance-evaluations-new-languages/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "Service Update",
+    "summary": "Amazon Connect Customer now uses generative AI to automate evaluations of human and AI agent performance in 45 additional languages, such as Arabic, Dutch, Indonesian, and Polish. Managers define custom evaluation criteria in natural language and receive AI-generated evaluations with justifications in their preferred language. Performance evaluations also support cross-language evaluation and can complete assessments in English, even when the conversation is in another language. This enables multilingual contact centers to use a standardized evaluation framework across languages. This feature is supported in all AWS commercial regions where Amazon Connect Customer is offered. For information about Amazon Connect pricing, please visit our pricing page . To learn more, visit our documentation and our webpage .",
+    "published": "2026-11-23T18:00:00Z",
+    "hash": "e5861a2f008f642807f330bd054b17223a3ab0b28d34894471f5714cdc1e77eb"
+  },
+  {
+    "title": "Amazon CloudFront is now available in the AWS European Sovereign Cloud",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-european-sovereign-cloud",
+    "source": "AWS What's New",
+    "service": "Amazon CloudFront",
+    "category": "Release",
+    "summary": "Amazon CloudFront is now available in the AWS European Sovereign Cloud. Organizations with strict EU sovereignty requirements can now deliver websites, applications, and APIs with the performance, security, and scale of CloudFront, all within the EU. Until now, customers had to build and run their own delivery and TLS termination infrastructure to keep traffic and data inside the EU. With CloudFront in the AWS European Sovereign Cloud, content delivery, TLS termination, logs, and customer configuration stay within the European Sovereign Cloud boundary. The AWS European Sovereign Cloud is physically and logically separate from other AWS Regions, and only EU-resident personnel operate it. This helps governments, healthcare, financial services and other regulated industries meet data residency and operational sovereignty requirements without trading away performance and scale. Customers use the same CloudFront APIs and console experience they already know making it easy to transfer over e",
+    "published": "2026-11-23T18:00:00Z",
+    "hash": "4572ad26bd1f6f103359e98b64cad8b734c48e43d27a0bd7f0fc49fbcfb7ddd5"
+  },
+  {
+    "title": "AWS Partner Central expands analytics access with Partner Central Agents and Data Subscriptions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-analytics-agent-s3/",
+    "source": "AWS What's New",
+    "service": "AWS Partner Central",
+    "category": "General Announcement",
+    "summary": "AWS Partners and AWS Marketplace sellers now have two new ways to access their analytics data in AWS Partner Central. Partner Central Agents answer questions in plain language, and Data Subscriptions deliver Partner Central data to an Amazon Simple Storage Service (Amazon S3) bucket every day. Partner Central Agents answer questions about leads, marketing campaigns, opportunities and pipeline, and funding, without navigating dashboards or exporting to spreadsheets. AWS Marketplace sellers can also ask about usage, agreements and renewals, billing, collections, and disbursements. Partners can get the same answers in their own artificial intelligence (AI) assistants and agents through the Partner Central Model Context Protocol (MCP) server. Data Subscriptions deliver ready-to-use datasets to an S3 bucket daily, covering leads, marketing campaigns, partner account relationships, opportunities and pipeline, and AWS Marketplace usage, agreements, and renewals. Because the data lives in a pa",
+    "published": "2026-11-23T17:36:00Z",
+    "hash": "33eebb8b0904735ec7227587c71ecc6f139e372c487d27f3b809e6179e85be98"
+  },
+  {
+    "title": "AgentCore runtime instances are now generally available in the AWS GovCloud (US-West) Region",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentcore-runtime-instances-govcloud",
+    "source": "AWS What's New",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Release",
+    "summary": "Amazon Bedrock AgentCore runtime instances are now available in the AWS GovCloud (US-West) Region. Runtime instances run your agents on Amazon EC2 instances in your own account, while AgentCore handles provisioning, patching, scaling, and lifecycle management. With runtime instances, teams in AWS GovCloud (US) can choose GPU-accelerated, memory-optimized, or compute-optimized instance types for their agents and run agent sessions of up to 14 days. Agent instances, storage volumes, and session data stay in the AWS GovCloud (US-West) Region, which helps public sector organizations and their partners meet data residency and compliance requirements. Runtime instances work alongside the default serverless, microVM-based AgentCore runtime, so you can pick the right compute for each agent without changing how you deploy or invoke it. You are charged for the management of the compute provisioned, in addition to your Amazon EC2 costs. To get started, visit AWS News Blog or AgentCore documentati",
+    "published": "2026-11-23T17:21:00Z",
+    "hash": "a6fb5e9881633dc735cf9253c1ee44095812e719090754750fa0590093c7abb5"
+  },
+  {
+    "title": "Amazon CloudFront Announces HTTP/2 Support for Connections to Origins",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-cloudfront-http2-origins/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudFront",
+    "category": "Upgrade",
+    "summary": "Amazon CloudFront now supports HTTP/2 connections to custom origins and VPC origins. HTTP/2 lets CloudFront send many requests over fewer connections to your origin. This means fewer connections and TLS handshakes for your origin to handle, which improves performance for API and agentic workloads, such as AI agents calling MCP servers or mobile and web apps calling backend APIs. Until now, CloudFront connected to origins only over HTTP/1.1, which handles one request at a time per connection. When traffic spiked, for example when an AI agent made many tool calls at once, CloudFront had to open more origin connections. Each new connection added latency and load. With HTTP/2, those requests share connections, so your origin does less work and responds faster. HTTP/2 is also supported for WebSocket connections that support extended CONNECT. If your origin doesn't support HTTP/2, CloudFront automatically falls back to HTTP/1.1, so you don't need to change anything on your origin. HTTP/2 to ",
+    "published": "2026-11-23T17:00:00Z",
+    "hash": "d679c317646e6e83a087b8904e75d4539481316869e6b708f8f7406613eb67e1"
+  },
+  {
+    "title": "AWS Global Accelerator now preserves client IPs for NLBs with TLS listeners",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/global-accelerator-client-ip-nlb-tls/",
+    "source": "AWS What's New",
+    "service": "AWS Global Accelerator",
+    "category": "Release",
+    "summary": "AWS Global Accelerator now preserves the client IP address for traffic sent to Network Load Balancer (NLB) endpoints with TLS listeners. You can terminate TLS at your NLB and still see the original client IP address in your application. This means you can apply security groups, geo-blocking, rate limiting, fraud detection, audit logging, allowlists, and compliance controls based on the real client IP. Previously, you couldn't add an NLB with a TLS listener to an accelerator that had client IP address preservation enabled. You had to choose between terminating TLS at the NLB and seeing the real client IP address. With this launch, you get both. This helps with workloads that need TLS termination at Layer 4, such as non-HTTP TCP protocols, applications that require static or Elastic IP addresses, and high-throughput traffic where a Layer 7 load balancer isn't a fit. To enable this feature, add an NLB with a TLS listener as an endpoint to an accelerator with client IP address preservation",
+    "published": "2026-11-23T16:00:00Z",
+    "hash": "f120a14fb0dea764267f813965d3f01820364c842efdad920ab94d1a2209dd97"
+  },
+  {
+    "title": "Announcing metal size for Amazon EC2 G7 instances",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-g7-metal-size/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Today, AWS announces the general availability of the metal size for Amazon Elastic Compute Cloud (Amazon EC2) G7 instances, accelerated by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs. G7 instances deliver up to 4.6x AI inference performance and up to 2.1x graphics performance compared to G6. Customers can use the metal size of G7 instances to run physical AI simulations, deploy AI agent sandboxes, and accelerate graphics workloads that need direct access to bare metal infrastructure. G7 metal instances enable customers to run specialized workloads that require a custom virtualization stack, hypervisor-level GPU drivers, or licensing-restricted applications. The metal size of G7 instances feature 8 NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs with 32 GB of memory per GPU and custom Intel Xeon 6 processors. They support 192 virtual CPUs (vCPUs), 768 GiB of system memory, and 700 Gbps of Elastic Fabric Adapter (EFA) networking bandwidth. The new metal size is available in the A",
+    "published": "2026-11-23T16:00:00Z",
+    "hash": "91920df245f200da3c42e8d56ed8e7c72a6f7b3dbb1c28df484846907fa89510"
+  },
+  {
+    "title": "Amazon Aurora serverless for MySQL now supports up to 384 ACUs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-serverless-mysql-supports-384-acu/",
+    "source": "AWS What's New",
+    "service": "Amazon Aurora",
+    "category": "Upgrade",
+    "summary": "Amazon Aurora serverless now supports database capacity of up to 384 Aurora Capacity Units (ACUs) for Aurora MySQL-Compatible Edition, a 50% increase from the previous maximum of 256 ACUs. Each ACU provides approximately 2 gibibytes (GiB) of memory with corresponding CPU and networking, so a single Aurora serverless database can now scale up to 768 GiB of memory. When the workload completes, Aurora serverless automatically scales down to zero. This makes Aurora serverless especially well-suited for agentic AI applications, which typically have bursts of activity, long idle windows, and unpredictable traffic patterns. Aurora serverless handles all of it automatically, scaling capacity with your agents, so you only pay for what you use. With 384 ACU support, customers can now use Aurora serverless for even more demanding workloads while continuing to scale down to zero when not in use, paying only for the capacity consumed. For new clusters, select a supported Aurora MySQL engine version",
+    "published": "2026-11-23T16:00:00Z",
+    "hash": "f862f4fba9480854a4739f64b8b0d1dde4908e10e69a18624381e87e3685b1e5"
+  },
+  {
+    "title": "AWS CodeDeploy now supports suspending Amazon EC2 Auto Scaling processes",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-codedeploy-suspend-asg-processes/",
+    "source": "AWS What's New",
+    "service": "AWS CodeDeploy",
+    "category": "Upgrade",
+    "summary": "AWS CodeDeploy can now suspend Amazon EC2 Auto Scaling processes during EC2 in-place deployments to Auto Scaling groups. CodeDeploy is a fully managed service that automates application deployments to Amazon EC2 instances, on-premises servers, AWS Lambda functions, and Amazon ECS services. This launch helps prevent scaling activities from terminating or replacing instances while CodeDeploy is updating them, which can cause a deployment to fail. You can choose to suspend any combination of these processes (Terminate, AZRebalance, InstanceRefresh, and ScheduledActions) on a deployment group, or on a single deployment. CodeDeploy suspends the processes you choose before it deploys and resumes them when the deployment succeeds, fails, or is stopped, so you don't need custom scripts to suspend and resume processes during deployments. A setting on the deployment group applies to every deployment in that group, including deployments that your existing pipelines start. You can configure this f",
+    "published": "2026-11-23T08:00:00Z",
+    "hash": "1d072c2c5276546283abe839af4272b221c6bdb31a543d732b3ea1435bafa355"
+  },
+  {
+    "title": "Amazon SageMaker Studio now supports training job submission and model deployment for SageMaker HyperPod clusters",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-studio-hyperpod/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker Studio now provides a native developer experience for Amazon SageMaker HyperPod, enabling data scientists to submit distributed training jobs, deploy models, and monitor workloads through a visual interface on HyperPod clusters orchestrated with Amazon Elastic Kubernetes Service (Amazon EKS). SageMaker HyperPod is a purpose-built infrastructure for distributed training and fine-tuning of foundation models at scale, designed to reduce infrastructure management overhead. Submitting training jobs and deploying custom models on HyperPod at scale requires familiarity with kubectl and authoring Kubernetes manifests, creating operational burden for data scientists who prefer to work in an interactive development environment. With this launch, data scientists can now submit distributed PyTorch and Ray training jobs and deploy models from Amazon SageMaker JumpStart, Amazon S3, or Amazon FSx, through single-page forms with a live YAML preview in SageMaker Studio. Compute configu",
+    "published": "2026-11-23T08:00:00Z",
+    "hash": "9ec71f20878b95b91c8331784ed410898eb46439e1507b20494c0f7e534e7506"
+  },
+  {
+    "title": "Amazon SageMaker HyperPod launches a redesigned console experience for creating Amazon EKS-orchestrated clusters",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-console-eks/",
+    "source": "AWS What's New",
+    "service": "Amazon EKS",
+    "category": "Release",
+    "summary": "Amazon SageMaker HyperPod now offers a redesigned AWS Management Console experience for creating clusters orchestrated by Amazon EKS. A guided workflow helps ML infrastructure administrators and platform teams set up networking, instance groups, storage, permissions, resiliency, observability, lifecycle scripts, and tags. Required settings are kept apart from optional ones. You enter only what is needed to create the cluster and add other capabilities later, when you need them. You can start with smart defaults or choose a workload profile that applies a coordinated set of settings based on how you plan to use the cluster. You can then adjust individual and advanced settings as needed, reducing repetitive setup while retaining control over the configuration. The redesigned experience is available in all AWS Regions where Amazon SageMaker HyperPod is available. To learn more, check our documentation .",
+    "published": "2026-11-23T08:00:00Z",
+    "hash": "1b2f3fbac8c7a49e9ecc722261e65b1ed17de8005c038cd43cd2e42b5ecfde19"
+  },
+  {
+    "title": "Amazon Inspector expands runtime reachability analysis for ECR and EC2 findings",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/inspector-runtime-reachability/",
+    "source": "AWS What's New",
+    "service": "Amazon Inspector",
+    "category": "Security",
+    "summary": "Amazon Inspector has expanded its vulnerability management capabilities with runtime reachability analysis for findings originating from Amazon Elastic Container Registry (Amazon ECR) and Amazon Elastic Compute Cloud (Amazon EC2) instances. Previously, Inspector reported every vulnerability found in a resource, including packages that were never used by applications. Security teams had to manually assess which vulnerabilities actually posed risk in their deployed environments. Now, Inspector automatically identifies which vulnerabilities are potentially reachable by analyzing package placement in container images and process activity on EC2 instances. With runtime reachability analysis, you can focus remediation efforts on vulnerabilities that matter most to your security posture. For container images, Inspector determines whether a vulnerable package is within your application's dockerfile paths defined by WORKDIR, ENTRYPOINT, or CMD instructions. For EC2 instances, Inspector identifi",
+    "published": "2026-11-23T08:00:00Z",
+    "hash": "f8b63f4c5e2585d0cde97181bd763cfe4f611016053b1531374171b365d0dd2f"
+  },
+  {
+    "title": "Amazon EC2 Capacity Blocks for ML now supports search across multiple instance types and AWS Regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-capacity-blocks-ml-flex-search/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Upgrade",
+    "summary": "Amazon EC2 Capacity Blocks for ML now lets customers search across multiple instance types and AWS Regions in a single search, making it easier to find and reserve the capacity their ML workloads need. With Capacity Blocks for ML, customers can reserve accelerated compute instances such as Amazon EC2 P6-B300, P6-B200, and Trn2 instances, for a future start date and for up to 6 months. Until now, customers looking to buy Capacity Blocks had to run a separate search for every instance type and Region combination. Starting today, customers can use a single search in the AWS Management Console to look for Capacity Blocks across multiple instance types and Regions, making it easier to secure capacity without repeated searches. Customers can also programmatically search for capacity across multiple instance types within a Region with a single API call using DescribeCapacityBlockOfferings. This feature is available for all Instance Capacity Blocks in AWS Regions where EC2 Capacity Blocks for ",
+    "published": "2026-11-23T08:00:00Z",
+    "hash": "cc50ac6b8210218c01e9daff4dfe489b039ca3556380ee529d29024b0fcd91f5"
+  },
+  {
+    "title": "Amazon Connect Customer AI agents now fill in step-by-step guides",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-ai-agents-fill-guides/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "General Announcement",
+    "summary": "AI agents in Amazon Connect Customer can now populate fields of a step-by-step guide for contact center agents during live customer interactions. With step-by-step guides, managers can design forms and other user interfaces for common workflows, such as rebooking a trip or submitting a claim. Now, AI agents can fill in a guide when it first loads and suggest updates during live conversations, saving time and improving data accuracy. When contact center agents speak to customers, they spend valuable time recording the information they need to solve the customer's problem in a step-by-step guide. For example, when a traveler calls an airline to change her flight, the agent might record her booking reference, dates of travel, and seat preferences. Now, Connect Customer's AI agents can automatically suggest and populate information like this, based on the context of the conversation. Human agents can review each suggestion, accept or reject suggestions individually or in bulk, and make any",
+    "published": "2026-11-23T08:00:00Z",
+    "hash": "1840c2bb8bd3eed6641f23e1f4635cda3293bb3fc9e611540099d4bc6ed1d2e5"
+  },
+  {
+    "title": "Amazon FSx for NetApp ONTAP adds AWS CloudFormation and Console support for snapshots, clones, and data replication",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-fsx-for-netapp-ontap-additional-resources/",
+    "source": "AWS What's New",
+    "service": "AWS CloudFormation",
+    "category": "Release",
+    "summary": "Amazon FSx for NetApp ONTAP now lets you snapshot, clone, and replicate your data directly from the Amazon FSx Console and AWS CloudFormation. Today’s launch allows you to protect and copy your ONTAP data using the same AWS tools that you use across the rest of your AWS environments, with a few clicks in the AWS console or as part of your infrastructure-as-code workflows. FSx for ONTAP is the first and only storage service that allows you to launch and run fully managed, fully featured ONTAP file systems in the cloud. Previously, you could only set up and manage snapshots, volume clones, and SnapMirror replication via the ONTAP CLI or REST API. Starting today, you can also use the Amazon FSx Console, Amazon FSx API, and AWS CloudFormation, in addition to the ONTAP CLI and REST API, to manage these resources. AWS Console and CloudFormation support for these resources are available in all AWS Regions where FSx for ONTAP is available. To learn more, visit the FSx for NetApp ONTAP user gui",
+    "published": "2026-11-23T05:00:00Z",
+    "hash": "66109681b647c1d6deab134473f7926f3d0dad14e5deb9eab25d90f94248c13e"
+  },
+  {
+    "title": "You can now copy data server-side between Amazon S3 buckets and Amazon FSx file systems with S3 Access Points",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/s3-access-points-server-side-copy-fsx/",
+    "source": "AWS What's New",
+    "service": "Amazon FSx",
+    "category": "Service Update",
+    "summary": "You can now use Amazon S3 Access Points to copy or move data server-side between Amazon S3 general purpose buckets and Amazon FSx file systems within the same AWS Region, making it faster, lower-cost, and easier to move your data between S3 and FSx or across FSx file systems. An S3 Access Point for FSx is an S3 endpoint that allows you to access the data on your Amazon FSx for NetApp ONTAP and Amazon FSx for OpenZFS file systems via the S3 API and from S3-based services and applications. You can also use S3 Access Points to transfer data to and from your file system without the need to mount it—for example, to copy data into your file system from an S3 bucket owned by a partner or to export job results into another team's bucket. Previously, S3 Access Points for FSx didn't support server-side copies, so transferring your data meant downloading and then uploading each object from a server you run. Starting today, you can now transfer data server-side using S3's standard CopyObject and U",
+    "published": "2026-11-22T08:00:00Z",
+    "hash": "be346fd75de040c9bfd980109285b2b428f9c6da3f18955cef95db89482341fa"
+  },
+  {
+    "title": "Amazon CloudWatch Query Studio now supports saved queries",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-query-studio-saved-queries",
+    "source": "AWS What's New",
+    "service": "Amazon CloudWatch",
+    "category": "Upgrade",
+    "summary": "Amazon CloudWatch Query Studio now lets you save your PromQL and SQL metrics queries and reuse them. You no longer need to rewrite or search for queries you run often, such as a latency query you check during every incident. You can save a query under a name and use \"/\" in the name to organize queries into folders. In the Saved tab of the Queries panel, you can search, sort, and preview your saved queries. You can then apply one to replace what's in the studio, append it to your current queries, edit it, or delete it. Saved queries are stored in your account and Region, and you control who can create, view, and delete them by using AWS Identity and Access Management (IAM) permissions. You can also manage them programmatically with the new PutMetricDataQueryDefinition, GetMetricDataQueryDefinition, ListMetricDataQueryDefinitions, and DeleteMetricDataQueryDefinition APIs. You can use saved queries in Amazon CloudWatch Query Studio in the following AWS Regions: US East (N. Virginia), US E",
+    "published": "2026-11-21T03:00:00Z",
+    "hash": "a7e2d379406782eb9330b670afa4b894057cd904aa0e413d76bb6642d8689bdf"
+  },
+  {
     "title": "Web Search on Amazon Bedrock expands language support and country-aware search",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/web-search-amazon-bedrock/",
     "source": "AWS What's New",
@@ -28,6 +258,16 @@
     "summary": "AWS Network Firewall announces the public preview of automated Internet firewall, a new centralized control that allows you to configure Network Firewall, with native network address translation (NAT) capability, on the internet gateways of all the Virtual Private Clouds (VPCs) in your environment. Using automated Internet firewall mode, you can centrally define your Network Firewall security rules and enforce them on all inbound and outbound traffic across the internet gateways of your VPCs. You are not required to make routing or architectural changes to deploy automated Internet firewall. You can deploy it across select VPCs or your entire account, organization or organization unit. AWS Network Firewall is a stateful, managed, network firewall and intrusion detection and prevention service for your VPC. Customers use it to inspect their traffic and secure AWS resources. Prior to this launch, customers would configure AWS Network Firewalls inside their VPCs in the traffic path of all",
     "published": "2026-11-20T22:38:00Z",
     "hash": "1240ea14c0df805abb835bbe4f432851b6193d426066a5b43e536a3497eede36"
+  },
+  {
+    "title": "AWS Compute Optimizer automation rules now support organizational units",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-compute-optimizer/",
+    "source": "AWS What's New",
+    "service": "AWS Compute Optimizer",
+    "category": "Upgrade",
+    "summary": "AWS Compute Optimizer automation rules can now target the organizational units (OUs) you manage with AWS Organizations, making it easier for large organizations to scale optimization across their accounts. Previously, management accounts could target up to 50 member accounts per rule. Now, a single rule can cover every account in an OU, including accounts added later. You also have the flexibility to exclude specific child OUs or member accounts as needed. Automation rules help you save cost and improve performance by applying recommended actions on a daily, weekly, or monthly schedule when they match your criteria. These actions include cleaning up unattached Amazon Elastic Block Store (Amazon EBS) volumes and upgrading volumes to the latest-generation volume types. For example, from your management account, you can create an automation rule to clean up unattached volumes across your entire organization, while allowing resource owners to tag and exclude volumes they want to keep. To g",
+    "published": "2026-11-20T22:05:00Z",
+    "hash": "faa90ca56453076ea39df435bdecf4c2d84a612cbdbc5165cabf4460fc01fc36"
   },
   {
     "title": "Amazon Cognito extends multi-Region replication to additional AWS Regions",
@@ -78,6 +318,16 @@
     "summary": "Today, Amazon CloudWatch announces support for your own application telemetry in the CloudWatch Observability EKS add-on. The CloudWatch agent you already run now accepts metrics, traces, and logs from your applications, so you don't deploy and operate a separate collector to get them into CloudWatch. Applications instrumented with an OpenTelemetry SDK send to an OTLP endpoint that the agent serves on every node, on by default. Metrics arrive as CloudWatch metrics you query with PromQL, traces go to AWS X-Ray and Transaction Search, and logs go to CloudWatch Logs. For Prometheus metrics, the agent scrapes the targets described by standard ServiceMonitor and PodMonitor objects, with no Prometheus operator to run and no change to your scrape configuration. Each team defines its own targets alongside its application rather than in one central add-on configuration. Label selectors let you choose which monitors CloudWatch scrapes. Both sources carry the same Kubernetes, host, cloud, and ser",
     "published": "2026-11-20T20:05:00Z",
     "hash": "72c5d0bfb79baf18ad93c087b7d9494180446ee443c57ef883d1ab72a0190212"
+  },
+  {
+    "title": "AWS Private CA now supports X.509 IAM condition keys",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-private-ca-x509-iam-keys/",
+    "source": "AWS What's New",
+    "service": "AWS Identity and Access Management",
+    "category": "Upgrade",
+    "summary": "AWS Private Certificate Authority (AWS Private CA) now supports IAM condition keys that describe the certificate being issued. You can write IAM policies that allow or deny a certificate request based on its subject, subject alternative names (SANs), public key, signature algorithm, validity period, key usage, extended key usage, and basic constraints. You can share one private CA across teams and accounts, and each team can issue only the certificates your policies allow. Previously, IAM policies could control who requests certificates from which CA, and with which certificate template, but not what the certificate contains. To keep each team to its own domain names, customers ran a separate CA for each team or built their own authorization layer in front of AWS Private CA. Now, AWS Private CA evaluates your policies against the certificate as it would be issued, before anything is signed, and denies requests that don't comply. For example, you can limit each account to DNS names in i",
+    "published": "2026-11-20T20:00:00Z",
+    "hash": "f30013347fbd98bcd4d92bc817c3c52b6dcc424c3feb80a189a4744d90572851"
   },
   {
     "title": "Amazon Transcribe announces a synchronous transcription API",
@@ -418,6 +668,16 @@
     "summary": "AWS Lambda MicroVMs now supports customer managed keys (CMK) in AWS Key Management Service (KMS) for data encryption at rest. CMK gives you full control over the lifecycle and usage of your KMS keys , helping meet compliance requirements in regulated industries like financial services and healthcare. Lambda MicroVMs is a serverless compute primitive that provides VM-level isolation, near-instant launch and resume, and state preservation for executing user or AI generated code. Use MicroVMs to build applications like AI coding assistants, interactive development environments, and vulnerability scanners. To get started, create a CMK in AWS KMS and configure its cryptographic properties, metadata, and AWS IAM access permissions. Then, specify this CMK as a parameter when you create a MicroVM image or run a MicroVM. Lambda uses this CMK to encrypt your MicroVM image, MicroVM image environment variables, and the payload passed to the MicroVM run hook. You can use CMK with Lambda MicroVMs th",
     "published": "2026-11-20T08:00:00Z",
     "hash": "c59327ece2f89443ab93b16ac9873cb7288c6bbf94449e3edf3ffa97c06aa4ab"
+  },
+  {
+    "title": "AWS CDK Blocks reaches general availability",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cdk-blocks-ga/",
+    "source": "AWS What's New",
+    "service": "AWS Cloud Development Kit",
+    "category": "Release",
+    "summary": "AWS Cloud Development Kit (AWS CDK) Blocks, known as AWS Blocks in preview, is now generally available. It is an expansion of the CDK that simplifies building production-grade applications on AWS, by providing production-ready building blocks for common app features, such as data storage and processing, background jobs, and building AI agents. CDK Blocks build upon CDK constructs. CDK constructs are reusable pieces of code that define AWS infrastructure, such as a database or a storage bucket. CDK Blocks packages a CDK construct along with the connecting code applications need to use that infrastructure, incorporating AWS service-specific best practices, such as safe retries, dead-letter routing and partial-batch failures, and a local testing setup, reducing the code and configuration you need to write and maintain. It also enables you to compose and share your own custom components that incorporate your organization's requirements, helping teams build production ready applications fas",
+    "published": "2026-11-20T08:00:00Z",
+    "hash": "29ee9665e14270a1ee405abda964dec424b358d8b6fa1d5ff49dddd7f2f8a4fe"
   },
   {
     "title": "AWS Backup now supports incremental backups for Amazon DynamoDB",
