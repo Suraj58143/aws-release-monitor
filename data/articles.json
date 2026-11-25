@@ -1,5 +1,55 @@
 [
   {
+    "title": "Amazon OpenSearch Serverless is now available in the Africa (Cape Town) Region",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-serverless-available-cape-town-region/",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Release",
+    "summary": "Starting today, the next generation of Amazon OpenSearch Serverless is available in the AWS Africa (Cape Town) Region. Customers can now use a fully managed search, vector and analytics engine that provisions resources in seconds, auto scales instantly to meet changing demand, and scales to zero when idle, so customers only pay for the compute they use. With this launch, customers in the Africa (Cape Town) Region can run agentic AI, search, and observability workloads without provisioning or managing clusters. Compute is fully separated from storage, which lets customers scale compute independently to reduce costs during low-traffic periods while remaining ready for traffic spikes. With scale-to-zero and pay-per-usage pricing, customers can save up to 60% compared to provisioning OpenSearch clusters for peak loads. To learn more, see the OpenSearch Serverless documentation and pricing page . For the full list of AWS Regions where OpenSearch Serverless is available, see the Regional Ser",
+    "published": "2026-11-24T20:22:00Z",
+    "hash": "73a9f527d29672a7cb09a0af3e0c751be47b0e9b1c461e1463d2c4941f4fec1d"
+  },
+  {
+    "title": "AWS CloudFormation makes resource coverage comprehensive with 206 new types",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudformation-coverage-expansion/",
+    "source": "AWS What's New",
+    "service": "AWS CloudFormation",
+    "category": "Upgrade",
+    "summary": "AWS CloudFormation now supports 206 additional resource types across 88 services, including Amazon SageMaker Hub, Amazon Bedrock AgentCore PolicyEngine, and Amazon EC2 Snapshot. This closes key gaps in CloudFormation coverage and helps customers to standardize on safe and scalable infrastructure management workflows. The launch utilized a new AI-driven internal framework to collapse the costs of onboarding resource types to CloudFormation, setting up CloudFormation for continued coverage expansion. AWS Cloud Control API supports all new resource types that CloudFormation supports. Additionally, Cloud Control API now supports 224 read-only resource types across 99 services, making it easier to find and inspect existing AWS resources. CloudFormation resource coverage is available across all AWS Regions where the underlying service is available. To learn more, visit the AWS resource and property types reference , the Cloud Control API resource list , and the AWS CloudFormation User Guide ",
+    "published": "2026-11-24T20:00:00Z",
+    "hash": "a2040f07a7661f3695930de6e30cb0cb688d536af06530543cad36bdcef45599"
+  },
+  {
+    "title": "CVE-2026-135614 - Sensitive data redaction bypass in the troubleshooting tool in Amazon ECS MCP Server",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-200-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon ECS",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-200-AWS Publication Date: 11/24/2026 11:00 AM PST Description: Amazon ECS MCP Server is an open-source Model Context Protocol server that lets AI agents and assistants manage and troubleshoot Amazon ECS workloads using the operator's AWS credentials. We identified CVE-2026-135614, an issue in the troubleshooting tool of the Amazon ECS MCP Server (awslabs.ecs-mcp-server) before 0.1.36. With the sensitive data setting at its default, the troubleshooting tool returned container environment variable values and secret references from ECS task definitions without the redaction the setting is intended to apply. This might allow a remote actor who can influence the agent's input, for example through prompt injection, to obtain those values. Impacted versions: < 0.1.36 Refer to the article for the most up-to-date and complete information.",
+    "published": "2026-11-24T19:27:19Z",
+    "hash": "f6773abf01b92940f059ee52727b550da62a2076b7aabcef38e172f7dae2a177"
+  },
+  {
+    "title": "CVE-2026-135414 - Server-side request forgery in snapshot repository registration in Amazon OpenSearch Service",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-201-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "Amazon OpenSearch Service",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-201-AWS Publication Date: 11/24/2026 11:15 AM PST Description: Amazon OpenSearch Service is a managed service for deploying, operating, and scaling OpenSearch clusters in the AWS Cloud. We identified CVE-2026-135414, an issue in snapshot repository registration in Amazon OpenSearch Service. A user with snapshot management permissions on a domain could set a repository endpoint that caused the domain's service-operated nodes to send requests to network destinations that the user specified. This issue is addressed in service software R20260720. We recommend that customers update their domains to R20260720 or later. Impacted versions: Amazon OpenSearch Service service software before R20260720 Refer to the article for the most up-to-date and complete information.",
+    "published": "2026-11-24T19:27:19Z",
+    "hash": "8d084e2ff50298d6e6267c7e32a97492610c0981f513fa7572314044b208a455"
+  },
+  {
+    "title": "Amazon Connect Customer dashboards now support grouping historical metrics by time interval",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-time-interval/",
+    "source": "AWS What's New",
+    "service": "Amazon Connect",
+    "category": "General Announcement",
+    "summary": "Amazon Connect Customer analytics dashboards now support grouping historical metrics by time interval on trailing widgets, giving contact center managers granular control over how performance data is visualized over time. Trailing widgets now display data grouped by 15-minute, 30-minute, one-hour, daily, and weekly intervals. For example, a workforce manager investigating a spike in average handle time can switch from a daily view to 15-minute intervals to pinpoint the exact period the spike occurred, then zoom out to a weekly view to confirm whether it reflects a broader trend. Time interval grouping on dashboards is available in all AWS regions where Amazon Connect Customer is offered. To learn more, see the Amazon Connect Customer Administrator Guide. To learn more about Amazon Connect Customer, visit the Amazon Connect Customer website .",
+    "published": "2026-11-24T17:00:00Z",
+    "hash": "30a05ddfdc98cce6db9b1db7fe344b557bbea557e94bb5ae1265ac7707a018c5"
+  },
+  {
     "title": "Amazon EC2 X8i instances are now available in the Asia Pacific (New Zealand) Region",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-x8i-new-zealand/",
     "source": "AWS What's New",
@@ -20,12 +70,32 @@
     "hash": "c8588324cda7decdeca5b476a86398eb7109f3de319aaa6a41400437fca55fc6"
   },
   {
+    "title": "Amazon API Gateway announces API Portal",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-announces-api-portal/",
+    "source": "AWS What's New",
+    "service": "Amazon API Gateway",
+    "category": "Service Update",
+    "summary": "Today, Amazon API Gateway announces API Portal , a new feature that discovers, governs, and documents the APIs and AI endpoints behind Amazon API Gateway, Application Load Balancer, and Amazon CloudFront across your AWS organization. Many organizations can't see which APIs are running, which were never registered, which are no longer maintained, and which lack protection. API Portal builds a continuously updated inventory using AWS-side traffic logs and service configuration records, with nothing to install, no logs to forward, and no traffic to reroute, for a single account or your entire AWS organization. Every discovered API starts as a shadow API until you choose to manage it. API Portal labels each API as public or private and identifies AI endpoints, including MCP servers, A2A servers, and LLM endpoints. For managed APIs, it flags those that stop receiving traffic or lose their owner and evaluates security posture against best practices such as authentication, throttling, and AWS",
+    "published": "2026-11-23T20:00:00Z",
+    "hash": "43cb306d8d285948d90cd96ab6a5fa7bf998be03eba1fe6b30c9b49d32fae8dc"
+  },
+  {
+    "title": "Amazon OpenSearch Service now supports OpenSearch version 3.9",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-opensearch-3-9",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Upgrade",
+    "summary": "You can now run OpenSearch version 3.9 on Amazon OpenSearch Service. OpenSearch 3.9 helps you reduce vector memory and storage, evaluate search quality with more large language model (LLM) providers, build more responsive AI agents, and control access to shared resources. This release adds a new half-float vector type and a bf16 encoder, which store each vector dimension in 16 bits to reduce the memory and storage your vector indexes need. New 2-bit and 4-bit scalar quantization lets you choose the right balance of compression and recall for each workload. Base64-encoded vector ingestion makes request payloads smaller, which speeds up bulk loading. In addition, radial search now uses a redesigned graph traversal to improve both recall and throughput. In Search Relevance Workbench, LLM-as-a-Judge now works with Amazon Bedrock and other LLM providers through ML Commons connectors. You can also retry failed documents, edit ratings, and reuse earlier judgments to reduce repeated LLM calls.",
+    "published": "2026-11-23T19:30:00Z",
+    "hash": "58e6de31477842a16376dbad4911a4a9688f30af9953d90c29672b44f17cdb4b"
+  },
+  {
     "title": "AWS WAF introduces simplified pricing",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-introduces-simplified-pricing/",
     "source": "AWS What's New",
     "service": "AWS WAF",
     "category": "Service Update",
-    "summary": "AWS WAF now offers simplified pricing that follows what you protect instead of how you configure it. Previously, you paid separate charges for each web ACL, rule, rule group subscription, and capacity tier, making every security decision a billing calculation. Now, your bill follows three dimensions: the resources you protect, the traffic AWS WAF inspects, and the level of protection you apply. This makes the cost-benefit trade-off easy to understand, and adding or changing rules no longer changes your rate. The new model makes protection costs predictable before you deploy. Each web ACL now includes up to 2,500 WCU at no extra charge, up from 1,500, and you can add rules such as Bot Control common protections or the Anti-DDoS rule group without additional fees. You pay a resource fee for each protected resource, a base request fee for every request AWS WAF inspects, and a premium request fee only for traffic evaluated by advanced protections like Bot Control targeted protections, Frau",
+    "summary": "AWS WAF now offers simplified pricing that follows what you protect instead of how you configure it. Previously, you paid separate charges for each web ACL, rule, rule group subscription, and capacity tier, making every security decision a billing calculation. Now, your bill follows three dimensions: the resources you protect, the traffic AWS WAF inspects, and the level of protection you apply. This makes the cost-benefit trade-off easy to understand, and adding or changing rules no longer changes your rate. This new pricing goes into effect on Feb 1, 2027. The new model makes protection costs predictable before you deploy. Each web ACL now includes up to 2,500 WCU at no extra charge, up from 1,500, and you can add rules such as Bot Control common protections or the Anti-DDoS rule group without additional fees. You pay a resource fee for each protected resource, a base request fee for every request AWS WAF inspects, and a premium request fee only for traffic evaluated by advanced prote",
     "published": "2026-11-23T18:51:00Z",
     "hash": "162160ab607afcd50860a8395313c96d4f745b21af472ba5832cb3fba7cce76b"
   },
@@ -100,6 +170,56 @@
     "hash": "a6fb5e9881633dc735cf9253c1ee44095812e719090754750fa0590093c7abb5"
   },
   {
+    "title": "RDS PostgreSQL now supports PostgreSQL 19.0 in the Amazon RDS Database Preview Environment",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/postgresql-19-amazon-rds-database-preview-environment/",
+    "source": "AWS What's New",
+    "service": "Amazon Relational Database Service",
+    "category": "Upgrade",
+    "summary": "Starting today, Amazon RDS for PostgreSQL 19.0 is available in the Amazon RDS Database Preview Environment , allowing you to evaluate PostgreSQL 19.0 on Amazon RDS PostgreSQL. PostgreSQL 19.0 introduces the REPACK command with a CONCURRENTLY option, which removes table and index bloat with minimal locking. You can now enable parallel autovacuum for faster index vacuuming, and logical replication to synchronize sequence values to the subscriber. Two new extensions, pg_plan_advice and pg_stash_advice, let you guide query planner decisions. Refer to the PostgreSQL community announcement for more details. Amazon RDS Database Preview Environment DB clusters are retained for a maximum period of 60 days and are automatically deleted after the retention period, along with their backups and snapshots. A snapshot created in the Preview Environment cannot be copied to a production environment. You can use the PostgreSQL dump and load functionality to import or export your databases from the Previ",
+    "published": "2026-11-23T17:00:00Z",
+    "hash": "b2f6a173eac84fed5e6bc16c40210b7e834d8cedfb8159e7a0c37ec4e9435a4c"
+  },
+  {
+    "title": "Amazon SageMaker HyperPod now detects Kubernetes issues affecting training",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-k8s-monitoring-agent/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "General Announcement",
+    "summary": "Amazon SageMaker HyperPod now detects Kubernetes issues that disrupt training, such as crash-looping device plugins or missing DaemonSets, on clusters orchestrated by Amazon EKS. SageMaker HyperPod is purpose-built infrastructure for AI/ML model development, with built-in fault tolerance and automated cluster recovery. Previously, when a device plugin crash-looped or a taint evicted a job's pods, the job's error rarely named the pod or node, so engineers pieced the cause together from kubectl output and per-rank logs. Now, the new HyperPod Kubernetes Resource Monitoring Agent watches nodes, critical pods such as NVIDIA device plugins, and required DaemonSets that impact HyperPod and Kubeflow training jobs. The agent correlates Kubernetes issues with the training jobs they affect and reports them as Kubernetes events and Amazon CloudWatch logs. For example, if a device plugin keeps crashing on one node mid training run, the agent flags the node as it loses GPUs and, when the job fails, ",
+    "published": "2026-11-23T17:00:00Z",
+    "hash": "433152d5c0446864985388c289b760881af22cebfc0136902034f783f1dfb9b7"
+  },
+  {
+    "title": "Amazon SageMaker HyperPod now detects and recovers hung training jobs on Slurm clusters",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-slurm-hung-jobs/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker HyperPod now supports hung job detection for Slurm-orchestrated clusters, which finds training jobs that have stopped making progress and returns them to the job queue. SageMaker HyperPod helps you provision resilient clusters for training and deploying AI/ML models. Previously, a job that hung on an NCCL timeout, a stalled data pipeline, or a deadlock kept its GPUs while Slurm reported it as running, until you noticed that the job is not making progress. Now, if a training run hangs, HyperPod detects it within minutes from the job's output and GPU activity, or from log patterns that you define, such as your training step message or an NCCL error, and writes an event to Amazon CloudWatch. You can also have HyperPod cancel the hung job and let Slurm requeue it, so the job can restart from its last checkpoint instead of holding its GPUs idle. You turn on detection per job with an environment variable that points to a rules file, and it works with any framework, including",
+    "published": "2026-11-23T17:00:00Z",
+    "hash": "cb0bece15151d4fef6ea9c353dbd48ec5da80474b02cea848b6a14e1f28c2104"
+  },
+  {
+    "title": "Amazon SageMaker HyperPod extends AMI auto-patching to Slurm and inference on EKS",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-patching-slurm-eks-inference/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker HyperPod now automatically patches AMIs on Slurm clusters and introduces a new AMI patching strategy for Amazon EKS clusters that deploy inference workloads. SageMaker HyperPod is purpose-built infrastructure for training and deploying foundation models at scale. Previously, patching a Slurm cluster meant waiting for training runs to finish, scheduling downtime, and upgrading nodes by hand, which could take days of coordination between infrastructure admins and research scientists. Also, auto-patching on Amazon EKS waited for nodes to go idle, which suited training workloads but left nodes serving inference workloads, which rarely go idle, without critical AMI updates. Now, HyperPod patches both while jobs and models keep running: Auto-patching (Slurm): HyperPod patches each node only when it is idle, so running jobs aren't disrupted. Teams no longer have to choose between training and security, and can keep clusters secure without coordination between infrastructure a",
+    "published": "2026-11-23T17:00:00Z",
+    "hash": "2f3c0216d7ae09551698f56f45646cb9bb56593cafa8532877f5a59a18d2b6ad"
+  },
+  {
+    "title": "Amazon SageMaker HyperPod deep health check now validates training correctness",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-training-validation/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Bug Fix",
+    "summary": "Amazon SageMaker HyperPod clusters orchestrated by Amazon EKS now support MultiNodeTrainingValidation, a deep health check that validates nodes train correctly before your jobs run. SageMaker HyperPod is purpose-built infrastructure for AI/ML model development, with built-in fault tolerance and automated cluster recovery. Previously, a GPU with a subtle fault could pass hardware stress and connectivity tests and still compute wrong results, and the first sign was often NaN or infinite loss in a production training run. Now, The new MultiNodeTraining Validation check trains a fixed Megatron-LM workload on each instance and then across instances over Elastic Fabric Adapter (EFA), and fails any instance whose training loss is NaN, infinite, or diverging, or whose training doesn't finish in time. For example, you can run the check before a multi-week pre-training run, and with automatic node recovery, HyperPod reboots or replaces any instance that fails, so a faulty GPU doesn't surface day",
+    "published": "2026-11-23T17:00:00Z",
+    "hash": "983fa037f6be8833be1731b38c97120a1dfd0ab14eb374a44caecc5edf77ea20"
+  },
+  {
     "title": "Amazon CloudFront Announces HTTP/2 Support for Connections to Origins",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-cloudfront-http2-origins/",
     "source": "AWS What's New",
@@ -140,6 +260,26 @@
     "hash": "f862f4fba9480854a4739f64b8b0d1dde4908e10e69a18624381e87e3685b1e5"
   },
   {
+    "title": "AWS WAF announces automated discovery and protection for API endpoints",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/api-security-with-waf/",
+    "source": "AWS What's New",
+    "service": "AWS WAF",
+    "category": "General Announcement",
+    "summary": "Automated API discovery and protection are now generally available, enabling you to discover every API behind Amazon API Gateway, Application Load Balancers, and Amazon CloudFront across your AWS Organization and protect them using AWS WAF. Discovery is available through the new API Gateway API Portal, which identifies the APIs automatically from traffic logs and service configuration records, with no agents to deploy or logs to forward. The API Portal classifies the APIs it finds, identifies zombie and shadow APIs, evaluates each API's security posture, and reports findings, including the ones that are missing WAF protections. For unprotected APIs, customers can enable protection using WAF. Protection is available through the new AWS WAF API Security managed rule group, which protects your APIs against the most exploited API attack categories: Broken Object Level Authorization (BOLA), where the attackers change record IDs in requests to read other users' data, Broken Authentication an",
+    "published": "2026-11-23T08:00:00Z",
+    "hash": "bed2f25e4909a5eab3ae8ad9193c4b11db2290365992fcd791b178003b7aee58"
+  },
+  {
+    "title": "AWS DevOps Agent adds Access Profiles and AWS Organizations",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-access-profiles-orgs/",
+    "source": "AWS What's New",
+    "service": "AWS Organizations",
+    "category": "Service Update",
+    "summary": "AWS DevOps Agent now gives you more ways to govern and control your AWS DevOps Agent instances. With the new Access Profiles feature you can link IAM IDC users in your Agent Spaces to specific permission sets. For example, you can use Access Profiles to limit the ability to create or update skills and memories to a select set of users. AWS Organizations support allows you to more easily configure your Agent Space's AWS account access permissions by automatically aligning accounts in organizations with your Agent Spaces. For the list of AWS Regions where AWS DevOps Agent is available, see the supported Regions table . See all the latest AWS DevOps Agent features on the release history page.",
+    "published": "2026-11-23T08:00:00Z",
+    "hash": "ca6c5fc5310a13d90be36b0321d0747d83a8ad7907c8b29b7b66416b5dd79e19"
+  },
+  {
     "title": "AWS CodeDeploy now supports suspending Amazon EC2 Auto Scaling processes",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-codedeploy-suspend-asg-processes/",
     "source": "AWS What's New",
@@ -168,6 +308,16 @@
     "summary": "Amazon SageMaker HyperPod now offers a redesigned AWS Management Console experience for creating clusters orchestrated by Amazon EKS. A guided workflow helps ML infrastructure administrators and platform teams set up networking, instance groups, storage, permissions, resiliency, observability, lifecycle scripts, and tags. Required settings are kept apart from optional ones. You enter only what is needed to create the cluster and add other capabilities later, when you need them. You can start with smart defaults or choose a workload profile that applies a coordinated set of settings based on how you plan to use the cluster. You can then adjust individual and advanced settings as needed, reducing repetitive setup while retaining control over the configuration. The redesigned experience is available in all AWS Regions where Amazon SageMaker HyperPod is available. To learn more, check our documentation .",
     "published": "2026-11-23T08:00:00Z",
     "hash": "1b2f3fbac8c7a49e9ecc722261e65b1ed17de8005c038cd43cd2e42b5ecfde19"
+  },
+  {
+    "title": "Amazon SageMaker AI now supports viewing capacity reservations",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-capacity-reservations/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker AI now lets you view SageMaker Capacity Reservations in the SageMaker console, AWS CLI, and AWS SDKs. Previously, customers had no self-service way to see their reserved capacity, including reservation timelines and instance availability, and had to rely on AWS Support to plan their own workloads. Starting today, administrators can review the capacity they hold without leaving SageMaker AI. Administrators can list reservations with their status, instance type, availability zone, instance count, start time, and end time. Customers can view their SageMaker Capacity Reservations under Reserved Capacity section in SageMaker Console. They can open a reservation to see its details, including the ML reservation ARN to use in a SageMaker Inference Endpoint configuration. Additionally, the details page lists the SageMaker AI resources that can use the reservation, such as Amazon SageMaker HyperPod clusters and SageMaker Inference endpoints, and shows the status of each associat",
+    "published": "2026-11-23T08:00:00Z",
+    "hash": "7e09c0e4b2450e2537f831a202e52acfcb18dcf835e1356160b28a61894cb412"
   },
   {
     "title": "Amazon Inspector expands runtime reachability analysis for ECR and EC2 findings",
@@ -258,6 +408,16 @@
     "summary": "AWS Network Firewall announces the public preview of automated Internet firewall, a new centralized control that allows you to configure Network Firewall, with native network address translation (NAT) capability, on the internet gateways of all the Virtual Private Clouds (VPCs) in your environment. Using automated Internet firewall mode, you can centrally define your Network Firewall security rules and enforce them on all inbound and outbound traffic across the internet gateways of your VPCs. You are not required to make routing or architectural changes to deploy automated Internet firewall. You can deploy it across select VPCs or your entire account, organization or organization unit. AWS Network Firewall is a stateful, managed, network firewall and intrusion detection and prevention service for your VPC. Customers use it to inspect their traffic and secure AWS resources. Prior to this launch, customers would configure AWS Network Firewalls inside their VPCs in the traffic path of all",
     "published": "2026-11-20T22:38:00Z",
     "hash": "1240ea14c0df805abb835bbe4f432851b6193d426066a5b43e536a3497eede36"
+  },
+  {
+    "title": "AWS Network Firewall introduces automated Internet firewall (Preview)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-automated-internet/",
+    "source": "AWS What's New",
+    "service": "AWS Network Firewall",
+    "category": "Release",
+    "summary": "AWS Network Firewall announces the public preview of automated internet firewall (Preview), a new centralized control that allows you to configure Network Firewall, with native network address translation (NAT) capability, on the internet gateways of all the Virtual Private Clouds (VPCs) in your environment. Using automated internet firewall (Preview) mode, you can centrally define your Network Firewall security rules and enforce them on all inbound and outbound traffic across the internet gateways of your VPCs. You are not required to make routing or architectural changes to deploy automated internet firewall (Preview). You can deploy it across select VPCs or your entire account, organization or organization unit. AWS Network Firewall is a stateful, managed, network firewall and intrusion detection and prevention service for your VPC. Customers use it to inspect their traffic and secure AWS resources. Prior to this launch, customers would configure AWS Network Firewalls inside their V",
+    "published": "2026-11-20T22:38:00Z",
+    "hash": "28ffd64c0b5f086b338df4ef517fb78b6ffe4f01aa5a20858e425aec1fa656a1"
   },
   {
     "title": "AWS Compute Optimizer automation rules now support organizational units",
@@ -565,7 +725,7 @@
     "source": "AWS What's New",
     "service": "Amazon Simple Storage Service",
     "category": "Upgrade",
-    "summary": "Amazon S3 now supports at least 11,000 GET/HEAD requests per second, up from 5,500, for general purpose buckets. With this higher request rate, you can retrieve data faster for read-intensive workloads such as machine learning training, data analytics, and data transfers. To maximize throughput, distribute your requests across multiple prefixes so that S3 can scale each one independently. This increase applies automatically to your existing read requests in all AWS Regions, with no changes required to your applications and at no additional charge beyond standard S3 request pricing. To learn more, visit the Amazon S3 user guide and the S3 product page .",
+    "summary": "Amazon S3 now supports at least 11,000 GET/HEAD requests per second per partitioned prefix, up from 5,500, for general purpose buckets. A partitioned prefix is a prefix whose keys S3 has assigned to their own partition to serve a high request rate, and S3 creates them automatically as your traffic grows. With this higher request rate, you can retrieve data faster for read-intensive workloads such as machine learning training, data analytics, and data transfers. To maximize throughput, distribute your requests across multiple prefixes so that S3 can scale each one independently. This increase applies automatically to your existing read requests in all AWS Regions, with no changes required to your applications and at no additional charge beyond standard S3 request pricing. To learn more, visit the Amazon S3 user guide and the S3 product page .",
     "published": "2026-11-20T15:00:00Z",
     "hash": "0c3aa28a240367a1e093b7bf5db0572eb7950c746f8524279b83325f64e9838f"
   },
