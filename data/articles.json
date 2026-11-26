@@ -1,5 +1,125 @@
 [
   {
+    "title": "AWS Lambda now supports orchestrating MicroVMs with Lambda durable functions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/",
+    "source": "AWS What's New",
+    "service": "AWS Lambda",
+    "category": "Upgrade",
+    "summary": "Today, AWS announces a developer preview of a new extension for orchestrating Lambda MicroVMs with Lambda durable functions . The extension adds durable operations for running work on MicroVMs and managing their lifecycle. You can use the new operations to build software factories, security scanners, or orchestrate CI/CD jobs that run untrusted or agent-generated code in isolated sandboxes. With Lambda durable functions, you can build resilient, multi-step applications and AI workflows that run for up to one year, with built-in checkpointing and automatic retries. Lambda MicroVMs are a serverless compute primitive that provides VM-level isolation, near-instant launch and resume, and state preservation for running user-generated or AI-generated code. With this launch, you can run individual tasks in a MicroVM or launch a MicroVM session, where tasks share the same files and memory. The durable function manages the MicroVM lifecycle and runs each task as a durable operation. It checkpoin",
+    "published": "2026-11-25T20:00:00Z",
+    "hash": "513ebc6ac706ed0ca89f04a920f28037c3e9f9a801f3402f70a2c5102ab5c20d"
+  },
+  {
+    "title": "Amazon CloudWatch Omni now integrates with PagerDuty",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-pagerduty/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudWatch Omni",
+    "category": "General Announcement",
+    "summary": "Amazon CloudWatch Omni alerts can now automatically create PagerDuty incidents, so notifications flow directly into your existing incident management workflows. This reduces mean time to resolution (MTTR) by eliminating manual notification steps and ensuring consistent incident workflows. CloudWatch Omni is a fully managed AI-powered observability experience built on open standards that unifies monitoring for AI agents, applications, and infrastructure. PagerDuty is an incident management platform that routes alerts to the right on-call responders and coordinates their response. When an Omni alert fires, Omni creates a PagerDuty incident. In PagerDuty, Omni alerts follow your existing on-call schedules and escalation policies, so critical alerts reach the right responder wherever they are, at any hour. Omni alerts include severity, the affected service, and a link back to the related data in Omni, so responders have the context they need to diagnose the problem. For PagerDuty integrati",
+    "published": "2026-11-25T20:00:00Z",
+    "hash": "650f8941c364b1672795d112fc20b96c98564ed86ca6d3e59c69fa814b836a8a"
+  },
+  {
+    "title": "CVE-2026-134070 - Improper input sanitization in the AWS Config remediation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-203-aws/",
+    "source": "AWS Security Bulletins",
+    "service": "AWS Config",
+    "category": "Security",
+    "summary": "Bulletin ID: 2026-203-AWS Publication Date: 11/25/2026 11:30 AM PST Description: AWS Systems Manager Automation provides AWS-managed runbooks that customers can run directly or through integrations such as AWS Config remediation. Session Manager, a capability of AWS Systems Manager, stores each account's regional session preferences in the SSM-SessionManagerRunShell document. We identified CVE-2026-134070, where improper input validation in the AWS-managed AWS Systems Manager Automation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3 might allow an authenticated remote user who is permitted to run the runbook to set unintended configuration in the account's Regional Session Manager preferences document (SSM-SessionManagerRunShell) via a crafted S3KeyPrefix parameter value. This applies only when that document does not already exist in the Region. The unintended configuration can include arbitrary commands, which then run on managed instances when other user",
+    "published": "2026-11-25T19:41:20Z",
+    "hash": "18f762a4f8c5aa6c05b05a4a30f3e08f03498aa3dca874480fef8ac1f02fc3d5"
+  },
+  {
+    "title": "Amazon EC2 M8g instances are now available in Israel (Tel Aviv)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m8g-instances-telaviv-region/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M8g instances are available in the Israel (Tel Aviv) region. These instances are powered by AWS Graviton4 processors and deliver up to 30% better performance compared to AWS Graviton3-based instances. Amazon EC2 M8g instances are built for general-purpose workloads, such as application servers, microservices, gaming servers, midsize data stores, and caching fleets. M8g instances are up to 40% faster for databases, up to 30% faster for web applications, and up to 45% faster for large Java applications than AWS Graviton3-based M7g instances. These instances are built on the AWS Nitro System , which offloads CPU virtualization, storage, and networking functions to dedicated hardware and software to enhance the performance and security of your workloads. M8g instances offer larger instance sizes with up to 3x more vCPUs and memory than Graviton3-based M7g instances. M8g instances are available for purchase in this region via Savings",
+    "published": "2026-11-25T17:15:00Z",
+    "hash": "299a2da566acffc85ab03ac0f81ede50d1da551aaa8d58f6af1d4c6f8a71c1cc"
+  },
+  {
+    "title": "Amazon EC2 M9gd instances are now available in Asia Pacific (Seoul)",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m9gd-asiapacific-seoul/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9gd instances are available in the Asia Pacific (Seoul) region. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed CPUs, which deliver the best price performance for a broad range of workloads running on Amazon EC2. M9gd instances deliver up to 25% better compute performance than AWS Graviton4-based M8gd instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation AWS Nitro System and are the first to feature the Nitro Isolation Engine . The Isolation Engine uses formal verification to provide mathematical assurance that customer workloads are isolated from each other and from AWS operators, pioneering a new standard for mathematically proven cloud security. M9gd instances serve a broad range of general-purpose workloads, including application servers, microserv",
+    "published": "2026-11-25T17:10:00Z",
+    "hash": "65be002cb905328dc572da7afcb2247ddbc394ff646801113b79a0a9cf4afa7a"
+  },
+  {
+    "title": "Amazon EC2 C9gd instances now available in additional regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c9gd-instances-additional-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C9gd instances are available in the Europe (Ireland, Spain) regions. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed CPUs, which deliver the best price performance for a broad range of workloads running on Amazon EC2. C9gd instances deliver up to 25% better compute performance than AWS Graviton4-based C8gd instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation AWS Nitro System and are the first to feature the Nitro Isolation Engine . The Isolation Engine uses formal verification to provide mathematical assurance that customer workloads are isolated from each other and from AWS operators, pioneering a new standard for mathematically proven cloud security. C9gd instances are ideal for compute-intensive workloads such as high-performance computing (HPC), ba",
+    "published": "2026-11-25T16:49:00Z",
+    "hash": "553412ceefdfa3be890bbc48aadf7a4993961f993989f662392b4c2c89440ba8"
+  },
+  {
+    "title": "Amazon EC2 C9g instances are now available in additional regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c9g-instances-additional-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C9g instances are available in the Asia Pacific (Sydney), Europe (Ireland, Spain), and South America (São Paulo) regions. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed CPUs, which deliver the best price performance for a broad range of workloads running on Amazon EC2. C9g instances deliver up to 25% better compute performance than AWS Graviton4-based C8g instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation AWS Nitro System and are the first to feature the Nitro Isolation Engine . The Isolation Engine uses formal verification to provide mathematical assurance that customer workloads are isolated from each other and from AWS operators, pioneering a new standard for mathematically proven cloud security. C9g instances are ideal for compute-intensive work",
+    "published": "2026-11-25T16:17:00Z",
+    "hash": "cad5d9e84bcd567998f8b3170eefe8066db92131d83788f9eaa60ceeae9e94dd"
+  },
+  {
+    "title": "Amazon EC2 M9g instances now available in additional regions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m9g-instances-additional-regions/",
+    "source": "AWS What's New",
+    "service": "Amazon EC2",
+    "category": "Release",
+    "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9g instances, powered by AWS Graviton5 processors, are available in US West (N. California), Canada (Central), South America (São Paulo), and Asia Pacific (Seoul) regions. AWS Graviton5 processors are the fifth generation of custom-designed CPUs, delivering the best price performance for memory-intensive workloads running on Amazon EC2. M9g instances deliver up to 25% better performance compared to AWS Graviton4-based M8g instances. They are up to 30% faster for databases. These instances are built on the sixth-generation AWS Nitro System and are the first to feature the Nitro Isolation Engine , harnessing formal verification to provide mathematical assurance that customer workloads are isolated from each other and AWS operators, pioneering a new standard for mathematically proven cloud security. M9g instances are ideal for workloads such as open-source databases, in-memory caches, big data analytics, and memory-intensive appli",
+    "published": "2026-11-25T16:06:00Z",
+    "hash": "2571903bec37bddccc12e744f945d2fc4a985bf6eaed61c94e6bc173d1b82da7"
+  },
+  {
+    "title": "AWS IoT Core quotas and usage are now visible in AWS Service Quotas console",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-quota-usage-monitoring/",
+    "source": "AWS What's New",
+    "service": "AWS IoT",
+    "category": "Release",
+    "summary": "AWS IoT Core now publishes its most used service quotas and your current usage against the quotas in AWS Service Quotas console , improving observability and monitoring of API limits and quotas. This launch enables you to monitor your service quota usage, set alarms before you are throttled, and request quota increases ahead of planned growth. AWS IoT Core is a fully managed service that securely connects IoT devices at scale to the AWS cloud and routes IoT device data to AWS and third-party services. As your device fleet grows, your applications depend on quotas for operations, such as connecting and authenticating devices, publishing and subscribing to messages. Previously, service quotas and usage were not visibile in AWS Service Quotas Console and you had to contact AWS Support to learn about your current utilization before throttling occured. Now you can view quotas and usage for both device messaging (data plane) and resource management (control plane) APIs. You can also use Amaz",
+    "published": "2026-11-25T08:00:00Z",
+    "hash": "4f680f1c5910e129b883cdc1b60c5aa22b813a1b5a944cbbd67cb2bd96d510ca"
+  },
+  {
+    "title": "AWS IoT Core now uses dedicated IPv6 address ranges for the HTTP rule action",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-dedicated-ipv6-ranges/",
+    "source": "AWS What's New",
+    "service": "AWS IoT",
+    "category": "Bug Fix",
+    "summary": "AWS IoT Core can now send traffic to HTTPS endpoints within a dedicated, published IPv6 address range. This launch enables you to configure your HTTPS endpoints to accept requests only from AWS IoT Core and block all other traffic, thereby reducing your endpoint's exposure to public internet. AWS IoT Core is a fully managed service that securely connects IoT devices at scale to the AWS cloud and routes IoT device data to AWS and third-party services. AWS IoT Core's HTTP rule action delivers IoT device data to any HTTPS endpoint, such as your application servers, on-premises systems, or partner services. With this launch, you can choose from AWS IoT Core's published IPv6 range, and add the fixed IPv6 range to an Amazon API Gateway resource policy , a security group , or your firewall rules . Your HTTPS endpoints will then accept traffic only from AWS IoT Core, giving you network layer control over who can reach your endpoint. To get started, configure your HTTPS endpoint destination to ",
+    "published": "2026-11-25T08:00:00Z",
+    "hash": "4fd6dde1af41213dde34ea2247081906c9802405ae5987fef141c801c4de2a5e"
+  },
+  {
+    "title": "Amazon Transcribe Turbo: more accurate transcripts and natural turn-taking for voice agents, now in public preview",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/transcribe-turbo-preview/",
+    "source": "AWS What's New",
+    "service": "Amazon Transcribe",
+    "category": "Release",
+    "summary": "Amazon Transcribe Turbo, our next-generation speech-to-text model, is now in public preview in US East (Ohio) for batch and streaming. Turbo improves accuracy, supports custom vocabulary, and formats numbers, dates, currency, phone numbers and addresses following each locale's conventions. Streaming: English, Portuguese, French, Italian, German and Spanish supported. Word Error Rate (WER) drops ~14% relative in English and 11% relative in the other languages versus the current production model, and formatting accuracy improves by more than 20 points. Batch: English Turbo is generally available in most AWS Regions. Portuguese, French, Italian, German, Spanish, Chinese, Japanese, Korean and Arabic are now in preview, with ~16% lower word error rate. The base model needs no API, code, or SDK changes. Turbo streaming also adds two new features for voice agents in English at launch and for other languages by the end of December 2026. Semantic turn-taking detects when a caller is done speaki",
+    "published": "2026-11-25T08:00:00Z",
+    "hash": "258f20f05f830acf5b70326c498da40a160f369548104244eff1fb209cc23a25"
+  },
+  {
+    "title": "AWS IAM extends trusted identity propagation to IAM federation and IAM Roles Anywhere, and simplifies it in IAM Identity Center",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iam/",
+    "source": "AWS What's New",
+    "service": "AWS Identity and Access Management",
+    "category": "General Announcement",
+    "summary": "Trusted identity propagation (TIP) carries the identity of a human user or workload with requests to supported AWS Services. Customers can use that identity in IAM policy conditions for access control and to identify the originating human user or workload in AWS CloudTrail. AWS is expanding TIP to AWS Identity and Access Management (IAM) federation and IAM Roles Anywhere , while simplifying the existing TIP experience in AWS IAM Identity Center. In addition, IAM outbound identity federation now enables customers to request an AWS-signed JSON Web Token (JWT) that includes identity information from TIP sessions, allowing external services to identify the human user or workload that originated the request. With TIP for IAM federation, customers can map the human or workload identity, along with optional runtime claims such as a risk score or a CI/CD workflow name, from the SAML assertion or OIDC token used for federation to the role session. IAM Roles Anywhere extends TIP to identities so",
+    "published": "2026-11-25T06:00:00Z",
+    "hash": "5bb1d5f0944d1e558dccd17b511c9f00f5d1a223bff1c13bb52a08cc964e624d"
+  },
+  {
     "title": "Amazon OpenSearch Serverless is now available in the Africa (Cape Town) Region",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-serverless-available-cape-town-region/",
     "source": "AWS What's New",
@@ -178,6 +298,16 @@
     "summary": "Starting today, Amazon RDS for PostgreSQL 19.0 is available in the Amazon RDS Database Preview Environment , allowing you to evaluate PostgreSQL 19.0 on Amazon RDS PostgreSQL. PostgreSQL 19.0 introduces the REPACK command with a CONCURRENTLY option, which removes table and index bloat with minimal locking. You can now enable parallel autovacuum for faster index vacuuming, and logical replication to synchronize sequence values to the subscriber. Two new extensions, pg_plan_advice and pg_stash_advice, let you guide query planner decisions. Refer to the PostgreSQL community announcement for more details. Amazon RDS Database Preview Environment DB clusters are retained for a maximum period of 60 days and are automatically deleted after the retention period, along with their backups and snapshots. A snapshot created in the Preview Environment cannot be copied to a production environment. You can use the PostgreSQL dump and load functionality to import or export your databases from the Previ",
     "published": "2026-11-23T17:00:00Z",
     "hash": "b2f6a173eac84fed5e6bc16c40210b7e834d8cedfb8159e7a0c37ec4e9435a4c"
+  },
+  {
+    "title": "Amazon SageMaker HyperPod now supports NCCL profiling for training jobs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-nccl-profiler/",
+    "source": "AWS What's New",
+    "service": "Amazon SageMaker AI",
+    "category": "Upgrade",
+    "summary": "Amazon SageMaker HyperPod now supports NVIDIA Collective Communications Library (NCCL) profiling with the HyperPod NCCL Profiler, giving you visibility into communication performance across the nodes and GPUs in a distributed training job. SageMaker HyperPod helps you scale generative AI model development across hundreds or thousands of AI accelerators. Previously, one throttled GPU or degraded link could slow the whole job without an error, and finding it meant stopping the job to run NCCL tests. Now, the HyperPod NCCL profiler loads as a plugin in your training job and sends per-rank bandwidth and timing to Amazon CloudWatch or Amazon Managed Service for Prometheus, with no changes to your training code. For example, if training throughput drops with no errors, the NCCL profiler dashboard on Amazon Managed Grafana flags the node whose GPUs fall behind their peers and shows whether they are throttled, so you find it without stopping the job. If cross-node bandwidth drops on every node",
+    "published": "2026-11-23T17:00:00Z",
+    "hash": "e4e42ff5fbc8daf3767da573dcd126fd4e58f15c824639315b0dea24522a6e61"
   },
   {
     "title": "Amazon SageMaker HyperPod now detects Kubernetes issues affecting training",
