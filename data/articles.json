@@ -1,5 +1,35 @@
 [
   {
+    "title": "Amazon Timestream for InfluxDB 3 now supports heterogeneous clusters",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/influxdb-heterogeneous-cluster/",
+    "source": "AWS What's New",
+    "service": "Amazon Timestream",
+    "category": "Upgrade",
+    "summary": "Amazon Timestream for InfluxDB 3 now supports heterogeneous clusters, which let you assign a different instance size to each node role in an InfluxDB 3 Enterprise cluster. You can size the writer, reader, and compactor roles independently. You set the size for each role when you create a cluster or add nodes to an existing cluster, using the Amazon Timestream console, the AWS Command Line Interface (CLI), or the AWS SDKs. Time series workloads rarely load every part of a database the same way. Queries need memory for the query cache, writes are gated by durable flushes to object storage, and compaction needs vCPUs to merge files in the background. Because every node previously ran one instance size, scaling a single role meant scaling all of them and paying for headroom on nodes already sized correctly. You can now place reader nodes on a larger size for a bigger cache or more complex queries while keeping writer nodes smaller, or give the compactor more vCPUs without changing the rest",
+    "published": "2026-11-27T22:30:00Z",
+    "hash": "a2428c53471a01cc455a7a697a4634e5cc51c5e4b157923245ed9b2d18c3ce68"
+  },
+  {
+    "title": "Amazon CloudWatch announces basic OpenTelemetry enrichment at no additional cost",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-opentelemetry-enrichment/",
+    "source": "AWS What's New",
+    "service": "Amazon CloudWatch",
+    "category": "Service Update",
+    "summary": "Amazon CloudWatch now offers basic OpenTelemetry enrichment for AWS service metrics at no additional cost. Basic enrichment turns the metrics that AWS services publish to CloudWatch into OpenTelemetry data points you can query with PromQL. It covers metrics that identify a resource, such as Amazon EC2 CPUUtilization with an InstanceId dimension. Enriched metrics get resource attributes for the Amazon Resource Name, cloud provider, Region, and account ID, plus an instrumentation scope naming the source service. Your original CloudWatch dimensions become data point attributes. To query AWS resource tags as PromQL labels, choose resource tag enrichment instead. It is charged as OTel Vended Metric Enrichment, and you can switch levels at any time. Your AWS service metrics stay available through existing CloudWatch APIs. When you set up CloudWatch Omni, basic enrichment is enabled by default, so you can query your AWS service metrics with PromQL right away. Any account can also enable it di",
+    "published": "2026-11-27T21:03:00Z",
+    "hash": "c9384eee7568611eea89bbf5e4e2693c0fdcd2bcd45730e1bc83bd1de35db93e"
+  },
+  {
+    "title": "Amazon Neptune introduces Neptune Graph Sessions, smaller graphs designed for agents that scale to zero and resume automatically",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-neptune-graph-sessions-generally-available",
+    "source": "AWS What's New",
+    "service": "Amazon Neptune",
+    "category": "Upgrade",
+    "summary": "Amazon Neptune now supports Neptune Graph Sessions, a compute mode designed for agents that scales memory and CPU automatically and scales to zero when idle. You can give each agent, user or task its own graph without paying for the 16 m-NCU minimum of a provisioned graph. You choose a starting size of 4 s-NCU (sessions Neptune capacity units) or 8 s-NCU of working memory when you create a graph. Applications such as GraphRAG assistants, AI agents and per-user analytics improve accuracy when using a graph. These use cases often need a separate graph for each conversation or task, and the size of that graph is hard to predict. Each Graph Sessions graph starts at the size you choose and includes memory headroom up to twice that size for the data you load and the queries you run (a 4 s-NCU graph has up to 8 s-NCU of memory, and an 8 s-NCU graph has up to 16 s-NCU), so the starting size does not have to cover your largest graph. You are billed for the memory your graph uses, so a graph tha",
+    "published": "2026-11-27T19:00:00Z",
+    "hash": "7704ad91e22818a260eba325e6c259723d40edc7ed24d21f54518c69b4b540e3"
+  },
+  {
     "title": "Amazon RDS for PostgreSQL supports minor versions 18.7, 17.12, 16.16, 15.20, and 14.25",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-18-7-17-12-16-16-15-20-14-25/",
     "source": "AWS What's New",
@@ -58,6 +88,16 @@
     "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9gd instances are available in the Asia Pacific (Seoul) region. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed CPUs, which deliver the best price performance for a broad range of workloads running on Amazon EC2. M9gd instances deliver up to 25% better compute performance than AWS Graviton4-based M8gd instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation AWS Nitro System and are the first to feature the Nitro Isolation Engine . The Isolation Engine uses formal verification to provide mathematical assurance that customer workloads are isolated from each other and from AWS operators, pioneering a new standard for mathematically proven cloud security. M9gd instances serve a broad range of general-purpose workloads, including application servers, microserv",
     "published": "2026-11-25T17:10:00Z",
     "hash": "65be002cb905328dc572da7afcb2247ddbc394ff646801113b79a0a9cf4afa7a"
+  },
+  {
+    "title": "Amazon OpenSearch Service optimised engine now publishes data to Amazon S3 Tables",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-publish-s3-tables",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "General Announcement",
+    "summary": "The optimized engine for observability in Amazon OpenSearch Service now lets customers who send observability data directly to OpenSearch publish that data to Amazon S3 Tables. These customers can search and analyze data in OpenSearch, but reusing it with other analytics and AI tools often requires a parallel ingestion or custom export pipeline. This integration provides an open-table reuse path without changing how data enters OpenSearch. Publish policies make selected indexes available as Apache Iceberg tables in your AWS account. Engineers and AI agents can query the same observability data with Amazon EMR Serverless, DuckDB, and other Iceberg-compatible tools without adding query load to OpenSearch. They can reuse it for historical investigations, cross-dataset analysis, audits, and long-term trend analysis while retaining it at lower cost. This feature is available at no additional charge on the new engine for observability with OpenSearch 3.9 in the following AWS Regions: US East",
+    "published": "2026-11-25T17:00:00Z",
+    "hash": "61a4dd354cf09c0f062140c29eda966c0afbe6b6959f8b061c926a4f9f9f11c9"
   },
   {
     "title": "Amazon EC2 C9gd instances now available in additional regions",
@@ -168,6 +208,16 @@
     "summary": "Bulletin ID: 2026-201-AWS Publication Date: 11/24/2026 11:15 AM PST Description: Amazon OpenSearch Service is a managed service for deploying, operating, and scaling OpenSearch clusters in the AWS Cloud. We identified CVE-2026-135414, an issue in snapshot repository registration in Amazon OpenSearch Service. A user with snapshot management permissions on a domain could set a repository endpoint that caused the domain's service-operated nodes to send requests to network destinations that the user specified. This issue is addressed in service software R20260720. We recommend that customers update their domains to R20260720 or later. Impacted versions: Amazon OpenSearch Service service software before R20260720 Refer to the article for the most up-to-date and complete information.",
     "published": "2026-11-24T19:27:19Z",
     "hash": "8d084e2ff50298d6e6267c7e32a97492610c0981f513fa7572314044b208a455"
+  },
+  {
+    "title": "Amazon OpenSearch Service optimized engine supports high-cardinality query and DSL",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-distributed-joins",
+    "source": "AWS What's New",
+    "service": "Amazon OpenSearch Service",
+    "category": "Upgrade",
+    "summary": "Amazon OpenSearch Service now supports distributed joins, high-cardinality aggregations, and OpenSearch query DSL on the new engine. Observability data often spans logs, traces, and agent traces. Engineers and their AI agents must connect these datasets to determine what failed, where it failed, and who was affected. With Piped Processing Language (PPL) or SQL, engineers and agents can query multiple petabytes to connect an error log to its trace and enrich telemetry with service ownership or deployment metadata in one query. High-cardinality aggregations help you measure incident impact across millions of distinct hosts, users, or tenants. Because the new engine distributes joins and aggregations across data nodes, you don’t need to copy related data into a single index. Routing key support keeps related documents on the same shard, so lookups and joins on that key stay fast. The new engine also supports OpenSearch query DSL, so applications, alerts, and integrations that send query D",
+    "published": "2026-11-24T17:00:00Z",
+    "hash": "54bfc701d5fa261adcf9550e02802fb8d3e0415f2aae7ec27a623e45e9582eec"
   },
   {
     "title": "Amazon OpenSearch Service new engine now joins logs, traces, and metadata",
